@@ -1,0 +1,18 @@
+{
+    "writerHelper.docs.characters.path": "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\设定\\人物设定.md",
+    "writerHelper.docs.scenes.path": "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\设定\\场景设定.md",
+    "writerHelper.docs.items.path": "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\设定\\物品设定.md",
+    "writerHelper.docs.skills.path": "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\设定\\技能设定.md",
+    "writerHelper.docs.factions.path": "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\设定\\势力设定.md",
+    "writerHelper.configPaths.world": "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\设定\\世界设定.md",
+    "writerHelper.outline.paths": [
+        "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\大纲\\大纲.md"
+    ],
+    "writerHelper.detailed.paths": [
+        "d:\\陈永恒工作文档\\航海\\Cthulhu-Navigation\\大纲\\细纲.md"
+    ],
+    "writerHelper.chapterSummary.dirs": [
+        "章节"
+    ],
+    "writerHelper.chapterSummary.outputDir": "章节概述"
+}
