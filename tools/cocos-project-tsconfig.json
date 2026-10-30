@@ -1,0 +1,9 @@
+{
+  /* Base configuration. Do not edit this field. */
+  "extends": "./temp/tsconfig.cocos.json",
+
+  /* Project code must pass TypeScript strict mode. */
+  "compilerOptions": {
+    "strict": true
+  }
+}
