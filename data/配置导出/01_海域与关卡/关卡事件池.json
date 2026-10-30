@@ -1,0 +1,42 @@
+[
+  {
+    "pool_id": 101,
+    "level_id": 101,
+    "event_id": 1001,
+    "weight": 40,
+    "distance_min": 0,
+    "distance_max": 0,
+    "max_times": 0,
+    "guaranteed": 0
+  },
+  {
+    "pool_id": 101,
+    "level_id": 101,
+    "event_id": 1002,
+    "weight": 30,
+    "distance_min": 0,
+    "distance_max": 0,
+    "max_times": 0,
+    "guaranteed": 0
+  },
+  {
+    "pool_id": 101,
+    "level_id": 101,
+    "event_id": 1003,
+    "weight": 15,
+    "distance_min": 100,
+    "distance_max": 0,
+    "max_times": 2,
+    "guaranteed": 0
+  },
+  {
+    "pool_id": 101,
+    "level_id": 101,
+    "event_id": 1004,
+    "weight": 15,
+    "distance_min": 200,
+    "distance_max": 0,
+    "max_times": 1,
+    "guaranteed": 0
+  }
+]

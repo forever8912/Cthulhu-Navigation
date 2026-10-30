@@ -1,0 +1,35 @@
+[
+  {
+    "group_id": 1001,
+    "wave": 1,
+    "start_delay": 0,
+    "spawn_interval": 1.5,
+    "monster_id": 1,
+    "monster_level": 1,
+    "count_min": 2,
+    "count_max": 3,
+    "spawn_side": "left"
+  },
+  {
+    "group_id": 1001,
+    "wave": 2,
+    "start_delay": 10,
+    "spawn_interval": 2,
+    "monster_id": 2,
+    "monster_level": 1,
+    "count_min": 1,
+    "count_max": 2,
+    "spawn_side": "both"
+  },
+  {
+    "group_id": 9001,
+    "wave": 1,
+    "start_delay": 0,
+    "spawn_interval": 0,
+    "monster_id": 9001,
+    "monster_level": 5,
+    "count_min": 1,
+    "count_max": 1,
+    "spawn_side": "left"
+  }
+]

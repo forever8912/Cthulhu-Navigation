@@ -1,0 +1,30 @@
+[
+  {
+    "equip_drop_id": 1,
+    "rarity": "white",
+    "slot": "weapon",
+    "weight": 70,
+    "level_range": "1~5"
+  },
+  {
+    "equip_drop_id": 2,
+    "rarity": "blue",
+    "slot": "weapon",
+    "weight": 60,
+    "level_range": "5~10"
+  },
+  {
+    "equip_drop_id": 2,
+    "rarity": "purple",
+    "slot": "weapon",
+    "weight": 30,
+    "level_range": "5~10"
+  },
+  {
+    "equip_drop_id": 2,
+    "rarity": "orange",
+    "slot": "weapon",
+    "weight": 10,
+    "level_range": "5~10"
+  }
+]

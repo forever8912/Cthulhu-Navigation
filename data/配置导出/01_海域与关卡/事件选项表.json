@@ -1,0 +1,29 @@
+[
+  {
+    "event_id": 1003,
+    "option_id": 1,
+    "text": "靠近查看",
+    "cost_id": 0,
+    "result_type": "drop",
+    "result_id": 201,
+    "weight": 1
+  },
+  {
+    "event_id": 1003,
+    "option_id": 2,
+    "text": "绕道而行",
+    "cost_id": 0,
+    "result_type": "none",
+    "result_id": 0,
+    "weight": 1
+  },
+  {
+    "event_id": 1003,
+    "option_id": 3,
+    "text": "强行打捞（战斗）",
+    "cost_id": 0,
+    "result_type": "battle",
+    "result_id": 1001,
+    "weight": 1
+  }
+]

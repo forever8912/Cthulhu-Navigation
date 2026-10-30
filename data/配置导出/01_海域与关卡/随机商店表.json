@@ -1,0 +1,12 @@
+[
+  {
+    "shop_id": 201,
+    "name": "漂流商人",
+    "item_count_min": 4,
+    "item_count_max": 6,
+    "free_refresh": 1,
+    "refresh_cost_id": 1,
+    "ad_refresh": 1,
+    "stay_seconds": 300
+  }
+]

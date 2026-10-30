@@ -1,0 +1,90 @@
+[
+  {
+    "item_id": "itm_gold",
+    "name": "金币",
+    "category": "currency",
+    "quality": "white",
+    "stack_max": 99999,
+    "icon": "icon/itm_gold",
+    "sell_price": 0,
+    "desc": "通用货币",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_premium",
+    "name": "珍珠币",
+    "category": "currency",
+    "quality": "purple",
+    "stack_max": 99999,
+    "icon": "icon/itm_premium",
+    "sell_price": 0,
+    "desc": "稀缺游戏币，商业化相关",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_wood",
+    "name": "木材",
+    "category": "base_res",
+    "quality": "white",
+    "stack_max": 9999,
+    "icon": "icon/itm_wood",
+    "sell_price": 5,
+    "desc": "能源/建造/修理三重消耗",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_iron",
+    "name": "铁",
+    "category": "base_res",
+    "quality": "white",
+    "stack_max": 9999,
+    "icon": "icon/itm_iron",
+    "sell_price": 8,
+    "desc": "基础锻造材料",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_food",
+    "name": "食物",
+    "category": "base_res",
+    "quality": "white",
+    "stack_max": 9999,
+    "icon": "icon/itm_food",
+    "sell_price": 3,
+    "desc": "船员消耗",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_refined_iron",
+    "name": "精铁",
+    "category": "forge_mat",
+    "quality": "blue",
+    "stack_max": 999,
+    "icon": "icon/itm_refined_iron",
+    "sell_price": 30,
+    "desc": "中级锻造材料",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_mithril",
+    "name": "秘银",
+    "category": "forge_mat",
+    "quality": "purple",
+    "stack_max": 999,
+    "icon": "icon/itm_mithril",
+    "sell_price": 80,
+    "desc": "高级锻造材料",
+    "use_effect": ""
+  },
+  {
+    "item_id": "itm_crystal",
+    "name": "魔晶",
+    "category": "forge_mat",
+    "quality": "blue",
+    "stack_max": 999,
+    "icon": "icon/itm_crystal",
+    "sell_price": 50,
+    "desc": "魔法线专属材料",
+    "use_effect": ""
+  }
+]

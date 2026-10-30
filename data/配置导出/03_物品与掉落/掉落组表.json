@@ -1,0 +1,30 @@
+[
+  {
+    "drop_group_id": 1001,
+    "name": "普通战斗掉落-迷雾海峡",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 1101,
+    "name": "资源基础组（木材/铁/食物选1~2种）",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 2
+  },
+  {
+    "drop_group_id": 1102,
+    "name": "锻造材料组（选1）",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 9002,
+    "name": "迷雾守望者Boss掉落",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  }
+]

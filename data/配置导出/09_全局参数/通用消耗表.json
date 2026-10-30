@@ -1,0 +1,12 @@
+[
+  {
+    "cost_id": 1,
+    "items": "[{\"item_id\":\"itm_gold\",\"count\":100}]",
+    "desc": "商店刷新消耗"
+  },
+  {
+    "cost_id": 2,
+    "items": "[{\"item_id\":\"itm_gold\",\"count\":300}]",
+    "desc": "商人岛稀有商品消耗"
+  }
+]

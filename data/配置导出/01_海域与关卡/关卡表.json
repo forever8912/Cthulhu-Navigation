@@ -1,0 +1,32 @@
+[
+  {
+    "level_id": 101,
+    "zone_id": "迷雾海峡",
+    "name": "迷雾海峡-第一段",
+    "level_type": "mainline",
+    "event_count_min": 3,
+    "event_count_max": 5,
+    "event_distance_min": 80,
+    "event_distance_max": 200,
+    "event_pool_id": 101,
+    "boss_monster_group_id": 9001,
+    "clear_drop_group_id": 101,
+    "first_clear_group_id": 9001,
+    "recommend_level": 1
+  },
+  {
+    "level_id": 102,
+    "zone_id": "迷雾海峡",
+    "name": "迷雾海峡-Boss",
+    "level_type": "boss",
+    "event_count_min": 2,
+    "event_count_max": 3,
+    "event_distance_min": 100,
+    "event_distance_max": 220,
+    "event_pool_id": 102,
+    "boss_monster_group_id": 9001,
+    "clear_drop_group_id": 9002,
+    "first_clear_group_id": 9101,
+    "recommend_level": 5
+  }
+]

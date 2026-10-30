@@ -1,0 +1,12 @@
+[
+  {
+    "monster_id": 1,
+    "skill_id": 101,
+    "trigger": "cd",
+    "trigger_param": 5,
+    "effect_type": "debuff_hit",
+    "effect_value": 0.1,
+    "target": "all",
+    "duration": 3
+  }
+]

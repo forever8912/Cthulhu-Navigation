@@ -1,0 +1,24 @@
+[
+  {
+    "group_id": 1001,
+    "name": "迷雾海峡-普通袭击A",
+    "group_type": "raid",
+    "wave_count": 2,
+    "wave_interval": 10,
+    "end_condition": "clear",
+    "loop": 0,
+    "drop_group_id": 1001,
+    "can_escape": 1
+  },
+  {
+    "group_id": 9001,
+    "name": "迷雾守望者Boss战",
+    "group_type": "boss",
+    "wave_count": 1,
+    "wave_interval": 0,
+    "end_condition": "clear",
+    "loop": 0,
+    "drop_group_id": 9002,
+    "can_escape": 1
+  }
+]

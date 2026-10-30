@@ -1,0 +1,74 @@
+[
+  {
+    "monster_id": 1,
+    "level": 1,
+    "hp": 150,
+    "attack": 12,
+    "armor": 3,
+    "magic_resist": 2,
+    "move_speed_scale": 1,
+    "attack_interval_scale": 1,
+    "fear_value": 2,
+    "drop_group_id": 1001
+  },
+  {
+    "monster_id": 1,
+    "level": 2,
+    "hp": 190,
+    "attack": 14,
+    "armor": 4,
+    "magic_resist": 2,
+    "move_speed_scale": 1,
+    "attack_interval_scale": 1,
+    "fear_value": 2,
+    "drop_group_id": 1001
+  },
+  {
+    "monster_id": 1,
+    "level": 3,
+    "hp": 230,
+    "attack": 16,
+    "armor": 5,
+    "magic_resist": 3,
+    "move_speed_scale": 1,
+    "attack_interval_scale": 1,
+    "fear_value": 3,
+    "drop_group_id": 1001
+  },
+  {
+    "monster_id": 2,
+    "level": 1,
+    "hp": 200,
+    "attack": 15,
+    "armor": 8,
+    "magic_resist": 5,
+    "move_speed_scale": 1,
+    "attack_interval_scale": 1,
+    "fear_value": 3,
+    "drop_group_id": 1001
+  },
+  {
+    "monster_id": 3,
+    "level": 1,
+    "hp": 130,
+    "attack": 18,
+    "armor": 2,
+    "magic_resist": 1,
+    "move_speed_scale": 1,
+    "attack_interval_scale": 1,
+    "fear_value": 3,
+    "drop_group_id": 1001
+  },
+  {
+    "monster_id": 9001,
+    "level": 5,
+    "hp": 2400,
+    "attack": 40,
+    "armor": 25,
+    "magic_resist": 15,
+    "move_speed_scale": 1,
+    "attack_interval_scale": 1,
+    "fear_value": 12,
+    "drop_group_id": 9002
+  }
+]

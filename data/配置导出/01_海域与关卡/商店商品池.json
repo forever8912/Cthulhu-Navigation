@@ -1,0 +1,12 @@
+[
+  {
+    "shop_id": 201,
+    "item_id": "itm_wood",
+    "weight": 30,
+    "price_type": "coin",
+    "price_scale": 1,
+    "stock_min": 1,
+    "stock_max": 3,
+    "unlock_condition": ""
+  }
+]

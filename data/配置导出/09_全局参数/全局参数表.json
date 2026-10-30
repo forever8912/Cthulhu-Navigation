@@ -1,0 +1,68 @@
+[
+  {
+    "param_key": "main_stat_k",
+    "value": "1.0",
+    "type": "float",
+    "desc": "主属性伤害系数K（战斗系统3.1）"
+  },
+  {
+    "param_key": "crit_rate_base",
+    "value": "0.05",
+    "type": "float",
+    "desc": "基础暴击率5%"
+  },
+  {
+    "param_key": "crit_mult_base",
+    "value": "1.5",
+    "type": "float",
+    "desc": "基础暴击倍率150%"
+  },
+  {
+    "param_key": "eff_min",
+    "value": "0.5",
+    "type": "float",
+    "desc": "释放效率下限"
+  },
+  {
+    "param_key": "eff_max",
+    "value": "2.0",
+    "type": "float",
+    "desc": "释放效率上限"
+  },
+  {
+    "param_key": "pct_mod_min",
+    "value": "0.4",
+    "type": "float",
+    "desc": "百分比修正P下限"
+  },
+  {
+    "param_key": "pct_mod_max",
+    "value": "2.0",
+    "type": "float",
+    "desc": "百分比修正P上限"
+  },
+  {
+    "param_key": "defense_k",
+    "value": "60",
+    "type": "int",
+    "desc": "防御曲线常数 x/(x+60)"
+  },
+  {
+    "param_key": "heal_cap_pct",
+    "value": "0.3",
+    "type": "float",
+    "desc": "单次治疗≤目标HP上限×30%"
+  },
+  {
+    "param_key": "offline_hours_max",
+    "value": "8",
+    "type": "int",
+    "desc": "离线收益时长上限"
+  },
+  {
+    "param_key": "ad_daily_limit",
+    "value": "5",
+    "type": "int",
+    "desc": "单日激励视频上限"
+  }
+]

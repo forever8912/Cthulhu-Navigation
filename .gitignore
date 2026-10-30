@@ -1,0 +1,24 @@
+# Local work cache
+.workbuddy/
+
+# Credentials and local sessions
+**/session.txt
+*.session
+
+# Office temporary and lock files
+~$*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Empty legacy folders retained locally after the document migration
+Cthulhu-Navigation/
+评审/
+美术素材/
+.恐惧之海_1阶船体第一章_AI生图提示词总表.ref/

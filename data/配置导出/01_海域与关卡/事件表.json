@@ -1,0 +1,52 @@
+[
+  {
+    "event_id": 1001,
+    "name": "航行袭击",
+    "type": "battle",
+    "ref_id": 1001,
+    "icon": "icon/event_battle_01",
+    "desc": "海面下有东西在游动……",
+    "skippable": 0,
+    "san_delta": 0
+  },
+  {
+    "event_id": 1002,
+    "name": "漂浮物",
+    "type": "floating",
+    "ref_id": 1101,
+    "icon": "icon/event_float",
+    "desc": "远处漂来一个箱子",
+    "skippable": 1,
+    "san_delta": 0
+  },
+  {
+    "event_id": 1003,
+    "name": "神秘残骸",
+    "type": "choice",
+    "ref_id": 1003,
+    "icon": "icon/event_choice",
+    "desc": "一艘沉没的商船残骸",
+    "skippable": 1,
+    "san_delta": -2
+  },
+  {
+    "event_id": 1004,
+    "name": "漂流商人",
+    "type": "shop",
+    "ref_id": 201,
+    "icon": "icon/event_shop",
+    "desc": "一位蒙面商人向你招手",
+    "skippable": 1,
+    "san_delta": 0
+  },
+  {
+    "event_id": 1005,
+    "name": "海域Boss",
+    "type": "boss",
+    "ref_id": 9001,
+    "icon": "icon/event_boss",
+    "desc": "巨大阴影浮出海面",
+    "skippable": 0,
+    "san_delta": -5
+  }
+]
