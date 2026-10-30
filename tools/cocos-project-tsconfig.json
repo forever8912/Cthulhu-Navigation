@@ -4,6 +4,7 @@
 
   /* Project code must pass TypeScript strict mode. */
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "skipLibCheck": true
   }
 }
