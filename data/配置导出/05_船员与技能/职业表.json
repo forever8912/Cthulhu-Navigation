@@ -1,0 +1,167 @@
+[
+  {
+    "class_id": 2101,
+    "name": "渔夫",
+    "class_line": "hunt",
+    "tier": 2,
+    "main_attr": "agi",
+    "main_attr2": "str",
+    "prev_class_id": 0,
+    "passive_buff_id": 4001,
+    "desc": "狩猎系·低级"
+  },
+  {
+    "class_id": 2201,
+    "name": "魔法学徒",
+    "class_line": "magic",
+    "tier": 2,
+    "main_attr": "int",
+    "main_attr2": "spr",
+    "prev_class_id": 0,
+    "passive_buff_id": 4002,
+    "desc": "魔法系·低级（两个低级职业之一）"
+  },
+  {
+    "class_id": 2202,
+    "name": "药剂师",
+    "class_line": "magic",
+    "tier": 2,
+    "main_attr": "int",
+    "main_attr2": "agi",
+    "prev_class_id": 0,
+    "passive_buff_id": 4002,
+    "desc": "魔法系·低级（两个低级职业之二）"
+  },
+  {
+    "class_id": 2301,
+    "name": "工匠",
+    "class_line": "forge",
+    "tier": 2,
+    "main_attr": "agi",
+    "main_attr2": "int",
+    "prev_class_id": 0,
+    "passive_buff_id": 4003,
+    "desc": "锻造系·低级"
+  },
+  {
+    "class_id": 2401,
+    "name": "水手",
+    "class_line": "ocean",
+    "tier": 2,
+    "main_attr": "spr",
+    "main_attr2": "agi",
+    "prev_class_id": 0,
+    "passive_buff_id": 4004,
+    "desc": "海洋系·低级"
+  },
+  {
+    "class_id": 2501,
+    "name": "入殓师",
+    "class_line": "death",
+    "tier": 2,
+    "main_attr": "spr",
+    "main_attr2": "int",
+    "prev_class_id": 0,
+    "passive_buff_id": 4005,
+    "desc": "死亡系·低级"
+  },
+  {
+    "class_id": 2601,
+    "name": "牧师",
+    "class_line": "light",
+    "tier": 2,
+    "main_attr": "spr",
+    "main_attr2": "int",
+    "prev_class_id": 0,
+    "passive_buff_id": 4006,
+    "desc": "光明系·低级"
+  },
+  {
+    "class_id": 2701,
+    "name": "战士",
+    "class_line": "war",
+    "tier": 2,
+    "main_attr": "str",
+    "main_attr2": "agi",
+    "prev_class_id": 0,
+    "passive_buff_id": 4007,
+    "desc": "战争系·低级"
+  },
+  {
+    "class_id": 3101,
+    "name": "猎手",
+    "class_line": "hunt",
+    "tier": 3,
+    "main_attr": "agi",
+    "main_attr2": "str",
+    "prev_class_id": 2101,
+    "passive_buff_id": 0,
+    "desc": "晋升后核心被动升级覆盖，新增被动另行buff表"
+  },
+  {
+    "class_id": 3201,
+    "name": "秘术师",
+    "class_line": "magic",
+    "tier": 3,
+    "main_attr": "int",
+    "main_attr2": "spr",
+    "prev_class_id": 2201,
+    "passive_buff_id": 0,
+    "desc": "魔法学徒晋升"
+  },
+  {
+    "class_id": 3301,
+    "name": "机械师",
+    "class_line": "forge",
+    "tier": 3,
+    "main_attr": "agi",
+    "main_attr2": "int",
+    "prev_class_id": 2301,
+    "passive_buff_id": 0,
+    "desc": "工匠晋升"
+  },
+  {
+    "class_id": 3401,
+    "name": "领航员",
+    "class_line": "ocean",
+    "tier": 3,
+    "main_attr": "spr",
+    "main_attr2": "agi",
+    "prev_class_id": 2401,
+    "passive_buff_id": 0,
+    "desc": "水手晋升"
+  },
+  {
+    "class_id": 3501,
+    "name": "通灵者",
+    "class_line": "death",
+    "tier": 3,
+    "main_attr": "spr",
+    "main_attr2": "int",
+    "prev_class_id": 2501,
+    "passive_buff_id": 0,
+    "desc": "入殓师晋升"
+  },
+  {
+    "class_id": 3601,
+    "name": "圣战士",
+    "class_line": "light",
+    "tier": 3,
+    "main_attr": "spr",
+    "main_attr2": "str",
+    "prev_class_id": 2601,
+    "passive_buff_id": 0,
+    "desc": "牧师晋升"
+  },
+  {
+    "class_id": 3701,
+    "name": "角斗士",
+    "class_line": "war",
+    "tier": 3,
+    "main_attr": "str",
+    "main_attr2": "agi",
+    "prev_class_id": 2701,
+    "passive_buff_id": 0,
+    "desc": "战士晋升"
+  }
+]

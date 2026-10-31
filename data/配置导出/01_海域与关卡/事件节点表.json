@@ -1,0 +1,352 @@
+[
+  {
+    "node_id": "W01-N1",
+    "event_id": "W01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "断裂的船首",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "W01-N2",
+    "event_id": "W01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "倾斜的货舱",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "W01-N3",
+    "event_id": "W01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "船长室",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "W01-N4",
+    "event_id": "W01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "船员舱",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "W01-N5",
+    "event_id": "W01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "沉船的最后一夜",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  },
+  {
+    "node_id": "T01-N1",
+    "event_id": "T01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "断裂的石柱",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "T01-N2",
+    "event_id": "T01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "水淹的回廊",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "T01-N3",
+    "event_id": "T01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "星盘厅",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "T01-N4",
+    "event_id": "T01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "祭司的寝室",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "T01-N5",
+    "event_id": "T01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "神像的注视",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  },
+  {
+    "node_id": "G01-N1",
+    "event_id": "G01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "浅葬坑",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "G01-N2",
+    "event_id": "G01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "悬棺阵",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "G01-N3",
+    "event_id": "G01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "陪葬室",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "G01-N4",
+    "event_id": "G01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "守墓人的岗",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "G01-N5",
+    "event_id": "G01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "王的棺椁",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  },
+  {
+    "node_id": "L01-N1",
+    "event_id": "L01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "散落的书页",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "L01-N2",
+    "event_id": "L01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "禁忌书架",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "L01-N3",
+    "event_id": "L01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "活着的墨水",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "L01-N4",
+    "event_id": "L01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "抄写员的桌",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "L01-N5",
+    "event_id": "L01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "万物之书",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  },
+  {
+    "node_id": "A01-N1",
+    "event_id": "A01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "干涸的血槽",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "A01-N2",
+    "event_id": "A01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "献祭池",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "A01-N3",
+    "event_id": "A01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "血月石阶",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "A01-N4",
+    "event_id": "A01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "契约者的座",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "A01-N5",
+    "event_id": "A01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "契约之桌",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  },
+  {
+    "node_id": "C01-N1",
+    "event_id": "C01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "圣水盆",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "C01-N2",
+    "event_id": "C01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "疯教士的布道",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "C01-N3",
+    "event_id": "C01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "圣物匣",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "C01-N4",
+    "event_id": "C01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "钟楼下",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "C01-N5",
+    "event_id": "C01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "逐客的钟声",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  },
+  {
+    "node_id": "R01-N1",
+    "event_id": "R01",
+    "seq": 1,
+    "layer": "外围",
+    "scene": "空间皱褶",
+    "base_time": 12,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "R01-N2",
+    "event_id": "R01",
+    "seq": 2,
+    "layer": "浅层",
+    "scene": "倒悬的钟楼",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "R01-N3",
+    "event_id": "R01",
+    "seq": 3,
+    "layer": "中层",
+    "scene": "记忆之池",
+    "base_time": 15,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "R01-N4",
+    "event_id": "R01",
+    "seq": 4,
+    "layer": "深处",
+    "scene": "无名者的合唱",
+    "base_time": 18,
+    "progress_add": 20,
+    "can_retreat": true
+  },
+  {
+    "node_id": "R01-N5",
+    "event_id": "R01",
+    "seq": 5,
+    "layer": "核心",
+    "scene": "神的眼睛",
+    "base_time": 25,
+    "progress_add": 20,
+    "can_retreat": false
+  }
+]

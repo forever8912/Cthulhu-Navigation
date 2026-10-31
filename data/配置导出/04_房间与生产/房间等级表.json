@@ -1,0 +1,2522 @@
+[
+  {
+    "room_id": 1001,
+    "level": 1,
+    "hp": 80,
+    "armor": 0,
+    "require_attr_value": 5,
+    "produce_drop_group_id": 5001,
+    "produce_cd": 3.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": [
+      {
+        "item_id": "itm_food",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "四人脚踏机",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "底舱并排放两台自行车式的踏板机，链条直连传动轴，一个人最多连踩十分钟，所以四个人轮两班。产出全船能源 20/分。没人蹬，全船断电——这间房的排班表永远最满。",
+    "storage_cap": 100
+  },
+  {
+    "room_id": 1001,
+    "level": 2,
+    "hp": 100,
+    "armor": 2,
+    "require_attr_value": 10,
+    "produce_drop_group_id": 5001,
+    "produce_cd": 2.4,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 10
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_food",
+        "count": 1,
+        "every_sec": 9.6
+      }
+    ],
+    "level_name": "水手滚轮机",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "从海里捞上来的那位被固定在滚轮里，滚轮接上传动轴，产出 25/分。它不累，但每天到点会自己慢下来——船员说\"它也累\"，然后真给它排了班。守则只有一条：别跟它对视。",
+    "storage_cap": 150
+  },
+  {
+    "room_id": 1001,
+    "level": 3,
+    "hp": 120,
+    "armor": 4,
+    "require_attr_value": 15,
+    "produce_drop_group_id": 5001,
+    "produce_cd": 1.8,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 100
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 40
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_food",
+        "count": 1,
+        "every_sec": 7.2
+      }
+    ],
+    "level_name": "电鳗发电罐",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一口海水罐架在传动轴上，罐里养着一缸畸变电鳗。它们一受惊就放电，放电就推轴，产出 33.3/分。喂鱼能多放一阵——鱼少了，先暗的是灯，然后才是它们瘦下来。",
+    "storage_cap": 250
+  },
+  {
+    "room_id": 1001,
+    "level": 4,
+    "hp": 150,
+    "armor": 6,
+    "require_attr_value": 20,
+    "produce_drop_group_id": 5001,
+    "produce_cd": 1.5,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2500
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 240
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 100
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_food",
+        "count": 1,
+        "every_sec": 6
+      }
+    ],
+    "level_name": "船底牵引兽",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "没人下去看过它长什么样。只知道它拴在船底往前拖，缆绳从龙骨穿上来接传动轴，产出 40/分。船员在甲板上跺三脚它就动——这是全船唯一不解释的操作规程。",
+    "storage_cap": 350
+  },
+  {
+    "room_id": 1001,
+    "level": 5,
+    "hp": 180,
+    "armor": 8,
+    "require_attr_value": 25,
+    "produce_drop_group_id": 5001,
+    "produce_cd": 1.2,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 4000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 520
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 260
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_food",
+        "count": 1,
+        "every_sec": 4.8
+      }
+    ],
+    "level_name": "永动舵轮",
+    "deck_slots": 0,
+    "require_hull_level": 5,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "舵轮自己转。没人喂它，没人蹬它，没人拴它——它一直没停过，产出 50/分。船员经过这间房门口会加快脚步，但问起就说\"好用就行\"。",
+    "storage_cap": 500
+  },
+  {
+    "room_id": 1101,
+    "level": 1,
+    "hp": 80,
+    "armor": 0,
+    "require_attr_value": 5,
+    "produce_drop_group_id": 5011,
+    "produce_cd": 7.5,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "手摇钓竿",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一根竿，一条线，一个人坐在船舷边，产食物 8/分。战时收竿——鱼不咬钩的时候，怪会先咬船。",
+    "storage_cap": 150
+  },
+  {
+    "room_id": 1101,
+    "level": 2,
+    "hp": 100,
+    "armor": 2,
+    "require_attr_value": 10,
+    "produce_drop_group_id": 5011,
+    "produce_cd": 4.6,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 10
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "自动拖网",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "船尾挂网，船走它捞，产食物 13/分。饵是上一次的渔获——船员管这叫\"省饵钱\"。船后永远跟着一群海鸥，船员说\"跟着吧，它们也是船上的\"。",
+    "storage_cap": 250
+  },
+  {
+    "room_id": 1101,
+    "level": 3,
+    "hp": 130,
+    "armor": 5,
+    "require_attr_value": 15,
+    "produce_drop_group_id": 5011,
+    "produce_cd": 3.1,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 110
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 45
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "许愿渔网",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "往水里撒一份食物，说一声要什么，网里就有一条，每天限三次，产食物 19.4/分。没人说给谁听，也没人问为什么有效。系统的说法依然是\"渔获\"。",
+    "storage_cap": 400
+  },
+  {
+    "room_id": 1102,
+    "level": 1,
+    "hp": 80,
+    "armor": 0,
+    "require_attr_value": 6,
+    "produce_drop_group_id": 5012,
+    "produce_cd": 10.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "水培菜架",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "舱里立几排架子，灯泡底下种点绿的，产食物 6/分加少量药材。产出慢但战时不断供。船员没事就进来站着——全船只有这里是绿的。",
+    "storage_cap": 100
+  },
+  {
+    "room_id": 1102,
+    "level": 2,
+    "hp": 100,
+    "armor": 2,
+    "require_attr_value": 11,
+    "produce_drop_group_id": 5012,
+    "produce_cd": 6.7,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 10
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "堆肥温室",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "底下埋着一头打死的怪物，它烂得越彻底，菜长得越好，产食物 9/分。需要淡水浇灌。船员的原话是\"这土肥\"，没人说肥的是什么。",
+    "storage_cap": 180
+  },
+  {
+    "room_id": 1102,
+    "level": 3,
+    "hp": 130,
+    "armor": 5,
+    "require_attr_value": 16,
+    "produce_drop_group_id": 5012,
+    "produce_cd": 4.6,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 110
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 45
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "恒温菜舱",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "整间舱恒温恒湿，断电也不受影响，产食物 13/分加全体船员 SAN 恢复 +10%。长出来的东西会动，但熟了就不动。闻着土味睡一觉，比忏悔室便宜。",
+    "storage_cap": 300
+  },
+  {
+    "room_id": 1201,
+    "level": 1,
+    "hp": 70,
+    "armor": 0,
+    "require_attr_value": 4,
+    "produce_drop_group_id": 5013,
+    "produce_cd": 12.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "雨水收集器",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "甲板上支着漏斗和帆布，等下雨，产淡水 5/分。不下雨就等着。这间房的正式操作是\"抬头看天\"。",
+    "storage_cap": 120
+  },
+  {
+    "room_id": 1201,
+    "level": 2,
+    "hp": 90,
+    "armor": 2,
+    "require_attr_value": 8,
+    "produce_drop_group_id": 5013,
+    "produce_cd": 7.5,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 10
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "尿液过滤器",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "三层砂石加炭，把能回收的都回收，产淡水 8/分。没人愿意值班，所以这间房的岗位是轮着抽签的。味道不好，但谁也不敢拆。",
+    "storage_cap": 200
+  },
+  {
+    "room_id": 1201,
+    "level": 3,
+    "hp": 120,
+    "armor": 5,
+    "require_attr_value": 12,
+    "produce_drop_group_id": 5013,
+    "produce_cd": 5.6,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 110
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 45
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 12
+      }
+    ],
+    "level_name": "活体滤水器",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "打捞上来的那只蚌养在水柜里。它喝咸的，吐淡的，产淡水 10.7/分。没人知道它是什么，船员叫它\"水龙头\"。全船喝它吐的水，没人觉得不对。",
+    "storage_cap": 320
+  },
+  {
+    "room_id": 1301,
+    "level": 1,
+    "hp": 100,
+    "armor": 0,
+    "require_attr_value": 8,
+    "produce_drop_group_id": 5017,
+    "produce_cd": 15.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 6
+      }
+    ],
+    "level_name": "木匠工坊",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一间屋，一个锤，一堆从沉船上拆的零件。烧能源产炮弹（40 发/分，10 发/15 秒），锻造也在屋里做。炉子是从沉船上拆的，比船上所有人都见过世面。",
+    "storage_cap": 200
+  },
+  {
+    "room_id": 1301,
+    "level": 2,
+    "hp": 130,
+    "armor": 2,
+    "require_attr_value": 14,
+    "produce_drop_group_id": 5017,
+    "produce_cd": 8.8,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1200
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 50
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 30
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 4
+      }
+    ],
+    "level_name": "骨料工坊",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "炉温上来后改烧更多能源，炮弹产率提到 68 发/分。锻造开放稀有（蓝）品质。老师傅拿深海生物的骨头做锤柄，说\"这木头不震手\"——他不解释为什么管骨头叫木头。",
+    "storage_cap": 350
+  },
+  {
+    "room_id": 1301,
+    "level": 3,
+    "hp": 170,
+    "armor": 5,
+    "require_attr_value": 20,
+    "produce_drop_group_id": 5017,
+    "produce_cd": 6.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 4000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 140
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 90
+      },
+      {
+        "item_id": "bp_room_rare",
+        "count": 1
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "itm_energy",
+        "count": 1,
+        "every_sec": 3
+      }
+    ],
+    "level_name": "老师傅的工坊",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "全套水力锻锤，烧能源 20/分，炮弹 100 发/分，锻造开放史诗（紫）品质。老师傅在这间屋里什么都能修，包括船员的心情。他从不问材料的出处，这是他的职业道德。",
+    "storage_cap": 500
+  },
+  {
+    "room_id": 3101,
+    "level": 1,
+    "hp": 60,
+    "armor": 0,
+    "require_attr_value": 5,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "瞭望台",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "桅杆上钉了个筐，上去看一眼。提前 10 秒显示来袭方向，全船射程 +10%。上去的人不带望远镜带酒——看得越远越不想看海。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3101,
+    "level": 2,
+    "hp": 80,
+    "armor": 0,
+    "require_attr_value": 10,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 60
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 40
+      }
+    ],
+    "consume_json": null,
+    "level_name": "鹰眼瞭望台",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "换了一只从深海生物身上\"借\"的眼睛，能透过雾看，索敌不变。问起来船员就说\"它反正也用不上\"。借了没还。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3101,
+    "level": 3,
+    "hp": 110,
+    "armor": 3,
+    "require_attr_value": 15,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 3200
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 180
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 110
+      }
+    ],
+    "consume_json": null,
+    "level_name": "观星瞭望台",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "看得太远，看海看得难受，改成看星星。全船射程 +25%。这是全船唯一朝上看的地方。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3102,
+    "level": 1,
+    "hp": 80,
+    "armor": 0,
+    "require_attr_value": 6,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "急救医务室",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一张床，一盆热水，一排绷带，伤员恢复 HP。热水是这艘船上最贵的东西，谁受伤都给一盆。全船唯一不向海里借任何东西的房间。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3102,
+    "level": 2,
+    "hp": 100,
+    "armor": 0,
+    "require_attr_value": 12,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1200
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 50
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 30
+      }
+    ],
+    "consume_json": null,
+    "level_name": "外科医务室",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "添了缝合台和手术灯，恢复速度翻倍。医生从不说\"疼就说\"——他说\"疼也别说，省力气\"。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3102,
+    "level": 3,
+    "hp": 130,
+    "armor": 3,
+    "require_attr_value": 18,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 4000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 140
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 90
+      },
+      {
+        "item_id": "bp_room_rare",
+        "count": 1
+      }
+    ],
+    "consume_json": null,
+    "level_name": "康复病房",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "三张床换成恒温病房，静养的船员 SAN 恢复 ×2。全船最安静的地方，门口挂着\"不许讲海里的事\"。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3103,
+    "level": 1,
+    "hp": 70,
+    "armor": 0,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 5016,
+    "produce_cd": 60.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "打捞钩",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一根绳，一个钩，挂在船舷外，0 岗位自动捞漂过来的东西，离线也捞。木 4~8 / 币 15~25 每次。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3103,
+    "level": 2,
+    "hp": 90,
+    "armor": 0,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 5016,
+    "produce_cd": 45.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 20
+      }
+    ],
+    "consume_json": null,
+    "level_name": "拖网打捞架",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "船走，网捞，周期缩到 45 秒。捞上来的东西一半没人认领，一半有人不肯认领。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3103,
+    "level": 3,
+    "hp": 120,
+    "armor": 3,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 5016,
+    "produce_cd": 32.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 100
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 60
+      }
+    ],
+    "consume_json": null,
+    "level_name": "八爪打捞机",
+    "deck_slots": 0,
+    "require_hull_level": 5,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "跟它借的八只手，一次捞八样，深水也够得着，周期 32 秒，稀有材料 +10%。没人愿意深究它为什么肯帮忙。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3104,
+    "level": 1,
+    "hp": 80,
+    "armor": 0,
+    "require_attr_value": 8,
+    "produce_drop_group_id": 5015,
+    "produce_cd": 60.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": [
+      {
+        "item_id": "sm_void_crystal",
+        "count": 1
+      }
+    ],
+    "level_name": "告解小间",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一张帘子隔出来的小间，说说话。300 币清一条负面特性。帘子后面是谁不重要，重要的是有人听。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3104,
+    "level": 2,
+    "hp": 100,
+    "armor": 0,
+    "require_attr_value": 14,
+    "produce_drop_group_id": 5015,
+    "produce_cd": 45.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 20
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "sm_void_crystal",
+        "count": 1
+      }
+    ],
+    "level_name": "隔板告解室",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "帘子换成木板，中间钉死——因为看不见脸，才说得出口。神职人员可用虚空晶加工赎罪券，CD 45 秒。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 3104,
+    "level": 3,
+    "hp": 130,
+    "armor": 3,
+    "require_attr_value": 20,
+    "produce_drop_group_id": 5015,
+    "produce_cd": 30.0,
+    "produce_roll": 1,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 100
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 60
+      },
+      {
+        "item_id": "bp_room_rare",
+        "count": 1
+      }
+    ],
+    "consume_json": [
+      {
+        "item_id": "sm_void_crystal",
+        "count": 1
+      }
+    ],
+    "level_name": "烛火告解室",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "隔板前多了一支一直点着的蜡烛，守夜人轮流添蜡，没人问蜡是哪儿来的。赎罪券 CD 缩到 30 秒。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2001,
+    "level": 1,
+    "hp": 100,
+    "armor": 0,
+    "require_attr_value": 6,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 38,
+    "atk_cd": 4.0,
+    "skill_ids": [
+      "5001"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "手掷鱼叉",
+    "deck_slots": 0,
+    "require_hull_level": 1,
+    "atk_range": 95,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 5
+      }
+    ],
+    "level_desc": "船体 Lv1 就能建的第一座塔：一根绑在绞座上的大鱼叉，瞄准靠手，装填靠手，打出去靠绞盘弹簧。单发 38，4 秒一发，吃炮弹 5 发/次。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2001,
+    "level": 2,
+    "hp": 130,
+    "armor": 2,
+    "require_attr_value": 12,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 50,
+    "atk_cd": 3.5,
+    "skill_ids": [
+      "5001"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 60
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 40
+      }
+    ],
+    "consume_json": null,
+    "level_name": "双联鱼叉",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 95,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 5
+      }
+    ],
+    "level_desc": "两根叉子并排架在绞座上轮流上膛，单发 50。火力提了一半，船员还是管它叫\"叉子\"。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2001,
+    "level": 3,
+    "hp": 160,
+    "armor": 5,
+    "require_attr_value": 18,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 64,
+    "atk_cd": 3.0,
+    "skill_ids": [
+      "5001"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 150
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 90
+      }
+    ],
+    "consume_json": null,
+    "level_name": "绞盘鱼叉炮",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 95,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 5
+      }
+    ],
+    "level_desc": "加了绞盘和滑轮组，装填快了三分之一，单发 64。第一次有了炮管，船员的评价是\"终于像个炮了\"。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2001,
+    "level": 4,
+    "hp": 190,
+    "armor": 7,
+    "require_attr_value": 23,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 86,
+    "atk_cd": 2.7,
+    "skill_ids": [
+      "5001"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 6000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 360
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 220
+      }
+    ],
+    "consume_json": null,
+    "level_name": "爆裂鱼叉炮",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 95,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 5
+      }
+    ],
+    "level_desc": "叉头里塞了炸药，扎进去再炸，单发 86。甲板守则新增一条：不许在这门炮旁边抽烟。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2001,
+    "level": 5,
+    "hp": 220,
+    "armor": 9,
+    "require_attr_value": 28,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 115,
+    "atk_cd": 2.4,
+    "skill_ids": [
+      "5001"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 9600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 800
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 550
+      }
+    ],
+    "consume_json": null,
+    "level_name": "捕鲸炮",
+    "deck_slots": 0,
+    "require_hull_level": 5,
+    "atk_range": 95,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 5
+      }
+    ],
+    "level_desc": "这门炮本来就是捕鲸的，现在拿来捕别的。单发 115，2.4 秒一发。船员承认它是炮了——因为它真的打沉过一头大的。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2001,
+    "level": 6,
+    "hp": 250,
+    "armor": 11,
+    "require_attr_value": 33,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 155,
+    "atk_cd": 2.15,
+    "skill_ids": [
+      "5001"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 18000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 1200
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 800
+      }
+    ],
+    "consume_json": null,
+    "level_name": "重型捕鲸炮",
+    "deck_slots": 0,
+    "require_hull_level": 6,
+    "atk_range": 100,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 5
+      }
+    ],
+    "level_desc": "口径大到需要两个绞盘，单发 155。到这一级，那句\"本来就是捕鲸的\"才真的成立。（1.1 开放）",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2004,
+    "level": 1,
+    "hp": 90,
+    "armor": 0,
+    "require_attr_value": 5,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 21,
+    "atk_cd": 4.5,
+    "skill_ids": [
+      "5006"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "铁砂筒",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 65,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 8
+      }
+    ],
+    "level_desc": "一根粗管子，往里灌铁砂和火药，往海里泼。一次泼 3 个目标，射程只有 65，单发 21 但架不住面广。密集小怪的最优解。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2004,
+    "level": 2,
+    "hp": 120,
+    "armor": 2,
+    "require_attr_value": 10,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 29,
+    "atk_cd": 4.0,
+    "skill_ids": [
+      "5006"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 900
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 50
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 35
+      }
+    ],
+    "consume_json": null,
+    "level_name": "双管铁砂筒",
+    "deck_slots": 0,
+    "require_hull_level": 2,
+    "atk_range": 65,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 8
+      }
+    ],
+    "level_desc": "两根管子轮着泼，单发 29。撒得挺开——这是船员的全部评价。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2004,
+    "level": 3,
+    "hp": 150,
+    "armor": 5,
+    "require_attr_value": 16,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 36,
+    "atk_cd": 3.4,
+    "skill_ids": [
+      "5006"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2200
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 140
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 85
+      }
+    ],
+    "consume_json": null,
+    "level_name": "霰弹炮",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 68,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 8
+      }
+    ],
+    "level_desc": "终于有了炮闩和瞄准环，单发 36，3.4 秒一轮。没人用瞄准环。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2004,
+    "level": 4,
+    "hp": 180,
+    "armor": 6,
+    "require_attr_value": 21,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 49,
+    "atk_cd": 3.0,
+    "skill_ids": [
+      "5006"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 5500
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 330
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 200
+      }
+    ],
+    "consume_json": null,
+    "level_name": "免瞄霰弹炮",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 70,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 8
+      }
+    ],
+    "level_desc": "散步大到不用瞄，单发 49。甲板守则：这门炮开火时，所有人蹲下。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2004,
+    "level": 5,
+    "hp": 210,
+    "armor": 8,
+    "require_attr_value": 26,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 66,
+    "atk_cd": 2.7,
+    "skill_ids": [
+      "5006"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 9000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 740
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 500
+      }
+    ],
+    "consume_json": null,
+    "level_name": "扫射霰弹炮",
+    "deck_slots": 0,
+    "require_hull_level": 5,
+    "atk_range": 72,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 8
+      }
+    ],
+    "level_desc": "整片海面都归它管。单发 66，一轮泼 8 发炮弹，弹药黑洞。怪贴到脸上的时候，它是最后一句话。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2004,
+    "level": 6,
+    "hp": 240,
+    "armor": 10,
+    "require_attr_value": 31,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 87,
+    "atk_cd": 2.4,
+    "skill_ids": [
+      "5006"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 17000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 1100
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 740
+      }
+    ],
+    "consume_json": null,
+    "level_name": "闭眼霰弹炮",
+    "deck_slots": 0,
+    "require_hull_level": 6,
+    "atk_range": 75,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_cannonball",
+        "count": 8
+      }
+    ],
+    "level_desc": "闭着眼睛打也能中点什么，单发 87。射程 75，还是最短，但它不在乎。（1.1 开放）",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2003,
+    "level": 1,
+    "hp": 85,
+    "armor": 0,
+    "require_attr_value": 8,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 45,
+    "atk_cd": 3.6,
+    "skill_ids": [
+      "5005"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "单晶咒镜",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 120,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "一面磨亮的魔晶镜片，把魔力拧成一束，单发 45，无视护甲，射程 120。一发吃一颗魔晶——船员把它当工资在算，不是当武器。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2003,
+    "level": 2,
+    "hp": 110,
+    "armor": 2,
+    "require_attr_value": 14,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 60,
+    "atk_cd": 3.2,
+    "skill_ids": [
+      "5005"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1200
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 60
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 45
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 3
+      }
+    ],
+    "consume_json": null,
+    "level_name": "省晶咒镜",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 120,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "调了焦距，同样的晶打得狠一点，单发 60。船员的操作守则就四个字：省着点打。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2003,
+    "level": 3,
+    "hp": 140,
+    "armor": 4,
+    "require_attr_value": 20,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 81,
+    "atk_cd": 2.9,
+    "skill_ids": [
+      "5005"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2800
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 150
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 100
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 5
+      }
+    ],
+    "consume_json": null,
+    "level_name": "破甲咒镜",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 125,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "发现重甲精英真的怕这个，单发 81。这是整条线里船员唯一一次兴奋——这东西伤得到它。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2003,
+    "level": 4,
+    "hp": 170,
+    "armor": 6,
+    "require_attr_value": 25,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 111,
+    "atk_cd": 2.65,
+    "skill_ids": [
+      "5005"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 6800
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 360
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 230
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 8
+      }
+    ],
+    "consume_json": null,
+    "level_name": "聚焦咒镜",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 130,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "光束拧成一根针，单发 111，射程 130。打哪儿一个洞。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2003,
+    "level": 5,
+    "hp": 200,
+    "armor": 7,
+    "require_attr_value": 30,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 154,
+    "atk_cd": 2.45,
+    "skill_ids": [
+      "5005"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 11000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 800
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 560
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 12
+      }
+    ],
+    "consume_json": null,
+    "level_name": "专线咒镜",
+    "deck_slots": 0,
+    "require_hull_level": 5,
+    "atk_range": 135,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "一对一专线，只打大的，单发 154。贵的体感比数值更贵——但看着它一发烧穿精英，没人说话了。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2003,
+    "level": 6,
+    "hp": 230,
+    "armor": 9,
+    "require_attr_value": 35,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 216,
+    "atk_cd": 2.3,
+    "skill_ids": [
+      "5005"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 20000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 1250
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 850
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 16
+      }
+    ],
+    "consume_json": null,
+    "level_name": "贵价咒镜",
+    "deck_slots": 0,
+    "require_hull_level": 6,
+    "atk_range": 140,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "单发 216。账房看了账单，船长看了战果，双方都觉得自己赢了。贵，但它值。（1.1 开放）",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2002,
+    "level": 1,
+    "hp": 90,
+    "armor": 0,
+    "require_attr_value": 8,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 30,
+    "atk_cd": 6.0,
+    "skill_ids": [
+      "5002"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "单面魔镜",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 110,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "就一面镜子架在炮座上，照到哪儿哪儿热，一次照 5 个目标，射程 110，无视护甲。船员管它叫镜子，它确实是门炮。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2002,
+    "level": 2,
+    "hp": 120,
+    "armor": 2,
+    "require_attr_value": 14,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 42,
+    "atk_cd": 5.0,
+    "skill_ids": [
+      "5002"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 60
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 40
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 3
+      }
+    ],
+    "consume_json": null,
+    "level_name": "三棱魔镜",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 110,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "一面变三面，光散得更开，单发 42。名字终于带\"炮\"字了，虽然还是没炮管。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2002,
+    "level": 3,
+    "hp": 150,
+    "armor": 5,
+    "require_attr_value": 20,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 60,
+    "atk_cd": 4.0,
+    "skill_ids": [
+      "5002"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2400
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 150
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 90
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 5
+      }
+    ],
+    "consume_json": null,
+    "level_name": "引燃魔镜",
+    "deck_slots": 0,
+    "require_hull_level": 3,
+    "atk_range": 115,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "照哪儿哪儿着。本来是拿来照亮的，后来发现照到的东西会烧起来——结论比技术好笑，名字就这么定了。单发 60。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2002,
+    "level": 4,
+    "hp": 180,
+    "armor": 7,
+    "require_attr_value": 25,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 82,
+    "atk_cd": 3.6,
+    "skill_ids": [
+      "5002"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 6000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 360
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 220
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 8
+      }
+    ],
+    "consume_json": null,
+    "level_name": "棱镜魔镜阵",
+    "deck_slots": 0,
+    "require_hull_level": 4,
+    "atk_range": 120,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "六面棱镜联动，一次盖半片海，单发 82。调一次角度要三个人。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2002,
+    "level": 5,
+    "hp": 210,
+    "armor": 9,
+    "require_attr_value": 30,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 110,
+    "atk_cd": 3.2,
+    "skill_ids": [
+      "5002"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 9600
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 800
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 550
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 12
+      }
+    ],
+    "consume_json": null,
+    "level_name": "观星魔镜",
+    "deck_slots": 0,
+    "require_hull_level": 5,
+    "atk_range": 125,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "长得像望远镜，船员坚持叫它观星镜。单发 110，一次压 5 个目标。它确实是门炮。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 2002,
+    "level": 6,
+    "hp": 240,
+    "armor": 11,
+    "require_attr_value": 35,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 149,
+    "atk_cd": 2.9,
+    "skill_ids": [
+      "5002"
+    ],
+    "speed": 0.0,
+    "grid_total": 0,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 18000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 1200
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 800
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 16
+      }
+    ],
+    "consume_json": null,
+    "level_name": "巨型观星镜",
+    "deck_slots": 0,
+    "require_hull_level": 6,
+    "atk_range": 130,
+    "atk_consume_json": [
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "level_desc": "全船口径最大的光学设备，单发 149。官方终于澄清\"不是望远镜\"。澄清来得太晚，没人改口。（1.1 开放）",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9001,
+    "level": 1,
+    "hp": 150,
+    "armor": 0,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 10.0,
+    "grid_total": 8,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "木筏",
+    "deck_slots": 3,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "几块板子绑在一起，8 格。能浮，仅此而已。船员管它叫\"船\"，是出于礼貌。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9001,
+    "level": 2,
+    "hp": 300,
+    "armor": 2,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 12.0,
+    "grid_total": 10,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_wood",
+        "count": 30
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 10
+      },
+      {
+        "item_id": "itm_shell",
+        "count": 300
+      }
+    ],
+    "consume_json": null,
+    "level_name": "单桅渔船",
+    "deck_slots": 4,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "有桅杆了，10 格。第一张帆升起来的时候全船鼓掌——这是\"我们真的在航海\"的第一个时刻。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9001,
+    "level": 3,
+    "hp": 500,
+    "armor": 4,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 14.0,
+    "grid_total": 12,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_wood",
+        "count": 120
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 60
+      },
+      {
+        "item_id": "itm_shell",
+        "count": 2500
+      }
+    ],
+    "consume_json": null,
+    "level_name": "双桅护卫舰",
+    "deck_slots": 5,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "两根桅杆，12 格。样子像军舰了，虽然炮还是叉子。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9001,
+    "level": 4,
+    "hp": 750,
+    "armor": 6,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 16.0,
+    "grid_total": 14,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_wood",
+        "count": 300
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 160
+      },
+      {
+        "item_id": "itm_shell",
+        "count": 12000
+      }
+    ],
+    "consume_json": null,
+    "level_name": "三桅盖伦",
+    "deck_slots": 6,
+    "require_hull_level": 4,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "三桅，14 格。从远处看已经是艘正儿八经的船，船员开始给它刷漆。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9001,
+    "level": 5,
+    "hp": 1050,
+    "armor": 8,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [],
+    "speed": 18.0,
+    "grid_total": 16,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_wood",
+        "count": 700
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 380
+      },
+      {
+        "item_id": "itm_shell",
+        "count": 24000
+      },
+      {
+        "item_id": "bp_ship_hull_3",
+        "count": 1
+      },
+      {
+        "item_id": "sm_dragon_wood",
+        "count": 3
+      }
+    ],
+    "consume_json": null,
+    "level_name": "不沉方舟",
+    "deck_slots": 7,
+    "require_hull_level": 5,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "16 格，7 个甲板岗。名字叫\"不沉\"——不是因为它沉不了，是下面那位不让它沉。一个字都不解释。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9101,
+    "level": 1,
+    "hp": 150,
+    "armor": 5,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [
+      "5003",
+      "5004"
+    ],
+    "speed": 8.0,
+    "grid_total": 8,
+    "upgrade_cost_json": [],
+    "consume_json": null,
+    "level_name": "生命号·幼苗",
+    "deck_slots": 3,
+    "require_hull_level": 1,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "一株从龙骨里长出来的藤蔓船，8 格，自带藤条攻击与全房间自我修复。砍它会疼，所以现在改用剪的。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9101,
+    "level": 2,
+    "hp": 280,
+    "armor": 15,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [
+      "5003",
+      "5004"
+    ],
+    "speed": 10.0,
+    "grid_total": 10,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 1000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 30
+      },
+      {
+        "item_id": "itm_stone",
+        "count": 30
+      }
+    ],
+    "consume_json": null,
+    "level_name": "生命号·藤蔓",
+    "deck_slots": 4,
+    "require_hull_level": 2,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "藤蔓爬满舷侧，10 格。风暴过后它自己把裂缝缠上，船员省了一半修船的木料。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9101,
+    "level": 3,
+    "hp": 420,
+    "armor": 25,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [
+      "5003",
+      "5004"
+    ],
+    "speed": 12.0,
+    "grid_total": 12,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 60
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 50
+      },
+      {
+        "item_id": "itm_stone",
+        "count": 60
+      },
+      {
+        "item_id": "bp_ship_hull_2",
+        "count": 1
+      }
+    ],
+    "consume_json": null,
+    "level_name": "生命号·枝干",
+    "deck_slots": 5,
+    "require_hull_level": 3,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "枝干比橡木还硬，12 格。有船员试着掰下一根做弓，被藤条抽了一下。再没人试过。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9101,
+    "level": 4,
+    "hp": 600,
+    "armor": 35,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [
+      "5003",
+      "5004"
+    ],
+    "speed": 14.0,
+    "grid_total": 14,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 6000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 200
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 120
+      },
+      {
+        "item_id": "itm_stone",
+        "count": 80
+      }
+    ],
+    "consume_json": null,
+    "level_name": "生命号·树林",
+    "deck_slots": 6,
+    "require_hull_level": 4,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "整艘船像一片会移动的树林，14 格。海鸟在上面做窝，怪物犹豫要不要攻击一丛\"植物\"。",
+    "storage_cap": 0
+  },
+  {
+    "room_id": 9101,
+    "level": 5,
+    "hp": 820,
+    "armor": 45,
+    "require_attr_value": 0,
+    "produce_drop_group_id": 0,
+    "produce_cd": 0.0,
+    "produce_roll": 0,
+    "atk": 0,
+    "atk_cd": 0.0,
+    "skill_ids": [
+      "5003",
+      "5004"
+    ],
+    "speed": 16.0,
+    "grid_total": 16,
+    "upgrade_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 14000
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 400
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 240
+      },
+      {
+        "item_id": "itm_stone",
+        "count": 160
+      },
+      {
+        "item_id": "bp_ship_hull_2",
+        "count": 1
+      }
+    ],
+    "consume_json": null,
+    "level_name": "生命号·心脏",
+    "deck_slots": 7,
+    "require_hull_level": 5,
+    "atk_range": 0,
+    "atk_consume_json": null,
+    "level_desc": "树干中心有规律的跳动，16 格。没人切开看过。它把船开回了家，这就够了。",
+    "storage_cap": 0
+  }
+]

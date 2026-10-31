@@ -1,0 +1,135 @@
+[
+  {
+    "quality_id": 1,
+    "quality_name": "破损",
+    "color": "gray",
+    "power_coeff": 1.0,
+    "require_coeff": 1.0,
+    "effect_coeff": 1.0,
+    "forge_allowed": true,
+    "drop_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "desc": "最低品质，保底产物"
+  },
+  {
+    "quality_id": 2,
+    "quality_name": "完整",
+    "color": "white",
+    "power_coeff": 1.12,
+    "require_coeff": 1.08,
+    "effect_coeff": 1.15,
+    "forge_allowed": true,
+    "drop_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "desc": ""
+  },
+  {
+    "quality_id": 3,
+    "quality_name": "精良",
+    "color": "green",
+    "power_coeff": 1.28,
+    "require_coeff": 1.18,
+    "effect_coeff": 1.32,
+    "forge_allowed": true,
+    "drop_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "desc": ""
+  },
+  {
+    "quality_id": 4,
+    "quality_name": "卓越",
+    "color": "blue",
+    "power_coeff": 1.48,
+    "require_coeff": 1.3,
+    "effect_coeff": 1.52,
+    "forge_allowed": true,
+    "drop_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "desc": "工坊Lv1上限"
+  },
+  {
+    "quality_id": 5,
+    "quality_name": "完美",
+    "color": "purple",
+    "power_coeff": 1.7,
+    "require_coeff": 1.44,
+    "effect_coeff": 1.75,
+    "forge_allowed": true,
+    "drop_weight_json": {
+      "1": 0,
+      "2": 20,
+      "3": 30,
+      "4": 30,
+      "5": 20,
+      "6": 0,
+      "7": 0
+    },
+    "desc": "锻造天花板，工坊Lv2解锁"
+  },
+  {
+    "quality_id": 6,
+    "quality_name": "史诗",
+    "color": "orange",
+    "power_coeff": 1.95,
+    "require_coeff": 1.6,
+    "effect_coeff": 2.0,
+    "forge_allowed": false,
+    "drop_weight_json": {
+      "1": 0,
+      "2": 0,
+      "3": 30,
+      "4": 40,
+      "5": 25,
+      "6": 5,
+      "7": 0
+    },
+    "desc": "仅掉落"
+  },
+  {
+    "quality_id": 7,
+    "quality_name": "传说",
+    "color": "red",
+    "power_coeff": 2.25,
+    "require_coeff": 1.78,
+    "effect_coeff": 2.3,
+    "forge_allowed": false,
+    "drop_weight_json": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 30,
+      "5": 45,
+      "6": 25,
+      "7": 0
+    },
+    "desc": "仅掉落，7阶固定传说"
+  }
+]

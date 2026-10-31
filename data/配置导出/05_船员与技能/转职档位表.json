@@ -1,0 +1,101 @@
+[
+  {
+    "tier": 1,
+    "tier_name": "船员",
+    "attr1_type": "str",
+    "attr1_require": 0,
+    "attr2_type": "none",
+    "attr2_require": 0,
+    "book_item_id": "",
+    "reward_json": {},
+    "release_phase": "mvp",
+    "desc": "初始"
+  },
+  {
+    "tier": 2,
+    "tier_name": "老手",
+    "attr1_type": "str",
+    "attr1_require": 20,
+    "attr2_type": "agi",
+    "attr2_require": 15,
+    "book_item_id": "itm_jobbook_2",
+    "reward_json": {
+      "all_attr": 3,
+      "main_attr": 0
+    },
+    "release_phase": "mvp",
+    "desc": "漂浮物宝箱/商人岛掉落转职书"
+  },
+  {
+    "tier": 3,
+    "tier_name": "精英",
+    "attr1_type": "str",
+    "attr1_require": 40,
+    "attr2_type": "agi",
+    "attr2_require": 30,
+    "book_item_id": "itm_jobbook_3",
+    "reward_json": {
+      "all_attr": 0,
+      "main_attr": 8
+    },
+    "release_phase": "mvp",
+    "desc": "岛屿探索稀有掉落"
+  },
+  {
+    "tier": 4,
+    "tier_name": "大师",
+    "attr1_type": "str",
+    "attr1_require": 65,
+    "attr2_type": "agi",
+    "attr2_require": 50,
+    "book_item_id": "itm_jobbook_4",
+    "reward_json": {
+      "all_attr": 10,
+      "main_attr": 0
+    },
+    "release_phase": "v1_1",
+    "desc": "商人岛高价/遗迹岛"
+  },
+  {
+    "tier": 5,
+    "tier_name": "宗师",
+    "attr1_type": "str",
+    "attr1_require": 90,
+    "attr2_type": "agi",
+    "attr2_require": 75,
+    "book_item_id": "itm_jobbook_5",
+    "reward_json": {
+      "all_attr": 0,
+      "main_attr": 15
+    },
+    "release_phase": "v1_1",
+    "desc": "海域Boss必掉"
+  },
+  {
+    "tier": 6,
+    "tier_name": "传奇",
+    "attr1_type": "str",
+    "attr1_require": 120,
+    "attr2_type": "agi",
+    "attr2_require": 100,
+    "book_item_id": "itm_jobbook_6",
+    "reward_json": {
+      "all_attr": 20,
+      "main_attr": 0
+    },
+    "release_phase": "v2_0",
+    "desc": "后期海域Boss"
+  },
+  {
+    "tier": 7,
+    "tier_name": "神级",
+    "attr1_type": "str",
+    "attr1_require": 0,
+    "attr2_type": "none",
+    "attr2_require": 0,
+    "book_item_id": "",
+    "reward_json": {},
+    "release_phase": "later",
+    "desc": "后续版本开放"
+  }
+]

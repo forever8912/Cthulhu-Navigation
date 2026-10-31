@@ -1,0 +1,86 @@
+[
+  {
+    "field": "uid",
+    "type": "string",
+    "required": true,
+    "desc": "玩家唯一 id（服务端生成；对手列表不展示原始 id，只展示 name）",
+    "example": "u_88231"
+  },
+  {
+    "field": "name",
+    "type": "string",
+    "required": true,
+    "desc": "船长名（玩家昵称，脱敏后 ≤8 字）；虚拟船长同样从名池表取此格式",
+    "example": "灰雾里的埃布纳"
+  },
+  {
+    "field": "layer",
+    "type": "int",
+    "required": true,
+    "desc": "该玩家竞技场历史最高层。匹配窗口 = 目标层 ± mirror_window(3) 层内的玩家",
+    "example": 12
+  },
+  {
+    "field": "chars",
+    "type": "json",
+    "required": true,
+    "desc": "最强角色数组，固定 3 名（不足 3 名不上传）；按战力降序，对手队伍按前 N 名截取（N=玩家上场人数）",
+    "example": "[{...},{...},{...}]"
+  },
+  {
+    "field": "chars[].name",
+    "type": "string",
+    "required": true,
+    "desc": "角色名（船员名，来自 05 船员名称表或玩家自定义）",
+    "example": "老鸦"
+  },
+  {
+    "field": "chars[].class_id",
+    "type": "int",
+    "required": true,
+    "desc": "职业 id（引用 05 职业表）",
+    "example": 3101
+  },
+  {
+    "field": "chars[].attrs",
+    "type": "json",
+    "required": true,
+    "desc": "四维：str=力量 / int=智力 / agi=技巧 / spr=精神",
+    "example": "{\"str\":31,\"int\":12,\"agi\":40,\"spr\":14}"
+  },
+  {
+    "field": "chars[].appearance",
+    "type": "json",
+    "required": true,
+    "desc": "外貌，与 05 初始船员表同格式：skin 1xxx / face 2xxx / eyes 3xxx / mouth 4xxx / hair 5xxx / outfit 6xxx / accessory（0=不显示）",
+    "example": "{\"skin\":1002,\"face\":2005,\"eyes\":3003,\"mouth\":4001,\"hair\":5007,\"outfit\":6004,\"accessory\":0}"
+  },
+  {
+    "field": "chars[].equip",
+    "type": "json",
+    "required": true,
+    "desc": "装备位摘要（06 装备：id / 品质 / 词缀），只够战力预估与品质展示，不还原完整装备树",
+    "example": "[{\"id\":2001,\"quality\":\"blue\"}]"
+  },
+  {
+    "field": "chars[].skills",
+    "type": "json",
+    "required": true,
+    "desc": "技能 id 列表（≤4，只含玩家已解锁技能，与 skill_rule 一致）",
+    "example": "[5101,5102]"
+  },
+  {
+    "field": "ts",
+    "type": "int",
+    "required": true,
+    "desc": "快照时间戳；每次历史最高层变化 / 上阵阵容变化 / 装备变化时全量重传",
+    "example": 1790000000
+  },
+  {
+    "field": "ver",
+    "type": "int",
+    "required": true,
+    "desc": "契约版本号，当前 1；服务端按版本兼容旧快照",
+    "example": 1
+  }
+]

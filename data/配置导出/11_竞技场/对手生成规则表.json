@@ -1,0 +1,37 @@
+[
+  {
+    "band_id": 1,
+    "min_layer": 1,
+    "max_layer": 7,
+    "equip_quality": "白/绿",
+    "equip_weights": {
+      "white": 70,
+      "green": 30
+    },
+    "bias_count": 1,
+    "desc": "开局档：第 5 层起蓝装出现率 10%（并入 green 位随机）"
+  },
+  {
+    "band_id": 2,
+    "min_layer": 8,
+    "max_layer": 17,
+    "equip_quality": "蓝/紫",
+    "equip_weights": {
+      "blue": 70,
+      "purple": 30
+    },
+    "bias_count": 1,
+    "desc": "第 8 层起出现紫装（doc §3.4.4 口径）"
+  },
+  {
+    "band_id": 3,
+    "min_layer": 18,
+    "max_layer": 999,
+    "equip_quality": "全紫",
+    "equip_weights": {
+      "purple": 100
+    },
+    "bias_count": 2,
+    "desc": "第 18 层起全紫，偏科更狠——高层的对手像「偏科的老玩家」，不像木桩"
+  }
+]

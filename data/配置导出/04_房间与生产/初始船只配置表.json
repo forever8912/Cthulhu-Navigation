@@ -1,0 +1,18 @@
+[
+  {
+    "config_id": 1,
+    "room_id": 9001,
+    "level": 1,
+    "is_built": true,
+    "sort_order": 0,
+    "desc": "初始船体：hp=150 / armor=0 / grid_total=8 / speed=10 / 甲板岗 3 / 无自带技能；Lv1 叫「木筏」"
+  },
+  {
+    "config_id": 2,
+    "room_id": 1001,
+    "level": 1,
+    "is_built": true,
+    "sort_order": 1,
+    "desc": "动力舱 Lv1「四人脚踏机」，占 2 格，is_energy=1，产能源 20/min；剩余 6 格供自由建造"
+  }
+]

@@ -1,0 +1,2739 @@
+[
+  {
+    "group_id": "RS-W1A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=25",
+    "float_text": "木材 ×25"
+  },
+  {
+    "group_id": "RS-W1A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_silver_figurehead;qty=1",
+    "float_text": "银质船首像 ×1"
+  },
+  {
+    "group_id": "RS-W1A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W1A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.08;scope=all",
+    "float_text": "全队 HP -8%"
+  },
+  {
+    "group_id": "RS-W1A-FAIL",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_wood;qty=15",
+    "float_text": "木材 ×15"
+  },
+  {
+    "group_id": "RS-W1A-FAIL",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W1B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=40",
+    "float_text": "木材 ×40"
+  },
+  {
+    "group_id": "RS-W1B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=6",
+    "float_text": "铁 ×6"
+  },
+  {
+    "group_id": "RS-W1B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W2A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=30",
+    "float_text": "木材 ×30"
+  },
+  {
+    "group_id": "RS-W2A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=8",
+    "float_text": "铁 ×8"
+  },
+  {
+    "group_id": "RS-W2A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W2B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7001;on_win=RS-W2B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-W2B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=20",
+    "float_text": "铁 ×20"
+  },
+  {
+    "group_id": "RS-W2B-WIN",
+    "seq": 2,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-W2B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W3A-OK",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=150",
+    "float_text": "贝壳币 ×150"
+  },
+  {
+    "group_id": "RS-W3A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-W3A-OK",
+    "seq": 3,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-W3A-OK",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W3A-FAIL",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7002;on_win=RS-W3AF-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-W3AF-WIN",
+    "seq": 1,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W3B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=80",
+    "float_text": "贝壳币 ×80"
+  },
+  {
+    "group_id": "RS-W3B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=7002;on_win=RS-W3B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-W3B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=10",
+    "float_text": "铁 ×10"
+  },
+  {
+    "group_id": "RS-W3B-WIN",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W4A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=15;scope=all",
+    "float_text": "全队 SAN +15"
+  },
+  {
+    "group_id": "RS-W4A",
+    "seq": 2,
+    "type": "hp",
+    "params": "hp=0.15;scope=all",
+    "float_text": "全队 HP +15%"
+  },
+  {
+    "group_id": "RS-W4A",
+    "seq": 3,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-W4A",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W4B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=120",
+    "float_text": "贝壳币 ×120"
+  },
+  {
+    "group_id": "RS-W4B",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN -10"
+  },
+  {
+    "group_id": "RS-W4B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7003;on_win=RS-W5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-W5A-WIN",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=2;qty=1",
+    "float_text": "紫装（完美） ×1"
+  },
+  {
+    "group_id": "RS-W5A-WIN",
+    "seq": 2,
+    "type": "san",
+    "params": "san=20;scope=all",
+    "float_text": "全队 SAN +20"
+  },
+  {
+    "group_id": "RS-W5A-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-W5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7004;on_win=RS-W5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-W5B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=10",
+    "float_text": "精铁 ×10"
+  },
+  {
+    "group_id": "RS-W5B-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=bp_room_rare;qty=1",
+    "float_text": "稀有房间图纸 ×1"
+  },
+  {
+    "group_id": "RS-W5B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T1A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=25",
+    "float_text": "木材 ×25"
+  },
+  {
+    "group_id": "RS-T1A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-T1A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T1A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.08;scope=all",
+    "float_text": "全队 HP -8%"
+  },
+  {
+    "group_id": "RS-T1A-FAIL",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_wood;qty=15",
+    "float_text": "木材 ×15"
+  },
+  {
+    "group_id": "RS-T1A-FAIL",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T1B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=40",
+    "float_text": "木材 ×40"
+  },
+  {
+    "group_id": "RS-T1B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=6",
+    "float_text": "铁 ×6"
+  },
+  {
+    "group_id": "RS-T1B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T2A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=12",
+    "float_text": "铁 ×12"
+  },
+  {
+    "group_id": "RS-T2A-OK",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=100",
+    "float_text": "贝壳币 ×100"
+  },
+  {
+    "group_id": "RS-T2A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T2A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.12;scope=all",
+    "float_text": "全队 HP -12%"
+  },
+  {
+    "group_id": "RS-T2A-FAIL",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=6",
+    "float_text": "铁 ×6"
+  },
+  {
+    "group_id": "RS-T2A-FAIL",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T2B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=30",
+    "float_text": "木材 ×30"
+  },
+  {
+    "group_id": "RS-T2B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=5",
+    "float_text": "铁 ×5"
+  },
+  {
+    "group_id": "RS-T2B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T3A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-T3A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-T3A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T3A-FAIL",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7012;on_win=RS-T3AF-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-T3AF-WIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=120",
+    "float_text": "贝壳币 ×120"
+  },
+  {
+    "group_id": "RS-T3AF-WIN",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T3B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=70",
+    "float_text": "贝壳币 ×70"
+  },
+  {
+    "group_id": "RS-T3B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=7011;on_win=RS-T3B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-T3B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=18",
+    "float_text": "铁 ×18"
+  },
+  {
+    "group_id": "RS-T3B-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=2",
+    "float_text": "精铁 ×2"
+  },
+  {
+    "group_id": "RS-T3B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T4A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=15;scope=all",
+    "float_text": "全队 SAN +15"
+  },
+  {
+    "group_id": "RS-T4A",
+    "seq": 2,
+    "type": "hp",
+    "params": "hp=0.15;scope=all",
+    "float_text": "全队 HP +15%"
+  },
+  {
+    "group_id": "RS-T4A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T4B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=130",
+    "float_text": "贝壳币 ×130"
+  },
+  {
+    "group_id": "RS-T4B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_crystal;qty=2",
+    "float_text": "魔晶 ×2"
+  },
+  {
+    "group_id": "RS-T4B",
+    "seq": 3,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN -10"
+  },
+  {
+    "group_id": "RS-T4B",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7013;on_win=RS-T5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-T5A-WIN",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=2;qty=1",
+    "float_text": "紫装（完美） ×1"
+  },
+  {
+    "group_id": "RS-T5A-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=bp_ship_hull_3;qty=1",
+    "float_text": "船体龙骨图纸 ×1"
+  },
+  {
+    "group_id": "RS-T5A-WIN",
+    "seq": 3,
+    "type": "roll",
+    "params": "chance=0.5;hit=RS-T5A-SAN;miss=empty",
+    "float_text": "赌一把"
+  },
+  {
+    "group_id": "RS-T5A-WIN",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-T5A-SAN",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-30;scope=all",
+    "float_text": "全队 SAN -30"
+  },
+  {
+    "group_id": "RS-T5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7013;on_win=RS-T5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-T5B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=4",
+    "float_text": "强化石 ×4"
+  },
+  {
+    "group_id": "RS-T5B-WIN",
+    "seq": 2,
+    "type": "san",
+    "params": "san=20;scope=all",
+    "float_text": "全队 SAN +20"
+  },
+  {
+    "group_id": "RS-T5B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G1A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=14",
+    "float_text": "铁 ×14"
+  },
+  {
+    "group_id": "RS-G1A-OK",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=60",
+    "float_text": "贝壳币 ×60"
+  },
+  {
+    "group_id": "RS-G1A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G1A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.08;scope=all",
+    "float_text": "全队 HP -8%"
+  },
+  {
+    "group_id": "RS-G1A-FAIL",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=8",
+    "float_text": "铁 ×8"
+  },
+  {
+    "group_id": "RS-G1A-FAIL",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G1B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=20",
+    "float_text": "铁 ×20"
+  },
+  {
+    "group_id": "RS-G1B",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G2A-OK",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-G2A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=3",
+    "float_text": "精铁 ×3"
+  },
+  {
+    "group_id": "RS-G2A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G2A-FAIL",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7021;on_win=RS-G2AF-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-G2AF-WIN",
+    "seq": 1,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G2B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=25",
+    "float_text": "木材 ×25"
+  },
+  {
+    "group_id": "RS-G2B",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-8;scope=all",
+    "float_text": "全队 SAN -8"
+  },
+  {
+    "group_id": "RS-G2B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G3A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7022;on_win=RS-G3A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-G3A-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=12",
+    "float_text": "精铁 ×12"
+  },
+  {
+    "group_id": "RS-G3A-WIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=150",
+    "float_text": "贝壳币 ×150"
+  },
+  {
+    "group_id": "RS-G3A-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G3B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=110",
+    "float_text": "贝壳币 ×110"
+  },
+  {
+    "group_id": "RS-G3B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=10",
+    "float_text": "铁 ×10"
+  },
+  {
+    "group_id": "RS-G3B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G4A",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=0.15;scope=all",
+    "float_text": "全队 HP +15%"
+  },
+  {
+    "group_id": "RS-G4A",
+    "seq": 2,
+    "type": "san",
+    "params": "san=10;scope=all",
+    "float_text": "全队 SAN +10"
+  },
+  {
+    "group_id": "RS-G4A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G4B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-G4B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=7021;on_win=RS-G4B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-G4B-WIN",
+    "seq": 1,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7023;on_win=RS-G5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-G5A-WIN",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=2;qty=2",
+    "float_text": "紫装（完美） ×2"
+  },
+  {
+    "group_id": "RS-G5A-WIN",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-G5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7022;on_win=RS-G5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-G5B-WIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=200",
+    "float_text": "贝壳币 ×200"
+  },
+  {
+    "group_id": "RS-G5B-WIN",
+    "seq": 2,
+    "type": "san",
+    "params": "san=20;scope=all",
+    "float_text": "全队 SAN +20"
+  },
+  {
+    "group_id": "RS-G5B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L1A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-L1A-OK",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=60",
+    "float_text": "贝壳币 ×60"
+  },
+  {
+    "group_id": "RS-L1A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L1A-FAIL",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-8;scope=all",
+    "float_text": "全队 SAN -8"
+  },
+  {
+    "group_id": "RS-L1A-FAIL",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L1B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=50",
+    "float_text": "贝壳币 ×50"
+  },
+  {
+    "group_id": "RS-L1B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-L1B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L2A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=3",
+    "float_text": "强化石 ×3"
+  },
+  {
+    "group_id": "RS-L2A-OK",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN -10"
+  },
+  {
+    "group_id": "RS-L2A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L2A-FAIL",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7031;on_win=RS-L2AF-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-L2AF-WIN",
+    "seq": 1,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L2B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-L2B",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L3A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=2",
+    "float_text": "图纸残页 ×2"
+  },
+  {
+    "group_id": "RS-L3A-OK",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=90",
+    "float_text": "贝壳币 ×90"
+  },
+  {
+    "group_id": "RS-L3A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L3A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.1;scope=all",
+    "float_text": "全队 HP -10%"
+  },
+  {
+    "group_id": "RS-L3A-FAIL",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-12;scope=all",
+    "float_text": "全队 SAN -12"
+  },
+  {
+    "group_id": "RS-L3A-FAIL",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L3B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7032;on_win=RS-L3B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-L3B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=8",
+    "float_text": "铁 ×8"
+  },
+  {
+    "group_id": "RS-L3B-WIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=80",
+    "float_text": "贝壳币 ×80"
+  },
+  {
+    "group_id": "RS-L3B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L4A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=15;scope=all",
+    "float_text": "全队 SAN +15"
+  },
+  {
+    "group_id": "RS-L4A",
+    "seq": 2,
+    "type": "hp",
+    "params": "hp=0.15;scope=all",
+    "float_text": "全队 HP +15%"
+  },
+  {
+    "group_id": "RS-L4A",
+    "seq": 3,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-L4A",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L4B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=140",
+    "float_text": "贝壳币 ×140"
+  },
+  {
+    "group_id": "RS-L4B",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN -10"
+  },
+  {
+    "group_id": "RS-L4B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7033;on_win=RS-L5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-L5A-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_skillbook;qty=1",
+    "float_text": "技能书 ×1"
+  },
+  {
+    "group_id": "RS-L5A-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=bp_ship_hull_3;qty=1",
+    "float_text": "船体龙骨图纸 ×1"
+  },
+  {
+    "group_id": "RS-L5A-WIN",
+    "seq": 3,
+    "type": "roll",
+    "params": "chance=0.5;hit=RS-L5A-SAN;miss=empty",
+    "float_text": "赌一把"
+  },
+  {
+    "group_id": "RS-L5A-WIN",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-L5A-SAN",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-50;scope=all",
+    "float_text": "全队 SAN -50"
+  },
+  {
+    "group_id": "RS-L5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7033;on_win=RS-L5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-L5B-WIN",
+    "seq": 1,
+    "type": "san",
+    "params": "san=30;scope=all",
+    "float_text": "全队 SAN +30"
+  },
+  {
+    "group_id": "RS-L5B-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-L5B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A1A",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.1;scope=all",
+    "float_text": "全队 HP -10%"
+  },
+  {
+    "group_id": "RS-A1A",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-8;scope=all",
+    "float_text": "全队 SAN -8"
+  },
+  {
+    "group_id": "RS-A1A",
+    "seq": 3,
+    "type": "item",
+    "params": "item=itm_crystal;qty=3",
+    "float_text": "魔晶 ×3"
+  },
+  {
+    "group_id": "RS-A1A",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A1B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_crystal;qty=1",
+    "float_text": "魔晶 ×1"
+  },
+  {
+    "group_id": "RS-A1B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=6",
+    "float_text": "铁 ×6"
+  },
+  {
+    "group_id": "RS-A1B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A2A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=-20",
+    "float_text": "食物 −20"
+  },
+  {
+    "group_id": "RS-A2A",
+    "seq": 2,
+    "type": "san",
+    "params": "san=15;scope=all",
+    "float_text": "全队 SAN +15"
+  },
+  {
+    "group_id": "RS-A2A",
+    "seq": 3,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-A2A",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A2B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7041;on_win=RS-A2B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-A2B-WIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=180",
+    "float_text": "贝壳币 ×180"
+  },
+  {
+    "group_id": "RS-A2B-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_crystal;qty=2",
+    "float_text": "魔晶 ×2"
+  },
+  {
+    "group_id": "RS-A2B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A3A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=8",
+    "float_text": "精铁 ×8"
+  },
+  {
+    "group_id": "RS-A3A-OK",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A3A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.15;scope=all",
+    "float_text": "全队 HP -15%"
+  },
+  {
+    "group_id": "RS-A3A-FAIL",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A3B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_wood;qty=28",
+    "float_text": "木材 ×28"
+  },
+  {
+    "group_id": "RS-A3B",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A4A-OK",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-15;scope=all",
+    "float_text": "全队 SAN -15"
+  },
+  {
+    "group_id": "RS-A4A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_crystal;qty=4",
+    "float_text": "魔晶 ×4"
+  },
+  {
+    "group_id": "RS-A4A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A4A-FAIL",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7042;on_win=RS-A4AF-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-A4AF-WIN",
+    "seq": 1,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A4B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=6",
+    "float_text": "精铁 ×6"
+  },
+  {
+    "group_id": "RS-A4B",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=100",
+    "float_text": "贝壳币 ×100"
+  },
+  {
+    "group_id": "RS-A4B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7043;on_win=RS-A5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-A5A-WIN",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=2;qty=2",
+    "float_text": "紫装（完美） ×2"
+  },
+  {
+    "group_id": "RS-A5A-WIN",
+    "seq": 2,
+    "type": "trait",
+    "params": "trait=2015;scope=all",
+    "float_text": "全队获得「契约印记」"
+  },
+  {
+    "group_id": "RS-A5A-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-A5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7043;on_win=RS-A5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-A5B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_crystal;qty=10",
+    "float_text": "魔晶 ×10"
+  },
+  {
+    "group_id": "RS-A5B-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_orange_shard;qty=2",
+    "float_text": "橙装碎片 ×2"
+  },
+  {
+    "group_id": "RS-A5B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C1A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_holy_water;qty=1",
+    "float_text": "圣水 ×1"
+  },
+  {
+    "group_id": "RS-C1A",
+    "seq": 2,
+    "type": "san",
+    "params": "san=8;scope=all",
+    "float_text": "全队 SAN +8"
+  },
+  {
+    "group_id": "RS-C1A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C1B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=120",
+    "float_text": "贝壳币 ×120"
+  },
+  {
+    "group_id": "RS-C1B",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-6;scope=all",
+    "float_text": "全队 SAN -6"
+  },
+  {
+    "group_id": "RS-C1B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C2A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-12;scope=all",
+    "float_text": "全队 SAN -12"
+  },
+  {
+    "group_id": "RS-C2A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-C2A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C2B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7051;on_win=RS-C2B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-C2B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=15",
+    "float_text": "铁 ×15"
+  },
+  {
+    "group_id": "RS-C2B-WIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=90",
+    "float_text": "贝壳币 ×90"
+  },
+  {
+    "group_id": "RS-C2B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C3A-OK",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-C3A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-C3A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C3A-FAIL",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7052;on_win=RS-C3AF-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-C3AF-WIN",
+    "seq": 1,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C3B",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=220",
+    "float_text": "贝壳币 ×220"
+  },
+  {
+    "group_id": "RS-C3B",
+    "seq": 2,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-C3B",
+    "seq": 3,
+    "type": "san",
+    "params": "san=-8;scope=all",
+    "float_text": "全队 SAN -8"
+  },
+  {
+    "group_id": "RS-C3B",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C4A",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=0.15;scope=all",
+    "float_text": "全队 HP +15%"
+  },
+  {
+    "group_id": "RS-C4A",
+    "seq": 2,
+    "type": "san",
+    "params": "san=10;scope=all",
+    "float_text": "全队 SAN +10"
+  },
+  {
+    "group_id": "RS-C4A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C4B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-C4B",
+    "seq": 2,
+    "type": "hp",
+    "params": "hp=-0.1;scope=all",
+    "float_text": "全队 HP -10%"
+  },
+  {
+    "group_id": "RS-C4B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7053;on_win=RS-C5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-C5A-WIN",
+    "seq": 1,
+    "type": "equip",
+    "params": "pool=2;qty=1",
+    "float_text": "紫装（完美） ×1"
+  },
+  {
+    "group_id": "RS-C5A-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=3",
+    "float_text": "强化石 ×3"
+  },
+  {
+    "group_id": "RS-C5A-WIN",
+    "seq": 3,
+    "type": "san",
+    "params": "san=-20;scope=all",
+    "float_text": "全队 SAN -20"
+  },
+  {
+    "group_id": "RS-C5A-WIN",
+    "seq": 4,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-C5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7052;on_win=RS-C5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-C5B-WIN",
+    "seq": 1,
+    "type": "san",
+    "params": "san=30;scope=all",
+    "float_text": "全队 SAN +30"
+  },
+  {
+    "group_id": "RS-C5B-WIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-C5B-WIN",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R1A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_crystal;qty=3",
+    "float_text": "魔晶 ×3"
+  },
+  {
+    "group_id": "RS-R1A-OK",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN -10"
+  },
+  {
+    "group_id": "RS-R1A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R1A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.12;scope=all",
+    "float_text": "全队 HP -12%"
+  },
+  {
+    "group_id": "RS-R1A-FAIL",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-15;scope=all",
+    "float_text": "全队 SAN -15"
+  },
+  {
+    "group_id": "RS-R1A-FAIL",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R1B",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=8",
+    "float_text": "铁 ×8"
+  },
+  {
+    "group_id": "RS-R1B",
+    "seq": 2,
+    "type": "san",
+    "params": "san=-5;scope=all",
+    "float_text": "全队 SAN -5"
+  },
+  {
+    "group_id": "RS-R1B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R2A-OK",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=6",
+    "float_text": "精铁 ×6"
+  },
+  {
+    "group_id": "RS-R2A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=1",
+    "float_text": "图纸残页 ×1"
+  },
+  {
+    "group_id": "RS-R2A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R2A-FAIL",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.15;scope=all",
+    "float_text": "全队 HP -15%"
+  },
+  {
+    "group_id": "RS-R2A-FAIL",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R2B",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN -10"
+  },
+  {
+    "group_id": "RS-R2B",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=2",
+    "float_text": "强化石 ×2"
+  },
+  {
+    "group_id": "RS-R2B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R3A-OK",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-15;scope=all",
+    "float_text": "全队 SAN -15"
+  },
+  {
+    "group_id": "RS-R3A-OK",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=2",
+    "float_text": "图纸残页 ×2"
+  },
+  {
+    "group_id": "RS-R3A-OK",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R3A-FAIL",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-20;scope=all",
+    "float_text": "全队 SAN -20"
+  },
+  {
+    "group_id": "RS-R3A-FAIL",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R3B",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.08;scope=all",
+    "float_text": "全队 HP -8%"
+  },
+  {
+    "group_id": "RS-R3B",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R4A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-18;scope=all",
+    "float_text": "全队 SAN -18"
+  },
+  {
+    "group_id": "RS-R4A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_crystal;qty=4",
+    "float_text": "魔晶 ×4"
+  },
+  {
+    "group_id": "RS-R4A",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R4B",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.08;scope=all",
+    "float_text": "全队 HP -8%"
+  },
+  {
+    "group_id": "RS-R4B",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=90",
+    "float_text": "贝壳币 ×90"
+  },
+  {
+    "group_id": "RS-R4B",
+    "seq": 3,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R5A",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7063;on_win=RS-R5A-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-R5A-WIN",
+    "seq": 1,
+    "type": "roll",
+    "params": "chance=0.5;hit=RS-R5A-GOOD;miss=RS-R5A-BAD",
+    "float_text": "赌一把"
+  },
+  {
+    "group_id": "RS-R5A-WIN",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-R5A-GOOD",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_orange_shard;qty=5",
+    "float_text": "橙装碎片 ×5"
+  },
+  {
+    "group_id": "RS-R5A-BAD",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-40;scope=all",
+    "float_text": "全队 SAN -40"
+  },
+  {
+    "group_id": "RS-R5B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=7063;on_win=RS-R5B-WIN;on_lose=RS-LOSE",
+    "float_text": "战斗"
+  },
+  {
+    "group_id": "RS-R5B-WIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_enhance_stone;qty=5",
+    "float_text": "强化石 ×5"
+  },
+  {
+    "group_id": "RS-R5B-WIN",
+    "seq": 2,
+    "type": "progress",
+    "params": "progress=20",
+    "float_text": "探索进度 +20%"
+  },
+  {
+    "group_id": "RS-LOSE",
+    "seq": 1,
+    "type": "end",
+    "params": "reason=lose;loss=0.30",
+    "float_text": "全员倒地，被拖回船上（普通材料与币 −30%）"
+  },
+  {
+    "group_id": "RS-END-RETREAT",
+    "seq": 1,
+    "type": "end",
+    "params": "reason=retreat",
+    "float_text": "你带走了能带的东西"
+  },
+  {
+    "group_id": "RS-SEA-NOTHING",
+    "seq": 1,
+    "type": "end",
+    "params": "reason=nothing",
+    "float_text": "两手空空地退开——至少人还在"
+  },
+  {
+    "group_id": "RS-C2101-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-3;scope=all",
+    "float_text": "全队 SAN −3"
+  },
+  {
+    "group_id": "RS-C2101-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_dragon_wood;qty=2",
+    "float_text": "龙骨木 ×2"
+  },
+  {
+    "group_id": "RS-C2101-B",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.10;scope=all",
+    "float_text": "全队 HP −10%（撞上暗礁）"
+  },
+  {
+    "group_id": "RS-C2101-B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=8101;on_win=RS-C2101-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2101-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=25",
+    "float_text": "贝壳币 ×25"
+  },
+  {
+    "group_id": "RS-C2101-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_wood;qty=12",
+    "float_text": "木材 ×12"
+  },
+  {
+    "group_id": "RS-C2102-A",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.15;scope=all",
+    "float_text": "全队 HP −15%"
+  },
+  {
+    "group_id": "RS-C2102-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_deep_scale;qty=2",
+    "float_text": "深渊鳞 ×2"
+  },
+  {
+    "group_id": "RS-C2102-B",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.20;scope=all",
+    "float_text": "全队 HP −20%"
+  },
+  {
+    "group_id": "RS-C2102-B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=8102;on_win=RS-C2102-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2102-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=30",
+    "float_text": "贝壳币 ×30"
+  },
+  {
+    "group_id": "RS-C2102-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_iron;qty=5",
+    "float_text": "铁 ×5"
+  },
+  {
+    "group_id": "RS-C2103-A",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.10;scope=all",
+    "float_text": "全队 HP −10%"
+  },
+  {
+    "group_id": "RS-C2103-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_star_sand;qty=2",
+    "float_text": "星砂 ×2"
+  },
+  {
+    "group_id": "RS-C2103-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8102;on_win=RS-C2103-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2103-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=30",
+    "float_text": "贝壳币 ×30"
+  },
+  {
+    "group_id": "RS-C2103-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_wood;qty=15",
+    "float_text": "木材 ×15"
+  },
+  {
+    "group_id": "RS-C2104-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=sm_chart_page;qty=1",
+    "float_text": "海图残页 ×1"
+  },
+  {
+    "group_id": "RS-C2104-B",
+    "seq": 1,
+    "type": "roll",
+    "params": "chance=0.3;hit=RS-C2104-BHIT;miss=empty",
+    "float_text": "赌一把"
+  },
+  {
+    "group_id": "RS-C2104-BHIT",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.15;scope=all",
+    "float_text": "全队 HP −15%（船首撞穿了）"
+  },
+  {
+    "group_id": "RS-C2104-BHIT",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=8101;on_win=RS-C2101-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2105-A",
+    "seq": 1,
+    "type": "hp",
+    "params": "hp=-0.10;scope=all",
+    "float_text": "全队 HP −10%"
+  },
+  {
+    "group_id": "RS-C2105-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_void_crystal;qty=1",
+    "float_text": "虚空晶 ×1"
+  },
+  {
+    "group_id": "RS-C2105-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8105;on_win=RS-C2105-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2105-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=40",
+    "float_text": "贝壳币 ×40"
+  },
+  {
+    "group_id": "RS-C2105-BWIN",
+    "seq": 2,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-C2201-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=40",
+    "float_text": "食物 ×40"
+  },
+  {
+    "group_id": "RS-C2201-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_whale_oil;qty=2",
+    "float_text": "鲸脂 ×2"
+  },
+  {
+    "group_id": "RS-C2201-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8103;on_win=RS-C2201-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2201-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=30",
+    "float_text": "食物 ×30"
+  },
+  {
+    "group_id": "RS-C2201-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=20",
+    "float_text": "贝壳币 ×20"
+  },
+  {
+    "group_id": "RS-C2202-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-8;scope=all",
+    "float_text": "全队 SAN −8"
+  },
+  {
+    "group_id": "RS-C2202-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_star_sand;qty=1",
+    "float_text": "星砂 ×1"
+  },
+  {
+    "group_id": "RS-C2202-A",
+    "seq": 3,
+    "type": "item",
+    "params": "item=itm_crystal;qty=5",
+    "float_text": "魔晶 ×5"
+  },
+  {
+    "group_id": "RS-C2202-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8104;on_win=RS-C2202-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2202-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_crystal;qty=10",
+    "float_text": "魔晶 ×10"
+  },
+  {
+    "group_id": "RS-C2202-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=15",
+    "float_text": "贝壳币 ×15"
+  },
+  {
+    "group_id": "RS-C2203-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=sm_deep_scale;qty=3",
+    "float_text": "深渊鳞 ×3"
+  },
+  {
+    "group_id": "RS-C2203-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8105;on_win=RS-C2203-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2203-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=40",
+    "float_text": "贝壳币 ×40"
+  },
+  {
+    "group_id": "RS-C2203-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=3",
+    "float_text": "精铁 ×3"
+  },
+  {
+    "group_id": "RS-C2204-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=18",
+    "float_text": "食物 ×18"
+  },
+  {
+    "group_id": "RS-C2204-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_star_sand;qty=1",
+    "float_text": "星砂 ×1"
+  },
+  {
+    "group_id": "RS-C2204-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8103;on_win=RS-C2204-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2204-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=35",
+    "float_text": "食物 ×35"
+  },
+  {
+    "group_id": "RS-C2204-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=10",
+    "float_text": "贝壳币 ×10"
+  },
+  {
+    "group_id": "RS-C2205-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=40",
+    "float_text": "食物 ×40"
+  },
+  {
+    "group_id": "RS-C2205-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_whale_oil;qty=1",
+    "float_text": "鲸脂 ×1"
+  },
+  {
+    "group_id": "RS-C2205-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8103;on_win=RS-C2205-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2205-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_food;qty=60",
+    "float_text": "食物 ×60"
+  },
+  {
+    "group_id": "RS-C2205-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=25",
+    "float_text": "贝壳币 ×25"
+  },
+  {
+    "group_id": "RS-C2301-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=sm_chart_page;qty=2",
+    "float_text": "海图残页 ×2"
+  },
+  {
+    "group_id": "RS-C2301-A",
+    "seq": 2,
+    "type": "equip",
+    "params": "pool=1;qty=1",
+    "float_text": "蓝装（卓越） ×1"
+  },
+  {
+    "group_id": "RS-C2301-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8102;on_win=RS-C2301-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2301-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=60",
+    "float_text": "贝壳币 ×60"
+  },
+  {
+    "group_id": "RS-C2301-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_mithril;qty=2",
+    "float_text": "秘银 ×2"
+  },
+  {
+    "group_id": "RS-C2302-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=20;scope=all",
+    "float_text": "全队 SAN +20"
+  },
+  {
+    "group_id": "RS-C2302-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_holy_water;qty=2",
+    "float_text": "圣水 ×2"
+  },
+  {
+    "group_id": "RS-C2302-A",
+    "seq": 3,
+    "type": "item",
+    "params": "item=sm_void_crystal;qty=1",
+    "float_text": "虚空晶 ×1"
+  },
+  {
+    "group_id": "RS-C2302-B",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN −10"
+  },
+  {
+    "group_id": "RS-C2302-B",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=80",
+    "float_text": "贝壳币 ×80"
+  },
+  {
+    "group_id": "RS-C2302-B",
+    "seq": 3,
+    "type": "battle",
+    "params": "group=8102;on_win=RS-C2302-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2302-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=40",
+    "float_text": "贝壳币 ×40"
+  },
+  {
+    "group_id": "RS-C2303-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=4;scope=all",
+    "float_text": "全队 SAN +4"
+  },
+  {
+    "group_id": "RS-C2303-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_chart_page;qty=1",
+    "float_text": "海图残页 ×1"
+  },
+  {
+    "group_id": "RS-C2303-A",
+    "seq": 3,
+    "type": "shell",
+    "params": "shell=30",
+    "float_text": "贝壳币 ×30"
+  },
+  {
+    "group_id": "RS-C2303-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8103;on_win=RS-C2303-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2303-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=50",
+    "float_text": "贝壳币 ×50"
+  },
+  {
+    "group_id": "RS-C2303-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_refined_iron;qty=2",
+    "float_text": "精铁 ×2"
+  },
+  {
+    "group_id": "RS-C2304-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=sm_dragon_wood;qty=2",
+    "float_text": "龙骨木 ×2"
+  },
+  {
+    "group_id": "RS-C2304-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_cannonball;qty=30",
+    "float_text": "炮弹 ×30"
+  },
+  {
+    "group_id": "RS-C2304-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8101;on_win=RS-C2304-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2304-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_iron;qty=25",
+    "float_text": "铁 ×25"
+  },
+  {
+    "group_id": "RS-C2304-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=15",
+    "float_text": "贝壳币 ×15"
+  },
+  {
+    "group_id": "RS-C2305-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=sm_dragon_wood;qty=3",
+    "float_text": "龙骨木 ×3"
+  },
+  {
+    "group_id": "RS-C2305-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=2",
+    "float_text": "图纸残页 ×2"
+  },
+  {
+    "group_id": "RS-C2305-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8102;on_win=RS-C2305-B1;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2305-B1",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8102;on_win=RS-C2305-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2305-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=100",
+    "float_text": "贝壳币 ×100"
+  },
+  {
+    "group_id": "RS-C2305-BWIN",
+    "seq": 2,
+    "type": "equip",
+    "params": "pool=2;qty=1",
+    "float_text": "紫装（完美） ×1"
+  },
+  {
+    "group_id": "RS-C2401-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-15;scope=all",
+    "float_text": "全队 SAN −15"
+  },
+  {
+    "group_id": "RS-C2401-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_void_crystal;qty=1",
+    "float_text": "虚空晶 ×1"
+  },
+  {
+    "group_id": "RS-C2401-A",
+    "seq": 3,
+    "type": "buff",
+    "params": "buff=4401",
+    "float_text": "获得「血月标记」：下场战斗对 Boss 伤害 +15%"
+  },
+  {
+    "group_id": "RS-C2401-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8105;on_win=RS-C2401-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2401-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=50",
+    "float_text": "贝壳币 ×50"
+  },
+  {
+    "group_id": "RS-C2401-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_crystal;qty=8",
+    "float_text": "魔晶 ×8"
+  },
+  {
+    "group_id": "RS-C2402-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-20;scope=all",
+    "float_text": "全队 SAN −20"
+  },
+  {
+    "group_id": "RS-C2402-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_chart_page;qty=1",
+    "float_text": "海图残页 ×1"
+  },
+  {
+    "group_id": "RS-C2402-A",
+    "seq": 3,
+    "type": "buff",
+    "params": "buff=4402",
+    "float_text": "获得「低语回响」：下场战斗全队命中 +10%"
+  },
+  {
+    "group_id": "RS-C2402-B",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-35;scope=all",
+    "float_text": "全队 SAN −35"
+  },
+  {
+    "group_id": "RS-C2402-B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=8104;on_win=RS-C2402-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2402-BWIN",
+    "seq": 1,
+    "type": "shell",
+    "params": "shell=45",
+    "float_text": "贝壳币 ×45"
+  },
+  {
+    "group_id": "RS-C2402-BWIN",
+    "seq": 2,
+    "type": "item",
+    "params": "item=itm_bp_page;qty=3",
+    "float_text": "图纸残页 ×3"
+  },
+  {
+    "group_id": "RS-C2403-A",
+    "seq": 1,
+    "type": "item",
+    "params": "item=sm_star_sand;qty=2",
+    "float_text": "星砂 ×2"
+  },
+  {
+    "group_id": "RS-C2403-A",
+    "seq": 2,
+    "type": "san",
+    "params": "san=30;scope=all",
+    "float_text": "全队 SAN +30"
+  },
+  {
+    "group_id": "RS-C2403-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8105;on_win=RS-C2403-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2403-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_mithril;qty=3",
+    "float_text": "秘银 ×3"
+  },
+  {
+    "group_id": "RS-C2403-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=40",
+    "float_text": "贝壳币 ×40"
+  },
+  {
+    "group_id": "RS-C2404-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-10;scope=all",
+    "float_text": "全队 SAN −10"
+  },
+  {
+    "group_id": "RS-C2404-A",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=300",
+    "float_text": "贝壳币 ×300"
+  },
+  {
+    "group_id": "RS-C2404-A",
+    "seq": 3,
+    "type": "item",
+    "params": "item=sm_chart_page;qty=1",
+    "float_text": "海图残页 ×1"
+  },
+  {
+    "group_id": "RS-C2404-B",
+    "seq": 1,
+    "type": "battle",
+    "params": "group=8104;on_win=RS-C2404-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2404-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_adamant;qty=1",
+    "float_text": "恒金 ×1"
+  },
+  {
+    "group_id": "RS-C2404-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=150",
+    "float_text": "贝壳币 ×150"
+  },
+  {
+    "group_id": "RS-C2405-A",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-15;scope=all",
+    "float_text": "全队 SAN −15"
+  },
+  {
+    "group_id": "RS-C2405-A",
+    "seq": 2,
+    "type": "item",
+    "params": "item=sm_void_crystal;qty=1",
+    "float_text": "虚空晶 ×1"
+  },
+  {
+    "group_id": "RS-C2405-A",
+    "seq": 3,
+    "type": "buff",
+    "params": "buff=4401",
+    "float_text": "获得「血月标记」：下场战斗对 Boss 伤害 +15%"
+  },
+  {
+    "group_id": "RS-C2405-B",
+    "seq": 1,
+    "type": "san",
+    "params": "san=-40;scope=all",
+    "float_text": "全队 SAN −40"
+  },
+  {
+    "group_id": "RS-C2405-B",
+    "seq": 2,
+    "type": "battle",
+    "params": "group=8105;on_win=RS-C2405-BWIN;on_lose=RS-LOSE",
+    "float_text": ""
+  },
+  {
+    "group_id": "RS-C2405-BWIN",
+    "seq": 1,
+    "type": "item",
+    "params": "item=itm_orange_shard;qty=3",
+    "float_text": "橙装碎片 ×3"
+  },
+  {
+    "group_id": "RS-C2405-BWIN",
+    "seq": 2,
+    "type": "shell",
+    "params": "shell=80",
+    "float_text": "贝壳币 ×80"
+  }
+]

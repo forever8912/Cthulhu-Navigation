@@ -1,0 +1,44 @@
+[
+  {
+    "crew_id": 1001,
+    "name": "老船长",
+    "gender": "male",
+    "rarity": "fine",
+    "str": 12,
+    "int": 14,
+    "agi": 13,
+    "spr": 18,
+    "look_json": {
+      "skin": 1001,
+      "face": 2001,
+      "eyes": 3001,
+      "mouth": 4001,
+      "hair": 5001,
+      "outfit": 6001,
+      "accessory": 0
+    },
+    "trait_ids": [],
+    "desc": "精神向，教学引导位；划桨舱以外的备用岗位"
+  },
+  {
+    "crew_id": 1002,
+    "name": "大副",
+    "gender": "female",
+    "rarity": "common",
+    "str": 16,
+    "int": 9,
+    "agi": 12,
+    "spr": 10,
+    "look_json": {
+      "skin": 1001,
+      "face": 2001,
+      "eyes": 3001,
+      "mouth": 4001,
+      "hair": 5002,
+      "outfit": 6001,
+      "accessory": 0
+    },
+    "trait_ids": [],
+    "desc": "力量向，划桨舱主岗；初始免费船员"
+  }
+]

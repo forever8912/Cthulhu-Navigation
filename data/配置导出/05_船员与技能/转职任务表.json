@@ -1,0 +1,137 @@
+[
+  {
+    "task_id": 201,
+    "tier": 2,
+    "class_id": 2101,
+    "task_type": "fish",
+    "target_id": "",
+    "target_count": 10,
+    "desc": "钓上 10 条蓝色品质鱼"
+  },
+  {
+    "task_id": 202,
+    "tier": 2,
+    "class_id": 2201,
+    "task_type": "consume",
+    "target_id": "itm_crystal",
+    "target_count": 50,
+    "desc": "累计消耗 50 魔晶"
+  },
+  {
+    "task_id": 203,
+    "tier": 2,
+    "class_id": 2202,
+    "task_type": "craft",
+    "target_id": "",
+    "target_count": 30,
+    "desc": "种植房累计产出 30 份药材"
+  },
+  {
+    "task_id": 204,
+    "tier": 2,
+    "class_id": 2301,
+    "task_type": "forge",
+    "target_id": "",
+    "target_count": 20,
+    "desc": "工坊累计锻造 20 件装备"
+  },
+  {
+    "task_id": 205,
+    "tier": 2,
+    "class_id": 2401,
+    "task_type": "sail",
+    "target_id": "",
+    "target_count": 20,
+    "desc": "累计航行通过 20 个海图节点"
+  },
+  {
+    "task_id": 206,
+    "tier": 2,
+    "class_id": 2501,
+    "task_type": "consume",
+    "target_id": "itm_ritual_candle",
+    "target_count": 3,
+    "desc": "完成 3 次入殓仪式（消耗仪式蜡烛×3）"
+  },
+  {
+    "task_id": 207,
+    "tier": 2,
+    "class_id": 2601,
+    "task_type": "clear_san",
+    "target_id": "",
+    "target_count": 5,
+    "desc": "祈祷室累计清除 5 项负面特性"
+  },
+  {
+    "task_id": 208,
+    "tier": 2,
+    "class_id": 2701,
+    "task_type": "kill",
+    "target_id": "",
+    "target_count": 30,
+    "desc": "单人累计击退 30 只登船怪"
+  },
+  {
+    "task_id": 301,
+    "tier": 3,
+    "class_id": 3101,
+    "task_type": "fish",
+    "target_id": "",
+    "target_count": 1,
+    "desc": "钓上 1 条紫色品质特殊鱼"
+  },
+  {
+    "task_id": 302,
+    "tier": 3,
+    "class_id": 3201,
+    "task_type": "consume",
+    "target_id": "itm_crystal",
+    "target_count": 200,
+    "desc": "累计消耗 200 魔晶"
+  },
+  {
+    "task_id": 303,
+    "tier": 3,
+    "class_id": 3301,
+    "task_type": "forge",
+    "target_id": "",
+    "target_count": 1,
+    "desc": "锻造出 1 件紫色装备"
+  },
+  {
+    "task_id": 304,
+    "tier": 3,
+    "class_id": 3401,
+    "task_type": "sail",
+    "target_id": "",
+    "target_count": 60,
+    "desc": "累计航行通过 60 个海图节点"
+  },
+  {
+    "task_id": 305,
+    "tier": 3,
+    "class_id": 3501,
+    "task_type": "consume",
+    "target_id": "itm_ritual_candle",
+    "target_count": 10,
+    "desc": "主持 10 次通灵仪式（消耗仪式蜡烛×10）"
+  },
+  {
+    "task_id": 306,
+    "tier": 3,
+    "class_id": 3601,
+    "task_type": "kill",
+    "target_id": "",
+    "target_count": 80,
+    "desc": "累计击退 80 只登船怪"
+  },
+  {
+    "task_id": 307,
+    "tier": 3,
+    "class_id": 3701,
+    "task_type": "kill",
+    "target_id": "",
+    "target_count": 100,
+    "desc": "单人累计击退 100 只登船怪"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "rule_id": 1,
+    "name": "永久死亡",
+    "san_set": -1,
+    "lose_pos_trait": 1,
+    "gain_neg_trait": 0,
+    "keep_class": false,
+    "desc": "船员永久移除，随机失去1项正面特性；转职位阶与属性一并移除"
+  },
+  {
+    "rule_id": 2,
+    "name": "广告复活",
+    "san_set": 30,
+    "lose_pos_trait": 0,
+    "gain_neg_trait": 1,
+    "keep_class": true,
+    "desc": "看激励视频复活；SAN归30，必得1项负面特性，保留剩余特性/位阶/属性"
+  }
+]

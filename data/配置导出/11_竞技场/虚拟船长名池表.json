@@ -1,0 +1,602 @@
+[
+  {
+    "npc_id": 1,
+    "name": "独眼的老巴罗",
+    "gender": "male",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 2,
+    "name": "独眼的埃布纳",
+    "gender": "male",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 3,
+    "name": "独眼的霍尔格",
+    "gender": "male",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 4,
+    "name": "独眼的铁手皮特",
+    "gender": "male",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 5,
+    "name": "独眼的哑巴扬",
+    "gender": "male",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 6,
+    "name": "独眼的玛尔戈",
+    "gender": "female",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 7,
+    "name": "独眼的寡妇妮丝",
+    "gender": "female",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 8,
+    "name": "独眼的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 9,
+    "name": "独眼的数钱的萝丝",
+    "gender": "female",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 10,
+    "name": "独眼的雾里的小满",
+    "gender": "female",
+    "quip": "总是先看天气，再看人。"
+  },
+  {
+    "npc_id": 11,
+    "name": "灰雾里的老巴罗",
+    "gender": "male",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 12,
+    "name": "灰雾里的埃布纳",
+    "gender": "male",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 13,
+    "name": "灰雾里的霍尔格",
+    "gender": "male",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 14,
+    "name": "灰雾里的铁手皮特",
+    "gender": "male",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 15,
+    "name": "灰雾里的哑巴扬",
+    "gender": "male",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 16,
+    "name": "灰雾里的玛尔戈",
+    "gender": "female",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 17,
+    "name": "灰雾里的寡妇妮丝",
+    "gender": "female",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 18,
+    "name": "灰雾里的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 19,
+    "name": "灰雾里的数钱的萝丝",
+    "gender": "female",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 20,
+    "name": "灰雾里的雾里的小满",
+    "gender": "female",
+    "quip": "船是捡的，名字是自己起的。"
+  },
+  {
+    "npc_id": 21,
+    "name": "不睡觉的老巴罗",
+    "gender": "male",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 22,
+    "name": "不睡觉的埃布纳",
+    "gender": "male",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 23,
+    "name": "不睡觉的霍尔格",
+    "gender": "male",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 24,
+    "name": "不睡觉的铁手皮特",
+    "gender": "male",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 25,
+    "name": "不睡觉的哑巴扬",
+    "gender": "male",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 26,
+    "name": "不睡觉的玛尔戈",
+    "gender": "female",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 27,
+    "name": "不睡觉的寡妇妮丝",
+    "gender": "female",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 28,
+    "name": "不睡觉的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 29,
+    "name": "不睡觉的数钱的萝丝",
+    "gender": "female",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 30,
+    "name": "不睡觉的雾里的小满",
+    "gender": "female",
+    "quip": "据说把当年的船员都忘了。"
+  },
+  {
+    "npc_id": 31,
+    "name": "欠着债的老巴罗",
+    "gender": "male",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 32,
+    "name": "欠着债的埃布纳",
+    "gender": "male",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 33,
+    "name": "欠着债的霍尔格",
+    "gender": "male",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 34,
+    "name": "欠着债的铁手皮特",
+    "gender": "male",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 35,
+    "name": "欠着债的哑巴扬",
+    "gender": "male",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 36,
+    "name": "欠着债的玛尔戈",
+    "gender": "female",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 37,
+    "name": "欠着债的寡妇妮丝",
+    "gender": "female",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 38,
+    "name": "欠着债的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 39,
+    "name": "欠着债的数钱的萝丝",
+    "gender": "female",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 40,
+    "name": "欠着债的雾里的小满",
+    "gender": "female",
+    "quip": "欠遍了半个海域的债。"
+  },
+  {
+    "npc_id": 41,
+    "name": "镀过金的老巴罗",
+    "gender": "male",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 42,
+    "name": "镀过金的埃布纳",
+    "gender": "male",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 43,
+    "name": "镀过金的霍尔格",
+    "gender": "male",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 44,
+    "name": "镀过金的铁手皮特",
+    "gender": "male",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 45,
+    "name": "镀过金的哑巴扬",
+    "gender": "male",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 46,
+    "name": "镀过金的玛尔戈",
+    "gender": "female",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 47,
+    "name": "镀过金的寡妇妮丝",
+    "gender": "female",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 48,
+    "name": "镀过金的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 49,
+    "name": "镀过金的数钱的萝丝",
+    "gender": "female",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 50,
+    "name": "镀过金的雾里的小满",
+    "gender": "female",
+    "quip": "金牙是唯一没泡过海水的东西。"
+  },
+  {
+    "npc_id": 51,
+    "name": "失眠的老巴罗",
+    "gender": "male",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 52,
+    "name": "失眠的埃布纳",
+    "gender": "male",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 53,
+    "name": "失眠的霍尔格",
+    "gender": "male",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 54,
+    "name": "失眠的铁手皮特",
+    "gender": "male",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 55,
+    "name": "失眠的哑巴扬",
+    "gender": "male",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 56,
+    "name": "失眠的玛尔戈",
+    "gender": "female",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 57,
+    "name": "失眠的寡妇妮丝",
+    "gender": "female",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 58,
+    "name": "失眠的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 59,
+    "name": "失眠的数钱的萝丝",
+    "gender": "female",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 60,
+    "name": "失眠的雾里的小满",
+    "gender": "female",
+    "quip": "三年没在陆地上睡过觉。"
+  },
+  {
+    "npc_id": 61,
+    "name": "活下来的老巴罗",
+    "gender": "male",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 62,
+    "name": "活下来的埃布纳",
+    "gender": "male",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 63,
+    "name": "活下来的霍尔格",
+    "gender": "male",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 64,
+    "name": "活下来的铁手皮特",
+    "gender": "male",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 65,
+    "name": "活下来的哑巴扬",
+    "gender": "male",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 66,
+    "name": "活下来的玛尔戈",
+    "gender": "female",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 67,
+    "name": "活下来的寡妇妮丝",
+    "gender": "female",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 68,
+    "name": "活下来的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 69,
+    "name": "活下来的数钱的萝丝",
+    "gender": "female",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 70,
+    "name": "活下来的雾里的小满",
+    "gender": "female",
+    "quip": "沉过四次船，每次都说是最后一次。"
+  },
+  {
+    "npc_id": 71,
+    "name": "说谎的老巴罗",
+    "gender": "male",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 72,
+    "name": "说谎的埃布纳",
+    "gender": "male",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 73,
+    "name": "说谎的霍尔格",
+    "gender": "male",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 74,
+    "name": "说谎的铁手皮特",
+    "gender": "male",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 75,
+    "name": "说谎的哑巴扬",
+    "gender": "male",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 76,
+    "name": "说谎的玛尔戈",
+    "gender": "female",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 77,
+    "name": "说谎的寡妇妮丝",
+    "gender": "female",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 78,
+    "name": "说谎的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 79,
+    "name": "说谎的数钱的萝丝",
+    "gender": "female",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 80,
+    "name": "说谎的雾里的小满",
+    "gender": "female",
+    "quip": "说过的话一半是编的。"
+  },
+  {
+    "npc_id": 81,
+    "name": "数星星的老巴罗",
+    "gender": "male",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 82,
+    "name": "数星星的埃布纳",
+    "gender": "male",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 83,
+    "name": "数星星的霍尔格",
+    "gender": "male",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 84,
+    "name": "数星星的铁手皮特",
+    "gender": "male",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 85,
+    "name": "数星星的哑巴扬",
+    "gender": "male",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 86,
+    "name": "数星星的玛尔戈",
+    "gender": "female",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 87,
+    "name": "数星星的寡妇妮丝",
+    "gender": "female",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 88,
+    "name": "数星星的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 89,
+    "name": "数星星的数钱的萝丝",
+    "gender": "female",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 90,
+    "name": "数星星的雾里的小满",
+    "gender": "female",
+    "quip": "会在甲板上给星星记账。"
+  },
+  {
+    "npc_id": 91,
+    "name": "改了名的老巴罗",
+    "gender": "male",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 92,
+    "name": "改了名的埃布纳",
+    "gender": "male",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 93,
+    "name": "改了名的霍尔格",
+    "gender": "male",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 94,
+    "name": "改了名的铁手皮特",
+    "gender": "male",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 95,
+    "name": "改了名的哑巴扬",
+    "gender": "male",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 96,
+    "name": "改了名的玛尔戈",
+    "gender": "female",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 97,
+    "name": "改了名的寡妇妮丝",
+    "gender": "female",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 98,
+    "name": "改了名的烧不坏的薇拉",
+    "gender": "female",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 99,
+    "name": "改了名的数钱的萝丝",
+    "gender": "female",
+    "quip": "上个月还叫别的名字。"
+  },
+  {
+    "npc_id": 100,
+    "name": "改了名的雾里的小满",
+    "gender": "female",
+    "quip": "上个月还叫别的名字。"
+  }
+]

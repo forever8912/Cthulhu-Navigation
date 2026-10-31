@@ -1,0 +1,90 @@
+[
+  {
+    "layer": 1,
+    "base_attr": 100,
+    "opponent_attr": 85,
+    "pass_rate_target": 0.95,
+    "equip_quality": "白/绿",
+    "desc": "第 1 章开局（单人四维合计 100 = 标准开局船员水平）"
+  },
+  {
+    "layer": 5,
+    "base_attr": 152,
+    "opponent_attr": 129,
+    "pass_rate_target": 0.7,
+    "equip_quality": "白/绿",
+    "desc": "第 1 章末期"
+  },
+  {
+    "layer": 10,
+    "base_attr": 256,
+    "opponent_attr": 218,
+    "pass_rate_target": 0.6,
+    "equip_quality": "蓝/紫",
+    "desc": "第 2 章中期（第 8 层起对手出现紫装）"
+  },
+  {
+    "layer": 15,
+    "base_attr": 431,
+    "opponent_attr": 366,
+    "pass_rate_target": 0.6,
+    "equip_quality": "蓝/紫",
+    "desc": "第 2 章末期"
+  },
+  {
+    "layer": 20,
+    "base_attr": 726,
+    "opponent_attr": 617,
+    "pass_rate_target": 0.55,
+    "equip_quality": "全紫",
+    "desc": "第 3 章末期（第 18 层起对手全紫）"
+  },
+  {
+    "layer": 25,
+    "base_attr": 1224,
+    "opponent_attr": 1040,
+    "pass_rate_target": 0.5,
+    "equip_quality": "全紫",
+    "desc": "奇迹之海第 2 层"
+  },
+  {
+    "layer": 30,
+    "base_attr": 2062,
+    "opponent_attr": 1753,
+    "pass_rate_target": 0.5,
+    "equip_quality": "全紫",
+    "desc": "奇迹之海第 4 层"
+  },
+  {
+    "layer": 35,
+    "base_attr": 3475,
+    "opponent_attr": 2954,
+    "pass_rate_target": 0.5,
+    "equip_quality": "全紫",
+    "desc": "奇迹之海第 5 层（30 层起每 5 层 ≈ 奇迹之海 1 层）"
+  },
+  {
+    "layer": 40,
+    "base_attr": 5856,
+    "opponent_attr": 4978,
+    "pass_rate_target": 0.5,
+    "equip_quality": "全紫",
+    "desc": "奇迹之海第 6 层"
+  },
+  {
+    "layer": 45,
+    "base_attr": 9868,
+    "opponent_attr": 8388,
+    "pass_rate_target": 0.5,
+    "equip_quality": "全紫",
+    "desc": "奇迹之海第 7 层"
+  },
+  {
+    "layer": 50,
+    "base_attr": 16627,
+    "opponent_attr": 14133,
+    "pass_rate_target": 0.5,
+    "equip_quality": "全紫",
+    "desc": "奇迹之海第 8 层（50 层后沿用公式外推，不再配锚点）"
+  }
+]

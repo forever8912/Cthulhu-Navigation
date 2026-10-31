@@ -1,0 +1,587 @@
+[
+  {
+    "id": 12,
+    "affix_id": 1,
+    "tier": 2,
+    "text": "嗜血",
+    "value_min": 0.01,
+    "value_max": 0.015,
+    "desc": "造成伤害按比例回复生命 1%~1.5%"
+  },
+  {
+    "id": 13,
+    "affix_id": 1,
+    "tier": 3,
+    "text": "饮血",
+    "value_min": 0.015,
+    "value_max": 0.02,
+    "desc": "造成伤害按比例回复生命 1.5%~2%"
+  },
+  {
+    "id": 14,
+    "affix_id": 1,
+    "tier": 4,
+    "text": "汲血",
+    "value_min": 0.02,
+    "value_max": 0.028,
+    "desc": "造成伤害按比例回复生命 2%~2.8%"
+  },
+  {
+    "id": 15,
+    "affix_id": 1,
+    "tier": 5,
+    "text": "噬命",
+    "value_min": 0.028,
+    "value_max": 0.036,
+    "desc": "造成伤害按比例回复生命 2.8%~3.6%"
+  },
+  {
+    "id": 16,
+    "affix_id": 1,
+    "tier": 6,
+    "text": "血契",
+    "value_min": 0.036,
+    "value_max": 0.045,
+    "desc": "造成伤害按比例回复生命 3.6%~4.5%"
+  },
+  {
+    "id": 22,
+    "affix_id": 2,
+    "tier": 2,
+    "text": "锋锐",
+    "value_min": 0.03,
+    "value_max": 0.05,
+    "desc": "造成伤害提高 3%~5%"
+  },
+  {
+    "id": 23,
+    "affix_id": 2,
+    "tier": 3,
+    "text": "锐利",
+    "value_min": 0.05,
+    "value_max": 0.07,
+    "desc": "造成伤害提高 5%~7%"
+  },
+  {
+    "id": 24,
+    "affix_id": 2,
+    "tier": 4,
+    "text": "破阵",
+    "value_min": 0.07,
+    "value_max": 0.1,
+    "desc": "造成伤害提高 7%~10%"
+  },
+  {
+    "id": 25,
+    "affix_id": 2,
+    "tier": 5,
+    "text": "摧枯",
+    "value_min": 0.1,
+    "value_max": 0.13,
+    "desc": "造成伤害提高 10%~13%"
+  },
+  {
+    "id": 26,
+    "affix_id": 2,
+    "tier": 6,
+    "text": "灭顶",
+    "value_min": 0.13,
+    "value_max": 0.17,
+    "desc": "造成伤害提高 13%~17%"
+  },
+  {
+    "id": 32,
+    "affix_id": 3,
+    "tier": 2,
+    "text": "轻盈",
+    "value_min": 0.02,
+    "value_max": 0.03,
+    "desc": "攻击间隔缩短 2%~3%"
+  },
+  {
+    "id": 33,
+    "affix_id": 3,
+    "tier": 3,
+    "text": "迅捷",
+    "value_min": 0.03,
+    "value_max": 0.05,
+    "desc": "攻击间隔缩短 3%~5%"
+  },
+  {
+    "id": 34,
+    "affix_id": 3,
+    "tier": 4,
+    "text": "疾风",
+    "value_min": 0.05,
+    "value_max": 0.07,
+    "desc": "攻击间隔缩短 5%~7%"
+  },
+  {
+    "id": 35,
+    "affix_id": 3,
+    "tier": 5,
+    "text": "追影",
+    "value_min": 0.07,
+    "value_max": 0.09,
+    "desc": "攻击间隔缩短 7%~9%"
+  },
+  {
+    "id": 36,
+    "affix_id": 3,
+    "tier": 6,
+    "text": "无滞",
+    "value_min": 0.09,
+    "value_max": 0.12,
+    "desc": "攻击间隔缩短 9%~12%"
+  },
+  {
+    "id": 42,
+    "affix_id": 4,
+    "tier": 2,
+    "text": "精准",
+    "value_min": 0.01,
+    "value_max": 0.02,
+    "desc": "暴击率提高 1%~2%"
+  },
+  {
+    "id": 43,
+    "affix_id": 4,
+    "tier": 3,
+    "text": "瞄准",
+    "value_min": 0.02,
+    "value_max": 0.03,
+    "desc": "暴击率提高 2%~3%"
+  },
+  {
+    "id": 44,
+    "affix_id": 4,
+    "tier": 4,
+    "text": "洞察",
+    "value_min": 0.03,
+    "value_max": 0.04,
+    "desc": "暴击率提高 3%~4%"
+  },
+  {
+    "id": 45,
+    "affix_id": 4,
+    "tier": 5,
+    "text": "致命",
+    "value_min": 0.04,
+    "value_max": 0.055,
+    "desc": "暴击率提高 4%~5.5%"
+  },
+  {
+    "id": 46,
+    "affix_id": 4,
+    "tier": 6,
+    "text": "天罚",
+    "value_min": 0.055,
+    "value_max": 0.07,
+    "desc": "暴击率提高 5.5%~7%"
+  },
+  {
+    "id": 52,
+    "affix_id": 5,
+    "tier": 2,
+    "text": "重击",
+    "value_min": 0.04,
+    "value_max": 0.06,
+    "desc": "暴击伤害提高 4%~6%"
+  },
+  {
+    "id": 53,
+    "affix_id": 5,
+    "tier": 3,
+    "text": "狠辣",
+    "value_min": 0.06,
+    "value_max": 0.09,
+    "desc": "暴击伤害提高 6%~9%"
+  },
+  {
+    "id": 54,
+    "affix_id": 5,
+    "tier": 4,
+    "text": "断骨",
+    "value_min": 0.09,
+    "value_max": 0.12,
+    "desc": "暴击伤害提高 9%~12%"
+  },
+  {
+    "id": 55,
+    "affix_id": 5,
+    "tier": 5,
+    "text": "裂魂",
+    "value_min": 0.12,
+    "value_max": 0.16,
+    "desc": "暴击伤害提高 12%~16%"
+  },
+  {
+    "id": 56,
+    "affix_id": 5,
+    "tier": 6,
+    "text": "绝杀",
+    "value_min": 0.16,
+    "value_max": 0.2,
+    "desc": "暴击伤害提高 16%~20%"
+  },
+  {
+    "id": 62,
+    "affix_id": 6,
+    "tier": 2,
+    "text": "坚韧",
+    "value_min": 0.04,
+    "value_max": 0.06,
+    "desc": "生命上限提高 4%~6%"
+  },
+  {
+    "id": 63,
+    "affix_id": 6,
+    "tier": 3,
+    "text": "厚实",
+    "value_min": 0.06,
+    "value_max": 0.09,
+    "desc": "生命上限提高 6%~9%"
+  },
+  {
+    "id": 64,
+    "affix_id": 6,
+    "tier": 4,
+    "text": "磐石",
+    "value_min": 0.09,
+    "value_max": 0.12,
+    "desc": "生命上限提高 9%~12%"
+  },
+  {
+    "id": 65,
+    "affix_id": 6,
+    "tier": 5,
+    "text": "不摧",
+    "value_min": 0.12,
+    "value_max": 0.16,
+    "desc": "生命上限提高 12%~16%"
+  },
+  {
+    "id": 66,
+    "affix_id": 6,
+    "tier": 6,
+    "text": "不朽",
+    "value_min": 0.16,
+    "value_max": 0.2,
+    "desc": "生命上限提高 16%~20%"
+  },
+  {
+    "id": 72,
+    "affix_id": 7,
+    "tier": 2,
+    "text": "愈合",
+    "value_min": 0.003,
+    "value_max": 0.005,
+    "desc": "每秒回复生命上限百分比 0.3%~0.5%"
+  },
+  {
+    "id": 73,
+    "affix_id": 7,
+    "tier": 3,
+    "text": "再生",
+    "value_min": 0.005,
+    "value_max": 0.008,
+    "desc": "每秒回复生命上限百分比 0.5%~0.8%"
+  },
+  {
+    "id": 74,
+    "affix_id": 7,
+    "tier": 4,
+    "text": "回春",
+    "value_min": 0.008,
+    "value_max": 0.011,
+    "desc": "每秒回复生命上限百分比 0.8%~1.1%"
+  },
+  {
+    "id": 75,
+    "affix_id": 7,
+    "tier": 5,
+    "text": "不息",
+    "value_min": 0.011,
+    "value_max": 0.015,
+    "desc": "每秒回复生命上限百分比 1.1%~1.5%"
+  },
+  {
+    "id": 76,
+    "affix_id": 7,
+    "tier": 6,
+    "text": "永生",
+    "value_min": 0.015,
+    "value_max": 0.02,
+    "desc": "每秒回复生命上限百分比 1.5%~2%"
+  },
+  {
+    "id": 82,
+    "affix_id": 8,
+    "tier": 2,
+    "text": "硬化",
+    "value_min": 3.0,
+    "value_max": 5.0,
+    "desc": "护甲值提高 3~5"
+  },
+  {
+    "id": 83,
+    "affix_id": 8,
+    "tier": 3,
+    "text": "铆固",
+    "value_min": 5.0,
+    "value_max": 8.0,
+    "desc": "护甲值提高 5~8"
+  },
+  {
+    "id": 84,
+    "affix_id": 8,
+    "tier": 4,
+    "text": "鳞叠",
+    "value_min": 8.0,
+    "value_max": 12.0,
+    "desc": "护甲值提高 8~12"
+  },
+  {
+    "id": 85,
+    "affix_id": 8,
+    "tier": 5,
+    "text": "铁壁",
+    "value_min": 12.0,
+    "value_max": 17.0,
+    "desc": "护甲值提高 12~17"
+  },
+  {
+    "id": 86,
+    "affix_id": 8,
+    "tier": 6,
+    "text": "不沉",
+    "value_min": 17.0,
+    "value_max": 23.0,
+    "desc": "护甲值提高 17~23"
+  },
+  {
+    "id": 92,
+    "affix_id": 9,
+    "tier": 2,
+    "text": "遮蔽",
+    "value_min": 0.02,
+    "value_max": 0.03,
+    "desc": "受到伤害降低 2%~3%"
+  },
+  {
+    "id": 93,
+    "affix_id": 9,
+    "tier": 3,
+    "text": "格挡",
+    "value_min": 0.03,
+    "value_max": 0.045,
+    "desc": "受到伤害降低 3%~4.5%"
+  },
+  {
+    "id": 94,
+    "affix_id": 9,
+    "tier": 4,
+    "text": "御守",
+    "value_min": 0.045,
+    "value_max": 0.06,
+    "desc": "受到伤害降低 4.5%~6%"
+  },
+  {
+    "id": 95,
+    "affix_id": 9,
+    "tier": 5,
+    "text": "不动",
+    "value_min": 0.06,
+    "value_max": 0.08,
+    "desc": "受到伤害降低 6%~8%"
+  },
+  {
+    "id": 96,
+    "affix_id": 9,
+    "tier": 6,
+    "text": "无伤",
+    "value_min": 0.08,
+    "value_max": 0.1,
+    "desc": "受到伤害降低 8%~10%"
+  },
+  {
+    "id": 102,
+    "affix_id": 10,
+    "tier": 2,
+    "text": "蛮力",
+    "value_min": 2.0,
+    "value_max": 4.0,
+    "desc": "力量提高 2~4"
+  },
+  {
+    "id": 103,
+    "affix_id": 10,
+    "tier": 3,
+    "text": "巨力",
+    "value_min": 4.0,
+    "value_max": 6.0,
+    "desc": "力量提高 4~6"
+  },
+  {
+    "id": 104,
+    "affix_id": 10,
+    "tier": 4,
+    "text": "神力",
+    "value_min": 6.0,
+    "value_max": 9.0,
+    "desc": "力量提高 6~9"
+  },
+  {
+    "id": 105,
+    "affix_id": 10,
+    "tier": 5,
+    "text": "撼岳",
+    "value_min": 9.0,
+    "value_max": 13.0,
+    "desc": "力量提高 9~13"
+  },
+  {
+    "id": 106,
+    "affix_id": 10,
+    "tier": 6,
+    "text": "擎天",
+    "value_min": 13.0,
+    "value_max": 18.0,
+    "desc": "力量提高 13~18"
+  },
+  {
+    "id": 112,
+    "affix_id": 11,
+    "tier": 2,
+    "text": "聪慧",
+    "value_min": 2.0,
+    "value_max": 4.0,
+    "desc": "智力提高 2~4"
+  },
+  {
+    "id": 113,
+    "affix_id": 11,
+    "tier": 3,
+    "text": "博识",
+    "value_min": 4.0,
+    "value_max": 6.0,
+    "desc": "智力提高 4~6"
+  },
+  {
+    "id": 114,
+    "affix_id": 11,
+    "tier": 4,
+    "text": "明悟",
+    "value_min": 6.0,
+    "value_max": 9.0,
+    "desc": "智力提高 6~9"
+  },
+  {
+    "id": 115,
+    "affix_id": 11,
+    "tier": 5,
+    "text": "通玄",
+    "value_min": 9.0,
+    "value_max": 13.0,
+    "desc": "智力提高 9~13"
+  },
+  {
+    "id": 116,
+    "affix_id": 11,
+    "tier": 6,
+    "text": "全知",
+    "value_min": 13.0,
+    "value_max": 18.0,
+    "desc": "智力提高 13~18"
+  },
+  {
+    "id": 122,
+    "affix_id": 12,
+    "tier": 2,
+    "text": "灵巧",
+    "value_min": 2.0,
+    "value_max": 4.0,
+    "desc": "技巧提高 2~4"
+  },
+  {
+    "id": 123,
+    "affix_id": 12,
+    "tier": 3,
+    "text": "熟练",
+    "value_min": 4.0,
+    "value_max": 6.0,
+    "desc": "技巧提高 4~6"
+  },
+  {
+    "id": 124,
+    "affix_id": 12,
+    "tier": 4,
+    "text": "精妙",
+    "value_min": 6.0,
+    "value_max": 9.0,
+    "desc": "技巧提高 6~9"
+  },
+  {
+    "id": 125,
+    "affix_id": 12,
+    "tier": 5,
+    "text": "无双",
+    "value_min": 9.0,
+    "value_max": 13.0,
+    "desc": "技巧提高 9~13"
+  },
+  {
+    "id": 126,
+    "affix_id": 12,
+    "tier": 6,
+    "text": "入化",
+    "value_min": 13.0,
+    "value_max": 18.0,
+    "desc": "技巧提高 13~18"
+  },
+  {
+    "id": 132,
+    "affix_id": 13,
+    "tier": 2,
+    "text": "宁静",
+    "value_min": 2.0,
+    "value_max": 4.0,
+    "desc": "精神提高 2~4"
+  },
+  {
+    "id": 133,
+    "affix_id": 13,
+    "tier": 3,
+    "text": "澄心",
+    "value_min": 4.0,
+    "value_max": 6.0,
+    "desc": "精神提高 4~6"
+  },
+  {
+    "id": 134,
+    "affix_id": 13,
+    "tier": 4,
+    "text": "安魂",
+    "value_min": 6.0,
+    "value_max": 9.0,
+    "desc": "精神提高 6~9"
+  },
+  {
+    "id": 135,
+    "affix_id": 13,
+    "tier": 5,
+    "text": "通灵",
+    "value_min": 9.0,
+    "value_max": 13.0,
+    "desc": "精神提高 9~13"
+  },
+  {
+    "id": 136,
+    "affix_id": 13,
+    "tier": 6,
+    "text": "神启",
+    "value_min": 13.0,
+    "value_max": 18.0,
+    "desc": "精神提高 13~18"
+  }
+]

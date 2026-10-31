@@ -1,25 +1,14 @@
 [
   {
-    "item_id": "itm_gold",
-    "name": "金币",
+    "item_id": "itm_shell",
+    "name": "贝壳币",
     "category": "currency",
     "quality": "white",
     "stack_max": 99999,
-    "icon": "icon/itm_gold",
+    "icon_path": "icon/itm_shell",
     "sell_price": 0,
     "desc": "通用货币",
-    "use_effect": ""
-  },
-  {
-    "item_id": "itm_premium",
-    "name": "珍珠币",
-    "category": "currency",
-    "quality": "purple",
-    "stack_max": 99999,
-    "icon": "icon/itm_premium",
-    "sell_price": 0,
-    "desc": "稀缺游戏币，商业化相关",
-    "use_effect": ""
+    "use_effect": null
   },
   {
     "item_id": "itm_wood",
@@ -27,10 +16,21 @@
     "category": "base_res",
     "quality": "white",
     "stack_max": 9999,
-    "icon": "icon/itm_wood",
+    "icon_path": "icon/itm_wood",
     "sell_price": 5,
-    "desc": "能源/建造/修理三重消耗",
-    "use_effect": ""
+    "desc": "能源/建造/修理",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_stone",
+    "name": "石材",
+    "category": "base_res",
+    "quality": "white",
+    "stack_max": 9999,
+    "icon_path": "icon/itm_stone",
+    "sell_price": 6,
+    "desc": "高级建造/船只加固",
+    "use_effect": null
   },
   {
     "item_id": "itm_iron",
@@ -38,10 +38,10 @@
     "category": "base_res",
     "quality": "white",
     "stack_max": 9999,
-    "icon": "icon/itm_iron",
+    "icon_path": "icon/itm_iron",
     "sell_price": 8,
     "desc": "基础锻造材料",
-    "use_effect": ""
+    "use_effect": null
   },
   {
     "item_id": "itm_food",
@@ -49,10 +49,10 @@
     "category": "base_res",
     "quality": "white",
     "stack_max": 9999,
-    "icon": "icon/itm_food",
+    "icon_path": "icon/itm_food",
     "sell_price": 3,
     "desc": "船员消耗",
-    "use_effect": ""
+    "use_effect": null
   },
   {
     "item_id": "itm_refined_iron",
@@ -60,10 +60,10 @@
     "category": "forge_mat",
     "quality": "blue",
     "stack_max": 999,
-    "icon": "icon/itm_refined_iron",
+    "icon_path": "icon/itm_refined_iron",
     "sell_price": 30,
-    "desc": "中级锻造材料",
-    "use_effect": ""
+    "desc": "中级锻造",
+    "use_effect": null
   },
   {
     "item_id": "itm_mithril",
@@ -71,10 +71,21 @@
     "category": "forge_mat",
     "quality": "purple",
     "stack_max": 999,
-    "icon": "icon/itm_mithril",
+    "icon_path": "icon/itm_mithril",
     "sell_price": 80,
-    "desc": "高级锻造材料",
-    "use_effect": ""
+    "desc": "高级锻造",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_adamant",
+    "name": "恒金",
+    "category": "forge_mat",
+    "quality": "orange",
+    "stack_max": 999,
+    "icon_path": "icon/itm_adamant",
+    "sell_price": 200,
+    "desc": "顶级锻造",
+    "use_effect": null
   },
   {
     "item_id": "itm_crystal",
@@ -82,9 +93,371 @@
     "category": "forge_mat",
     "quality": "blue",
     "stack_max": 999,
-    "icon": "icon/itm_crystal",
+    "icon_path": "icon/itm_crystal",
     "sell_price": 50,
-    "desc": "魔法线专属材料",
-    "use_effect": ""
+    "desc": "魔法线专属",
+    "use_effect": null
+  },
+  {
+    "item_id": "bp_ship_hull_2",
+    "name": "船体加固图纸",
+    "category": "blueprint",
+    "quality": "blue",
+    "stack_max": 1,
+    "icon_path": "icon/bp_ship_hull_2",
+    "sell_price": 200,
+    "desc": "船体升级至Lv3所需。用途与来源：特殊船体「生命号」(9101) Lv3/Lv5 升级各需 1 张；普通船体线(9001)不用它。商人岛黑帆集市有售，图纸残页×3 合成可出",
+    "use_effect": {
+      "unlock_blueprint": [
+        {
+          "target_id": "9101",
+          "level": 3
+        },
+        {
+          "target_id": "9101",
+          "level": 5
+        }
+      ]
+    }
+  },
+  {
+    "item_id": "itm_ritual_candle",
+    "name": "仪式蜡烛",
+    "category": "class_material",
+    "quality": "blue",
+    "stack_max": 99,
+    "icon_path": "icon/itm_ritual_candle",
+    "sell_price": 0,
+    "desc": "转职任务物品",
+    "use_effect": null
+  },
+  {
+    "item_id": "cb_hunt_2",
+    "name": "狩猎神系·进阶转职书",
+    "category": "class_change",
+    "quality": "blue",
+    "stack_max": 1,
+    "icon_path": "icon/cb_hunt_2",
+    "sell_price": 0,
+    "desc": "2档转职书",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_potion_san",
+    "name": "镇定剂",
+    "category": "consumable",
+    "quality": "blue",
+    "stack_max": 99,
+    "icon_path": "icon/itm_potion_san",
+    "sell_price": 50,
+    "desc": "使用恢复SAN+10",
+    "use_effect": {
+      "san_restore": 10
+    }
+  },
+  {
+    "item_id": "itm_energy",
+    "name": "能源",
+    "category": "virtual",
+    "quality": "white",
+    "stack_max": 99999,
+    "icon_path": "icon/itm_energy",
+    "sell_price": 0,
+    "desc": "虚拟物品：不进背包，产出后直接进入能源池",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_fresh_water",
+    "name": "淡水",
+    "category": "base_res",
+    "quality": "white",
+    "stack_max": 9999,
+    "icon_path": "icon/itm_fresh_water",
+    "sell_price": 4,
+    "desc": "船员生存消耗、种植房升级前提、SAN恢复加成",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_jobbook_2",
+    "name": "转职书·老手",
+    "category": "jobbook",
+    "quality": "blue",
+    "stack_max": 1,
+    "icon_path": "icon/jobbook_2",
+    "sell_price": 80,
+    "desc": "转职2档必备；漂浮物宝箱/商人岛掉落",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_jobbook_3",
+    "name": "转职书·精英",
+    "category": "jobbook",
+    "quality": "purple",
+    "stack_max": 1,
+    "icon_path": "icon/jobbook_3",
+    "sell_price": 200,
+    "desc": "转职3档；岛屿探索稀有掉落",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_jobbook_4",
+    "name": "转职书·大师",
+    "category": "jobbook",
+    "quality": "purple",
+    "stack_max": 1,
+    "icon_path": "icon/jobbook_4",
+    "sell_price": 500,
+    "desc": "转职4档；商人岛高价/遗迹岛",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_jobbook_5",
+    "name": "转职书·宗师",
+    "category": "jobbook",
+    "quality": "orange",
+    "stack_max": 1,
+    "icon_path": "icon/jobbook_5",
+    "sell_price": 1200,
+    "desc": "转职5档；海域Boss必掉",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_jobbook_6",
+    "name": "转职书·传奇",
+    "category": "jobbook",
+    "quality": "orange",
+    "stack_max": 1,
+    "icon_path": "icon/jobbook_6",
+    "sell_price": 3000,
+    "desc": "转职6档；后期海域Boss",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_cannonball",
+    "name": "炮弹",
+    "category": "consumable",
+    "quality": "white",
+    "stack_max": 999,
+    "icon_path": "icon/cannonball",
+    "sell_price": 8,
+    "desc": "鱼叉炮/魔晶炮的通用弹药，工坊制造",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_herb",
+    "name": "药材",
+    "category": "base_res",
+    "quality": "white",
+    "stack_max": 9999,
+    "icon_path": "icon/itm_herb",
+    "sell_price": 6,
+    "desc": "治疗/解毒类药剂原料；药师转职任务材料；C 主题教堂为主要产地",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_holy_water",
+    "name": "圣水",
+    "category": "consumable",
+    "quality": "blue",
+    "stack_max": 99,
+    "icon_path": "icon/itm_holy_water",
+    "sell_price": 40,
+    "desc": "使用恢复 SAN+15；C 主题教堂产出",
+    "use_effect": {
+      "san_restore": 15
+    }
+  },
+  {
+    "item_id": "itm_bp_page",
+    "name": "图纸残页",
+    "category": "blueprint",
+    "quality": "blue",
+    "stack_max": 99,
+    "icon_path": "icon/itm_bp_page",
+    "sell_price": 25,
+    "desc": "3 张可合成 1 张随机蓝图（合成表见《06》）；L 主题图书馆为主要产地",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_enhance_stone",
+    "name": "强化石",
+    "category": "forge_mat",
+    "quality": "purple",
+    "stack_max": 999,
+    "icon_path": "icon/itm_enhance_stone",
+    "sell_price": 60,
+    "desc": "装备强化唯一消耗；竞技场/遗迹/掉落产出，商店限量；周供给约 34 颗",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_skillbook",
+    "name": "技能书",
+    "category": "special",
+    "quality": "orange",
+    "stack_max": 10,
+    "icon_path": "icon/itm_skillbook",
+    "sell_price": 800,
+    "desc": "使用后随机习得 1 个未拥有技能；L 主题图书馆为唯一稳定来源",
+    "use_effect": {
+      "learn_skill": "random"
+    }
+  },
+  {
+    "item_id": "itm_orange_shard",
+    "name": "橙装碎片",
+    "category": "special",
+    "quality": "orange",
+    "stack_max": 999,
+    "icon_path": "icon/itm_orange_shard",
+    "sell_price": 300,
+    "desc": "20 个合成 1 件随机橙装；A 主题祭坛与 R 主题裂隙产出",
+    "use_effect": null
+  },
+  {
+    "item_id": "bp_room_rare",
+    "name": "稀有房间图纸",
+    "category": "blueprint",
+    "quality": "purple",
+    "stack_max": 1,
+    "icon_path": "icon/bp_room_rare",
+    "sell_price": 1500,
+    "desc": "建造稀有功能房（祈祷室/打捞房/锻炼室）必需；W 主题沉船 N5-B 独占。用途与来源：工坊/医务室/忏悔室升至 Lv3 各需 1 张（共 3 张需求）；W 沉船 N5-B 战胜产出，图纸残页×3 合成可出，商人岛有售",
+    "use_effect": {
+      "unlock_blueprint": [
+        {
+          "target_id": "1301",
+          "level": 3
+        },
+        {
+          "target_id": "3102",
+          "level": 3
+        },
+        {
+          "target_id": "3104",
+          "level": 3
+        }
+      ]
+    }
+  },
+  {
+    "item_id": "bp_ship_hull_3",
+    "name": "船体龙骨图纸",
+    "category": "blueprint",
+    "quality": "purple",
+    "stack_max": 1,
+    "icon_path": "icon/bp_ship_hull_3",
+    "sell_price": 800,
+    "desc": "船体升级至 Lv4 必需；T 主题神殿与 L 主题图书馆 N5-A 产出。用途与来源：船体(9001)升至 Lv5「不沉方舟」必需 1 张；T 神殿 N5-A / L 图书馆 N5-A 战胜产出，图纸残页×3 合成可出，商人岛稀有上架",
+    "use_effect": {
+      "unlock_blueprint": [
+        {
+          "target_id": "9001",
+          "level": 5
+        }
+      ]
+    }
+  },
+  {
+    "item_id": "itm_silver_figurehead",
+    "name": "银质船首像",
+    "category": "special",
+    "quality": "blue",
+    "stack_max": 20,
+    "icon_path": "icon/itm_silver_figurehead",
+    "sell_price": 60,
+    "desc": "W 主题沉船独占小件，仅可出售，无其他用途",
+    "use_effect": null
+  },
+  {
+    "item_id": "sm_deep_scale",
+    "name": "深渊鳞",
+    "category": "forge_mat",
+    "quality": "blue",
+    "stack_max": 999,
+    "icon_path": "icon/sm_deep_scale",
+    "sell_price": 60,
+    "desc": "海面专属稀有材料（唯一来源：海面奇遇正解）。完美级护甲锻造必需 ×2；也可替代精铁 ×10 用于修理",
+    "use_effect": null
+  },
+  {
+    "item_id": "sm_whale_oil",
+    "name": "鲸脂",
+    "category": "forge_mat",
+    "quality": "blue",
+    "stack_max": 999,
+    "icon_path": "icon/sm_whale_oil",
+    "sell_price": 50,
+    "desc": "海面专属稀有材料。交工坊可让 100 发弹药在本航段伤害 +10%（1 鲸脂 = 100 发）",
+    "use_effect": null
+  },
+  {
+    "item_id": "sm_star_sand",
+    "name": "星砂",
+    "category": "forge_mat",
+    "quality": "purple",
+    "stack_max": 999,
+    "icon_path": "icon/sm_star_sand",
+    "sell_price": 120,
+    "desc": "海面专属稀有材料。完美/史诗级饰品锻造必需 ×3",
+    "use_effect": null
+  },
+  {
+    "item_id": "sm_void_crystal",
+    "name": "虚空晶",
+    "category": "special",
+    "quality": "orange",
+    "stack_max": 99,
+    "icon_path": "icon/sm_void_crystal",
+    "sell_price": 300,
+    "desc": "海面专属稀有材料。圣典/法器锻造必需 ×1；交忏悔室的神职人员可加工成赎罪券（1 虚空晶 = 1 券，不花贝壳币但占岗位与工期）。双用途即取舍：拿去锻造就清不了特性，拿去清特性就少一块锻造料",
+    "use_effect": null
+  },
+  {
+    "item_id": "sm_dragon_wood",
+    "name": "龙骨木",
+    "category": "forge_mat",
+    "quality": "purple",
+    "stack_max": 999,
+    "icon_path": "icon/sm_dragon_wood",
+    "sell_price": 150,
+    "desc": "海面专属稀有材料。稀有房间建造必需 ×2（打捞房/祈祷室/锻炼室）；船体 Lv5 升级必需 ×3",
+    "use_effect": null
+  },
+  {
+    "item_id": "sm_chart_page",
+    "name": "海图残页",
+    "category": "special",
+    "quality": "purple",
+    "stack_max": 99,
+    "icon_path": "icon/sm_chart_page",
+    "sell_price": 80,
+    "desc": "海面专属稀有材料。3 张合成 1 张藏宝图 → 指向 1 个隐藏打捞点（必出紫装 + 1,000 币）",
+    "use_effect": null
+  },
+  {
+    "item_id": "itm_indulgence",
+    "name": "赎罪券",
+    "category": "consumable",
+    "quality": "purple",
+    "stack_max": 99,
+    "icon_path": "icon/itm_indulgence",
+    "sell_price": 300,
+    "desc": "忏悔室神职人员用虚空晶加工而成。使用后清除 1 条负面特性（正面不可清，双面按负面计）；与 300 币直接清互为替代——券不花币但吃材料和工期",
+    "use_effect": {
+      "clear_neg_trait": 1
+    }
+  },
+  {
+    "item_id": "itm_treasure_map",
+    "name": "藏宝图",
+    "category": "special",
+    "quality": "purple",
+    "stack_max": 99,
+    "icon_path": "icon/itm_treasure_map",
+    "sell_price": 150,
+    "desc": "海图残页 ×3 在工坊合成。使用后立刻发现 1 个神秘打捞点（事件 2004：必出紫装 + 约 1,000 币）",
+    "use_effect": {
+      "trigger_event": "2004"
+    }
   }
 ]

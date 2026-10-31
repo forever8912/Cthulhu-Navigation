@@ -1,0 +1,163 @@
+[
+  {
+    "affix_id": 1,
+    "affix_name": "吸血",
+    "effect_json": {
+      "type": "lifesteal"
+    },
+    "apply_slots": [
+      "weapon"
+    ],
+    "desc": "造成伤害按比例回复生命"
+  },
+  {
+    "affix_id": 2,
+    "affix_name": "增伤",
+    "effect_json": {
+      "type": "dmg_pct"
+    },
+    "apply_slots": [
+      "weapon"
+    ],
+    "desc": "造成伤害提高"
+  },
+  {
+    "affix_id": 3,
+    "affix_name": "攻速",
+    "effect_json": {
+      "type": "atk_speed"
+    },
+    "apply_slots": [
+      "weapon"
+    ],
+    "desc": "攻击间隔缩短"
+  },
+  {
+    "affix_id": 4,
+    "affix_name": "暴击率",
+    "effect_json": {
+      "type": "crit_rate"
+    },
+    "apply_slots": [
+      "weapon"
+    ],
+    "desc": "暴击率提高"
+  },
+  {
+    "affix_id": 5,
+    "affix_name": "暴击伤害",
+    "effect_json": {
+      "type": "crit_dmg"
+    },
+    "apply_slots": [
+      "weapon"
+    ],
+    "desc": "暴击伤害提高"
+  },
+  {
+    "affix_id": 6,
+    "affix_name": "生命上限",
+    "effect_json": {
+      "type": "hp_pct"
+    },
+    "apply_slots": [
+      "armor",
+      "trinket"
+    ],
+    "desc": "生命上限提高"
+  },
+  {
+    "affix_id": 7,
+    "affix_name": "每秒恢复",
+    "effect_json": {
+      "type": "hp_regen"
+    },
+    "apply_slots": [
+      "armor",
+      "trinket"
+    ],
+    "desc": "每秒回复生命上限百分比"
+  },
+  {
+    "affix_id": 8,
+    "affix_name": "护甲",
+    "effect_json": {
+      "type": "armor_flat"
+    },
+    "apply_slots": [
+      "armor"
+    ],
+    "desc": "护甲值提高"
+  },
+  {
+    "affix_id": 9,
+    "affix_name": "减伤率",
+    "effect_json": {
+      "type": "dmg_reduce"
+    },
+    "apply_slots": [
+      "armor"
+    ],
+    "desc": "受到伤害降低"
+  },
+  {
+    "affix_id": 10,
+    "affix_name": "力量",
+    "effect_json": {
+      "type": "attr_up",
+      "attr": "str"
+    },
+    "apply_slots": [
+      "weapon",
+      "armor",
+      "trinket",
+      "relic"
+    ],
+    "desc": "力量提高"
+  },
+  {
+    "affix_id": 11,
+    "affix_name": "智力",
+    "effect_json": {
+      "type": "attr_up",
+      "attr": "int"
+    },
+    "apply_slots": [
+      "weapon",
+      "armor",
+      "trinket",
+      "relic"
+    ],
+    "desc": "智力提高"
+  },
+  {
+    "affix_id": 12,
+    "affix_name": "技巧",
+    "effect_json": {
+      "type": "attr_up",
+      "attr": "agi"
+    },
+    "apply_slots": [
+      "weapon",
+      "armor",
+      "trinket",
+      "relic"
+    ],
+    "desc": "技巧提高"
+  },
+  {
+    "affix_id": 13,
+    "affix_name": "精神",
+    "effect_json": {
+      "type": "attr_up",
+      "attr": "spr"
+    },
+    "apply_slots": [
+      "weapon",
+      "armor",
+      "trinket",
+      "relic"
+    ],
+    "desc": "精神提高"
+  }
+]

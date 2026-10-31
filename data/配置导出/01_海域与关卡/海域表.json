@@ -1,11 +1,11 @@
 [
   {
-    "zone_id": "迷雾海峡",
+    "zone_id": "zone_fog",
     "name": "迷雾海峡",
     "order": 1,
     "unlock_condition": "",
     "monster_level_range": "1~5",
     "rarity_weight_group": 1,
-    "boss_monster_group_id": 9001
+    "first_level_id": 101
   }
 ]

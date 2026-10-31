@@ -1,0 +1,275 @@
+[
+  {
+    "entry_id": 300101,
+    "pool_id": 3001,
+    "target_id": "1001",
+    "weight": 50,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 300102,
+    "pool_id": 3001,
+    "target_id": "1002",
+    "weight": 30,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 300103,
+    "pool_id": 3001,
+    "target_id": "1003",
+    "weight": 20,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 310101,
+    "pool_id": 3101,
+    "target_id": "4101",
+    "weight": 46,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 310102,
+    "pool_id": 3101,
+    "target_id": "4102",
+    "weight": 26,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 310103,
+    "pool_id": 3101,
+    "target_id": "4103",
+    "weight": 18,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 330101,
+    "pool_id": 3301,
+    "target_id": "1011",
+    "weight": 100,
+    "min_trigger_level": 2
+  },
+  {
+    "entry_id": 900101,
+    "pool_id": 9001,
+    "target_id": "9001",
+    "weight": 100,
+    "min_trigger_level": 5
+  },
+  {
+    "entry_id": 900201,
+    "pool_id": 9002,
+    "target_id": "9002",
+    "weight": 100,
+    "min_trigger_level": 10
+  },
+  {
+    "entry_id": 320101,
+    "pool_id": 3201,
+    "target_id": "W01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 320102,
+    "pool_id": 3201,
+    "target_id": "T01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 320103,
+    "pool_id": 3201,
+    "target_id": "G01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 320104,
+    "pool_id": 3201,
+    "target_id": "L01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 320105,
+    "pool_id": 3201,
+    "target_id": "A01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 320106,
+    "pool_id": 3201,
+    "target_id": "C01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 320107,
+    "pool_id": 3201,
+    "target_id": "R01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 310201,
+    "pool_id": 3102,
+    "target_id": "2002",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 310301,
+    "pool_id": 3103,
+    "target_id": "2101",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310302,
+    "pool_id": 3103,
+    "target_id": "2102",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310303,
+    "pool_id": 3103,
+    "target_id": "2103",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310304,
+    "pool_id": 3103,
+    "target_id": "2104",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310305,
+    "pool_id": 3103,
+    "target_id": "2105",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310306,
+    "pool_id": 3103,
+    "target_id": "2201",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310307,
+    "pool_id": 3103,
+    "target_id": "2202",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310308,
+    "pool_id": 3103,
+    "target_id": "2203",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310309,
+    "pool_id": 3103,
+    "target_id": "2204",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310310,
+    "pool_id": 3103,
+    "target_id": "2205",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310311,
+    "pool_id": 3103,
+    "target_id": "2301",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310312,
+    "pool_id": 3103,
+    "target_id": "2302",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310313,
+    "pool_id": 3103,
+    "target_id": "2303",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310314,
+    "pool_id": 3103,
+    "target_id": "2304",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310315,
+    "pool_id": 3103,
+    "target_id": "2305",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310316,
+    "pool_id": 3103,
+    "target_id": "2401",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310317,
+    "pool_id": 3103,
+    "target_id": "2402",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310318,
+    "pool_id": 3103,
+    "target_id": "2403",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310319,
+    "pool_id": 3103,
+    "target_id": "2404",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 310320,
+    "pool_id": 3103,
+    "target_id": "2405",
+    "weight": 100,
+    "min_trigger_level": 0
+  },
+  {
+    "entry_id": 320108,
+    "pool_id": 3201,
+    "target_id": "P01",
+    "weight": 100,
+    "min_trigger_level": 1
+  },
+  {
+    "entry_id": 310104,
+    "pool_id": 3101,
+    "target_id": "4105",
+    "weight": 10,
+    "min_trigger_level": 1
+  }
+]

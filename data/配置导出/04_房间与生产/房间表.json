@@ -1,0 +1,406 @@
+[
+  {
+    "room_id": 1001,
+    "name": "动力舱",
+    "room_type": "production",
+    "is_energy": true,
+    "grid_size": 2,
+    "max_count": 2,
+    "max_level": 5,
+    "mvp_max_level": 5,
+    "need_crew": 1,
+    "require_attr": "str",
+    "unlock_chapter": 1,
+    "build_cost_json": [],
+    "behavior_flag": null,
+    "desc": "开局自带，全船唯一产 itm_energy 的房间（v1.16 合并原 1002 发电舱——两间的产出条目本来就是同一个 itm_energy，重复）。5 阶讲同一件事：船员不停把「海里的东西」塞进传动轴——先是自己的腿（四人脚踏机），后来是水手滚轮，后来是电鳗，最后是一个没人敢下去看的东西。岗位全程力量：这活从头到尾都是出力气，不需要仪表",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 1101,
+    "name": "钓鱼房",
+    "room_type": "production",
+    "is_energy": false,
+    "grid_size": 2,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "agi",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 150
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 20
+      }
+    ],
+    "behavior_flag": {
+      "stop_in_battle": 1
+    },
+    "desc": "稳定产食物但战时罢工。3 阶：手摇钓竿 → 自动拖网 → 许愿渔网",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 1102,
+    "name": "种植房",
+    "room_type": "production",
+    "is_energy": false,
+    "grid_size": 2,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "int",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 150
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 25
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "稳定慢产，战时不断供。3 阶：水培菜架 → 堆肥温室 → 恒温菜舱",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 1201,
+    "name": "水源房",
+    "room_type": "production",
+    "is_energy": false,
+    "grid_size": 2,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "agi",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 100
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 15
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "基础淡水来源，新手指引第二步建造。3 阶：雨水收集器 → 尿液过滤器 → 活体滤水器（船员叫它水龙头）",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 1301,
+    "name": "工坊",
+    "room_type": "production",
+    "is_energy": false,
+    "grid_size": 2,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "agi",
+    "unlock_chapter": 2,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 250
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 30
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 15
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "烧能源产炮弹 + 锻造 + 材料合成（配方见装备与锻造系统）。3 阶：木匠工坊 → 骨料工坊 → 老师傅的工坊",
+    "unlock_hull_level": 2
+  },
+  {
+    "room_id": 2001,
+    "name": "鱼叉炮",
+    "room_type": "battle",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 2,
+    "max_level": 6,
+    "mvp_max_level": 5,
+    "need_crew": 1,
+    "require_attr": "agi",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 300
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 20
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "【单体·物理】船体 Lv1 就能建（舷炮取消后，这是玩家的第一座塔）。口径一路变大，名字一直是\"叉子\"。吃弹药 5 发/次，受护甲减免",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 2002,
+    "name": "魔晶炮",
+    "room_type": "battle",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 1,
+    "max_level": 6,
+    "mvp_max_level": 5,
+    "need_crew": 1,
+    "require_attr": "int",
+    "unlock_chapter": 2,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 400
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 20
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 5
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "【群体·魔法】5 目标递增衰减，无视护甲，吃魔晶 1/次。船员坚持叫它\"观星镜\"",
+    "unlock_hull_level": 3
+  },
+  {
+    "room_id": 2003,
+    "name": "咒镜炮",
+    "room_type": "battle",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 2,
+    "max_level": 6,
+    "mvp_max_level": 5,
+    "need_crew": 1,
+    "require_attr": "int",
+    "unlock_chapter": 2,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 500
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 25
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 8
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "【单体·魔法】最高单发、无视护甲、射程最远，但一发一颗魔晶——整条升级线都在讲\"这炮太贵了\"",
+    "unlock_hull_level": 3
+  },
+  {
+    "room_id": 2004,
+    "name": "霰弹炮",
+    "room_type": "battle",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 2,
+    "max_level": 6,
+    "mvp_max_level": 5,
+    "need_crew": 1,
+    "require_attr": "agi",
+    "unlock_chapter": 2,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 280
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 30
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "【群体·物理】3 目标、射程最短（65~75）、弹药吃得最凶（8 发/次）。密集小怪的最优解，也是弹药黑洞",
+    "unlock_hull_level": 2
+  },
+  {
+    "room_id": 3101,
+    "name": "瞭望台",
+    "room_type": "functional",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "agi",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 120
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 15
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "索敌预警+全船射程加成。3 阶：瞭望台 → 鹰眼瞭望台 → 观星瞭望台（看得越远越不想看海）",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 3102,
+    "name": "医务室",
+    "room_type": "functional",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "int",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 200
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 20
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "伤员恢复HP。3 阶：急救医务室 → 外科医务室 → 康复病房。**这间房绝对不许恐怖**，它是全船最安静的地方",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 3103,
+    "name": "打捞房",
+    "room_type": "functional",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 0,
+    "require_attr": "none",
+    "unlock_chapter": 1,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 250
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 25
+      }
+    ],
+    "behavior_flag": {
+      "auto_pickup": 1
+    },
+    "desc": "自动打捞漂浮物（0 岗位、离线也捞）。船体 Lv3 解锁，Lv3 满级要求船体 Lv5。trade-off：不占人手换低产率",
+    "unlock_hull_level": 3
+  },
+  {
+    "room_id": 3104,
+    "name": "忏悔室",
+    "room_type": "functional",
+    "is_energy": false,
+    "grid_size": 1,
+    "max_count": 1,
+    "max_level": 3,
+    "mvp_max_level": 3,
+    "need_crew": 1,
+    "require_attr": "spr",
+    "unlock_chapter": 2,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 250
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 40
+      },
+      {
+        "item_id": "itm_iron",
+        "count": 25
+      },
+      {
+        "item_id": "sm_dragon_wood",
+        "count": 2
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "清负面特性主渠道（300 币/条，不递增）+ 神职人员可用虚空晶加工赎罪券。3 阶：告解小间 → 隔板告解室 → 烛火告解室",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 9001,
+    "name": "初级船体",
+    "room_type": "ship_hull",
+    "is_energy": false,
+    "grid_size": 0,
+    "max_count": 1,
+    "max_level": 5,
+    "mvp_max_level": 5,
+    "need_crew": 0,
+    "require_attr": "none",
+    "unlock_chapter": 1,
+    "build_cost_json": [],
+    "behavior_flag": null,
+    "desc": "初始船体；耐久归零=沉没。5 阶从「木筏」走到「不沉方舟」",
+    "unlock_hull_level": 1
+  },
+  {
+    "room_id": 9101,
+    "name": "生命号船体",
+    "room_type": "ship_hull",
+    "is_energy": false,
+    "grid_size": 0,
+    "max_count": 1,
+    "max_level": 5,
+    "mvp_max_level": 5,
+    "need_crew": 0,
+    "require_attr": "none",
+    "unlock_chapter": 2,
+    "build_cost_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 2000
+      },
+      {
+        "item_id": "itm_stone",
+        "count": 50
+      },
+      {
+        "item_id": "bp_ship_hull_2",
+        "count": 1
+      }
+    ],
+    "behavior_flag": null,
+    "desc": "高等特殊船体：藤条攻击（5003）+全房间自我修复（5004），强度破格合理",
+    "unlock_hull_level": 2
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "pool_id": 3001,
+    "pool_name": "迷雾海峡·小怪袭击池",
+    "pool_type": "raid_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 3101,
+    "pool_name": "迷雾海峡·漂流物池",
+    "pool_type": "float_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 3201,
+    "pool_name": "海图·遗迹岛池（全海域共用，深度按海域缩放）",
+    "pool_type": "island_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 3301,
+    "pool_name": "迷雾海峡·精英1池（400距离）",
+    "pool_type": "elite_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 9001,
+    "pool_name": "迷雾海峡·Boss池",
+    "pool_type": "boss_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 9002,
+    "pool_name": "奇迹之海·隐藏Boss池",
+    "pool_type": "boss_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 3102,
+    "pool_name": "迷雾海峡·海面商船池（原「海面奇遇池」改名，避免与新 3103 混淆）",
+    "pool_type": "event_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  },
+  {
+    "pool_id": 3103,
+    "pool_name": "海面奇遇池（20 条 = 4 类 × 5 条，全海域共用）",
+    "pool_type": "event_pool",
+    "min_picks": 1,
+    "max_picks": 1
+  }
+]

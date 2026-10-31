@@ -1,0 +1,51 @@
+[
+  {
+    "drop_group_id": 6001,
+    "name": "钓鱼·手动·迷雾海峡",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 6002,
+    "name": "钓鱼·手动·风暴之海",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 6003,
+    "name": "钓鱼·手动·深渊海域",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 6004,
+    "name": "钓鱼·自动·迷雾海峡",
+    "mode": "pick_n",
+    "pick_min": 2,
+    "pick_max": 3
+  },
+  {
+    "drop_group_id": 6005,
+    "name": "钓鱼·自动·风暴之海",
+    "mode": "pick_n",
+    "pick_min": 2,
+    "pick_max": 3
+  },
+  {
+    "drop_group_id": 6006,
+    "name": "钓鱼·自动·深渊海域",
+    "mode": "pick_n",
+    "pick_min": 2,
+    "pick_max": 3
+  },
+  {
+    "drop_group_id": 6007,
+    "name": "钓鱼·异物池",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  }
+]

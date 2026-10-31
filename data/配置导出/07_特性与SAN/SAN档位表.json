@@ -1,0 +1,46 @@
+[
+  {
+    "tier_id": 20,
+    "tier_name": "崩溃",
+    "san_min": 0,
+    "san_max": 29,
+    "effect_json": {
+      "combat_pct": -0.3,
+      "produce_pct": -0.4,
+      "flee_chance": 0.05,
+      "flee_interval_sec": 60,
+      "flee_stop_sec": 10
+    },
+    "desc": "作战-30%、生产-40%，每分钟5%概率擅自离岗（停工10s）；头像边缘浮出低语触手"
+  },
+  {
+    "tier_id": 50,
+    "tier_name": "低落",
+    "san_min": 30,
+    "san_max": 49,
+    "effect_json": {
+      "combat_pct": -0.15,
+      "produce_pct": -0.2
+    },
+    "desc": "作战-15%、生产-20%；头顶气泡显示低落图标"
+  },
+  {
+    "tier_id": 80,
+    "tier_name": "正常",
+    "san_min": 50,
+    "san_max": 79,
+    "effect_json": {},
+    "desc": "无修正"
+  },
+  {
+    "tier_id": 100,
+    "tier_name": "高昂",
+    "san_min": 80,
+    "san_max": 200,
+    "effect_json": {
+      "combat_pct": 0.1,
+      "produce_pct": 0.1
+    },
+    "desc": "作战+10%、生产+10%"
+  }
+]

@@ -1,30 +1,338 @@
 [
   {
     "equip_drop_id": 1,
-    "rarity": "white",
+    "quality_id": 1,
     "slot": "weapon",
-    "weight": 70,
-    "level_range": "1~5"
+    "weight": 80,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 1,
+    "slot": "armor",
+    "weight": 40,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 1,
+    "slot": "trinket",
+    "weight": 28,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 1,
+    "slot": "relic",
+    "weight": 20,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 2,
+    "slot": "weapon",
+    "weight": 50,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 2,
+    "slot": "armor",
+    "weight": 25,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 2,
+    "slot": "trinket",
+    "weight": 17,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 2,
+    "slot": "relic",
+    "weight": 12,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 3,
+    "slot": "weapon",
+    "weight": 25,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 3,
+    "slot": "armor",
+    "weight": 12,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 3,
+    "slot": "trinket",
+    "weight": 9,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 3,
+    "slot": "relic",
+    "weight": 6,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 4,
+    "slot": "weapon",
+    "weight": 5,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 4,
+    "slot": "armor",
+    "weight": 2,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 4,
+    "slot": "trinket",
+    "weight": 2,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 1,
+    "quality_id": 4,
+    "slot": "relic",
+    "weight": 1,
+    "tier_range": "1~3"
   },
   {
     "equip_drop_id": 2,
-    "rarity": "blue",
+    "quality_id": 3,
     "slot": "weapon",
-    "weight": 60,
-    "level_range": "5~10"
+    "weight": 20,
+    "tier_range": "4~7"
   },
   {
     "equip_drop_id": 2,
-    "rarity": "purple",
+    "quality_id": 3,
+    "slot": "armor",
+    "weight": 10,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 3,
+    "slot": "trinket",
+    "weight": 7,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 3,
+    "slot": "relic",
+    "weight": 5,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 4,
+    "slot": "weapon",
+    "weight": 35,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 4,
+    "slot": "armor",
+    "weight": 18,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 4,
+    "slot": "trinket",
+    "weight": 12,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 4,
+    "slot": "relic",
+    "weight": 9,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 5,
     "slot": "weapon",
     "weight": 30,
-    "level_range": "5~10"
+    "tier_range": "4~7"
   },
   {
     "equip_drop_id": 2,
-    "rarity": "orange",
+    "quality_id": 5,
+    "slot": "armor",
+    "weight": 15,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 5,
+    "slot": "trinket",
+    "weight": 10,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 5,
+    "slot": "relic",
+    "weight": 8,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 6,
+    "slot": "weapon",
+    "weight": 12,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 6,
+    "slot": "armor",
+    "weight": 6,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 6,
+    "slot": "trinket",
+    "weight": 4,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 6,
+    "slot": "relic",
+    "weight": 3,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 7,
+    "slot": "weapon",
+    "weight": 3,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 7,
+    "slot": "armor",
+    "weight": 2,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 7,
+    "slot": "trinket",
+    "weight": 1,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 2,
+    "quality_id": 7,
+    "slot": "relic",
+    "weight": 1,
+    "tier_range": "4~7"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 5,
+    "slot": "weapon",
+    "weight": 28,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 5,
+    "slot": "armor",
+    "weight": 14,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 5,
+    "slot": "trinket",
+    "weight": 10,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 5,
+    "slot": "relic",
+    "weight": 8,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 6,
     "slot": "weapon",
     "weight": 10,
-    "level_range": "5~10"
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 6,
+    "slot": "armor",
+    "weight": 5,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 6,
+    "slot": "trinket",
+    "weight": 4,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 6,
+    "slot": "relic",
+    "weight": 3,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 7,
+    "slot": "weapon",
+    "weight": 2,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 7,
+    "slot": "armor",
+    "weight": 1,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 7,
+    "slot": "trinket",
+    "weight": 1,
+    "tier_range": "1~3"
+  },
+  {
+    "equip_drop_id": 3,
+    "quality_id": 7,
+    "slot": "relic",
+    "weight": 1,
+    "tier_range": "1~3"
   }
 ]

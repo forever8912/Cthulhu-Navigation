@@ -1,28 +1,287 @@
 [
   {
-    "drop_group_id": 1001,
-    "name": "普通战斗掉落-迷雾海峡",
+    "drop_group_id": 4001,
+    "name": "海域1·小怪袭击结算（1001/1002/1003 共用）",
     "mode": "all",
     "pick_min": 0,
     "pick_max": 0
   },
   {
-    "drop_group_id": 1101,
-    "name": "资源基础组（木材/铁/食物选1~2种）",
-    "mode": "pick_n",
-    "pick_min": 1,
-    "pick_max": 2
+    "drop_group_id": 4002,
+    "name": "海域1·精英战结算（1011）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
   },
   {
-    "drop_group_id": 1102,
-    "name": "锻造材料组（选1）",
+    "drop_group_id": 4003,
+    "name": "海域1·Boss战结算（9001）",
     "mode": "pick_n",
     "pick_min": 1,
     "pick_max": 1
   },
   {
-    "drop_group_id": 9002,
-    "name": "迷雾守望者Boss掉落",
+    "drop_group_id": 4004,
+    "name": "隐藏Boss结算（预留，v1.1 启用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4005,
+    "name": "海域2·小怪袭击结算（2001/2002/2003 共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4006,
+    "name": "海域2·精英战结算（2011/2012 共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4007,
+    "name": "海域2·小Boss结算（8001）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4008,
+    "name": "海域2·Boss战结算（9002）",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 4009,
+    "name": "海域3·小怪袭击结算（3001/3002/3003 共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4011,
+    "name": "子权重池·基础资源（被其他组 roll_times 调用，不可被事件直接引用）",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 4012,
+    "name": "子权重池·锻造材料（同上）",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 4013,
+    "name": "海域3·精英战结算（3011/3012 共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4014,
+    "name": "海域3·小Boss结算（8002/8003 共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4015,
+    "name": "海域3·Boss战结算（9003）",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 4016,
+    "name": "遗迹·节点战斗·杂兵结算（7 主题共用，按波数取 roll_times）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4017,
+    "name": "遗迹·节点战斗·精英结算（7 主题共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4018,
+    "name": "遗迹·节点战斗·Boss结算（7 主题共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4020,
+    "name": "海面奇遇·杂兵战斗结算（8101~8104 共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4021,
+    "name": "海面奇遇·精英伏击结算（8105）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4101,
+    "name": "漂流物·普通木箱",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4102,
+    "name": "漂流物·沉船",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4103,
+    "name": "漂流物·神秘宝箱",
+    "mode": "pick_n",
+    "pick_min": 1,
+    "pick_max": 1
+  },
+  {
+    "drop_group_id": 201,
+    "name": "第一章通关奖励",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 202,
+    "name": "第一章首通额外",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5001,
+    "name": "生产·动力舱能源",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5011,
+    "name": "生产·钓鱼房食物",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5012,
+    "name": "生产·种植房食物",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5013,
+    "name": "生产·雨水收集淡水",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4201,
+    "name": "遗迹·W01 沉船「奥菲莉亚号」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4202,
+    "name": "遗迹·T01 神殿「回声廊」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4203,
+    "name": "遗迹·G01 墓穴「无名冢」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4204,
+    "name": "遗迹·L01 图书馆「万卷沉船」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4205,
+    "name": "遗迹·A01 祭坛「血月阶」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4206,
+    "name": "遗迹·C01 教堂「无声弥撒」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4207,
+    "name": "遗迹·R01 裂隙「倒悬之钟」·满通关结算",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4210,
+    "name": "遗迹·通关首通额外（7 岛共用）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5015,
+    "name": "生产·忏悔室赎罪券",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5016,
+    "name": "生产·打捞房漂浮物",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 5017,
+    "name": "生产·工坊弹药",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4104,
+    "name": "漂流物·藏宝图打捞点（事件 2004，必出紫装）",
+    "mode": "all",
+    "pick_min": 0,
+    "pick_max": 0
+  },
+  {
+    "drop_group_id": 4105,
+    "name": "漂流物·低语的头骨（事件 2003，赎罪券）",
     "mode": "all",
     "pick_min": 0,
     "pick_max": 0

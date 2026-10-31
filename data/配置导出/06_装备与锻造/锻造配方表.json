@@ -1,0 +1,306 @@
+[
+  {
+    "recipe_id": 1,
+    "name": "锻造·武器位",
+    "workshop_level": 1,
+    "output_type": "equip_slot",
+    "output_slot": "weapon",
+    "output_item_id": "",
+    "output_count": 1,
+    "quality_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "cost_json": [
+      {
+        "item_id": "itm_iron",
+        "count": 5
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 3
+      }
+    ],
+    "cd": 20.0,
+    "desc": "工坊Lv1可锻，破损~卓越"
+  },
+  {
+    "recipe_id": 2,
+    "name": "锻造·护甲位",
+    "workshop_level": 1,
+    "output_type": "equip_slot",
+    "output_slot": "armor",
+    "output_item_id": "",
+    "output_count": 1,
+    "quality_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "cost_json": [
+      {
+        "item_id": "itm_iron",
+        "count": 4
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 4
+      }
+    ],
+    "cd": 20.0,
+    "desc": ""
+  },
+  {
+    "recipe_id": 3,
+    "name": "锻造·饰品位",
+    "workshop_level": 1,
+    "output_type": "equip_slot",
+    "output_slot": "trinket",
+    "output_item_id": "",
+    "output_count": 1,
+    "quality_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "cost_json": [
+      {
+        "item_id": "itm_iron",
+        "count": 3
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      }
+    ],
+    "cd": 20.0,
+    "desc": ""
+  },
+  {
+    "recipe_id": 4,
+    "name": "锻造·奇物位",
+    "workshop_level": 1,
+    "output_type": "equip_slot",
+    "output_slot": "relic",
+    "output_item_id": "",
+    "output_count": 1,
+    "quality_weight_json": {
+      "1": 40,
+      "2": 30,
+      "3": 20,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "cost_json": [
+      {
+        "item_id": "itm_iron",
+        "count": 4
+      },
+      {
+        "item_id": "itm_wood",
+        "count": 3
+      }
+    ],
+    "cd": 20.0,
+    "desc": "工坊Lv1可锻，破损~卓越；产出工具类或遗物类奇物"
+  },
+  {
+    "recipe_id": 5,
+    "name": "精铁合成",
+    "workshop_level": 2,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_refined_iron",
+    "output_count": 1,
+    "quality_weight_json": {
+      "1": 20,
+      "2": 30,
+      "3": 25,
+      "4": 15,
+      "5": 10,
+      "6": 0,
+      "7": 0
+    },
+    "cost_json": [
+      {
+        "item_id": "itm_iron",
+        "count": 3
+      }
+    ],
+    "cd": 15.0,
+    "desc": "工坊Lv2解锁；解锁完美品质锻造。**精铁同时掉落于深海/沉船事件（4012/4017/4203），合成是保底**"
+  },
+  {
+    "recipe_id": 6,
+    "name": "炮弹（消耗品）",
+    "workshop_level": 1,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_cannonball",
+    "output_count": 3,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "itm_iron",
+        "count": 2
+      }
+    ],
+    "cd": 10.0,
+    "desc": ""
+  },
+  {
+    "recipe_id": 7,
+    "name": "秘银合成",
+    "workshop_level": 2,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_mithril",
+    "output_count": 1,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "itm_refined_iron",
+        "count": 3
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 2
+      },
+      {
+        "item_id": "itm_energy",
+        "count": 10
+      }
+    ],
+    "cd": 30.0,
+    "desc": "工坊Lv2；高级船体/紫装锻材，也掉落于深海事件"
+  },
+  {
+    "recipe_id": 8,
+    "name": "恒金合成",
+    "workshop_level": 3,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_adamant",
+    "output_count": 1,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "itm_mithril",
+        "count": 3
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 4
+      },
+      {
+        "item_id": "itm_energy",
+        "count": 20
+      }
+    ],
+    "cd": 45.0,
+    "desc": "工坊Lv3；顶级锻材，主要靠深渊事件掉落，合成是保底"
+  },
+  {
+    "recipe_id": 9,
+    "name": "圣水合成",
+    "workshop_level": 1,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_holy_water",
+    "output_count": 1,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "itm_fresh_water",
+        "count": 5
+      },
+      {
+        "item_id": "itm_crystal",
+        "count": 1
+      },
+      {
+        "item_id": "itm_energy",
+        "count": 5
+      }
+    ],
+    "cd": 15.0,
+    "desc": "工坊Lv1；SAN恢复道具，忏悔室事件用"
+  },
+  {
+    "recipe_id": 10,
+    "name": "镇定剂合成",
+    "workshop_level": 1,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_potion_san",
+    "output_count": 1,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "itm_herb",
+        "count": 3
+      },
+      {
+        "item_id": "itm_fresh_water",
+        "count": 2
+      },
+      {
+        "item_id": "itm_energy",
+        "count": 5
+      }
+    ],
+    "cd": 20.0,
+    "desc": "工坊Lv1；给药材一个稳定用途"
+  },
+  {
+    "recipe_id": 11,
+    "name": "藏宝图合成",
+    "workshop_level": 2,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "itm_treasure_map",
+    "output_count": 1,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "sm_chart_page",
+        "count": 3
+      }
+    ],
+    "cd": 30.0,
+    "desc": "工坊Lv2；海图残页×3 → 藏宝图×1。残页唯一来源=海面奇遇正解（SM06，周产 5~6 → 约 2 张/周）。使用后立刻打开神秘打捞点（事件 2004 → 组 4104：紫装保底池3 + 币 1,000±100 + 锻造材料）"
+  },
+  {
+    "recipe_id": 12,
+    "name": "蓝图合成",
+    "workshop_level": 2,
+    "output_type": "item",
+    "output_slot": "",
+    "output_item_id": "random_blueprint",
+    "output_count": 1,
+    "quality_weight_json": null,
+    "cost_json": [
+      {
+        "item_id": "itm_bp_page",
+        "count": 3
+      }
+    ],
+    "cd": 30.0,
+    "desc": "工坊Lv2；图纸残页×3 → 随机蓝图×1。**random_blueprint=程序在 bp_room_rare / bp_ship_hull_2 / bp_ship_hull_3 三张未拥有图纸中等权随机**（全拥有则产 150 币补偿）。三张全有真实消耗点：稀有房间图纸→工坊/医务/忏悔 Lv3；船体加固→生命号 Lv3/Lv5；船体龙骨→船体 Lv5"
+  }
+]

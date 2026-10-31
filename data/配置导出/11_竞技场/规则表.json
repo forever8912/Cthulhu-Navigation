@@ -1,0 +1,140 @@
+[
+  {
+    "param_key": "start_back_layers",
+    "value": 3,
+    "type": "int",
+    "desc": "每次进入的起点 = max(1, 历史最高层 − 本值)。起点起的 3 层是回溯层（已通过），保底结算其奖励"
+  },
+  {
+    "param_key": "max_layer_mode",
+    "value": "only_up",
+    "type": "string",
+    "desc": "历史最高层 = 到达过的最深层（含挑战失败的那一层），只增不减；存档字段 arena_max_layer"
+  },
+  {
+    "param_key": "revert_reward_ratio",
+    "value": 0.4,
+    "type": "float",
+    "desc": "回溯层结算比例：币与材料 ×40%；强化石与装备一律不发"
+  },
+  {
+    "param_key": "revert_reward_rule",
+    "value": "no_stone_no_equip",
+    "type": "string",
+    "desc": "回溯层不给强化石、不给装备；回溯层撞上 5 的倍数时装备折算普通材料 ×3，界面明写「回溯层·装备已折算」"
+  },
+  {
+    "param_key": "food_per_member",
+    "value": 3,
+    "type": "int",
+    "desc": "每场消耗食物 = 上场人数 × 本值；无进入次数限制（频控靠起点回溯，不靠次数）"
+  },
+  {
+    "param_key": "team_size_min",
+    "value": 1,
+    "type": "int",
+    "desc": "上场人数下限（不能全员——船还要有人开）"
+  },
+  {
+    "param_key": "team_size_max",
+    "value": 3,
+    "type": "int",
+    "desc": "上场人数上限"
+  },
+  {
+    "param_key": "lose_hp_recover",
+    "value": 0.3,
+    "type": "float",
+    "desc": "HP 归零判负但不死亡；本次奖励 100% 保留、历史最高层不变；回船后 HP 恢复至上限 × 本值"
+  },
+  {
+    "param_key": "coin_base",
+    "value": 180,
+    "type": "int",
+    "desc": "新层首通币 = coin_base × coin_growth^(n−1)；回溯层再 × revert_reward_ratio"
+  },
+  {
+    "param_key": "coin_growth",
+    "value": 1.09,
+    "type": "float",
+    "desc": "首通币逐层成长系数（竞技场币收益 < 推图 210 币/分钟，定位是兑换机不是产出机）"
+  },
+  {
+    "param_key": "stone_base",
+    "value": 2,
+    "type": "int",
+    "desc": "首通强化石基础数"
+  },
+  {
+    "param_key": "stone_per5",
+    "value": 1,
+    "type": "int",
+    "desc": "每 5 层额外 +1 颗（第 6 层起生效）"
+  },
+  {
+    "param_key": "stone_cap",
+    "value": 6,
+    "type": "int",
+    "desc": "单层强化石封顶（26 层起固定 6 颗）"
+  },
+  {
+    "param_key": "equip_every5",
+    "value": 5,
+    "type": "int",
+    "desc": "n % 本值 == 0 时首通发装备 1 件；n % (本值×2) == 0 额外材料宝箱 ×1"
+  },
+  {
+    "param_key": "mirror_upload_top",
+    "value": 3,
+    "type": "int",
+    "desc": "每名玩家上报的最强角色数；对手队伍的角色属性/外貌/名称全部来自该镜像快照"
+  },
+  {
+    "param_key": "mirror_window",
+    "value": 3,
+    "type": "int",
+    "desc": "匹配窗口：只从「竞技场当前历史最高层与玩家相差 ≤ 本值」的玩家镜像里选取对手"
+  },
+  {
+    "param_key": "mirror_pool_size",
+    "value": 5,
+    "type": "int",
+    "desc": "每次进入随机抽出的候选船长数（战前可预览职业+主属性+装备品质后挑一个打）"
+  },
+  {
+    "param_key": "mirror_fallback",
+    "value": "virtual",
+    "type": "string",
+    "desc": "窗口内真实镜像不足 mirror_pool_size 时用虚拟船长补位（属性按虚拟层的锚点公式生成，名字取名池表、外貌按 05 船员外貌表 roll）；新玩家/离线模式全部走本兜底"
+  },
+  {
+    "param_key": "virtual_layer_jitter",
+    "value": 3,
+    "type": "int",
+    "desc": "虚拟船长的虚拟层在 [当前层 − 本值, 当前层 + 本值] 内均匀取，锚点按其虚拟层计算——保证「±3 层内」的手感不变"
+  },
+  {
+    "param_key": "team_size_rule",
+    "value": "mirror_top_n",
+    "type": "string",
+    "desc": "对手队伍规模 = 玩家上场人数（1v1/2v2/3v3）；镜像队伍取其 chars 前 N 名（N = 玩家上场人数）"
+  },
+  {
+    "param_key": "bias_min",
+    "value": 1,
+    "type": "int",
+    "desc": "对手四维分配至少 1 项偏科（模拟真实玩家，不是均衡木桩）；18 层起偏科数升到 2（见对手生成规则表）"
+  },
+  {
+    "param_key": "job_rule",
+    "value": "player_unlocked",
+    "type": "string",
+    "desc": "不生成玩家没有的职业系（避免信息不对称）"
+  },
+  {
+    "param_key": "skill_rule",
+    "value": "player_unlocked",
+    "type": "string",
+    "desc": "对手只使用玩家已解锁的技能（避免「它有你没有」的挫败）"
+  }
+]

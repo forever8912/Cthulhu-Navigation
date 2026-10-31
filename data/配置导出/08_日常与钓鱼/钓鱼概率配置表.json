@@ -1,0 +1,98 @@
+[
+  {
+    "config_id": 1,
+    "zone_id": "all",
+    "result_type": "blank",
+    "base_weight": 25,
+    "tech_bonus_per_10": 0,
+    "desc": "主动钓鱼专属，自动捕鱼无空军"
+  },
+  {
+    "config_id": 2,
+    "zone_id": "all",
+    "result_type": "common",
+    "base_weight": 55,
+    "tech_bonus_per_10": 0,
+    "desc": "普通鱼基准权重"
+  },
+  {
+    "config_id": 3,
+    "zone_id": "all",
+    "result_type": "rare",
+    "base_weight": 15,
+    "tech_bonus_per_10": 2,
+    "desc": "稀有鱼基准权重，技巧每10点+2%"
+  },
+  {
+    "config_id": 4,
+    "zone_id": "all",
+    "result_type": "special",
+    "base_weight": 4,
+    "tech_bonus_per_10": 1,
+    "desc": "特殊鱼基准权重，技巧每10点+1%"
+  },
+  {
+    "config_id": 5,
+    "zone_id": "all",
+    "result_type": "alien",
+    "base_weight": 1,
+    "tech_bonus_per_10": 0,
+    "desc": "异物基准权重"
+  },
+  {
+    "config_id": 6,
+    "zone_id": "zone_fog",
+    "result_type": "common",
+    "base_weight": 60,
+    "tech_bonus_per_10": 0,
+    "desc": "迷雾海峡普通鱼权重上调"
+  },
+  {
+    "config_id": 7,
+    "zone_id": "zone_fog",
+    "result_type": "rare",
+    "base_weight": 12,
+    "tech_bonus_per_10": 0,
+    "desc": "迷雾海峡稀有鱼权重下调"
+  },
+  {
+    "config_id": 8,
+    "zone_id": "zone_storm",
+    "result_type": "common",
+    "base_weight": 50,
+    "tech_bonus_per_10": 0,
+    "desc": "风暴之海普通鱼权重下调"
+  },
+  {
+    "config_id": 9,
+    "zone_id": "zone_storm",
+    "result_type": "rare",
+    "base_weight": 18,
+    "tech_bonus_per_10": 0,
+    "desc": "风暴之海稀有鱼权重上调"
+  },
+  {
+    "config_id": 10,
+    "zone_id": "zone_abyss",
+    "result_type": "common",
+    "base_weight": 45,
+    "tech_bonus_per_10": 0,
+    "desc": "深渊海域普通鱼权重下调"
+  },
+  {
+    "config_id": 11,
+    "zone_id": "zone_abyss",
+    "result_type": "rare",
+    "base_weight": 20,
+    "tech_bonus_per_10": 0,
+    "desc": "深渊海域稀有鱼权重上调"
+  },
+  {
+    "config_id": 12,
+    "zone_id": "zone_abyss",
+    "result_type": "special",
+    "base_weight": 6,
+    "tech_bonus_per_10": 0,
+    "desc": "深渊海域特殊鱼权重上调"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "rarity": "common",
+    "weight": 60,
+    "gender_weight_male": 50,
+    "gender_weight_female": 50,
+    "attr_roll_min": 4,
+    "attr_roll_max": 8,
+    "main_attr_bonus": 0,
+    "trait_pos_count": 0,
+    "trait_neg_count": 0,
+    "accessory_chance": 0.35
+  },
+  {
+    "rarity": "fine",
+    "weight": 25,
+    "gender_weight_male": 50,
+    "gender_weight_female": 50,
+    "attr_roll_min": 4,
+    "attr_roll_max": 8,
+    "main_attr_bonus": 1,
+    "trait_pos_count": 0,
+    "trait_neg_count": 0,
+    "accessory_chance": 0.35
+  },
+  {
+    "rarity": "rare",
+    "weight": 10,
+    "gender_weight_male": 50,
+    "gender_weight_female": 50,
+    "attr_roll_min": 4,
+    "attr_roll_max": 8,
+    "main_attr_bonus": 2,
+    "trait_pos_count": 0,
+    "trait_neg_count": 0,
+    "accessory_chance": 0.35
+  },
+  {
+    "rarity": "epic",
+    "weight": 4,
+    "gender_weight_male": 50,
+    "gender_weight_female": 50,
+    "attr_roll_min": 4,
+    "attr_roll_max": 8,
+    "main_attr_bonus": 3,
+    "trait_pos_count": 0,
+    "trait_neg_count": 0,
+    "accessory_chance": 0.35
+  },
+  {
+    "rarity": "legend",
+    "weight": 1,
+    "gender_weight_male": 50,
+    "gender_weight_female": 50,
+    "attr_roll_min": 4,
+    "attr_roll_max": 8,
+    "main_attr_bonus": 4,
+    "trait_pos_count": 0,
+    "trait_neg_count": 0,
+    "accessory_chance": 0.35
+  }
+]

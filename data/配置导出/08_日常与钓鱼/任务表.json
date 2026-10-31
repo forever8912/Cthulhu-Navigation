@@ -1,0 +1,1314 @@
+[
+  {
+    "task_id": 7001,
+    "task_name": "日常航行",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "voyage_done",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 60
+      }
+    ],
+    "sort": 7001,
+    "desc": "完成 1 次航行（≥1 航段）。保底"
+  },
+  {
+    "task_id": 7002,
+    "task_name": "海上猎杀",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "kill_monster",
+    "param_json": null,
+    "require_count": 15,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 70
+      }
+    ],
+    "sort": 7002,
+    "desc": "击败 15 只怪。保底"
+  },
+  {
+    "task_id": 7003,
+    "task_name": "物资收集",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "pickup_float",
+    "param_json": null,
+    "require_count": 8,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 60
+      }
+    ],
+    "sort": 7003,
+    "desc": "捞取 8 个漂浮物。保底"
+  },
+  {
+    "task_id": 7004,
+    "task_name": "弹药补给",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "ammo_produced",
+    "param_json": null,
+    "require_count": 100,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 70
+      }
+    ],
+    "sort": 7004,
+    "desc": "工坊累计产出 100 发弹药。教工坊"
+  },
+  {
+    "task_id": 7005,
+    "task_name": "第一竿",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "fish_manual",
+    "param_json": null,
+    "require_count": 3,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 70
+      }
+    ],
+    "sort": 7005,
+    "desc": "主动钓鱼 3 次。拉钓鱼玩法"
+  },
+  {
+    "task_id": 7006,
+    "task_name": "补漏",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "rescue_dying",
+    "param_json": null,
+    "require_count": 2,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 90
+      }
+    ],
+    "sort": 7006,
+    "desc": "战斗中把 2 名濒死船员拖入医务室。教核心操作"
+  },
+  {
+    "task_id": 7007,
+    "task_name": "塔的维护",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "repair_room",
+    "param_json": null,
+    "require_count": 3,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 80
+      }
+    ],
+    "sort": 7007,
+    "desc": "修理 3 个损毁房间。教修理"
+  },
+  {
+    "task_id": 7008,
+    "task_name": "火力压制",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "use_mobilize",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 90
+      }
+    ],
+    "sort": 7008,
+    "desc": "单场战斗使用 1 次「全员参战」。教主动技能"
+  },
+  {
+    "task_id": 7009,
+    "task_name": "航向深处",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "sail_distance",
+    "param_json": null,
+    "require_count": 300,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 80
+      }
+    ],
+    "sort": 7009,
+    "desc": "在任意海域推进 300 里。拉推图"
+  },
+  {
+    "task_id": 7010,
+    "task_name": "换岗",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "crew_attr_up",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 70
+      }
+    ],
+    "sort": 7010,
+    "desc": "让 1 名船员的某属性提升 1 点。拉养成"
+  },
+  {
+    "task_id": 7011,
+    "task_name": "清点库存",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "room_upgrade",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 70
+      }
+    ],
+    "sort": 7011,
+    "desc": "升级任意房间 1 次。拉建造"
+  },
+  {
+    "task_id": 7012,
+    "task_name": "直面恐惧",
+    "task_type": "daily",
+    "category": "教学/日常",
+    "condition_type": "counter",
+    "counter_key": "challenge_milestone",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 90
+      }
+    ],
+    "sort": 7012,
+    "desc": "挑战 1 次里程碑怪（失败也算）。降 Boss 门槛心理"
+  },
+  {
+    "task_id": 8001,
+    "task_name": "雾海渔夫",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone": "zone_fog",
+      "rarity": "common"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 500
+      }
+    ],
+    "sort": 8001,
+    "desc": "集齐迷雾海峡全部普通鱼种（白/绿）"
+  },
+  {
+    "task_id": 8002,
+    "task_name": "雾海收藏家",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone": "zone_fog"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1500
+      }
+    ],
+    "sort": 8002,
+    "desc": "集齐迷雾海峡全部鱼种（含特殊）"
+  },
+  {
+    "task_id": 8003,
+    "task_name": "雾海尺寸王",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_size_record_zone": "zone_fog"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 200
+      }
+    ],
+    "sort": 8003,
+    "desc": "迷雾海峡任意鱼种刷新尺寸纪录"
+  },
+  {
+    "task_id": 8004,
+    "task_name": "风暴渔夫",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone": "zone_storm",
+      "rarity": "common"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 800
+      }
+    ],
+    "sort": 8004,
+    "desc": "集齐风暴之海全部普通鱼种"
+  },
+  {
+    "task_id": 8005,
+    "task_name": "风暴收藏家",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone": "zone_storm"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 2000
+      }
+    ],
+    "sort": 8005,
+    "desc": "集齐风暴之海全部鱼种（含特殊）"
+  },
+  {
+    "task_id": 8006,
+    "task_name": "风暴尺寸王",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_size_record_zone": "zone_storm"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 300
+      }
+    ],
+    "sort": 8006,
+    "desc": "风暴之海任意鱼种刷新尺寸纪录"
+  },
+  {
+    "task_id": 8007,
+    "task_name": "深渊渔夫",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone": "zone_abyss",
+      "rarity": "common"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1200
+      }
+    ],
+    "sort": 8007,
+    "desc": "集齐深渊海域全部普通鱼种"
+  },
+  {
+    "task_id": 8008,
+    "task_name": "深渊收藏家",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone": "zone_abyss"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 3000
+      }
+    ],
+    "sort": 8008,
+    "desc": "集齐深渊海域全部鱼种（含特殊）"
+  },
+  {
+    "task_id": 8009,
+    "task_name": "深渊尺寸王",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_size_record_zone": "zone_abyss"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 500
+      }
+    ],
+    "sort": 8009,
+    "desc": "深渊海域任意鱼种刷新尺寸纪录"
+  },
+  {
+    "task_id": 8010,
+    "task_name": "初涉钓途",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_total",
+    "param_json": null,
+    "require_count": 10,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 100
+      }
+    ],
+    "sort": 8010,
+    "desc": "累计捕获 10 条鱼"
+  },
+  {
+    "task_id": 8011,
+    "task_name": "小有收获",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_total",
+    "param_json": null,
+    "require_count": 50,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 300
+      }
+    ],
+    "sort": 8011,
+    "desc": "累计捕获 50 条鱼"
+  },
+  {
+    "task_id": 8012,
+    "task_name": "捕鱼达人",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_total",
+    "param_json": null,
+    "require_count": 200,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 800
+      }
+    ],
+    "sort": 8012,
+    "desc": "累计捕获 200 条鱼"
+  },
+  {
+    "task_id": 8013,
+    "task_name": "深海猎人",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_total",
+    "param_json": null,
+    "require_count": 500,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 2000
+      }
+    ],
+    "sort": 8013,
+    "desc": "累计捕获 500 条鱼"
+  },
+  {
+    "task_id": 8014,
+    "task_name": "传说渔夫",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_total",
+    "param_json": null,
+    "require_count": 1000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 5000
+      }
+    ],
+    "sort": 8014,
+    "desc": "累计捕获 1000 条鱼"
+  },
+  {
+    "task_id": 8015,
+    "task_name": "异物发现者",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_alien",
+    "param_json": null,
+    "require_count": 5,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 150
+      }
+    ],
+    "sort": 8015,
+    "desc": "钓上 5 次异物"
+  },
+  {
+    "task_id": 8016,
+    "task_name": "特殊鱼猎手",
+    "task_type": "achieve",
+    "category": "钓鱼",
+    "condition_type": "counter",
+    "counter_key": "fish_special",
+    "param_json": null,
+    "require_count": 10,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8016,
+    "desc": "捕获 10 条特殊品质鱼（紫/橙）"
+  },
+  {
+    "task_id": 8101,
+    "task_name": "初次远航",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 500,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 100
+      }
+    ],
+    "sort": 8101,
+    "desc": "累计航行 500 里"
+  },
+  {
+    "task_id": 8102,
+    "task_name": "越过迷雾",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 1000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 200
+      }
+    ],
+    "sort": 8102,
+    "desc": "累计航行 1,000 里"
+  },
+  {
+    "task_id": 8103,
+    "task_name": "深入翡翠",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 3000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8103,
+    "desc": "累计航行 3,000 里"
+  },
+  {
+    "task_id": 8104,
+    "task_name": "穿越风暴",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 9000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 800
+      }
+    ],
+    "sort": 8104,
+    "desc": "累计航行 9,000 里"
+  },
+  {
+    "task_id": 8105,
+    "task_name": "老练船长",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 20000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1500
+      },
+      {
+        "type": "item",
+        "id": "itm_bp_page",
+        "count": 5
+      }
+    ],
+    "sort": 8105,
+    "desc": "累计航行 20,000 里"
+  },
+  {
+    "task_id": 8106,
+    "task_name": "七海行者",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 50000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 3000
+      }
+    ],
+    "sort": 8106,
+    "desc": "累计航行 50,000 里"
+  },
+  {
+    "task_id": 8107,
+    "task_name": "无垠",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 100000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 6000
+      },
+      {
+        "type": "item",
+        "id": "itm_orange_shard",
+        "count": 3
+      }
+    ],
+    "sort": 8107,
+    "desc": "累计航行 100,000 里"
+  },
+  {
+    "task_id": 8108,
+    "task_name": "深渊常客",
+    "task_type": "achieve",
+    "category": "航行",
+    "condition_type": "counter",
+    "counter_key": "sail_distance_total",
+    "param_json": null,
+    "require_count": 200000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 10000
+      }
+    ],
+    "sort": 8108,
+    "desc": "累计航行 200,000 里（限定涂装由程序按 appearance 发放）"
+  },
+  {
+    "task_id": 8109,
+    "task_name": "第一网",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "counter",
+    "counter_key": "fish_species",
+    "param_json": null,
+    "require_count": 5,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 100
+      }
+    ],
+    "sort": 8109,
+    "desc": "集齐 5 种鱼"
+  },
+  {
+    "task_id": 8110,
+    "task_name": "渔夫",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "counter",
+    "counter_key": "fish_species",
+    "param_json": null,
+    "require_count": 10,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 250
+      }
+    ],
+    "sort": 8110,
+    "desc": "集齐 10 种鱼"
+  },
+  {
+    "task_id": 8111,
+    "task_name": "博物学者",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "counter",
+    "counter_key": "fish_species",
+    "param_json": null,
+    "require_count": 20,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 600
+      }
+    ],
+    "sort": 8111,
+    "desc": "集齐 20 种鱼"
+  },
+  {
+    "task_id": 8112,
+    "task_name": "图鉴过半",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "counter",
+    "counter_key": "fish_species",
+    "param_json": null,
+    "require_count": 30,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1200
+      }
+    ],
+    "sort": 8112,
+    "desc": "集齐 30 种鱼"
+  },
+  {
+    "task_id": 8113,
+    "task_name": "深海全录",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "counter",
+    "counter_key": "fish_species",
+    "param_json": null,
+    "require_count": 40,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 3000
+      },
+      {
+        "type": "equip_random",
+        "quality": 4,
+        "count": 1
+      }
+    ],
+    "sort": 8113,
+    "desc": "集齐 40 种鱼"
+  },
+  {
+    "task_id": 8114,
+    "task_name": "传说之手",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "counter",
+    "counter_key": "fish_legendary",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 800
+      }
+    ],
+    "sort": 8114,
+    "desc": "首次钓上传说鱼"
+  },
+  {
+    "task_id": 8115,
+    "task_name": "一片海域的尽头",
+    "task_type": "achieve",
+    "category": "图鉴",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "fish_zone_all_any": 1
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1000
+      }
+    ],
+    "sort": 8115,
+    "desc": "集齐任意一个海域的全部鱼"
+  },
+  {
+    "task_id": 8116,
+    "task_name": "有炮的船",
+    "task_type": "achieve",
+    "category": "船只",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "hull_level": 2,
+      "cannon_built": 1
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 200
+      }
+    ],
+    "sort": 8116,
+    "desc": "船体 Lv2 且建成 1 门炮台"
+  },
+  {
+    "task_id": 8117,
+    "task_name": "双炮齐鸣",
+    "task_type": "achieve",
+    "category": "船只",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "cannon_count": 2
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8117,
+    "desc": "同时拥有 2 门炮台"
+  },
+  {
+    "task_id": 8118,
+    "task_name": "海上工厂",
+    "task_type": "achieve",
+    "category": "船只",
+    "condition_type": "counter",
+    "counter_key": "ammo_produced_total",
+    "param_json": null,
+    "require_count": 500,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8118,
+    "desc": "建成工坊并累计产 500 发弹药"
+  },
+  {
+    "task_id": 8119,
+    "task_name": "三阶船体",
+    "task_type": "achieve",
+    "category": "船只",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "hull_level": 3
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 600
+      }
+    ],
+    "sort": 8119,
+    "desc": "船体达到 Lv3"
+  },
+  {
+    "task_id": 8120,
+    "task_name": "四阶船体",
+    "task_type": "achieve",
+    "category": "船只",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "hull_level": 4
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1500
+      }
+    ],
+    "sort": 8120,
+    "desc": "船体达到 Lv4"
+  },
+  {
+    "task_id": 8121,
+    "task_name": "满级船体",
+    "task_type": "achieve",
+    "category": "船只",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "hull_level": 5
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 4000
+      },
+      {
+        "type": "appearance",
+        "count": 1
+      }
+    ],
+    "sort": 8121,
+    "desc": "船体达到 Lv5"
+  },
+  {
+    "task_id": 8122,
+    "task_name": "第一次转职",
+    "task_type": "achieve",
+    "category": "船员",
+    "condition_type": "counter",
+    "counter_key": "class_change",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 300
+      }
+    ],
+    "sort": 8122,
+    "desc": "任意船员完成 1 转"
+  },
+  {
+    "task_id": 8123,
+    "task_name": "三人成队",
+    "task_type": "achieve",
+    "category": "船员",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "crew_class2_count": 3
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 800
+      }
+    ],
+    "sort": 8123,
+    "desc": "3 名船员完成 2 转"
+  },
+  {
+    "task_id": 8124,
+    "task_name": "天赋异禀",
+    "task_type": "achieve",
+    "category": "船员",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "crew_attr_value": 20
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 500
+      }
+    ],
+    "sort": 8124,
+    "desc": "单名船员某属性达 20"
+  },
+  {
+    "task_id": 8125,
+    "task_name": "招募官",
+    "task_type": "achieve",
+    "category": "船员",
+    "condition_type": "counter",
+    "counter_key": "recruit_count",
+    "param_json": null,
+    "require_count": 10,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8125,
+    "desc": "累计招募 10 名船员"
+  },
+  {
+    "task_id": 8126,
+    "task_name": "满编",
+    "task_type": "achieve",
+    "category": "船员",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "crew_full": 1
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 600
+      }
+    ],
+    "sort": 8126,
+    "desc": "船员数达到当前上限"
+  },
+  {
+    "task_id": 8127,
+    "task_name": "不死的船医",
+    "task_type": "achieve",
+    "category": "船员",
+    "condition_type": "counter",
+    "counter_key": "revive_count",
+    "param_json": null,
+    "require_count": 10,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 300
+      }
+    ],
+    "sort": 8127,
+    "desc": "累计复活 10 次"
+  },
+  {
+    "task_id": 8128,
+    "task_name": "第一个里程碑",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "counter",
+    "counter_key": "kill_elite",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 150
+      }
+    ],
+    "sort": 8128,
+    "desc": "击败首个精英怪"
+  },
+  {
+    "task_id": 8129,
+    "task_name": "中段决斗",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "counter",
+    "counter_key": "kill_miniboss",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 800
+      },
+      {
+        "type": "equip_random",
+        "quality": 4,
+        "count": 1
+      }
+    ],
+    "sort": 8129,
+    "desc": "击败首个小 Boss"
+  },
+  {
+    "task_id": 8130,
+    "task_name": "章节终章",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "counter",
+    "counter_key": "kill_boss",
+    "param_json": null,
+    "require_count": 1,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1000
+      },
+      {
+        "type": "equip_random",
+        "quality": 4,
+        "count": 1
+      }
+    ],
+    "sort": 8130,
+    "desc": "击败首个大 Boss"
+  },
+  {
+    "task_id": 8131,
+    "task_name": "零阵亡",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "chapter_no_death": 1
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 700
+      }
+    ],
+    "sort": 8131,
+    "desc": "一章内无船员死亡通关"
+  },
+  {
+    "task_id": 8132,
+    "task_name": "翻盘",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "mobilize_clear_60s": 1
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 500
+      }
+    ],
+    "sort": 8132,
+    "desc": "使用全员参战后 60 秒内清空场上敌人"
+  },
+  {
+    "task_id": 8133,
+    "task_name": "千杀",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "counter",
+    "counter_key": "kill_total",
+    "param_json": null,
+    "require_count": 1000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 1200
+      }
+    ],
+    "sort": 8133,
+    "desc": "累计击杀 1,000 只怪"
+  },
+  {
+    "task_id": 8134,
+    "task_name": "一炮四中",
+    "task_type": "achieve",
+    "category": "战斗",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "single_shot_targets": 4
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 300
+      }
+    ],
+    "sort": 8134,
+    "desc": "单发炮弹命中 4 个目标"
+  },
+  {
+    "task_id": 8135,
+    "task_name": "全房三阶",
+    "task_type": "achieve",
+    "category": "经营",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "all_built_rooms_lv3": 1
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 3000
+      }
+    ],
+    "sort": 8135,
+    "desc": "全部已建房间达到 Lv3"
+  },
+  {
+    "task_id": 8136,
+    "task_name": "日产破千",
+    "task_type": "achieve",
+    "category": "经营",
+    "condition_type": "counter",
+    "counter_key": "day_output_total",
+    "param_json": null,
+    "require_count": 1000,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 600
+      }
+    ],
+    "sort": 8136,
+    "desc": "单日产出 1,000 单位资源"
+  },
+  {
+    "task_id": 8137,
+    "task_name": "能源自给",
+    "task_type": "achieve",
+    "category": "经营",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "net_positive_sec": 600,
+      "res": "energy"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8137,
+    "desc": "能源净产出 ≥ 0 持续 10 分钟"
+  },
+  {
+    "task_id": 8138,
+    "task_name": "食物自给",
+    "task_type": "achieve",
+    "category": "经营",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "net_positive_sec": 600,
+      "res": "food"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8138,
+    "desc": "食物净产出 ≥ 0 持续 10 分钟"
+  },
+  {
+    "task_id": 8139,
+    "task_name": "淡水自给",
+    "task_type": "achieve",
+    "category": "经营",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "net_positive_sec": 600,
+      "res": "water"
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 400
+      }
+    ],
+    "sort": 8139,
+    "desc": "淡水净产出 ≥ 0 持续 10 分钟"
+  },
+  {
+    "task_id": 8140,
+    "task_name": "弹药不断",
+    "task_type": "achieve",
+    "category": "经营",
+    "condition_type": "state",
+    "counter_key": "",
+    "param_json": {
+      "ammo_nonzero_sec": 3600
+    },
+    "require_count": 0,
+    "reward_json": [
+      {
+        "type": "shell",
+        "count": 500
+      }
+    ],
+    "sort": 8140,
+    "desc": "连续 60 分钟弹药库存不为 0"
+  }
+]

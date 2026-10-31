@@ -1,0 +1,1490 @@
+[
+  {
+    "name_id": 1001,
+    "gender": "male",
+    "name": "老盐巴·杰克",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1002,
+    "gender": "male",
+    "name": "独眼凯尔",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1003,
+    "gender": "male",
+    "name": "铁钩汉斯",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1004,
+    "gender": "male",
+    "name": "疤脸汤姆",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1005,
+    "gender": "male",
+    "name": "酒桶麦克",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1006,
+    "gender": "male",
+    "name": "断齿比尔",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1007,
+    "gender": "male",
+    "name": "桅顶老乔",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1008,
+    "gender": "male",
+    "name": "缆绳皮特",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1009,
+    "gender": "male",
+    "name": "咸鱼萨姆",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1010,
+    "gender": "male",
+    "name": "锚链鲍勃",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1011,
+    "gender": "male",
+    "name": "风暴杰克",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1012,
+    "gender": "male",
+    "name": "油布威利",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2001,
+    "gender": "female",
+    "name": "独眼玛莎",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2002,
+    "gender": "female",
+    "name": "老锚莉娜",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2003,
+    "gender": "female",
+    "name": "咸水安妮",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2004,
+    "gender": "female",
+    "name": "舵手贝丝",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2005,
+    "gender": "female",
+    "name": "缆索萝丝",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2006,
+    "gender": "female",
+    "name": "红发凯特",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2007,
+    "gender": "female",
+    "name": "风暴女乔安",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2008,
+    "gender": "female",
+    "name": "铁钉格蕾",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2009,
+    "gender": "female",
+    "name": "桅顶玛丽",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2010,
+    "gender": "female",
+    "name": "鱼鳞黛西",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2011,
+    "gender": "female",
+    "name": "潮汐苏珊",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2012,
+    "gender": "female",
+    "name": "甲板艾达",
+    "style": "sailor",
+    "rarity_allow": [
+      "common",
+      "fine"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1013,
+    "gender": "male",
+    "name": "面包房卢卡",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1014,
+    "gender": "male",
+    "name": "码头阿德里安",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1015,
+    "gender": "male",
+    "name": "鱼贩马可",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1016,
+    "gender": "male",
+    "name": "灯匠伊莱",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1017,
+    "gender": "male",
+    "name": "修帆匠塞恩",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1018,
+    "gender": "male",
+    "name": "酒馆诺亚",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1019,
+    "gender": "male",
+    "name": "铁匠学徒加斯",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1020,
+    "gender": "male",
+    "name": "搬运工鲁本",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1021,
+    "gender": "male",
+    "name": "摆渡人奥托",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1022,
+    "gender": "male",
+    "name": "拾荒者迪恩",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1023,
+    "gender": "male",
+    "name": "补网匠弗兰",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1024,
+    "gender": "male",
+    "name": "磨刀匠西奥",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2013,
+    "gender": "female",
+    "name": "面包房艾拉",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2014,
+    "gender": "female",
+    "name": "鱼摊娜塔莉",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2015,
+    "gender": "female",
+    "name": "缝帆女工塞拉",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2016,
+    "gender": "female",
+    "name": "灯匠之女伊芙",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2017,
+    "gender": "female",
+    "name": "酒馆老板娘洛娜",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2018,
+    "gender": "female",
+    "name": "洗衣妇玛蒂",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2019,
+    "gender": "female",
+    "name": "补网女米娅",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2020,
+    "gender": "female",
+    "name": "卖花人菲奥娜",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2021,
+    "gender": "female",
+    "name": "码头记账员克莱尔",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2022,
+    "gender": "female",
+    "name": "磨坊女黛拉",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2023,
+    "gender": "female",
+    "name": "铁匠之女蕾娅",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 2024,
+    "gender": "female",
+    "name": "摆渡女奥丽",
+    "style": "port",
+    "rarity_allow": [
+      "common",
+      "fine",
+      "rare"
+    ],
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "name_id": 1025,
+    "gender": "male",
+    "name": "冯·埃伯哈特",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1026,
+    "gender": "male",
+    "name": "落魄子爵卡西安",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1027,
+    "gender": "male",
+    "name": "塞尔温爵士",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1028,
+    "gender": "male",
+    "name": "奥兰多男爵",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1029,
+    "gender": "male",
+    "name": "提尔顿勋爵",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1030,
+    "gender": "male",
+    "name": "罗萨里奥伯爵",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1031,
+    "gender": "male",
+    "name": "维吉尔少爷",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1032,
+    "gender": "male",
+    "name": "埃德蒙公子",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1033,
+    "gender": "male",
+    "name": "德弗罗伊",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1034,
+    "gender": "male",
+    "name": "蒙特雷侯",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1035,
+    "gender": "male",
+    "name": "圣克莱尔",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1036,
+    "gender": "male",
+    "name": "阿什福德",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2025,
+    "gender": "female",
+    "name": "冯·艾尔玛",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2026,
+    "gender": "female",
+    "name": "女伯爵塞西莉",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2027,
+    "gender": "female",
+    "name": "塞尔温小姐",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2028,
+    "gender": "female",
+    "name": "奥兰迪娅",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2029,
+    "gender": "female",
+    "name": "提尔顿夫人",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2030,
+    "gender": "female",
+    "name": "罗萨里娅",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2031,
+    "gender": "female",
+    "name": "维奥莱特",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2032,
+    "gender": "female",
+    "name": "埃德米娜",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2033,
+    "gender": "female",
+    "name": "德弗罗伊夫人",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2034,
+    "gender": "female",
+    "name": "蒙特雷小姐",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2035,
+    "gender": "female",
+    "name": "圣克莱尔夫人",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 2036,
+    "gender": "female",
+    "name": "阿什福德小姐",
+    "style": "noble",
+    "rarity_allow": [
+      "rare",
+      "epic"
+    ],
+    "weight": 4,
+    "desc": ""
+  },
+  {
+    "name_id": 1037,
+    "gender": "male",
+    "name": "阿卜杜勒·萨利姆",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1038,
+    "gender": "male",
+    "name": "卡里姆·航海者",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1039,
+    "gender": "male",
+    "name": "香料商哈桑",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1040,
+    "gender": "male",
+    "name": "东方客陈九",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1041,
+    "gender": "male",
+    "name": "占星者拉希德",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1042,
+    "gender": "male",
+    "name": "竹筏人阿南",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1043,
+    "gender": "male",
+    "name": "驼队后裔扎伊德",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1044,
+    "gender": "male",
+    "name": "南洋水手沙旺",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1045,
+    "gender": "male",
+    "name": "香料群岛的穆萨",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1046,
+    "gender": "male",
+    "name": "风暴祭司卡帕",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1047,
+    "gender": "male",
+    "name": "银面人阿吉特",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1048,
+    "gender": "male",
+    "name": "珊瑚商巴图",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2037,
+    "gender": "female",
+    "name": "莱拉·萨利玛",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2038,
+    "gender": "female",
+    "name": "卡丽玛",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2039,
+    "gender": "female",
+    "name": "香料女商扎娜",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2040,
+    "gender": "female",
+    "name": "东方客柳三娘",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2041,
+    "gender": "female",
+    "name": "占星女拉希玛",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2042,
+    "gender": "female",
+    "name": "竹筏女阿娜",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2043,
+    "gender": "female",
+    "name": "驼队之女扎伊娜",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2044,
+    "gender": "female",
+    "name": "南洋女沙丽",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2045,
+    "gender": "female",
+    "name": "香料群岛的米娜",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2046,
+    "gender": "female",
+    "name": "风暴女祭司卡莉",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2047,
+    "gender": "female",
+    "name": "银面女阿吉塔",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 2048,
+    "gender": "female",
+    "name": "珊瑚商芭图",
+    "style": "exotic",
+    "rarity_allow": [
+      "fine",
+      "rare"
+    ],
+    "weight": 6,
+    "desc": ""
+  },
+  {
+    "name_id": 1049,
+    "gender": "male",
+    "name": "无名者赛勒斯",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1050,
+    "gender": "male",
+    "name": "灰袍奥古斯特",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1051,
+    "gender": "male",
+    "name": "蜡面人费恩",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1052,
+    "gender": "male",
+    "name": "低语者马库斯",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1053,
+    "gender": "male",
+    "name": "触须信徒伊桑",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1054,
+    "gender": "male",
+    "name": "灰烬祭司达里尔",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1055,
+    "gender": "male",
+    "name": "星之瞳奥列格",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1056,
+    "gender": "male",
+    "name": "深海之子诺曼",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1057,
+    "gender": "male",
+    "name": "缄默者以撒",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1058,
+    "gender": "male",
+    "name": "逆十字格里",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1059,
+    "gender": "male",
+    "name": "梦行者卢西恩",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 1060,
+    "gender": "male",
+    "name": "深渊抄经人瓦伦",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2049,
+    "gender": "female",
+    "name": "无名者塞拉",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2050,
+    "gender": "female",
+    "name": "灰袍奥古斯塔",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2051,
+    "gender": "female",
+    "name": "蜡面女菲恩",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2052,
+    "gender": "female",
+    "name": "低语者玛尔塔",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2053,
+    "gender": "female",
+    "name": "触须信徒伊莎",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2054,
+    "gender": "female",
+    "name": "灰烬女祭司达莉娅",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2055,
+    "gender": "female",
+    "name": "星之瞳奥尔加",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2056,
+    "gender": "female",
+    "name": "深海之女诺拉",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2057,
+    "gender": "female",
+    "name": "缄默者以斯帖",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2058,
+    "gender": "female",
+    "name": "逆十字格蕾塔",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2059,
+    "gender": "female",
+    "name": "梦行者露西娅",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  },
+  {
+    "name_id": 2060,
+    "gender": "female",
+    "name": "深渊抄经女瓦莱丽",
+    "style": "cult",
+    "rarity_allow": [
+      "rare",
+      "epic",
+      "legend"
+    ],
+    "weight": 3,
+    "desc": ""
+  }
+]

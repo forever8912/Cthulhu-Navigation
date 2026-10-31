@@ -1,90 +1,1423 @@
 [
   {
-    "monster_id": 1,
+    "monster_id": 101,
     "name": "迷雾水母",
     "category": "normal",
-    "tags": "aquatic",
-    "art": "monster/jellyfish_01",
-    "anim_idle": "idle",
-    "anim_move": "move",
-    "anim_attack": "attack",
-    "anim_hit": "hit",
-    "anim_die": "die",
-    "move_speed": 0.6,
-    "attack_interval": 2.5,
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/jellyfish/idle",
+    "art_move": "monster/jellyfish/move",
+    "art_attack": "monster/jellyfish/attack",
+    "art_hit": "monster/jellyfish/hit",
+    "art_die": "monster/jellyfish/die",
+    "move_speed_base": 0.6,
+    "attack_interval_base": 1.6,
     "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003"
+    ],
     "attack_target": "nearest",
     "attack_range": 300,
-    "can_climb": 1,
-    "can_fly": 0,
+    "can_climb": false,
+    "can_fly": false,
     "body_size": "small",
-    "fear_value": 2,
-    "sfx": ""
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "半透明伞体，触须拖在海面；远程魔法，一波 4 只共享火力，必然漏 1~1.5 只"
   },
   {
-    "monster_id": 2,
+    "monster_id": 102,
     "name": "腐化螃蟹",
     "category": "normal",
-    "tags": "aquatic|climb",
-    "art": "monster/crab_01",
-    "anim_idle": "idle",
-    "anim_move": "move",
-    "anim_attack": "attack",
-    "anim_hit": "hit",
-    "anim_die": "die",
-    "move_speed": 0.4,
-    "attack_interval": 2,
+    "tags": [
+      "aquatic"
+    ],
+    "art_idle": "monster/crab/idle",
+    "art_move": "monster/crab/move",
+    "art_attack": "monster/crab/attack",
+    "art_hit": "monster/crab/hit",
+    "art_die": "monster/crab/die",
+    "move_speed_base": 0.4,
+    "attack_interval_base": 1.6,
     "attack_type": "melee_phys",
-    "attack_target": "nearest",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "room",
     "attack_range": 60,
-    "can_climb": 1,
-    "can_fly": 0,
+    "can_climb": true,
+    "can_fly": false,
     "body_size": "medium",
-    "fear_value": 3,
-    "sfx": ""
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "甲壳厚，目标房间；拆 Lv1 房约 9.6s，逼玩家升房间"
   },
   {
-    "monster_id": 3,
+    "monster_id": 103,
     "name": "幽灵水手",
     "category": "normal",
-    "tags": "undead|climb",
-    "art": "monster/ghost_01",
-    "anim_idle": "idle",
-    "anim_move": "move",
-    "anim_attack": "attack",
-    "anim_hit": "hit",
-    "anim_die": "die",
-    "move_speed": 1.2,
-    "attack_interval": 1.8,
+    "tags": [
+      "undead",
+      "climbable"
+    ],
+    "art_idle": "monster/ghost_sailor/idle",
+    "art_move": "monster/ghost_sailor/move",
+    "art_attack": "monster/ghost_sailor/attack",
+    "art_hit": "monster/ghost_sailor/hit",
+    "art_die": "monster/ghost_sailor/die",
+    "move_speed_base": 1.2,
+    "attack_interval_base": 1.2,
     "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
     "attack_target": "lowest_hp",
     "attack_range": 60,
-    "can_climb": 1,
-    "can_fly": 0,
+    "can_climb": true,
+    "can_fly": false,
     "body_size": "medium",
-    "fear_value": 3,
-    "sfx": ""
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "亡灵，速度最快，专挑残血船员"
   },
   {
-    "monster_id": 9001,
+    "monster_id": 104,
+    "name": "迷雾领主",
+    "category": "elite",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/mist_lord/idle",
+    "art_move": "monster/mist_lord/move",
+    "art_attack": "monster/mist_lord/attack",
+    "art_hit": "monster/mist_lord/hit",
+    "art_die": "monster/mist_lord/die",
+    "move_speed_base": 0.7,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6102",
+      "6141",
+      "6142"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "精英：近战+远程混合，召唤小水母"
+  },
+  {
+    "monster_id": 105,
     "name": "迷雾守望者",
     "category": "boss",
-    "tags": "aquatic|undead",
-    "art": "monster/boss_mist",
-    "anim_idle": "idle",
-    "anim_move": "move",
-    "anim_attack": "attack",
-    "anim_hit": "hit",
-    "anim_die": "die",
-    "move_speed": 0.5,
-    "attack_interval": 3,
+    "tags": [
+      "undead",
+      "legendary",
+      "aquatic"
+    ],
+    "art_idle": "monster/mist_watcher/idle",
+    "art_move": "monster/mist_watcher/move",
+    "art_attack": "monster/mist_watcher/attack",
+    "art_hit": "monster/mist_watcher/hit",
+    "art_die": "monster/mist_watcher/die",
+    "move_speed_base": 0.4,
+    "attack_interval_base": 2.5,
     "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6101",
+      "6102",
+      "6103",
+      "6131"
+    ],
     "attack_target": "ship",
     "attack_range": 400,
-    "can_climb": 0,
-    "can_fly": 0,
+    "can_climb": false,
+    "can_fly": false,
     "body_size": "huge",
+    "fear_value": 35,
+    "sfx_id": "",
+    "desc": "Boss：对房间 20 / 船体 10（船体=房间×50%），领域技"
+  },
+  {
+    "monster_id": 201,
+    "name": "疯狂海鸥",
+    "category": "normal",
+    "tags": [
+      "flying",
+      "climbable"
+    ],
+    "art_idle": "monster/gull/idle",
+    "art_move": "monster/gull/move",
+    "art_attack": "monster/gull/attack",
+    "art_hit": "monster/gull/hit",
+    "art_die": "monster/gull/die",
+    "move_speed_base": 1.4,
+    "attack_interval_base": 1.4,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": true,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "飞行，无视攀爬直接落甲板；只有远程拦得住"
+  },
+  {
+    "monster_id": 202,
+    "name": "珊瑚守卫",
+    "category": "normal",
+    "tags": [
+      "aquatic"
+    ],
+    "art_idle": "monster/coral_guard/idle",
+    "art_move": "monster/coral_guard/move",
+    "art_attack": "monster/coral_guard/attack",
+    "art_hit": "monster/coral_guard/hit",
+    "art_die": "monster/coral_guard/die",
+    "move_speed_base": 0.5,
+    "attack_interval_base": 1.6,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "room",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "厚甲反伤，拆房型"
+  },
+  {
+    "monster_id": 203,
+    "name": "深海灯笼鱼",
+    "category": "normal",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/lanternfish/idle",
+    "art_move": "monster/lanternfish/move",
+    "art_attack": "monster/lanternfish/attack",
+    "art_hit": "monster/lanternfish/hit",
+    "art_die": "monster/lanternfish/die",
+    "move_speed_base": 0.6,
+    "attack_interval_base": 1.6,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003"
+    ],
+    "attack_target": "nearest",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "远程魔法，命中后致盲 2s"
+  },
+  {
+    "monster_id": 204,
+    "name": "翡翠女王",
+    "category": "elite",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/emerald_queen/idle",
+    "art_move": "monster/emerald_queen/move",
+    "art_attack": "monster/emerald_queen/attack",
+    "art_hit": "monster/emerald_queen/hit",
+    "art_die": "monster/emerald_queen/die",
+    "move_speed_base": 0.7,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6112",
+      "6143",
+      "6144"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "精英：召唤·自愈，会叫珊瑚守卫"
+  },
+  {
+    "monster_id": 205,
+    "name": "风暴海燕",
+    "category": "elite",
+    "tags": [
+      "flying",
+      "climbable"
+    ],
+    "art_idle": "monster/storm_petrel/idle",
+    "art_move": "monster/storm_petrel/move",
+    "art_attack": "monster/storm_petrel/attack",
+    "art_hit": "monster/storm_petrel/hit",
+    "art_die": "monster/storm_petrel/die",
+    "move_speed_base": 1.2,
+    "attack_interval_base": 1.5,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6112",
+      "6145",
+      "6146"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": true,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "精英：飞行 AOE，落在甲板中央"
+  },
+  {
+    "monster_id": 206,
+    "name": "翡翠巨兽",
+    "category": "boss",
+    "tags": [
+      "aquatic",
+      "legendary"
+    ],
+    "art_idle": "monster/emerald_beast/idle",
+    "art_move": "monster/emerald_beast/move",
+    "art_attack": "monster/emerald_beast/attack",
+    "art_hit": "monster/emerald_beast/hit",
+    "art_die": "monster/emerald_beast/die",
+    "move_speed_base": 0.4,
+    "attack_interval_base": 2.5,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6111",
+      "6113",
+      "6132"
+    ],
+    "attack_target": "ship",
+    "attack_range": 400,
+    "can_climb": false,
+    "can_fly": false,
+    "body_size": "huge",
+    "fear_value": 35,
+    "sfx_id": "",
+    "desc": "Boss：护盾·震击；对房间 23 / 船体 13"
+  },
+  {
+    "monster_id": 207,
+    "name": "礁岩蠕虫",
+    "category": "normal",
+    "tags": [
+      "aquatic"
+    ],
+    "art_idle": "monster/reef_worm/idle",
+    "art_move": "monster/reef_worm/move",
+    "art_attack": "monster/reef_worm/attack",
+    "art_hit": "monster/reef_worm/hit",
+    "art_die": "monster/reef_worm/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 1.2,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "room",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "疾行拆房，从海底钻出，前置预警 1.5s"
+  },
+  {
+    "monster_id": 208,
+    "name": "翡翠女王·厚甲",
+    "category": "elite",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/queen_armored/idle",
+    "art_move": "monster/queen_armored/move",
+    "art_attack": "monster/queen_armored/attack",
+    "art_hit": "monster/queen_armored/hit",
+    "art_die": "monster/queen_armored/die",
+    "move_speed_base": 0.7,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6112",
+      "6143",
+      "6144"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "204 换色变体（tint=armor），壳层加厚，1,500 里里程碑"
+  },
+  {
+    "monster_id": 209,
+    "name": "翡翠女王·蜕变体",
+    "category": "miniboss",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/queen_evolved/idle",
+    "art_move": "monster/queen_evolved/move",
+    "art_attack": "monster/queen_evolved/attack",
+    "art_hit": "monster/queen_evolved/hit",
+    "art_die": "monster/queen_evolved/die",
+    "move_speed_base": 0.7,
+    "attack_interval_base": 1.8,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6113",
+      "6147",
+      "6148"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 26,
+    "sfx_id": "",
+    "desc": "小Boss：= 204 基础档 ×2.2，1,500 里；紫装保底"
+  },
+  {
+    "monster_id": 301,
+    "name": "雷电水母",
+    "category": "normal",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/thunder_jelly/idle",
+    "art_move": "monster/thunder_jelly/move",
+    "art_attack": "monster/thunder_jelly/attack",
+    "art_hit": "monster/thunder_jelly/hit",
+    "art_die": "monster/thunder_jelly/die",
+    "move_speed_base": 0.6,
+    "attack_interval_base": 1.6,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003"
+    ],
+    "attack_target": "nearest",
+    "attack_range": 300,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "连锁闪电，命中后跳到相邻目标"
+  },
+  {
+    "monster_id": 302,
+    "name": "风暴元素",
+    "category": "normal",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/storm_elemental/idle",
+    "art_move": "monster/storm_elemental/move",
+    "art_attack": "monster/storm_elemental/attack",
+    "art_hit": "monster/storm_elemental/hit",
+    "art_die": "monster/storm_elemental/die",
+    "move_speed_base": 1.2,
+    "attack_interval_base": 1.2,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003"
+    ],
+    "attack_target": "room",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "疾行拆房型，AOE 电环"
+  },
+  {
+    "monster_id": 303,
+    "name": "幽灵海盗",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "climbable"
+    ],
+    "art_idle": "monster/ghost_pirate/idle",
+    "art_move": "monster/ghost_pirate/move",
+    "art_attack": "monster/ghost_pirate/attack",
+    "art_hit": "monster/ghost_pirate/hit",
+    "art_die": "monster/ghost_pirate/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 1.6,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "狂攻：脆皮高伤，优先集火对象"
+  },
+  {
+    "monster_id": 304,
+    "name": "雷电领主",
+    "category": "elite",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/thunder_lord/idle",
+    "art_move": "monster/thunder_lord/move",
+    "art_attack": "monster/thunder_lord/attack",
+    "art_hit": "monster/thunder_lord/hit",
+    "art_die": "monster/thunder_lord/die",
+    "move_speed_base": 0.7,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6121",
+      "6149",
+      "6150"
+    ],
+    "attack_target": "nearest",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "精英：控制·召唤"
+  },
+  {
+    "monster_id": 305,
+    "name": "幽灵船长",
+    "category": "elite",
+    "tags": [
+      "undead",
+      "climbable"
+    ],
+    "art_idle": "monster/ghost_captain/idle",
+    "art_move": "monster/ghost_captain/move",
+    "art_attack": "monster/ghost_captain/attack",
+    "art_hit": "monster/ghost_captain/hit",
+    "art_die": "monster/ghost_captain/die",
+    "move_speed_base": 0.8,
+    "attack_interval_base": 2.3,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6121",
+      "6122",
+      "6151",
+      "6152"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 80,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "重躯：慢但硬，召骷髅"
+  },
+  {
+    "monster_id": 306,
+    "name": "灼日暴君投影",
+    "category": "boss",
+    "tags": [
+      "magical",
+      "legendary"
+    ],
+    "art_idle": "monster/sun_tyrant/idle",
+    "art_move": "monster/sun_tyrant/move",
+    "art_attack": "monster/sun_tyrant/attack",
+    "art_hit": "monster/sun_tyrant/hit",
+    "art_die": "monster/sun_tyrant/die",
+    "move_speed_base": 0.4,
+    "attack_interval_base": 2.5,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6121",
+      "6123",
+      "6133"
+    ],
+    "attack_target": "ship",
+    "attack_range": 400,
+    "can_climb": false,
+    "can_fly": false,
+    "body_size": "huge",
+    "fear_value": 35,
+    "sfx_id": "",
+    "desc": "Boss：火 AOE；瞳孔单独切层做狂暴阶段提示；对房间 34 / 船体 17"
+  },
+  {
+    "monster_id": 307,
+    "name": "深潮鱼人",
+    "category": "normal",
+    "tags": [
+      "aquatic",
+      "climbable"
+    ],
+    "art_idle": "monster/deep_fishman/idle",
+    "art_move": "monster/deep_fishman/move",
+    "art_attack": "monster/deep_fishman/attack",
+    "art_hit": "monster/deep_fishman/hit",
+    "art_die": "monster/deep_fishman/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 1.6,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "冲锋：首次接触突进 1.5 倍速"
+  },
+  {
+    "monster_id": 308,
+    "name": "溺亡者",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "climbable"
+    ],
+    "art_idle": "monster/drowned_one/idle",
+    "art_move": "monster/drowned_one/move",
+    "art_attack": "monster/drowned_one/attack",
+    "art_hit": "monster/drowned_one/hit",
+    "art_die": "monster/drowned_one/die",
+    "move_speed_base": 1.1,
+    "attack_interval_base": 1.6,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "厚甲（v1.6 由骷髅战士下沉）；血月事件用血红 tint"
+  },
+  {
+    "monster_id": 309,
+    "name": "深海触手",
+    "category": "normal",
+    "tags": [
+      "aquatic"
+    ],
+    "art_idle": "monster/deep_tentacle/idle",
+    "art_move": "monster/deep_tentacle/move",
+    "art_attack": "monster/deep_tentacle/attack",
+    "art_hit": "monster/deep_tentacle/hit",
+    "art_die": "monster/deep_tentacle/die",
+    "move_speed_base": 0.8,
+    "attack_interval_base": 1.6,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "room",
+    "attack_range": 80,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "medium",
+    "fear_value": 10,
+    "sfx_id": "",
+    "desc": "缠绕：命中后目标 2s 不能移动；拆房型"
+  },
+  {
+    "monster_id": 310,
+    "name": "雷电领主·重躯",
+    "category": "elite",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/thunder_lord_heavy/idle",
+    "art_move": "monster/thunder_lord_heavy/move",
+    "art_attack": "monster/thunder_lord_heavy/attack",
+    "art_hit": "monster/thunder_lord_heavy/hit",
+    "art_die": "monster/thunder_lord_heavy/die",
+    "move_speed_base": 0.7,
+    "attack_interval_base": 2.3,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6121",
+      "6149",
+      "6150"
+    ],
+    "attack_target": "nearest",
+    "attack_range": 250,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 18,
+    "sfx_id": "",
+    "desc": "304 换色变体（tint=heavy），体型更宽"
+  },
+  {
+    "monster_id": 311,
+    "name": "幽灵船长·不灭号",
+    "category": "miniboss",
+    "tags": [
+      "undead",
+      "climbable"
+    ],
+    "art_idle": "monster/undying_ship/idle",
+    "art_move": "monster/undying_ship/move",
+    "art_attack": "monster/undying_ship/attack",
+    "art_hit": "monster/undying_ship/hit",
+    "art_die": "monster/undying_ship/die",
+    "move_speed_base": 0.8,
+    "attack_interval_base": 1.8,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6121",
+      "6122",
+      "6153",
+      "6154"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 80,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 26,
+    "sfx_id": "",
+    "desc": "小Boss：4,444/74/21，2,400 里；\"打不动的重甲幽灵船\""
+  },
+  {
+    "monster_id": 312,
+    "name": "雷霆之喉",
+    "category": "miniboss",
+    "tags": [
+      "aquatic",
+      "magical"
+    ],
+    "art_idle": "monster/thunder_maw/idle",
+    "art_move": "monster/thunder_maw/move",
+    "art_attack": "monster/thunder_maw/attack",
+    "art_hit": "monster/thunder_maw/hit",
+    "art_die": "monster/thunder_maw/die",
+    "move_speed_base": 1.2,
+    "attack_interval_base": 1.8,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003",
+      "6121",
+      "6155",
+      "6156"
+    ],
+    "attack_target": "nearest",
+    "attack_range": 300,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 26,
+    "sfx_id": "",
+    "desc": "小Boss：3,777/92/17，4,000 里；狂攻，三回合内必须打死"
+  },
+  {
+    "monster_id": 701,
+    "name": "溺亡水手",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "island_w"
+    ],
+    "art_idle": "monster/e_drowned/idle",
+    "art_move": "monster/e_drowned/move",
+    "art_attack": "monster/e_drowned/attack",
+    "art_hit": "monster/e_drowned/hit",
+    "art_die": "monster/e_drowned/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "W 沉船杂兵；复用 103 换色（泡胀半透）"
+  },
+  {
+    "monster_id": 702,
+    "name": "守夜人",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "island_w"
+    ],
+    "art_idle": "monster/e_watchman/idle",
+    "art_move": "monster/e_watchman/move",
+    "art_attack": "monster/e_watchman/attack",
+    "art_hit": "monster/e_watchman/hit",
+    "art_die": "monster/e_watchman/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6202"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "W 沉船杂兵；提灯骨架，灯是唯一光源"
+  },
+  {
+    "monster_id": 703,
+    "name": "船骸守卫",
+    "category": "elite",
+    "tags": [
+      "undead",
+      "island_w"
+    ],
+    "art_idle": "monster/e_guard/idle",
+    "art_move": "monster/e_guard/move",
+    "art_attack": "monster/e_guard/attack",
+    "art_hit": "monster/e_guard/hit",
+    "art_die": "monster/e_guard/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6203"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
     "fear_value": 12,
-    "sfx": ""
+    "sfx_id": "",
+    "desc": "W 精英；受远程伤害 −20%，逼玩家带近战"
+  },
+  {
+    "monster_id": 704,
+    "name": "船长亡灵",
+    "category": "boss",
+    "tags": [
+      "undead",
+      "island_w"
+    ],
+    "art_idle": "monster/e_captain/idle",
+    "art_move": "monster/e_captain/move",
+    "art_attack": "monster/e_captain/attack",
+    "art_hit": "monster/e_captain/hit",
+    "art_die": "monster/e_captain/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6204",
+      "6301"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "W Boss；每 8s 全队 SAN−5，HP<30% 攻击 +50%"
+  },
+  {
+    "monster_id": 711,
+    "name": "石像仆从",
+    "category": "normal",
+    "tags": [
+      "aquatic",
+      "island_t"
+    ],
+    "art_idle": "monster/e_stone/idle",
+    "art_move": "monster/e_stone/move",
+    "art_attack": "monster/e_stone/attack",
+    "art_hit": "monster/e_stone/hit",
+    "art_die": "monster/e_stone/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6211"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "T 神殿杂兵；免疫击退；复用 102 换石质"
+  },
+  {
+    "monster_id": 712,
+    "name": "祭司残影",
+    "category": "elite",
+    "tags": [
+      "magical",
+      "island_t"
+    ],
+    "art_idle": "monster/e_priest/idle",
+    "art_move": "monster/e_priest/move",
+    "art_attack": "monster/e_priest/attack",
+    "art_hit": "monster/e_priest/hit",
+    "art_die": "monster/e_priest/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6212"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 12,
+    "sfx_id": "",
+    "desc": "T 精英；每 10s 全队 SAN−6"
+  },
+  {
+    "monster_id": 713,
+    "name": "潮汐神像",
+    "category": "boss",
+    "tags": [
+      "aquatic",
+      "island_t"
+    ],
+    "art_idle": "monster/e_idol/idle",
+    "art_move": "monster/e_idol/move",
+    "art_attack": "monster/e_idol/attack",
+    "art_hit": "monster/e_idol/hit",
+    "art_die": "monster/e_idol/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6213",
+      "6302"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "T Boss；每 8s 随机目标增伤 50%，HP<30% SAN−10/8s"
+  },
+  {
+    "monster_id": 721,
+    "name": "食尸者",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "island_g"
+    ],
+    "art_idle": "monster/e_ghoul/idle",
+    "art_move": "monster/e_ghoul/move",
+    "art_attack": "monster/e_ghoul/attack",
+    "art_hit": "monster/e_ghoul/hit",
+    "art_die": "monster/e_ghoul/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6221"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "G 墓穴杂兵；攻击带 5% 最大 HP 腐化（无视护甲）"
+  },
+  {
+    "monster_id": 722,
+    "name": "守墓人",
+    "category": "elite",
+    "tags": [
+      "undead",
+      "island_g"
+    ],
+    "art_idle": "monster/e_keeper/idle",
+    "art_move": "monster/e_keeper/move",
+    "art_attack": "monster/e_keeper/attack",
+    "art_hit": "monster/e_keeper/hit",
+    "art_die": "monster/e_keeper/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6222"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 12,
+    "sfx_id": "",
+    "desc": "G 精英；受远程伤害 −15%"
+  },
+  {
+    "monster_id": 723,
+    "name": "棺中王",
+    "category": "boss",
+    "tags": [
+      "undead",
+      "island_g"
+    ],
+    "art_idle": "monster/e_king/idle",
+    "art_move": "monster/e_king/move",
+    "art_attack": "monster/e_king/attack",
+    "art_hit": "monster/e_king/hit",
+    "art_die": "monster/e_king/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6223"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "G Boss；每 10s 攻击 +30%，叠加上限 +90%"
+  },
+  {
+    "monster_id": 731,
+    "name": "墨人",
+    "category": "normal",
+    "tags": [
+      "magical",
+      "island_l"
+    ],
+    "art_idle": "monster/e_ink/idle",
+    "art_move": "monster/e_ink/move",
+    "art_attack": "monster/e_ink/attack",
+    "art_hit": "monster/e_ink/hit",
+    "art_die": "monster/e_ink/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003",
+      "6231"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "L 图书馆杂兵；死亡溅墨，随机 1 人命中 −15%"
+  },
+  {
+    "monster_id": 732,
+    "name": "抄写员",
+    "category": "elite",
+    "tags": [
+      "magical",
+      "island_l"
+    ],
+    "art_idle": "monster/e_scribe/idle",
+    "art_move": "monster/e_scribe/move",
+    "art_attack": "monster/e_scribe/attack",
+    "art_hit": "monster/e_scribe/hit",
+    "art_die": "monster/e_scribe/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003",
+      "6232"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 12,
+    "sfx_id": "",
+    "desc": "L 精英；每 8s 回自身 5% HP"
+  },
+  {
+    "monster_id": 733,
+    "name": "万物之书",
+    "category": "boss",
+    "tags": [
+      "magical",
+      "island_l"
+    ],
+    "art_idle": "monster/e_tome/idle",
+    "art_move": "monster/e_tome/move",
+    "art_attack": "monster/e_tome/attack",
+    "art_hit": "monster/e_tome/hit",
+    "art_die": "monster/e_tome/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003",
+      "6233"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "L Boss；每 10s 全队 SAN−8"
+  },
+  {
+    "monster_id": 741,
+    "name": "血信徒",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "island_a"
+    ],
+    "art_idle": "monster/e_cultist/idle",
+    "art_move": "monster/e_cultist/move",
+    "art_attack": "monster/e_cultist/attack",
+    "art_hit": "monster/e_cultist/hit",
+    "art_die": "monster/e_cultist/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6241"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "A 祭坛杂兵；死亡给最近敌人回 10% HP"
+  },
+  {
+    "monster_id": 742,
+    "name": "受缚者",
+    "category": "elite",
+    "tags": [
+      "undead",
+      "island_a"
+    ],
+    "art_idle": "monster/e_bound/idle",
+    "art_move": "monster/e_bound/move",
+    "art_attack": "monster/e_bound/attack",
+    "art_hit": "monster/e_bound/hit",
+    "art_die": "monster/e_bound/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6242"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 12,
+    "sfx_id": "",
+    "desc": "A 精英；死亡爆炸，全队 HP−8%"
+  },
+  {
+    "monster_id": 743,
+    "name": "契约之影",
+    "category": "boss",
+    "tags": [
+      "magical",
+      "island_a"
+    ],
+    "art_idle": "monster/e_table/idle",
+    "art_move": "monster/e_table/move",
+    "art_attack": "monster/e_table/attack",
+    "art_hit": "monster/e_table/hit",
+    "art_die": "monster/e_table/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "mixed",
+    "skill_ids": [
+      "6001",
+      "6003",
+      "6243"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "A Boss；每 10s 抽最低 HP 目标 10% 当前 HP"
+  },
+  {
+    "monster_id": 751,
+    "name": "疯修女",
+    "category": "normal",
+    "tags": [
+      "undead",
+      "island_c"
+    ],
+    "art_idle": "monster/e_nun/idle",
+    "art_move": "monster/e_nun/move",
+    "art_attack": "monster/e_nun/attack",
+    "art_hit": "monster/e_nun/hit",
+    "art_die": "monster/e_nun/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6251"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "C 教堂杂兵；攻击附带 SAN−2"
+  },
+  {
+    "monster_id": 752,
+    "name": "敲钟人",
+    "category": "elite",
+    "tags": [
+      "undead",
+      "island_c"
+    ],
+    "art_idle": "monster/e_ringer/idle",
+    "art_move": "monster/e_ringer/move",
+    "art_attack": "monster/e_ringer/attack",
+    "art_hit": "monster/e_ringer/hit",
+    "art_die": "monster/e_ringer/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6252"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 12,
+    "sfx_id": "",
+    "desc": "C 精英；每 12s 全队 SAN−5"
+  },
+  {
+    "monster_id": 753,
+    "name": "唱诗班",
+    "category": "boss",
+    "tags": [
+      "undead",
+      "island_c"
+    ],
+    "art_idle": "monster/e_choir/idle",
+    "art_move": "monster/e_choir/move",
+    "art_attack": "monster/e_choir/attack",
+    "art_hit": "monster/e_choir/hit",
+    "art_die": "monster/e_choir/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003",
+      "6253",
+      "6303"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "C Boss；每 8s 全队 SAN−4，HP<50% 起我方攻击 −20%"
+  },
+  {
+    "monster_id": 761,
+    "name": "空间碎片",
+    "category": "normal",
+    "tags": [
+      "magical",
+      "island_r"
+    ],
+    "art_idle": "monster/e_shard/idle",
+    "art_move": "monster/e_shard/move",
+    "art_attack": "monster/e_shard/attack",
+    "art_hit": "monster/e_shard/hit",
+    "art_die": "monster/e_shard/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6261"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "small",
+    "fear_value": 6,
+    "sfx_id": "",
+    "desc": "R 裂隙杂兵；护甲 0 但 20% 闪避；复用 101 换几何"
+  },
+  {
+    "monster_id": 762,
+    "name": "回声",
+    "category": "elite",
+    "tags": [
+      "magical",
+      "island_r"
+    ],
+    "art_idle": "monster/e_echo/idle",
+    "art_move": "monster/e_echo/move",
+    "art_attack": "monster/e_echo/attack",
+    "art_hit": "monster/e_echo/hit",
+    "art_die": "monster/e_echo/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "melee_phys",
+    "skill_ids": [
+      "6001",
+      "6262"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 12,
+    "sfx_id": "",
+    "desc": "R 精英；反弹 15% 近战伤害；唯一允许与玩家同构图"
+  },
+  {
+    "monster_id": 763,
+    "name": "神的眼睛",
+    "category": "boss",
+    "tags": [
+      "magical",
+      "island_r"
+    ],
+    "art_idle": "monster/e_eye/idle",
+    "art_move": "monster/e_eye/move",
+    "art_attack": "monster/e_eye/attack",
+    "art_hit": "monster/e_eye/hit",
+    "art_die": "monster/e_eye/die",
+    "move_speed_base": 1.0,
+    "attack_interval_base": 2.0,
+    "attack_type": "ranged_magic",
+    "skill_ids": [
+      "6003",
+      "6263"
+    ],
+    "attack_target": "lowest_hp",
+    "attack_range": 60,
+    "can_climb": true,
+    "can_fly": false,
+    "body_size": "large",
+    "fear_value": 20,
+    "sfx_id": "",
+    "desc": "R Boss；每 10s 对全队各 3% 最大 HP 伤害"
   }
 ]

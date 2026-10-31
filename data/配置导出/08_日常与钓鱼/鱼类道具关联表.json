@@ -1,0 +1,282 @@
+[
+  {
+    "fish_id": "fish_fog_01",
+    "item_id": "",
+    "convert_food_count": 2,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_02",
+    "item_id": "",
+    "convert_food_count": 3,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_03",
+    "item_id": "",
+    "convert_food_count": 1,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_04",
+    "item_id": "",
+    "convert_food_count": 5,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_05",
+    "item_id": "",
+    "convert_food_count": 8,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_06",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_fog_07",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_fog_08",
+    "item_id": "",
+    "convert_food_count": 4,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_09",
+    "item_id": "",
+    "convert_food_count": 10,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_10",
+    "item_id": "",
+    "convert_food_count": 3,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_11",
+    "item_id": "",
+    "convert_food_count": 2,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_fog_12",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_storm_01",
+    "item_id": "",
+    "convert_food_count": 3,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_02",
+    "item_id": "",
+    "convert_food_count": 6,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_03",
+    "item_id": "",
+    "convert_food_count": 5,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_04",
+    "item_id": "",
+    "convert_food_count": 12,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_05",
+    "item_id": "",
+    "convert_food_count": 15,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_06",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_storm_07",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_storm_08",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_storm_09",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_storm_10",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_storm_11",
+    "item_id": "",
+    "convert_food_count": 4,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_12",
+    "item_id": "",
+    "convert_food_count": 3,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_13",
+    "item_id": "",
+    "convert_food_count": 2,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_storm_14",
+    "item_id": "",
+    "convert_food_count": 5,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_01",
+    "item_id": "",
+    "convert_food_count": 4,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_02",
+    "item_id": "",
+    "convert_food_count": 7,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_03",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_04",
+    "item_id": "",
+    "convert_food_count": 18,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_05",
+    "item_id": "",
+    "convert_food_count": 10,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_06",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_07",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_08",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_09",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_10",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_11",
+    "item_id": "",
+    "convert_food_count": 5,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_12",
+    "item_id": "",
+    "convert_food_count": 0,
+    "convert_cost": 0,
+    "desc": "不可食用/有特殊用途"
+  },
+  {
+    "fish_id": "fish_abyss_13",
+    "item_id": "",
+    "convert_food_count": 3,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  },
+  {
+    "fish_id": "fish_abyss_14",
+    "item_id": "",
+    "convert_food_count": 14,
+    "convert_cost": 0,
+    "desc": "可转换为食物"
+  }
+]

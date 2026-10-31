@@ -1,0 +1,1054 @@
+[
+  {
+    "part_id": 1001,
+    "part_type": "skin",
+    "gender": "both",
+    "option_name": "苍白",
+    "asset_path": "art/crew/skin/x_1001.png",
+    "layer": 10,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 1002,
+    "part_type": "skin",
+    "gender": "both",
+    "option_name": "黝黑",
+    "asset_path": "art/crew/skin/x_1002.png",
+    "layer": 10,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 1003,
+    "part_type": "skin",
+    "gender": "both",
+    "option_name": "麦色",
+    "asset_path": "art/crew/skin/x_1003.png",
+    "layer": 10,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 1004,
+    "part_type": "skin",
+    "gender": "both",
+    "option_name": "灰败",
+    "asset_path": "art/crew/skin/x_1004.png",
+    "layer": 10,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 1005,
+    "part_type": "skin",
+    "gender": "both",
+    "option_name": "蜡黄",
+    "asset_path": "art/crew/skin/x_1005.png",
+    "layer": 10,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 1006,
+    "part_type": "skin",
+    "gender": "both",
+    "option_name": "青紫",
+    "asset_path": "art/crew/skin/x_1006.png",
+    "layer": 10,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2001,
+    "part_type": "face",
+    "gender": "both",
+    "option_name": "无疤",
+    "asset_path": "art/crew/face/x_2001.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2002,
+    "part_type": "face",
+    "gender": "male",
+    "option_name": "刀疤",
+    "asset_path": "art/crew/face/m_2002.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2003,
+    "part_type": "face",
+    "gender": "male",
+    "option_name": "胡茬",
+    "asset_path": "art/crew/face/m_2003.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2004,
+    "part_type": "face",
+    "gender": "female",
+    "option_name": "圆脸",
+    "asset_path": "art/crew/face/f_2004.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2005,
+    "part_type": "face",
+    "gender": "both",
+    "option_name": "瘦削",
+    "asset_path": "art/crew/face/x_2005.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2006,
+    "part_type": "face",
+    "gender": "both",
+    "option_name": "苍老",
+    "asset_path": "art/crew/face/x_2006.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2007,
+    "part_type": "face",
+    "gender": "female",
+    "option_name": "雀斑",
+    "asset_path": "art/crew/face/f_2007.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 2008,
+    "part_type": "face",
+    "gender": "both",
+    "option_name": "鲛纹",
+    "asset_path": "art/crew/face/x_2008.png",
+    "layer": 20,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2",
+      "p3"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3001,
+    "part_type": "eyes",
+    "gender": "both",
+    "option_name": "圆瞳",
+    "asset_path": "art/crew/eyes/x_3001.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3002,
+    "part_type": "eyes",
+    "gender": "both",
+    "option_name": "细眼",
+    "asset_path": "art/crew/eyes/x_3002.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3003,
+    "part_type": "eyes",
+    "gender": "male",
+    "option_name": "独眼",
+    "asset_path": "art/crew/eyes/m_3003.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3004,
+    "part_type": "eyes",
+    "gender": "both",
+    "option_name": "灰眸",
+    "asset_path": "art/crew/eyes/x_3004.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3005,
+    "part_type": "eyes",
+    "gender": "both",
+    "option_name": "空洞",
+    "asset_path": "art/crew/eyes/x_3005.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3006,
+    "part_type": "eyes",
+    "gender": "both",
+    "option_name": "异瞳",
+    "asset_path": "art/crew/eyes/x_3006.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "epic",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3007,
+    "part_type": "eyes",
+    "gender": "male",
+    "option_name": "眯眼",
+    "asset_path": "art/crew/eyes/m_3007.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 3008,
+    "part_type": "eyes",
+    "gender": "female",
+    "option_name": "泪痣",
+    "asset_path": "art/crew/eyes/f_3008.png",
+    "layer": 30,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 4001,
+    "part_type": "mouth",
+    "gender": "both",
+    "option_name": "平唇",
+    "asset_path": "art/crew/mouth/x_4001.png",
+    "layer": 35,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 4002,
+    "part_type": "mouth",
+    "gender": "both",
+    "option_name": "薄唇",
+    "asset_path": "art/crew/mouth/x_4002.png",
+    "layer": 35,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 4003,
+    "part_type": "mouth",
+    "gender": "male",
+    "option_name": "烟斗",
+    "asset_path": "art/crew/mouth/m_4003.png",
+    "layer": 35,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 4004,
+    "part_type": "mouth",
+    "gender": "both",
+    "option_name": "缺牙",
+    "asset_path": "art/crew/mouth/x_4004.png",
+    "layer": 35,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 4005,
+    "part_type": "mouth",
+    "gender": "female",
+    "option_name": "抿嘴",
+    "asset_path": "art/crew/mouth/f_4005.png",
+    "layer": 35,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 4006,
+    "part_type": "mouth",
+    "gender": "both",
+    "option_name": "疤唇",
+    "asset_path": "art/crew/mouth/x_4006.png",
+    "layer": 35,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p2"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5001,
+    "part_type": "hair",
+    "gender": "male",
+    "option_name": "寸头",
+    "asset_path": "art/crew/hair/m_5001.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5002,
+    "part_type": "hair",
+    "gender": "female",
+    "option_name": "马尾",
+    "asset_path": "art/crew/hair/f_5002.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5003,
+    "part_type": "hair",
+    "gender": "both",
+    "option_name": "乱发",
+    "asset_path": "art/crew/hair/x_5003.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5004,
+    "part_type": "hair",
+    "gender": "both",
+    "option_name": "光头",
+    "asset_path": "art/crew/hair/x_5004.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5005,
+    "part_type": "hair",
+    "gender": "both",
+    "option_name": "卷发",
+    "asset_path": "art/crew/hair/x_5005.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5006,
+    "part_type": "hair",
+    "gender": "female",
+    "option_name": "长辫",
+    "asset_path": "art/crew/hair/f_5006.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5007,
+    "part_type": "hair",
+    "gender": "male",
+    "option_name": "油头",
+    "asset_path": "art/crew/hair/m_5007.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5008,
+    "part_type": "hair",
+    "gender": "female",
+    "option_name": "短发",
+    "asset_path": "art/crew/hair/f_5008.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5009,
+    "part_type": "hair",
+    "gender": "male",
+    "option_name": "络腮",
+    "asset_path": "art/crew/hair/m_5009.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5010,
+    "part_type": "hair",
+    "gender": "both",
+    "option_name": "头巾",
+    "asset_path": "art/crew/hair/x_5010.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5011,
+    "part_type": "hair",
+    "gender": "male",
+    "option_name": "束发",
+    "asset_path": "art/crew/hair/m_5011.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 5012,
+    "part_type": "hair",
+    "gender": "female",
+    "option_name": "披肩发",
+    "asset_path": "art/crew/hair/f_5012.png",
+    "layer": 40,
+    "anchor_x": 0,
+    "anchor_y": -2,
+    "palette_json": [
+      "p4",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6001,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "水手衫",
+    "asset_path": "art/crew/outfit/x_6001.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6002,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "皮围裙",
+    "asset_path": "art/crew/outfit/x_6002.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6003,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "长袍",
+    "asset_path": "art/crew/outfit/x_6003.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6004,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "粗布衣",
+    "asset_path": "art/crew/outfit/x_6004.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6005,
+    "part_type": "outfit",
+    "gender": "male",
+    "option_name": "船长外套",
+    "asset_path": "art/crew/outfit/m_6005.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6006,
+    "part_type": "outfit",
+    "gender": "female",
+    "option_name": "女仆裙",
+    "asset_path": "art/crew/outfit/f_6006.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6007,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "渔夫蓑衣",
+    "asset_path": "art/crew/outfit/x_6007.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6008,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "匠人背带",
+    "asset_path": "art/crew/outfit/x_6008.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6009,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "学者袍",
+    "asset_path": "art/crew/outfit/x_6009.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6010,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "海盗马甲",
+    "asset_path": "art/crew/outfit/x_6010.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6011,
+    "part_type": "outfit",
+    "gender": "female",
+    "option_name": "修女服",
+    "asset_path": "art/crew/outfit/f_6011.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 6012,
+    "part_type": "outfit",
+    "gender": "both",
+    "option_name": "军装",
+    "asset_path": "art/crew/outfit/x_6012.png",
+    "layer": 50,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p1",
+      "p2",
+      "p3",
+      "p4"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7001,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "眼罩",
+    "asset_path": "art/crew/accessory/x_7001.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7002,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "耳环",
+    "asset_path": "art/crew/accessory/x_7002.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7003,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "头巾",
+    "asset_path": "art/crew/accessory/x_7003.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "common",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7004,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "圣徽",
+    "asset_path": "art/crew/accessory/x_7004.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7005,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "项链",
+    "asset_path": "art/crew/accessory/x_7005.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "fine",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7006,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "单边眼镜",
+    "asset_path": "art/crew/accessory/x_7006.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "epic",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7007,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "蜡封面具",
+    "asset_path": "art/crew/accessory/x_7007.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "epic",
+    "weight": 10,
+    "desc": ""
+  },
+  {
+    "part_id": 7008,
+    "part_type": "accessory",
+    "gender": "both",
+    "option_name": "骨坠",
+    "asset_path": "art/crew/accessory/x_7008.png",
+    "layer": 60,
+    "anchor_x": 0,
+    "anchor_y": 0,
+    "palette_json": [
+      "p3",
+      "p5"
+    ],
+    "min_rarity": "rare",
+    "weight": 10,
+    "desc": ""
+  }
+]
