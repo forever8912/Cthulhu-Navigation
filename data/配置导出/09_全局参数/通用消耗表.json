@@ -1,12 +1,35 @@
 [
   {
     "cost_id": 1,
-    "items": "[{\"item_id\":\"itm_gold\",\"count\":100}]",
-    "desc": "商店刷新消耗"
+    "cost_name": "商店刷新·贝壳币",
+    "items_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 100
+      }
+    ],
+    "desc": ""
   },
   {
     "cost_id": 2,
-    "items": "[{\"item_id\":\"itm_gold\",\"count\":300}]",
-    "desc": "商人岛稀有商品消耗"
+    "cost_name": "转职任务·仪式蜡烛",
+    "items_json": [
+      {
+        "item_id": "itm_ritual_candle",
+        "count": 3
+      }
+    ],
+    "desc": ""
+  },
+  {
+    "cost_id": 3,
+    "cost_name": "教堂祈祷·恢复SAN",
+    "items_json": [
+      {
+        "item_id": "itm_shell",
+        "count": 200
+      }
+    ],
+    "desc": "幽光教堂事件选项消耗"
   }
 ]
