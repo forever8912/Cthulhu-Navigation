@@ -7,6 +7,7 @@ const out = __dirname;
 const root = path.resolve(out, '../../../../..');
 const gateC = path.join(root, 'assets/production/source/vs_art_master_01/gate_c');
 const p2 = path.join(root, 'assets/production/source/vs_art_master_01/p2');
+const accessCore = path.join(root, 'assets/production/source/vs_art_master_01/access_core');
 const reviewDir = path.join(root, 'assets/production/review/vs_art_master_01');
 const manifestDir = path.join(root, 'assets/production/manifests');
 const sheet = path.join(out, 'deck_props_sheet_v001.png');
@@ -36,7 +37,8 @@ async function fit(file, width, height) {
   const rightHullFile = path.join(gateC, 'ship_hull_visual_right_v009.png');
   await sharp(sourceHull).flop().png().toFile(rightHullFile);
   const hull = fs.readFileSync(rightHullFile);
-  const room = await fit(path.join(p2, 'room_1001_power_module_v001.png'), 398, 176);
+  const room = await fit(path.join(p2, 'room_1001_power_doors_normalized_v004.png'), 398, 176);
+  const ladder = await fit(path.join(accessCore, 'ship_access_core_ladder_normalized_v001.png'), 112, 218);
   const base = await fit(path.join(p2, 'room_2001_base_v001.png'), 145, 88);
   const launcher = await fit(path.join(p2, 'room_2001_launcher_v001.png'), 165, 66);
   const harpoon = await fit(path.join(p2, 'room_2001_harpoon_v001.png'), 142, 34);
@@ -51,6 +53,8 @@ async function fit(file, width, height) {
     { input: hull, left: 0, top: 0 },
     // 建造房间高于格子框架：两格房覆盖中间立柱。
     { input: room, left: 320, top: 463 },
+    // 中央交通核固定在船体中线，不占建造格；左右通道与房间地板对齐。
+    { input: ladder, left: 936, top: 402 },
     // 静态甲板装饰可在批准后合并到 deck_decor_static。
     { input: barrel, left: 565, top: 300 },
     { input: crates, left: 1320, top: 304 },
@@ -59,7 +63,7 @@ async function fit(file, width, height) {
     { input: sail, left: 855, top: 72 },
     { input: rigging, left: 735, top: 94 },
     { input: lantern, left: 1585, top: 252 },
-    // 2001 逻辑占 slot_03，视觉挂在 module_01.deck_mount_01。
+    // 2001 逻辑占 slot_R1，视觉挂在右侧甲板锚点。
     { input: base, left: 1090, top: 330 },
     { input: launcher, left: 1075, top: 288 },
     { input: harpoon, left: 1098, top: 284 }
@@ -80,16 +84,24 @@ async function fit(file, width, height) {
     layer_order_back_to_front: ['hull_back', 'slot_back', 'slot_frame', 'constructed_room', 'front_sill_occluder', 'deck_decor_static', 'deck_devices', 'mast', 'sail', 'rigging', 'lantern', 'fx', 'ui'],
     modules: {
       stern: { reusable: true },
-      mid_3slot: { reusable: true, slot_count: 3, deck_mount_count: 1 },
+      left_room_cell: { reusable: true, slot_count: 1 },
+      access_core: { reusable: false, slot_count: 0, fixed_at_visual_center: true },
+      right_room_cell: { reusable: true, slot_count: 1 },
       bow: { reusable: true }
     },
     hull_levels: [
-      { hull_level: 1, modules: ['stern', 'mid_01', 'bow'], build_slot_count: 3, stable_slot_ids: ['slot_01', 'slot_02', 'slot_03'], deck_mount_ids: ['mid_01.deck_mount_01'] },
-      { hull_level: 2, modules: ['stern', 'mid_01', 'mid_02', 'bow'], build_slot_count: 6, stable_slot_ids: ['slot_01', 'slot_02', 'slot_03', 'slot_04', 'slot_05', 'slot_06'], deck_mount_ids: ['mid_01.deck_mount_01', 'mid_02.deck_mount_01'] },
-      { hull_level: 3, modules: ['stern', 'mid_01', 'mid_02', 'mid_03', 'bow'], build_slot_count: 9, stable_slot_ids: ['slot_01', 'slot_02', 'slot_03', 'slot_04', 'slot_05', 'slot_06', 'slot_07', 'slot_08', 'slot_09'], deck_mount_ids: ['mid_01.deck_mount_01', 'mid_02.deck_mount_01', 'mid_03.deck_mount_01'], provisional: true }
+      { hull_level: 1, modules: ['stern', 'slot_L2', 'slot_L1', 'access_core', 'slot_R1', 'bow'], build_slot_count: 3, stable_slot_ids: ['slot_L1', 'slot_L2', 'slot_R1'], deck_mount_ids: ['deck_mount_R1'] },
+      { hull_level: 2, modules: ['stern', 'slot_L3', 'slot_L2', 'slot_L1', 'access_core', 'slot_R1', 'slot_R2', 'slot_R3', 'bow'], build_slot_count: 6, stable_slot_ids: ['slot_L1', 'slot_L2', 'slot_L3', 'slot_R1', 'slot_R2', 'slot_R3'], deck_mount_ids: ['deck_mount_R1', 'deck_mount_R2'] },
+      { hull_level: 3, build_slot_count: 9, stable_slot_ids: ['slot_L1', 'slot_L2', 'slot_L3', 'slot_L4', 'slot_R1', 'slot_R2', 'slot_R3', 'slot_R4', 'slot_R5'], provisional: true, note: 'Side allocation is not frozen until the Lv2 phone composition is approved.' }
     ],
-    example_occupancy: { room_1001_power: ['slot_01', 'slot_02'], room_2001_harpoon_logic: ['slot_03'], room_2001_harpoon_visual: 'mid_01.deck_mount_01' },
-    save_rule: 'Upgrade appends new stable slot IDs; existing slot IDs and room assignments never move.',
+    access_core: {
+      consumes_build_slot: false,
+      anchors: ['corridor_left', 'corridor_right', 'ladder_bottom', 'deck_exit'],
+      navigation_role: 'The only default connection between cabin corridor and upper deck.'
+    },
+    room_connection_rule: 'Adjacent rooms connect door_right to door_left at the shared floor_y. Multi-slot rooms suppress internal partitions and expose only their outermost doors.',
+    example_occupancy: { room_1001_power: ['slot_L2', 'slot_L1'], room_2001_harpoon_logic: ['slot_R1'], room_2001_harpoon_visual: 'deck_mount_R1' },
+    save_rule: 'Upgrade appends side-based stable slot IDs outward from access_core; existing slot IDs, room assignments and access_core never move.',
     camera_rule: 'Lv1/Lv2 fit width while preserving minimum room readability; Lv3 may use horizontal pan instead of shrinking rooms below target logical size.'
   };
   fs.writeFileSync(path.join(gateC, 'ship_modular_layout_v001.json'), JSON.stringify(layout, null, 2));
@@ -110,7 +122,7 @@ async function fit(file, width, height) {
     edit_prompt: editPrompt,
     edit_notes: 'Removed cloth and hanging bucket/lantern accidentally fused to mast; preserved separate sail, rigging, barrel, crates and lantern.',
     references: ['STYLE_SCENE_001_v001', 'hull_v008_deck_concept_1280x720.png'],
-    manual_edits: ['Cropped six parts without repaint', 'Flipped hull only to right-facing orientation', 'Composited room above slot frame', 'Placed static and animated deck details on separate review layers'],
+    manual_edits: ['Cropped six parts without repaint', 'Flipped hull only to right-facing orientation', 'Composited v004 room above slot frame', 'Added fixed central ladder access core', 'Placed static and animated deck details on separate review layers'],
     reviewer: '',
     review_notes: 'Right-facing layout and modular upgrade proposal pending integrated review. Not APPROVED and not imported into Cocos.',
     artifacts: [sheet, ...Object.values(parts).map(part => part.file), rightHullFile, previewFile, path.join(gateC, 'ship_modular_layout_v001.json')].map(file => ({ path: path.relative(root, file).replace(/\\/g, '/'), sha256: sha256(file) })),
@@ -118,8 +130,8 @@ async function fit(file, width, height) {
   };
   fs.writeFileSync(path.join(manifestDir, 'deck_props_and_layout_v001.json'), JSON.stringify(manifest, null, 2));
 
-  const diagram = `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520"><rect width="1280" height="520" fill="#15212d"/><g font-family="Microsoft YaHei,sans-serif" fill="#eee"><text x="40" y="48" font-size="26">船体模块扩展：固定船头/船尾 + 可追加三格中段</text><text x="40" y="98" font-size="20">Lv1 · 3格</text><text x="40" y="260" font-size="20">Lv2 · 6格</text></g><g stroke="#8b7256" stroke-width="4"><path fill="#3b2f2a" d="M190 125l-90 65 90 65z"/><rect fill="#263946" x="190" y="125" width="420" height="130"/><path fill="#3b2f2a" d="M610 125h110l70 65-70 65H610z"/><path fill="#3b2f2a" d="M190 285l-90 65 90 65z"/><rect fill="#263946" x="190" y="285" width="420" height="130"/><rect fill="#2e414d" x="610" y="285" width="420" height="130"/><path fill="#3b2f2a" d="M1030 285h110l70 65-70 65h-110z"/></g><g fill="#101923" stroke="#9a8060" stroke-width="3">${[0,1,2].map(i=>`<rect x="${215+i*130}" y="150" width="110" height="80"/>`).join('')}${[0,1,2,3,4,5].map(i=>`<rect x="${215+i*130}" y="310" width="110" height="80"/>`).join('')}</g><g font-family="Microsoft YaHei,sans-serif" font-size="17" fill="#eee"><text x="250" y="245">mid_01</text><text x="250" y="405">mid_01（原槽位不动）</text><text x="680" y="405">mid_02（升级新增）</text><text x="850" y="470">升级只追加 slot_04~06 和第二个甲板锚点</text></g></svg>`;
+  const diagram = `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520"><rect width="1280" height="520" fill="#15212d"/><g font-family="Microsoft YaHei,sans-serif" fill="#eee"><text x="40" y="48" font-size="26">固定中央交通核：房间分列梯井两侧，升级向外追加</text><text x="40" y="98" font-size="20">Lv1 · 左2 + 右1 = 3格</text><text x="40" y="270" font-size="20">Lv2 · 左3 + 右3 = 6格</text></g><g fill="#101923" stroke="#9a8060" stroke-width="3"><rect x="250" y="125" width="130" height="90"/><rect x="380" y="125" width="130" height="90"/><rect x="590" y="125" width="130" height="90"/><rect x="185" y="300" width="130" height="90"/><rect x="315" y="300" width="130" height="90"/><rect x="445" y="300" width="130" height="90"/><rect x="655" y="300" width="130" height="90"/><rect x="785" y="300" width="130" height="90"/><rect x="915" y="300" width="130" height="90"/></g><g fill="#5b4636" stroke="#d0a66e" stroke-width="4"><rect x="510" y="105" width="80" height="130"/><rect x="575" y="280" width="80" height="130"/></g><g stroke="#d0a66e" stroke-width="4">${[0,1,2,3].map(i=>`<line x1="530" y1="${130+i*24}" x2="570" y2="${130+i*24}"/>`).join('')}${[0,1,2,3].map(i=>`<line x1="595" y1="${305+i*24}" x2="635" y2="${305+i*24}"/>`).join('')}</g><g font-family="Microsoft YaHei,sans-serif" font-size="17" fill="#eee"><text x="285" y="248">L2</text><text x="415" y="248">L1</text><text x="515" y="258">交通核</text><text x="630" y="248">R1</text><text x="210" y="425">新增L3</text><text x="340" y="425">L2</text><text x="470" y="425">L1</text><text x="680" y="425">R1</text><text x="810" y="425">新增R2</text><text x="940" y="425">新增R3</text><text x="230" y="485">既有房间与梯井不移动；所有门锚点共用同一 floor_y</text></g></svg>`;
   await sharp(Buffer.from(diagram)).png().toFile(path.join(reviewDir, 'ship_modular_upgrade_v001.png'));
-  fs.writeFileSync(path.join(reviewDir, 'ship_layout_right_v009_board.html'), '<!doctype html><meta charset="utf-8"><title>Right-facing modular ship REVIEW</title><style>body{background:#15212d;color:#eee;font:16px/1.7 sans-serif;margin:24px}img{max-width:100%;background:#334754}</style><h1>右向船体、房间层级与模块升级 · REVIEW</h1><p>正式方向：船头朝右，航行和炮口默认朝右。房间层高于格子框架；动力舱覆盖两格之间的中柱。桅杆/帆/缆绳/灯为独立动画候选，桶和箱子为静态装饰。</p><img src="ship_layout_right_v009_1280x720.png"><h2>Lv1 → Lv2 模块扩展</h2><img src="ship_modular_upgrade_v001.png"><p>Lv1=一段三格中段；Lv2=追加第二段。旧槽位ID和房间不移动。</p>');
+  fs.writeFileSync(path.join(reviewDir, 'ship_layout_right_v009_board.html'), '<!doctype html><meta charset="utf-8"><title>Right-facing modular ship REVIEW</title><style>body{background:#15212d;color:#eee;font:16px/1.7 sans-serif;margin:24px}img{max-width:100%;background:#334754}</style><h1>右向船体、贯通房门与中央梯井 · REVIEW</h1><p>正式方向：船头朝右，航行和炮口默认朝右。动力舱具有左右贯通门和前景船员工作带；中央梯井固定连接船舱与甲板，且不占建造格。房间仍高于格子框架。</p><img src="ship_layout_right_v009_1280x720.png"><h2>Lv1 → Lv2 两侧扩展</h2><img src="ship_modular_upgrade_v001.png"><p>Lv1=左2+右1；Lv2=左3+右3。升级从交通核两侧向外增加，既有房间、梯井和稳定槽位ID不移动。</p>');
   console.log(JSON.stringify({ status: 'REVIEW', orientation: layout.orientation, layers: layout.layer_order_back_to_front, levels: layout.hull_levels }, null, 2));
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -24,10 +24,18 @@
     "stern": {
       "reusable": true
     },
-    "mid_3slot": {
+    "left_room_cell": {
       "reusable": true,
-      "slot_count": 3,
-      "deck_mount_count": 1
+      "slot_count": 1
+    },
+    "access_core": {
+      "reusable": false,
+      "slot_count": 0,
+      "fixed_at_visual_center": true
+    },
+    "right_room_cell": {
+      "reusable": true,
+      "slot_count": 1
     },
     "bow": {
       "reusable": true
@@ -38,80 +46,88 @@
       "hull_level": 1,
       "modules": [
         "stern",
-        "mid_01",
+        "slot_L2",
+        "slot_L1",
+        "access_core",
+        "slot_R1",
         "bow"
       ],
       "build_slot_count": 3,
       "stable_slot_ids": [
-        "slot_01",
-        "slot_02",
-        "slot_03"
+        "slot_L1",
+        "slot_L2",
+        "slot_R1"
       ],
       "deck_mount_ids": [
-        "mid_01.deck_mount_01"
+        "deck_mount_R1"
       ]
     },
     {
       "hull_level": 2,
       "modules": [
         "stern",
-        "mid_01",
-        "mid_02",
+        "slot_L3",
+        "slot_L2",
+        "slot_L1",
+        "access_core",
+        "slot_R1",
+        "slot_R2",
+        "slot_R3",
         "bow"
       ],
       "build_slot_count": 6,
       "stable_slot_ids": [
-        "slot_01",
-        "slot_02",
-        "slot_03",
-        "slot_04",
-        "slot_05",
-        "slot_06"
+        "slot_L1",
+        "slot_L2",
+        "slot_L3",
+        "slot_R1",
+        "slot_R2",
+        "slot_R3"
       ],
       "deck_mount_ids": [
-        "mid_01.deck_mount_01",
-        "mid_02.deck_mount_01"
+        "deck_mount_R1",
+        "deck_mount_R2"
       ]
     },
     {
       "hull_level": 3,
-      "modules": [
-        "stern",
-        "mid_01",
-        "mid_02",
-        "mid_03",
-        "bow"
-      ],
       "build_slot_count": 9,
       "stable_slot_ids": [
-        "slot_01",
-        "slot_02",
-        "slot_03",
-        "slot_04",
-        "slot_05",
-        "slot_06",
-        "slot_07",
-        "slot_08",
-        "slot_09"
+        "slot_L1",
+        "slot_L2",
+        "slot_L3",
+        "slot_L4",
+        "slot_R1",
+        "slot_R2",
+        "slot_R3",
+        "slot_R4",
+        "slot_R5"
       ],
-      "deck_mount_ids": [
-        "mid_01.deck_mount_01",
-        "mid_02.deck_mount_01",
-        "mid_03.deck_mount_01"
-      ],
-      "provisional": true
+      "provisional": true,
+      "note": "Side allocation is not frozen until the Lv2 phone composition is approved."
     }
   ],
+  "access_core": {
+    "consumes_build_slot": false,
+    "anchors": [
+      "corridor_left",
+      "corridor_right",
+      "ladder_bottom",
+      "deck_exit"
+    ],
+    "navigation_role": "The only default connection between cabin corridor and upper deck."
+  },
+  "room_connection_rule": "Adjacent rooms connect door_right to door_left at the shared floor_y. Multi-slot rooms suppress internal partitions and expose only their outermost doors.",
   "example_occupancy": {
     "room_1001_power": [
-      "slot_01",
-      "slot_02"
+      "slot_L2",
+      "slot_L1"
     ],
     "room_2001_harpoon_logic": [
-      "slot_03"
+      "slot_R1"
     ],
-    "room_2001_harpoon_visual": "mid_01.deck_mount_01"
+    "room_2001_harpoon_visual": "deck_mount_R1"
   },
-  "save_rule": "Upgrade appends new stable slot IDs; existing slot IDs and room assignments never move.",
+  "save_rule": "Upgrade appends side-based stable slot IDs outward from access_core; existing slot IDs, room assignments and access_core never move.",
   "camera_rule": "Lv1/Lv2 fit width while preserving minimum room readability; Lv3 may use horizontal pan instead of shrinking rooms below target logical size."
 }

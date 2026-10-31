@@ -24,7 +24,8 @@
   "manual_edits": [
     "Cropped six parts without repaint",
     "Flipped hull only to right-facing orientation",
-    "Composited room above slot frame",
+    "Composited v004 room above slot frame",
+    "Added fixed central ladder access core",
     "Placed static and animated deck details on separate review layers"
   ],
   "reviewer": "",
@@ -64,11 +65,11 @@
     },
     {
       "path": "assets/production/source/vs_art_master_01/gate_c/ship_layout_right_v009_preview.png",
-      "sha256": "6785a4d920917d8f881487ef7759dd9e62f373c1a19b36bd37c1a31cfef5bf19"
+      "sha256": "eb4da0b03371fd7dc6fc5d7e5d4501a39ca251a9e028deb6d0b33f9289dbc4d7"
     },
     {
       "path": "assets/production/source/vs_art_master_01/gate_c/ship_modular_layout_v001.json",
-      "sha256": "d89af4aad5fb8cae937f34a3a4360c606601b1d78e7df3cf07928ac74112837d"
+      "sha256": "91f33bab03ffbb7eee5467ecf56fe483900f77c54179293ecefec1a8d400302c"
     }
   ],
   "part_roles": {

@@ -1,0 +1,48 @@
+{
+  "asset_id": "ship_access_core_ladder",
+  "version": 1,
+  "status": "REVIEW",
+  "non_buildable": true,
+  "canvas": {
+    "width": 240,
+    "height": 400
+  },
+  "floor_y": 338,
+  "anchors": {
+    "corridor_left": {
+      "x": 0,
+      "y": 338,
+      "facing": "left"
+    },
+    "corridor_right": {
+      "x": 240,
+      "y": 338,
+      "facing": "right"
+    },
+    "ladder_bottom": {
+      "x": 120,
+      "y": 338,
+      "facing": "up"
+    },
+    "deck_exit": {
+      "x": 120,
+      "y": 0,
+      "facing": "up"
+    }
+  },
+  "navigation_edges": [
+    [
+      "corridor_left",
+      "ladder_bottom"
+    ],
+    [
+      "corridor_right",
+      "ladder_bottom"
+    ],
+    [
+      "ladder_bottom",
+      "deck_exit"
+    ]
+  ],
+  "placement_rule": "Fixed at ship visual center between left and right room wings; does not consume build_slot_count and never moves during hull upgrades."
+}

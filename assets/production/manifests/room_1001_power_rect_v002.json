@@ -1,0 +1,36 @@
+{
+  "task_id": "VS-ART-ROOM-TEMPLATE-01",
+  "asset_id": "room_1001_power_rect",
+  "version": 2,
+  "status": "REVIEW",
+  "generator": "built-in image_gen precise-object-edit",
+  "output_artifact_id": "exec-57595be0-ff38-4ca0-9e87-e3cf2ad5e805",
+  "provider_task_id": null,
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "prompt": "Use case: precise-object-edit. Asset type: two-slot rectangular game room module, power room v002. Input Image 1 is the edit target and contains the approved machinery/interior content. Image 2 is supporting context showing the strict rectangular room-slot framework. Rebuild only the outer room shell and layout boundary so the complete module is a strict front-facing rectangle with perfectly vertical left and right sides, perfectly horizontal top and bottom, square 90-degree corners, no trapezoid taper or perspective, and a wide two-slot aspect ratio approximately 2.25:1. Preserve the flywheel, belt drive, boiler/generator, pipes, gauge, table, lamp, color palette, brush style and lighting. The room renders above the slot-frame layer and covers the center post between two slots. Genuine transparent background outside the rectangle; no ship hull, characters, text, UI or watermark.",
+  "negative_prompt": "trapezoid, slanted side walls, converging perspective, chamfered outer silhouette, curved room boundary, protruding pipes, photorealism, 3D render, flat vector, text, watermark",
+  "references": [
+    "room_1001_power_module_v001.png",
+    "ship_layout_right_v009_1280x720.png"
+  ],
+  "manual_edits": [
+    "No source-pixel repaint after generation",
+    "Cropped transparent margins to detected content bbox",
+    "Normalized runtime candidate to exact 900x400 two-slot rectangle"
+  ],
+  "reviewer": "",
+  "review_notes": "Rectangular two-slot room candidate. Must render above slot_frame and cover the center post. Not APPROVED and not imported into Cocos.",
+  "license_notes": "Self-generated from approved internal project assets; no protected-IP style target or third-party texture",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_rect_v002.png",
+      "sha256": "e14695069c4fd2d4a57f60ed2c682e82f11c14e4f1bb8cc663380e6424be9676"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_rect_normalized_v002.png",
+      "sha256": "e57511f3bcd0acb6b475147c06c39e5d5f15373a32804d3e5d7de8ae885e0ff5"
+    }
+  ]
+}

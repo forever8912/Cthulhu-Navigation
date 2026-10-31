@@ -1,0 +1,48 @@
+{
+  "asset_id": "room_1001_power",
+  "version": 3,
+  "canvas": {
+    "width": 900,
+    "height": 400
+  },
+  "slot_span": 2,
+  "render_layers_back_to_front": [
+    "room_shell_and_machinery",
+    "crew",
+    "low_console_interaction_fx",
+    "front_sill_occluder"
+  ],
+  "walk_band": {
+    "x": 70,
+    "y": 155,
+    "width": 760,
+    "height": 190
+  },
+  "floor_y": 338,
+  "crew_display_height": 250,
+  "crew_anchors": [
+    {
+      "id": "crew_left",
+      "x": 225,
+      "y": 338,
+      "facing": "right",
+      "workstation": "flywheel_service"
+    },
+    {
+      "id": "crew_center",
+      "x": 450,
+      "y": 338,
+      "facing": "right",
+      "workstation": "belt_control"
+    },
+    {
+      "id": "crew_right",
+      "x": 675,
+      "y": 338,
+      "facing": "left",
+      "workstation": "boiler_valve"
+    }
+  ],
+  "interaction_rule": "Crew renders in front of machinery; front_sill may cover feet by at most 8 normalized pixels.",
+  "visual_reference_note": "Uses the functional stage-layout principle of shelter-management rooms; does not copy protected art, symbols or props."
+}

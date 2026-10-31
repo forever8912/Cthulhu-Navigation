@@ -1,0 +1,44 @@
+{
+  "task_id": "VS-ART-ROOM-DOORS-01",
+  "asset_id": "room_1001_power",
+  "version": 4,
+  "status": "REVIEW",
+  "generator": "built-in image_gen precise-object-edit",
+  "output_artifact_id": "exec-ddd490ee-eb35-43f7-93fe-8c1bb04a89e6",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "prompt": "Use case: precise-object-edit. Asset type: two-slot power-room sprite v004. Preserve the rectangular shell, dark hand-painted wood and iron, back-wall flywheel, belt, boiler, continuous foreground work floor and three empty crew work zones. Add a full-height open passage at the far left and a matching full-height open passage at the far right. Both passages must meet the same floor line and allow characters to walk between adjacent rooms. Keep the two-slot interior as one continuous room with no center wall and no internal door. Orthographic side cutaway, transparent background. No characters, text, UI, watermark or protected game-specific symbols.",
+  "negative_prompt": "characters, center partition, internal door, blocked doorway, sloped room shell, text, UI, watermark, photorealism, 3D render, pixel art",
+  "references": [
+    "room_1001_power_worker_v003.png"
+  ],
+  "manual_edits": [
+    "Alpha-trimmed and normalized to exact 900x400 canvas",
+    "Added machine-readable door, floor, walk-band and crew anchors"
+  ],
+  "reviewer": "",
+  "review_notes": "Door geometry and integrated ship fit pending approval; not imported into Cocos.",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_doors_v004.png",
+      "sha256": "65bc7614425927b2e921d70827faf9c403a3e05f2392f626027bc37d8b9b6b04"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_doors_normalized_v004.png",
+      "sha256": "23a87f78adae2308d77d77656fd0b39beaedc08ca246a25a1a28e90cd0a182c4"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_doors_layout_v004.json",
+      "sha256": "f5a8c95667c1c479627c3f24edcf0e6529bc2f5dda7c8c3c020f7acfa7b97cc5"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/room_1001_power_doors_anchors_v004.png",
+      "sha256": "4d530293b7a1934a89a6878f6838826177feabf92f6d56424aa522fc72d8ecf3"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/room_1001_power_doors_compare_v004.png",
+      "sha256": "d00fad92536ddabca2e33612cf89656a40554b966dcf50c7423292d7ac89a111"
+    }
+  ]
+}

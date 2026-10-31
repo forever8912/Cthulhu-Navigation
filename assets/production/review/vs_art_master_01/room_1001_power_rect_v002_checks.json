@@ -1,0 +1,23 @@
+{
+  "status": "REVIEW",
+  "canvas": [
+    1881,
+    836
+  ],
+  "has_alpha": true,
+  "content_bbox": {
+    "x": 38,
+    "y": 89,
+    "width": 1808,
+    "height": 664
+  },
+  "source_content_aspect_ratio": 2.7228915662650603,
+  "normalized_size": [
+    900,
+    400
+  ],
+  "normalized_aspect_ratio": 2.25,
+  "target_aspect_ratio": 2.25,
+  "normalized_aspect_error": 0,
+  "straight_frame_visual_check_required": true
+}

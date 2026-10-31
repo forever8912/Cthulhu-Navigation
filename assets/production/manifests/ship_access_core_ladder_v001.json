@@ -1,0 +1,41 @@
+{
+  "task_id": "VS-ART-ACCESS-CORE-01",
+  "asset_id": "ship_access_core_ladder",
+  "version": 1,
+  "status": "REVIEW",
+  "generator": "built-in image_gen",
+  "output_artifact_id": "exec-953a835d-a721-4d99-8ecb-35fe7eccfd90",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "prompt": "Use case: stylized-concept. Asset type: fixed central access-core sprite for a side-view ship management game. Create a narrow vertical wooden ladder shaft with an open deck hatch at the top, a climbable ladder, and open left and right corridor passages at the lower room-floor level. The component is non-buildable and sits between room wings. Dark restrained hand-painted wood and blue-grey iron matching the ship material language; strict orthographic cutaway; transparent background; readable at mobile scale. No characters, room machinery, weapons, text, UI or watermark.",
+  "negative_prompt": "characters, machinery, weapons, blocked passage, decorative staircase, text, UI, watermark, photorealism, 3D render, pixel art",
+  "references": [
+    "STYLE_SCENE_001_v001",
+    "ship_hull_visual_right_v009.png"
+  ],
+  "manual_edits": [
+    "Alpha-trimmed and normalized to exact 240x400 canvas",
+    "Added machine-readable corridor, ladder and deck-exit anchors"
+  ],
+  "reviewer": "",
+  "review_notes": "Integrated scale and hatch alignment pending approval; not imported into Cocos.",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/access_core/ship_access_core_ladder_v001.png",
+      "sha256": "cd606dc88ce0f5ae726c91f9daaffb16a8a8076b24d09dd9c6a854891b129411"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/access_core/ship_access_core_ladder_normalized_v001.png",
+      "sha256": "c88915d22a1a8de8df9831f38297000255614992164329bb5fddbbd03b86a00f"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/access_core/ship_access_core_ladder_layout_v001.json",
+      "sha256": "bf15530391248cc97931b4fa1b8f0032b26157f9f68726a2bb09c2eb65639ff3"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/ship_access_core_ladder_anchors_v001.png",
+      "sha256": "6db93b23444a542a14223207d8748f3cb25736f9053da52d6734e6333eb30d37"
+    }
+  ]
+}

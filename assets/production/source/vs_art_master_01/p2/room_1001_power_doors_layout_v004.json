@@ -1,0 +1,61 @@
+{
+  "asset_id": "room_1001_power",
+  "version": 4,
+  "status": "REVIEW",
+  "canvas": {
+    "width": 900,
+    "height": 400
+  },
+  "slot_span": 2,
+  "floor_y": 338,
+  "doorway": {
+    "clear_width": 78,
+    "clear_height": 205
+  },
+  "door_anchors": {
+    "left": {
+      "id": "door_left",
+      "x": 0,
+      "y": 338,
+      "facing": "left"
+    },
+    "right": {
+      "id": "door_right",
+      "x": 900,
+      "y": 338,
+      "facing": "right"
+    }
+  },
+  "walk_band": {
+    "x": 0,
+    "y": 145,
+    "width": 900,
+    "height": 200
+  },
+  "crew_display_height": 250,
+  "crew_anchors": [
+    {
+      "id": "crew_left",
+      "x": 225,
+      "y": 338,
+      "facing": "right",
+      "workstation": "flywheel_service"
+    },
+    {
+      "id": "crew_center",
+      "x": 450,
+      "y": 338,
+      "facing": "right",
+      "workstation": "belt_control"
+    },
+    {
+      "id": "crew_right",
+      "x": 675,
+      "y": 338,
+      "facing": "left",
+      "workstation": "boiler_valve"
+    }
+  ],
+  "merge_rule": "A two-slot room has no internal partition or internal door; only its two outer door anchors participate in navigation.",
+  "navigation_rule": "Connect left/right door anchors to adjacent room or access-core anchors only when floor_y matches."
+}

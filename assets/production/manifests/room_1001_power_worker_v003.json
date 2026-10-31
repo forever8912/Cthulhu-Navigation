@@ -1,0 +1,41 @@
+{
+  "task_id": "VS-ART-ROOM-WORKSPACE-01",
+  "asset_id": "room_1001_power_worker",
+  "version": 3,
+  "status": "REVIEW",
+  "generator": "built-in image_gen precise-object-edit plus deterministic normalization",
+  "output_artifact_id": "exec-3adcaae9-0c4f-4c64-bb59-126039d63939",
+  "provider_task_id": null,
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "prompt": "Use case: precise-object-edit. Asset type: two-slot rectangular power-room module v003 for a front-facing mobile management game. Preserve the strict rectangular outer shell, 90-degree corners, orthographic view, materials and core machinery identity, but push flywheel, boiler, pipes and gauges to the back wall and upper half. Keep a continuous unobstructed foreground floor strip across at least 80% width. Create three empty worker zones—left, center and right—large enough for front-facing 96–128px characters. Machinery is background scenery; crew renders in front. Add only low waist-height controls. No characters, text, UI or protected game-specific art.",
+  "negative_prompt": "Fallout Shelter art copy, Vault-Tec symbols, retro-futurist yellow-blue styling, protected game props, crowded foreground, floor-to-ceiling front machine, trapezoid, perspective, photorealism, 3D render, flat vector, text, watermark",
+  "references": [
+    "room_1001_power_rect_v002.png",
+    "ship_layout_right_v009_1280x720.png",
+    "shelter-management functional room staging only"
+  ],
+  "manual_edits": [
+    "Cropped transparent margins",
+    "Normalized to 900x400",
+    "Added review-only crew anchor overlay; source art unchanged after generation"
+  ],
+  "reviewer": "",
+  "review_notes": "Three crew anchors and foreground walk band defined. Placeholder silhouettes are review-only. Not APPROVED and not imported into Cocos.",
+  "license_notes": "Self-generated; functional layout inspiration only, no copied protected art, symbols or props",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_worker_v003.png",
+      "sha256": "0487e67a03156e295e7a6590fcb65c045249de5f2cceb776359635029cf56db3"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_worker_normalized_v003.png",
+      "sha256": "d260f8647b0661bf3ede0accec234c7b86c9a0ed4afba11a37c308f104cd186c"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_worker_layout_v003.json",
+      "sha256": "44a69050487411ad200d604886218f4d7cf1d1e210f08b2bdf21cc299f76a146"
+    }
+  ]
+}
