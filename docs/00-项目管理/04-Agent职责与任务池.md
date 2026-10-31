@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.5（2026-10-31）
+> 版本：v1.6（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -30,10 +30,11 @@
 | VS-W2-INPUT-01 | Trae | W2预备 | 已完成（`655a937`），已进入 W2 集成基线 | `assets/scripts/view/input/`、`DragGestureSandbox.scene`、`tests/view/input/` |
 | VS-W2-BATTLE-CORE-01 | GPT / Codex | W2 | 已完成（`41a0396` + `cb21e0e`） | `assets/scripts/logic/battle/`、`W2BattleGrayboxConfig.ts`、对应测试 |
 | VS-W2-VIEW-01 | Trae | W2 | 可领取，依赖工程提交 `cb21e0e` | `assets/scripts/view/battle/`、`BattleGraybox.scene`、`tests/view/battle/` |
-| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate B REWORK：v001~v004 全部保留为失败证据；整张候选生成路线关闭 | `source/vs_art_master_01/`、`manifests/ship_lv1_*`、`review/vs_art_master_01/` |
+| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate B REWORK：v005 几何通过并冻结，材质未通过；整张候选生成路线保持关闭 | `source/vs_art_master_01/`、`manifests/ship_lv1_*`、`review/vs_art_master_01/` |
 | VS-ART-GEOMETRY-01 | GPT / Codex | W2并行 | 部分完成：精确底稿通过；唯一 v004 六处净空均被梁柱侵入，已标记 REWORK | v004 底稿、候选、审核板、检查 JSON 与 manifest |
-| VS-ART-EDITABLE-01 | GPT / Codex | W2并行 | 可开始：固定几何可编辑母版；透明净空改为硬遮罩，不再生成整张船框 | `source/vs_art_master_01/gate_b/`、对应 manifest 与审核报告 |
-| VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待可编辑母版审核包完成后领取；只做 manifest/命名/授权记录审计 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
+| VS-ART-EDITABLE-01 | GPT / Codex | W2并行 | 部分完成：v005 分层与硬遮罩通过；材质评审 REWORK，旧版保留 | v005 SVG/PNG、层级 JSON、检查结果、manifest 与评审报告 |
+| VS-ART-MATERIAL-01 | GPT / Codex | W2并行 | 可开始：基于冻结几何制作 v006 厚涂材质版，只改材质与明暗 | `source/vs_art_master_01/gate_b/` 中 v006 与对应审核包 |
+| VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 可领取：独立审计 v005 manifest、命名、哈希、授权和状态一致性 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
 | VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
 | VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 已完成：运行时 JSON（`aa42508`）、Web Mobile（`30a4ba3`）、真实手机同网段启动均通过 | 配置运行时接入、手机验证、W1闸门结论 |
 
@@ -277,12 +278,31 @@ Owner：GPT / Codex
 - 画布、格坐标、底线和共同原点逐项精确匹配，误差≤1源像素。
 - 结构版通过前禁止材质评审；材质版不得破坏结构版检查结果。
 - v004 及更早文件不得覆盖，不进入 approved 或 Cocos。
+
+执行结果：v005 结构和材质初稿六处净空均为 0 侵入，坐标/原点/净高通过；材质仍为规则矢量初稿，评审转 REWORK，几何冻结。
+```
+
+```text
+任务编号：VS-ART-MATERIAL-01
+Owner：GPT / Codex
+目标：在不改变 v005 几何协议的前提下制作 v006 暗黑厚涂材质版。
+
+冻结项：1672×941 画布、共同原点、六格坐标、128×152 净空、硬遮罩、层级和后墙出血。
+只允许修改：木/铁材质、左上体积光、冷暖层次、盐渍/锈蚀/补丁木和克制的边缘磨损。
+
+必须修改：
+1. 消除等距矢量木纹，改为大色块、干刷断边和不规则笔触。
+2. 强化左上主光、梁柱转折、船腹冷暗与水线潮湿反光。
+3. 打破梁柱/铆钉/横板机械重复，不得侵入净空或制造小尺寸噪点。
+
+交付：v006 分层可编辑源文件、透明 PNG、同一几何检查、四视图审核板、manifest 和交接报告。
+状态止于 REVIEW/REWORK；用户批准前不得进入 approved 或 Cocos。
 ```
 
 ```text
 任务编号：VS-ART-AUDIT-01
 Owner：WorkBuddy
-目标：在 v005 可编辑母版审核包生成后，独立检查命名、版本、状态、SHA-256、参考来源、授权与人工修改记录。
+目标：独立检查 v005 可编辑母版的命名、版本、状态、SHA-256、参考来源、授权与人工修改记录。
 只允许新增 manifest_audit_v001.md；不得修改 PNG、manifest 或美术规范。
 结论只允许 PASS / FAIL，并逐项列出缺失字段和目标文件。
 ```

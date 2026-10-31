@@ -1,0 +1,75 @@
+{
+  "status": "REVIEW",
+  "structure": {
+    "file": "ship_lv1_hull_structure_v005.png",
+    "canvas": [
+      1672,
+      941
+    ],
+    "alpha_greater_than_zero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pass": true
+  },
+  "frame": {
+    "file": "ship_lv1_front_frame_v005.png",
+    "canvas": [
+      1672,
+      941
+    ],
+    "alpha_greater_than_zero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pass": true
+  },
+  "hull": {
+    "file": "ship_lv1_hull_body_v005.png",
+    "canvas": [
+      1672,
+      941
+    ],
+    "alpha_greater_than_zero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pass": true
+  },
+  "mask": {
+    "file": "ship_lv1_hard_mask_v005.png",
+    "canvas": [
+      1672,
+      941
+    ],
+    "alpha_greater_than_zero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pass": true
+  },
+  "geometry_match": true,
+  "origin": {
+    "x": 970,
+    "y": 730
+  },
+  "source_to_logical": 0.7651434643995749,
+  "clear_height_logical": 116.30180658873539,
+  "note": "后墙及合成图按设计填入背景，不适用前框零Alpha断言。仅几何通过；材质尚待用户评审。"
+}
