@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.3（2026-10-31）
+> 版本：v1.4（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -30,8 +30,11 @@
 | VS-W2-INPUT-01 | Trae | W2预备 | 已完成（`655a937`），已进入 W2 集成基线 | `assets/scripts/view/input/`、`DragGestureSandbox.scene`、`tests/view/input/` |
 | VS-W2-BATTLE-CORE-01 | GPT / Codex | W2 | 已完成（`41a0396` + `cb21e0e`） | `assets/scripts/logic/battle/`、`W2BattleGrayboxConfig.ts`、对应测试 |
 | VS-W2-VIEW-01 | Trae | W2 | 可领取，依赖工程提交 `cb21e0e` | `assets/scripts/view/battle/`、`BattleGraybox.scene`、`tests/view/battle/` |
-| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | 部分完成：授权已记录，船壳母版与三版透明框架待验收，未生成正式素材 | `assets/production/source/style_scene_001/`、`assets/production/manifests/style_scene_001/`、`assets/production/review/style_scene_001/` |
-| VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 运行时 JSON 已接入（`aa42508`）；Web Mobile 构建与手机尺寸验收通过（`30a4ba3`）；真实手机同网段启动待确认 | 配置运行时接入、手机验证、W1闸门结论 |
+| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate B REWORK：船壳母版与三版透明框架保留为失败证据；转入精确几何底稿路线 | `source/vs_art_master_01/`、`manifests/ship_lv1_*`、`review/vs_art_master_01/` |
+| VS-ART-GEOMETRY-01 | GPT / Codex | W2并行 | 可开始：先锁定六格几何与净高，再生成 v004；不得继续提示词盲抽 | 上述目录中的 Gate B 新版本，不覆盖 v001~v003 |
+| VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待几何底稿完成后领取；只做 manifest/命名/授权记录审计 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
+| VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
+| VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 已完成：运行时 JSON（`aa42508`）、Web Mobile（`30a4ba3`）、真实手机同网段启动均通过 | 配置运行时接入、手机验证、W1闸门结论 |
 
 禁止事项：
 
@@ -195,9 +198,9 @@
 - assets/风格定稿/风格定稿.png（STYLE_SCENE_001_v001）
 
 允许写入：
-- assets/production/source/style_scene_001/
-- assets/production/manifests/style_scene_001/
-- assets/production/review/style_scene_001/
+- assets/production/source/vs_art_master_01/
+- assets/production/manifests/（仅 VS-ART-MASTER-01 对应 manifest）
+- assets/production/review/vs_art_master_01/
 - 本任务的美术交接记录
 
 禁止写入：
@@ -220,6 +223,48 @@
 
 交付：候选对照板、分层清单、回拼图、manifest、风险与建议；无需改动代码仓库。
 非目标：不实现动画代码、正式 HUD 逻辑、配置 ID 调整或批量全量美术。
+```
+
+### 5.1 美术下一阶段任务卡
+
+```text
+任务编号：VS-ART-GEOMETRY-01
+Owner：GPT / Codex
+目标：终止船框提示词盲抽，建立精确六舱几何约束，并只生产一个受约束的 v004 候选。
+
+输入：
+- STYLE_SCENE_001_v001
+- ship_lv1_hull_shell_v001 与 ship_lv1_hull_frame_v001~v003（仅作失败证据）
+- Gate A 批准布局：六格 140×160、共同底线、112px 船员净空
+
+交付：
+1. 可测量的逻辑坐标底稿、透明遮罩与尺寸 JSON。
+2. v004 船体框架候选及匹配的后墙/船壳分层方案。
+3. 中灰底、场景代理底、逻辑尺寸、黑白剪影和 1280×720 回拼审核板。
+4. 更新后的 manifest；状态只能为 REVIEW 或 REWORK。
+
+验收：
+- 六格尺寸、中心距与共同底线为精确值，源像素误差不超过 1px。
+- 每格按统一缩放换算后的可见净高 ≥112 逻辑像素。
+- 六个开口为真实 Alpha，无遮头梁柱；不得缩小角色规避净高要求。
+- 通过几何自动检查后才进入材质/气氛评审。
+
+非目标：不生产六房、五怪、Lv2/Lv3，不写入 approved 或 Cocos assets/art。
+```
+
+```text
+任务编号：VS-ART-AUDIT-01
+Owner：WorkBuddy
+目标：在 v004 审核包生成后，独立检查命名、版本、状态、SHA-256、提示词、参考来源、授权与人工修改记录。
+只允许新增 manifest_audit_v001.md；不得修改 PNG、manifest 或美术规范。
+结论只允许 PASS / FAIL，并逐项列出缺失字段和目标文件。
+```
+
+```text
+任务编号：VS-ART-INGAME-01
+Owner：Trae（暂不启动）
+开放条件：船壳最小套件达到 APPROVED，且 VS-W2-VIEW-01 已交付。
+目标：只做导入、锚点、缩放、遮挡、Alpha 边缘与 50fps 验证；不得修改美术源文件。
 ```
 
 该任务与 WorkBuddy 的配置流水线、Trae 的拖拽输入目录无文件重叠，可同步进行。新窗口开工时必须先复述允许写入范围和验收条件。
