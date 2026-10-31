@@ -1,0 +1,29 @@
+{
+  "asset_id": "ship_lv1_hull_frame",
+  "version": 2,
+  "status": "REWORK",
+  "gate": "B",
+  "prompt": "Use case: precise-object-edit. Edit target is the transparent six-opening wooden ship frame. Preserve dark hand-painted impasto material, wood grain language, left bow/right stern, six equal openings, no items, true alpha outside AND in openings. Correct ONE geometric issue: the six room openings are too squat. Increase the interior clear height of ALL SIX bays by approximately 30 percent while keeping each bay width unchanged; clear rectangular width-to-height must be 0.875 (140:160), meaning a bay 180px wide needs 206px clear height. Stretching the entire image is forbidden: repaint structural wood and extend the lower hull DOWNWARD so beam textures and exterior patches remain natural. Keep upper deck and railing proportions unchanged, deepen the cutaway room band, and extend/repaint the lower hull to accommodate the deeper floors. Every room top and floor must share a common horizontal baseline. Keep each room empty and see-through; do NOT add back walls. Do not merely reproduce the old image: the new rooms must visibly be taller than they are wide. The vertical opening measurement is below the little diagonal top corner braces and above the wooden floor lip; that clear rectangle must also be taller than its width. Use wide canvas with enough vertical room and safe transparent margins; do not crop keel. Six-room single frame ONLY, no perspective, no ocean, mast, rope, people, weapons, plants, machinery, lamps, text or UI. No pixel art, 3D, photography, fake checkerboard or black-filled holes. Six clean alpha holes, 140:160 width-height, broadside side view. Return one production image.",
+  "negative_prompt": "No pixel art, 3D, photography, fake checkerboard, text, UI, characters, monsters, cannons, vegetation, machinery, ocean, mast, rope",
+  "generator": "built-in image_gen",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "task_id": "exec-0266a510-c84d-4b6b-882f-e8819eefc1d3",
+  "task_id_kind": "tool output artifact identifier; provider task ID not exposed",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T01:59:14.350Z",
+  "source_path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_frame_v002.png",
+  "references": [
+    "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_frame_v001.png"
+  ],
+  "manual_edits": [],
+  "reviewer": "Codex initial QA",
+  "review_notes": "六舱格及真实 alpha 已验证；净高不足以按 Gate A 目标比例容纳 112px 船员，修订中。模型版本、seed 和供应商任务 ID 未由工具公开，不伪造。",
+  "license_notes": "Self-generated with internal project reference; external reference provenance unverified; no protected IP requested",
+  "sha256": "63e9feb9020990f9971a55a3177d1f971700babc74a552d6430c097ff88a8258",
+  "pixel_size": [
+    1983,
+    793
+  ]
+}

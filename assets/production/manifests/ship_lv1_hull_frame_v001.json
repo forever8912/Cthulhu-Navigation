@@ -1,0 +1,29 @@
+{
+  "asset_id": "ship_lv1_hull_frame",
+  "version": 1,
+  "status": "REWORK",
+  "gate": "B",
+  "prompt": "Use case: background-extraction / precise-object-edit. Input is the exact ship hull shell master edit target. Produce a MATCHING front structural hull frame layer for that same ship, transparent PNG. Preserve the ship silhouette, all exterior hull planking, patchboards, upper deck, railing, bow, stern, six-bay count, posts, beams, lower floor edges, original canvas dimensions, object scale and position exactly. ONLY REMOVE the dark vertical-plank back walls and horizontal back-wall stiffeners INSIDE EACH OF THE SIX ROOM OPENINGS, replacing these six rectangular back-wall regions with genuine transparency. Preserve the structural vertical posts between the bays, diagonal corner braces, horizontal ceiling beams and wooden floors in front of each room. There must be SIX see-through room openings; original back-wall dark wood must not remain inside them. Outside the ship stays genuinely transparent. No new objects. No background, water, text, UI, people, furniture, vegetation, cannons, mast, lamps. Dark hand-painted impasto wooden ship; same left upper lighting, unchanged paintwork. This is a game production front frame, not a complete assembled ship. Return one isolated front-frame layer, not a sheet. Make removed openings true alpha, not black or painted checkerboard.",
+  "negative_prompt": "No pixel art, 3D, photography, fake checkerboard, text, UI, characters, monsters, cannons, vegetation, machinery, ocean, mast, rope",
+  "generator": "built-in image_gen",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "task_id": "exec-e33a44c1-82bd-4c90-acf0-f719f1863100",
+  "task_id_kind": "tool output artifact identifier; provider task ID not exposed",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T01:59:12.847Z",
+  "source_path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_frame_v001.png",
+  "references": [
+    "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_shell_v001.png"
+  ],
+  "manual_edits": [],
+  "reviewer": "Codex initial QA",
+  "review_notes": "六舱格及真实 alpha 已验证；净高不足以按 Gate A 目标比例容纳 112px 船员，修订中。模型版本、seed 和供应商任务 ID 未由工具公开，不伪造。",
+  "license_notes": "Self-generated with internal project reference; external reference provenance unverified; no protected IP requested",
+  "sha256": "7997c11e8b963a99843c2f631858242a5576383bcc906bf7b915aa90d1210286",
+  "pixel_size": [
+    1983,
+    793
+  ]
+}

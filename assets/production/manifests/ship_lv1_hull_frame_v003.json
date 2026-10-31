@@ -1,0 +1,29 @@
+{
+  "asset_id": "ship_lv1_hull_frame",
+  "version": 3,
+  "status": "REWORK",
+  "gate": "B",
+  "prompt": "Use case: precise-object-edit. Same transparent wooden ship front frame, same paint style, six equally spaced room bays. Edit only the lower cutaway room area: EXTEND THE SIX ROOM OPENINGS DOWNWARD by another 65 pixels, moving all six wooden floors and the keel down together, and repainting/lengthening all the vertical dividing posts. Do NOT compress the upper ship. Final source dimensions can be 1983 wide by about 860 tall to accommodate the deeper hull. Keep the upper deck as-is, room ceiling at approximately source y350, but place the inner wooden floor lips at approximately y640; main rectangular transparent area from y385 to y635 (250 pixels high). Divide the room band into six equal cells with 220 pixel center spacing (centers x460,680,900,1120,1340,1560). The repeated cell is 220px wide and approximately 251px usable height, matching approved 140:160 layout after uniform scale; posts consume some cell width, so each see-through opening may be narrower than 220. Ensure a 230px tall character could stand fully visibly within EVERY hole with no beam or brace crossing their head. All six floor baselines exactly aligned. There must be 6 genuinely transparent openings, each clear center-column height at least 245px, not 190px like the input. Preserve exterior hull silhouette language but extend lower hull depth naturally and repaint boards, do not stretch texture. Bow left, stern right. No background, water, UI, text, characters, furniture, plants, weapons, mast, rope, lanterns. Same oil-gouache impasto rendering with upper-left light; not pixel art, 3D or photography. Safe alpha margin around whole ship, don't crop keel. One front structural frame PNG, not a sheet.",
+  "generator": "built-in image_gen",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "review_notes": "六舱口真实透明，但按 Gate A 舱格宽度缩放后净高不足 112 逻辑像素。三轮仍未通过，停止文字微调，改用精确几何底稿再生产。",
+  "sha256": "6cc0af42ddfb47dfbb19b91370ad1256485b20e0d5f52a42d9a056e554403075",
+  "pixel_size": [
+    1903,
+    826
+  ],
+  "negative_prompt": "No pixel art, 3D, photography, fake checkerboard, text, UI, characters, monsters, cannons, vegetation, machinery, ocean, mast, rope",
+  "task_id": "exec-8fda3d21-c57a-4922-9d06-bd008b25218e",
+  "task_id_kind": "tool output artifact identifier; provider task ID not exposed",
+  "references": [
+    "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_frame_v002.png"
+  ],
+  "source_path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_frame_v003.png",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T02:00:40.415Z",
+  "manual_edits": [],
+  "reviewer": "Codex initial QA",
+  "license_notes": "Self-generated with internal project reference; external reference provenance unverified; no protected IP requested"
+}

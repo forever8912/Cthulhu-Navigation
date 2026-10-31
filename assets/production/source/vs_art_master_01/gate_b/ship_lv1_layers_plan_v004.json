@@ -1,0 +1,126 @@
+{
+  "status": "REWORK",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "origin": {
+    "x": 970,
+    "y": 730
+  },
+  "back_panels": [
+    {
+      "key": "room_back_1",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "rect": {
+        "x": 553,
+        "y": 575,
+        "width": 134,
+        "height": 158
+      },
+      "z": 60,
+      "overlap_px": 3,
+      "content": "后续独立绘制湿木后墙；不从扁平参考图硬抠"
+    },
+    {
+      "key": "room_back_2",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "rect": {
+        "x": 693,
+        "y": 575,
+        "width": 134,
+        "height": 158
+      },
+      "z": 60,
+      "overlap_px": 3,
+      "content": "后续独立绘制湿木后墙；不从扁平参考图硬抠"
+    },
+    {
+      "key": "room_back_3",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "rect": {
+        "x": 833,
+        "y": 575,
+        "width": 134,
+        "height": 158
+      },
+      "z": 60,
+      "overlap_px": 3,
+      "content": "后续独立绘制湿木后墙；不从扁平参考图硬抠"
+    },
+    {
+      "key": "room_back_4",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "rect": {
+        "x": 973,
+        "y": 575,
+        "width": 134,
+        "height": 158
+      },
+      "z": 60,
+      "overlap_px": 3,
+      "content": "后续独立绘制湿木后墙；不从扁平参考图硬抠"
+    },
+    {
+      "key": "room_back_5",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "rect": {
+        "x": 1113,
+        "y": 575,
+        "width": 134,
+        "height": 158
+      },
+      "z": 60,
+      "overlap_px": 3,
+      "content": "后续独立绘制湿木后墙；不从扁平参考图硬抠"
+    },
+    {
+      "key": "room_back_6",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "rect": {
+        "x": 1253,
+        "y": 575,
+        "width": 134,
+        "height": 158
+      },
+      "z": 60,
+      "overlap_px": 3,
+      "content": "后续独立绘制湿木后墙；不从扁平参考图硬抠"
+    }
+  ],
+  "shell": {
+    "z": 50,
+    "requirement": "完整外壳与舱底独立；所有后墙在同一画布内定位"
+  },
+  "frame": {
+    "z": 100,
+    "path": "ship_lv1_hull_frame_v004.png",
+    "requirement": "当前候选REWORK；净空矩形内不得有梁柱，梁柱限制在格边缘带"
+  },
+  "assembly": [
+    "ship_hull_back",
+    "room_back_1..6",
+    "room_contents (not produced)",
+    "crew (not produced)",
+    "ship_frame_front"
+  ],
+  "note": "仅分层合同，不冒充已绘制后墙资源；前框几何通过后才生产匹配补板"
+}

@@ -1,0 +1,133 @@
+{
+  "task_id": "VS-ART-GEOMETRY-01",
+  "cells": [
+    {
+      "clear": {
+        "x": 556,
+        "width": 128,
+        "y": 578,
+        "height": 152
+      },
+      "y": 570,
+      "foot": {
+        "x": 620,
+        "y": 730
+      },
+      "x": 550,
+      "height": 160,
+      "index": 1,
+      "width": 140,
+      "logical_clear_height": 116.30180658873539
+    },
+    {
+      "clear": {
+        "x": 696,
+        "width": 128,
+        "y": 578,
+        "height": 152
+      },
+      "y": 570,
+      "foot": {
+        "x": 760,
+        "y": 730
+      },
+      "x": 690,
+      "height": 160,
+      "index": 2,
+      "width": 140,
+      "logical_clear_height": 116.30180658873539
+    },
+    {
+      "clear": {
+        "x": 836,
+        "width": 128,
+        "y": 578,
+        "height": 152
+      },
+      "y": 570,
+      "foot": {
+        "x": 900,
+        "y": 730
+      },
+      "x": 830,
+      "height": 160,
+      "index": 3,
+      "width": 140,
+      "logical_clear_height": 116.30180658873539
+    },
+    {
+      "clear": {
+        "x": 976,
+        "width": 128,
+        "y": 578,
+        "height": 152
+      },
+      "y": 570,
+      "foot": {
+        "x": 1040,
+        "y": 730
+      },
+      "x": 970,
+      "height": 160,
+      "index": 4,
+      "width": 140,
+      "logical_clear_height": 116.30180658873539
+    },
+    {
+      "clear": {
+        "x": 1116,
+        "width": 128,
+        "y": 578,
+        "height": 152
+      },
+      "y": 570,
+      "foot": {
+        "x": 1180,
+        "y": 730
+      },
+      "x": 1110,
+      "height": 160,
+      "index": 5,
+      "width": 140,
+      "logical_clear_height": 116.30180658873539
+    },
+    {
+      "clear": {
+        "x": 1256,
+        "width": 128,
+        "y": 578,
+        "height": 152
+      },
+      "y": 570,
+      "foot": {
+        "x": 1320,
+        "y": 730
+      },
+      "x": 1250,
+      "height": 160,
+      "index": 6,
+      "width": 140,
+      "logical_clear_height": 116.30180658873539
+    }
+  ],
+  "source_to_logical": 0.7651434643995749,
+  "crew_logical_height": 112,
+  "baseline": 730,
+  "coordinate_note": "沿用已批准 Gate A 原图坐标。140×160 是源图格尺寸，逻辑格约107.12×122.42；不得误标成140×160逻辑像素。",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "layers": {
+    "hull": "painted continuous shell behind cutaway; no baked furniture or characters",
+    "front": "opaque hull and posts outside clear rectangles",
+    "back": "six independently painted timber panels behind openings, on same 1672x941 canvas"
+  },
+  "pitch": 140,
+  "crew_source_height": 146.37777777777777,
+  "status": "REVIEW",
+  "logical_canvas": {
+    "width": 1280,
+    "height": 720
+  }
+}

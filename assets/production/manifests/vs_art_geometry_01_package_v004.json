@@ -1,0 +1,29 @@
+{
+  "task_id": "VS-ART-GEOMETRY-01",
+  "status": "REWORK",
+  "generator": "Project-authored deterministic technical diagrams + one built-in image_gen candidate",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_geometry_v004.json",
+      "sha256": "ef7eb336a4db6593ce352cfa59e4a254867d959ae01f498fb8b1d6e4137f9bcd"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_geometry_v004.svg",
+      "sha256": "f1d979869acfeb5f5e7f1d87eec9ceda92bbaba44a402f9e2f64afcd69479cb6"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_geometry_guide_v004.png",
+      "sha256": "9d7a3842d6e3dd85a4a01531972c95c53a26418709ae43197c5c2c0872a9021a"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_geometry_mask_v004.png",
+      "sha256": "c375a333bebede6fd9a20fec998a96f8bc37a38653b3622a77dee78717f06a0e"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_layers_plan_v004.json",
+      "sha256": "a3eccb315d44f3ea3f160e31a6c34c7582bb6694126e5424bb11ebfbd6ab9299"
+    }
+  ],
+  "authorization": "Gate B masters only; no approved or Cocos writes",
+  "reviewer": "Codex geometry QA"
+}

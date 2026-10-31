@@ -1,0 +1,29 @@
+{
+  "asset_id": "ship_lv1_hull_shell",
+  "version": 1,
+  "status": "REWORK",
+  "gate": "B",
+  "prompt": "Use case: stylized-concept. Asset type: Gate B ship hull shell master, standalone transparent PNG for a 2D side-view cutaway game. Input image is ONLY a project composition/material reference, NOT a request to reproduce its pixel-art edges or UI. Create ONE isolated seaworthy aged wooden small fishing vessel hull, bow left and squared stern right, absolutely strict orthographic broadside, no perspective. Dark hand-painted impasto gouache/oil brush texture, restrained blue-grey/old wood brown/rusted iron, readable edges without black cartoon outlines. Soft upper-left key light. Entire outside transparent alpha, NO ocean, NO background, NO UI, NO labels, NO characters, NO monsters, NO cannons, NO weapons, NO vegetation, NO machinery, NO furniture. No mast, sails, ropes, lantern glow, steering wheel or ladder: these are separate later layers. Only hull back wall, keel, curved bow and stern, narrow upper deck lip, room floors and structural separator posts. Create exactly SIX equal-width empty rectangular interior bays on ONE lower horizontal floor line, six openings side by side; each bay clear width:height ratio 140:160 (0.875). Wide hull contains the full six-bay cutaway with minimal posts, large genuinely empty interiors with completed dark timber back walls; room ceilings all align and floors all align. Room opening band should be prominent enough for a 112 logical-pixel human inside 122 logical-pixel clear height, not tiny holes in a huge hull. Outer ship silhouette similar to reference in spirit but remove the redundant upper cannon and replace the entire planted/machinery interior with empty bays. The keel and bottom planking fully visible (no water hiding hull). Aim wide landscape canvas at least 2000 pixels wide with safe transparent margin, hull fills canvas; preserve all hull edges. This is ONE shell image only, not an exploded sheet or sprite atlas. Avoid pixelation, mosaics, cel shading, photorealism, 3D render, neon, pure-black unreadable interiors, text, watermark, baked checkerboard. Transparent outside silhouette, opaque painted timber back walls inside rooms.",
+  "negative_prompt": "No pixel art, 3D, photography, fake checkerboard, text, UI, characters, monsters, cannons, vegetation, machinery, ocean, mast, rope",
+  "generator": "built-in image_gen",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "task_id": "exec-2812f23c-72a6-4536-adba-2c23f20c0740",
+  "task_id_kind": "tool output artifact identifier; provider task ID not exposed",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T01:59:11.336Z",
+  "source_path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_shell_v001.png",
+  "references": [
+    "assets/风格定稿/风格定稿.png"
+  ],
+  "manual_edits": [],
+  "reviewer": "Codex initial QA",
+  "review_notes": "六舱格及真实 alpha 已验证；净高不足以按 Gate A 目标比例容纳 112px 船员，修订中。模型版本、seed 和供应商任务 ID 未由工具公开，不伪造。",
+  "license_notes": "Self-generated with internal project reference; external reference provenance unverified; no protected IP requested",
+  "sha256": "cf97a146ac0b1c0399945d0187fdc8378f54707533927a17d95877f1dbf3197d",
+  "pixel_size": [
+    1983,
+    793
+  ]
+}

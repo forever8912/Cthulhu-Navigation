@@ -1,0 +1,15 @@
+{
+  "task_id": "VS-ART-GEOMETRY-01",
+  "owner": "GPT / Codex · 当前美术窗口",
+  "status": "REWORK",
+  "date": "2026-10-31",
+  "scope": "精确几何底稿、遮罩、尺寸 JSON、唯一 v004 候选及审核包",
+  "prohibited": [
+    "覆盖 v001~v003",
+    "生成第二个 v004 候选",
+    "批量房间怪物",
+    "approved 写入",
+    "Cocos 工程写入"
+  ],
+  "handoff": "geometry_v004_report.md"
+}

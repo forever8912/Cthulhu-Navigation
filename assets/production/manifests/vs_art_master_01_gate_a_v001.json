@@ -1,0 +1,25 @@
+{
+  "asset_id": "vs_art_master_01_gate_a",
+  "version": 1,
+  "status": "APPROVED",
+  "purpose": "Gate A annotation and layering proposal",
+  "generator": "deterministic SVG annotation; no AI image generation",
+  "prompt": null,
+  "negative_prompt": null,
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "generated_at": "2026-10-31T01:54:22.018Z",
+  "references": [
+    {
+      "path": "assets/风格定稿/风格定稿.png",
+      "sha256": "710c2e9e2dc506b6cccb58a4c0ef7c7ddcb000a802d2842a42908c9dee8ca713",
+      "rights": "project internal reference; external provenance unverified"
+    }
+  ],
+  "manual_edits": [
+    "Added vector annotation overlay; reference pixels unchanged"
+  ],
+  "reviewer": "user",
+  "review_notes": "Gate A approved; only Gate B masters authorized. No Cocos import or bulk room/monster expansion."
+}

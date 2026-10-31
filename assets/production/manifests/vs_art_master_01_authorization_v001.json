@@ -1,0 +1,12 @@
+{
+  "task_id": "VS-ART-MASTER-01",
+  "date": "2026-10-31",
+  "gate_a": "APPROVED",
+  "reviewer": "user",
+  "approval_quote": "批准当前 Gate A",
+  "gate_b": "AUTHORIZED",
+  "scope_quote": "允许进入 Gate B 正式母版生成；不批准直接进入 Cocos 工程，不批准提前批量扩展全部房间和怪物。",
+  "allowed": ["Gate B 正式母版生成", "母版审核与拆分源资产"],
+  "prohibited": ["导入 Cocos 工程", "提前批量扩展全部房间和怪物"],
+  "asset_approval": "Gate A 批准不代表任何 Gate B 素材已获 APPROVED"
+}

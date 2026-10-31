@@ -1,0 +1,37 @@
+{
+  "asset_id": "ship_lv1_hull_frame",
+  "version": 4,
+  "status": "REWORK",
+  "task_id": "VS-ART-GEOMETRY-01",
+  "prompt": "Use case: precise-object-edit. Create ONE transparent PNG ship front structural frame, exact full uncropped canvas 1672x941. Input 1 is a TECHNICAL GEOMETRY GUIDE, not a style reference: preserve its object position and exact six cyan rectangle coordinates. Input 2 is ONLY the hand-painted material/style reference. Repaint the brown hull guide as dark low-saturation oil-gouache impasto old wet wood and rusted iron, upper-left key light, original fishing vessel bow left and stern right. The six cyan rectangles must become exactly six fully TRANSPARENT alpha holes, NOT painted wood, cyan or black. Holes at (556,578),(696,578),(836,578),(976,578),(1116,578),(1256,578), each width128 height152, common floor y730. Cell pitch140. Keep the ENTIRE rectangle clear, no diagonal braces or beams intruding, no decorated corners. Technical guide background becomes true alpha. Paint hull/frame ONLY outside holes within the brown ship silhouette. Upper deck and bottom keel can be detailed, narrow posts between six rooms remain outside specified holes. No cropping, no auto-centering, no changing canvas or scale, no zooming into ship: keep substantial transparent area above and left as in guide. No mast, sail, ropes, ocean, UI, labels, watermarks, people, furniture, vegetation, weapons, cannons or glowing lights. No pixel art, photography, 3D, cartoon outlines. Do not reproduce the full reference scene. ONLY one ship front frame at specified 1672x941 coordinates; outside ship and inside all six rectangular room holes are alpha. Back walls will be separate future layers. This is the only v004 candidate, precision geometry is more important than added ornament.",
+  "negative_prompt": "pixel art, 3D, photography, cartoon outline, text, watermark, UI, character, monster, furniture, cannon, vegetation, mast, ocean, opaque room interiors, cropped or recentered canvas",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "generator": "built-in image_gen",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T09:02:53.732Z",
+  "references": [
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_geometry_guide_v004.png",
+      "role": "exact geometry constraint",
+      "rights": "project-authored technical diagram"
+    },
+    {
+      "path": "assets/风格定稿/风格定稿.png",
+      "role": "STYLE_SCENE_001_v001 material reference",
+      "rights": "internal project reference; external provenance unverified"
+    }
+  ],
+  "manual_edits": [],
+  "review_notes": "画布通过；六个净空区均有梁柱侵入，REWORK。仅生成一次，未缩放/裁剪/后处理。未进入材质评审。输出标识不是供应商任务ID；模型版本、seed未由工具公开。",
+  "output_artifact_id": "exec-f08c12a4-0255-4878-83ce-fe92a7d16faf",
+  "provider_task_id": null,
+  "source_path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_frame_v004.png",
+  "sha256": "9c2eb6f82c40d68b015f29c8f4bd3cd3c8b12548b98c30080586062fe66786a0",
+  "pixel_size": [
+    1672,
+    941
+  ],
+  "reviewer": "Codex automatic geometry QA"
+}
