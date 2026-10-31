@@ -1,0 +1,63 @@
+{
+  "status": "REVIEW",
+  "layers": [
+    {
+      "key": "hull_body",
+      "canvas": [
+        1672,
+        941
+      ],
+      "alpha_differences_vs_v005": 0,
+      "clear_alpha_nonzero": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "key": "back_walls",
+      "canvas": [
+        1672,
+        941
+      ],
+      "alpha_differences_vs_v005": 0,
+      "clear_alpha_nonzero": "back wall intentionally opaque",
+      "pass": true
+    },
+    {
+      "key": "front_frame",
+      "canvas": [
+        1672,
+        941
+      ],
+      "alpha_differences_vs_v005": 0,
+      "clear_alpha_nonzero": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "mask_byte_identical": true,
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "origin": {
+    "x": 970,
+    "y": 730
+  },
+  "cells_unchanged": true,
+  "hierarchy_unchanged": true,
+  "back_wall_bleed": 3,
+  "old_v005_unchanged": true,
+  "clear_height_logical": 116.30180658873539
+}
