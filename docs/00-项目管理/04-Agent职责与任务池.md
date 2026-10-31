@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.12（2026-10-31）
+> 版本：v1.13（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -38,6 +38,9 @@
 | VS-ART-MATERIAL-MAP-01 | GPT / Codex | W2并行 | REWORK：v007 技术零漂移但船体视觉被用户否决；平直灰盒蒙皮路线关闭 | v007 分层源文件、四视图、风格并排板、manifest 与交接报告 |
 | VS-ART-HULL-REDESIGN-01 | GPT / Codex | W2并行 | v008 视觉候选 REVIEW：船体方向可继续；鱼叉炮已移至甲板，待迁移固定坐标 | `source/vs_art_master_01/gate_c/`、v008并排板、manifest与检查 |
 | VS-ART-P2-01 | GPT / Codex | W2并行 | 部分完成：1001 动力舱和 2001 鱼叉炮继续 REVIEW；炮位视觉改为甲板安装，旧舱内回拼废弃 | `source/vs_art_master_01/p2/`、P2审核板、manifest与交接报告 |
+| VS-ART-DECK-PROPS-01 | GPT / Codex | W2并行 | 已交付 REVIEW：桅杆/帆/缆绳/灯独立，桶/箱为静态装饰；右向 v009 回拼完成 | `source/vs_art_master_01/deck_props/`、右向审核板、manifest |
+| VS-DATA-HULL-SLOTS-01 | WorkBuddy | W2预备 | 待领取：设计 `build_slot_count=3/6/9` 数据迁移与旧 `grid_total` 兼容方案，不直接改数值源表 | 配置迁移提案、Schema/导出影响和存档兼容报告 |
+| VS-W2-HULL-MODULE-VIEW-01 | Trae | W2后续 | 阻塞：待模块接口和资产 APPROVED；实现 stern/mid/bow 装配、房间层级与 deckMountAnchor | 工程内船体装配视图和测试，范围届时冻结 |
 | VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待材质方向冻结后领取：独立审计最终候选 manifest、命名、哈希、授权和状态一致性 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
 | VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
 | VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 已完成：运行时 JSON（`aa42508`）、Web Mobile（`30a4ba3`）、真实手机同网段启动均通过 | 配置运行时接入、手机验证、W1闸门结论 |
@@ -87,6 +90,37 @@
 
 交付：独立分支 agent/VS-W1-DATA-01-config-validation、提交哈希、运行命令和结果摘要。
 非目标：不设计新字段、不调整现有数值、不接入Cocos运行时。
+```
+
+### 3.2 船体格位迁移提案
+
+```text
+任务编号：VS-DATA-HULL-SLOTS-01
+角色：数据 Agent（WorkBuddy）
+目标：为 Lv1=3、Lv2=6、暂定 Lv3=9 个可建造格位设计配置与存档兼容方案；本任务先提案和测试夹具，不直接改正式 xlsx 数值。
+
+必读文件（最多4份）：
+1. AGENTS.md
+2. docs/02-系统设计/船舱房间系统.md（只读 §1.1 与配置字段段落）
+3. docs/03-美术方案/08-风格定稿与拆分素材制作计划.md（只读 P1.6）
+4. assets/production/source/vs_art_master_01/gate_c/ship_modular_layout_v001.json
+
+允许写入：
+- docs/00-项目管理/船体格位迁移提案.md
+- tools/配置导出/tests/ 中独立迁移/校验夹具
+
+禁止写入：
+- data/配置表/*.xlsx
+- E:\devfearfulsea\NewProject
+- 现有正式 JSON、存档和美术文件
+
+提案必须回答：
+1. 新字段使用 build_slot_count 还是迁移 grid_total，旧 8/10/12/14/16 如何兼容。
+2. 两格房如何占连续槽位；甲板炮位如何保持逻辑占格但使用 deckMountAnchor。
+3. 升级只追加 slot_04~06/slot_07~09，如何保证旧槽位、房间实例和船员岗位不移动。
+4. 旧存档缺新字段时的默认值、迁移版本和回滚策略。
+
+验收条件：给出 Schema/导出器/类型/存档迁移影响矩阵；至少包含 Lv1→Lv2、两格房跨槽、炮位甲板映射和旧存档载入四个测试用例；不得擅自改正式数值。
 ```
 
 ## 四、Trae 任务卡

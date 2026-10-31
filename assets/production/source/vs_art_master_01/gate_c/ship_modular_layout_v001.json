@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "orientation": {
+    "bow": "right",
+    "travel_axis": "+X",
+    "default_weapon_aim": "right"
+  },
+  "layer_order_back_to_front": [
+    "hull_back",
+    "slot_back",
+    "slot_frame",
+    "constructed_room",
+    "front_sill_occluder",
+    "deck_decor_static",
+    "deck_devices",
+    "mast",
+    "sail",
+    "rigging",
+    "lantern",
+    "fx",
+    "ui"
+  ],
+  "modules": {
+    "stern": {
+      "reusable": true
+    },
+    "mid_3slot": {
+      "reusable": true,
+      "slot_count": 3,
+      "deck_mount_count": 1
+    },
+    "bow": {
+      "reusable": true
+    }
+  },
+  "hull_levels": [
+    {
+      "hull_level": 1,
+      "modules": [
+        "stern",
+        "mid_01",
+        "bow"
+      ],
+      "build_slot_count": 3,
+      "stable_slot_ids": [
+        "slot_01",
+        "slot_02",
+        "slot_03"
+      ],
+      "deck_mount_ids": [
+        "mid_01.deck_mount_01"
+      ]
+    },
+    {
+      "hull_level": 2,
+      "modules": [
+        "stern",
+        "mid_01",
+        "mid_02",
+        "bow"
+      ],
+      "build_slot_count": 6,
+      "stable_slot_ids": [
+        "slot_01",
+        "slot_02",
+        "slot_03",
+        "slot_04",
+        "slot_05",
+        "slot_06"
+      ],
+      "deck_mount_ids": [
+        "mid_01.deck_mount_01",
+        "mid_02.deck_mount_01"
+      ]
+    },
+    {
+      "hull_level": 3,
+      "modules": [
+        "stern",
+        "mid_01",
+        "mid_02",
+        "mid_03",
+        "bow"
+      ],
+      "build_slot_count": 9,
+      "stable_slot_ids": [
+        "slot_01",
+        "slot_02",
+        "slot_03",
+        "slot_04",
+        "slot_05",
+        "slot_06",
+        "slot_07",
+        "slot_08",
+        "slot_09"
+      ],
+      "deck_mount_ids": [
+        "mid_01.deck_mount_01",
+        "mid_02.deck_mount_01",
+        "mid_03.deck_mount_01"
+      ],
+      "provisional": true
+    }
+  ],
+  "example_occupancy": {
+    "room_1001_power": [
+      "slot_01",
+      "slot_02"
+    ],
+    "room_2001_harpoon_logic": [
+      "slot_03"
+    ],
+    "room_2001_harpoon_visual": "mid_01.deck_mount_01"
+  },
+  "save_rule": "Upgrade appends new stable slot IDs; existing slot IDs and room assignments never move.",
+  "camera_rule": "Lv1/Lv2 fit width while preserving minimum room readability; Lv3 may use horizontal pan instead of shrinking rooms below target logical size."
+}

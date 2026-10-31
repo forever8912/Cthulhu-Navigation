@@ -1,0 +1,94 @@
+{
+  "task_id": "VS-ART-DECK-PROPS-01",
+  "status": "REVIEW",
+  "generator": "built-in image_gen plus precise-object-edit",
+  "output_artifact_ids": [
+    "exec-e32dd08f-ed33-40fa-b723-720e422c3b37",
+    "exec-835f3fda-dcad-4647-bdff-78d9abeaffe5"
+  ],
+  "provider_task_ids": [
+    null,
+    null
+  ],
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "prompt": "Use case: stylized-concept. Asset type: transparent game sprite-parts sheet for deck details on the right-facing v008 ship. Input images: Image 1 is the authoritative approved style reference. Image 2 is the current right-facing hull and deck scale reference. Primary request: Create exactly six separated, non-overlapping side-view deck components with generous transparent spacing: (1) one weathered main mast with a sturdy deck foot and short yard arm, (2) one separate small torn canvas sail sized for that mast, (3) one separate loose rigging/rope group for subtle sway animation, (4) one small closed wooden barrel, (5) one low stack of two battered cargo crates, (6) one small hanging warm oil lantern with its own hook. No assembled ship and no duplicate variants. Style/medium: restrained dark hand-painted game illustration matching the reference; crisp variable dark structural edges, compact controlled brushwork, grey-brown old wood, desaturated canvas, blue-grey iron, tiny localized dull rust. Composition/framing: strict orthographic side view; all six components fully visible and isolated for clean cropping; mast vertical; sail and rope separate from mast; barrel and crates low enough not to block characters; consistent top-left light. Constraints: genuine transparent background; no text, labels, grid, frame, characters, ship hull, ocean, UI or watermark. Components must not touch. Mast/sail/rigging/lantern are animation-ready separate parts; barrel and crates are static decoration parts. Avoid: photorealism, 3D render, pixel art, flat vector, giant impasto strokes, bright orange rust, golden ornament, excessive steampunk detail, weapons, gore.",
+  "negative_prompt": "photorealism, 3D render, pixel art, flat vector, giant impasto strokes, bright orange rust, golden ornament, excessive steampunk detail, weapons, gore, text, watermark",
+  "edit_prompt": "Use case: precise-object-edit. Modify only the large mast component on the left. Remove the small torn cloth attached near the top of the mast and remove the hanging wooden bucket/lantern attached to that mast. Reconstruct exposed rope knots and wood naturally. Preserve the separate large sail, rigging, barrel, crate stack and oil lantern exactly. Keep genuine transparency and do not add or remove any other object.",
+  "edit_notes": "Removed cloth and hanging bucket/lantern accidentally fused to mast; preserved separate sail, rigging, barrel, crates and lantern.",
+  "references": [
+    "STYLE_SCENE_001_v001",
+    "hull_v008_deck_concept_1280x720.png"
+  ],
+  "manual_edits": [
+    "Cropped six parts without repaint",
+    "Flipped hull only to right-facing orientation",
+    "Composited room above slot frame",
+    "Placed static and animated deck details on separate review layers"
+  ],
+  "reviewer": "",
+  "review_notes": "Right-facing layout and modular upgrade proposal pending integrated review. Not APPROVED and not imported into Cocos.",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_props_sheet_v001.png",
+      "sha256": "797a051aa56fe491ddc53e290bd0daf23a06ad43fb67c73fce1798cc60d7722c"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_mast_v001.png",
+      "sha256": "b2a5fe878facadf9ec379e85d0a255b0bf031427c8a97cf5899fa695c356b753"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_sail_v001.png",
+      "sha256": "4b8bb74438ffee656a83baecf5b59d5c5f32c972d258d0263b68c0d686a266c4"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_rigging_v001.png",
+      "sha256": "8ffa6c7de7182a7b88070aafc6d5869f1701a014dfaad491e888cf505927eed9"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_barrel_v001.png",
+      "sha256": "02d3c6ca6069ace244204dc4edfebef61857bff7b92b628ae69122d7465b28fb"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_crates_v001.png",
+      "sha256": "a9f1615798dbeb23d98eb99c91390763af786b32eb2930db90cdb1b77c2b0909"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/deck_props/deck_lantern_v001.png",
+      "sha256": "9680301e6534d04b787b810a60d2c11e0d7cafbd7bbae5a1c6645faad4cf95bb"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_c/ship_hull_visual_right_v009.png",
+      "sha256": "16c4f98b2aa892eba0edfb076fbf7364cef531d005c65e5e8984e7d8ce6d2afa"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_c/ship_layout_right_v009_preview.png",
+      "sha256": "6785a4d920917d8f881487ef7759dd9e62f373c1a19b36bd37c1a31cfef5bf19"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_c/ship_modular_layout_v001.json",
+      "sha256": "d89af4aad5fb8cae937f34a3a4360c606601b1d78e7df3cf07928ac74112837d"
+    }
+  ],
+  "part_roles": {
+    "mast": {
+      "animated": true
+    },
+    "sail": {
+      "animated": true
+    },
+    "rigging": {
+      "animated": true
+    },
+    "barrel": {
+      "animated": false
+    },
+    "crates": {
+      "animated": false
+    },
+    "lantern": {
+      "animated": true
+    }
+  }
+}
