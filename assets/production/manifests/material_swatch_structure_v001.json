@@ -1,0 +1,37 @@
+{
+  "task_id": "VS-ART-MATERIAL-SWATCH-01",
+  "asset_id": "material_swatch_structure",
+  "version": 1,
+  "status": "REWORK",
+  "purpose": "small material style swatch; no full hull mapping",
+  "prompt": "Use case: stylized-concept. Asset type: ONE small game material swatch for style matching only, NOT a ship or full scene. Input image is a native 192x192 crop of the approved project art and is the authoritative style reference. Match its restrained hand-painted game illustration language closely: grey-brown old wood, desaturated blue-grey shadows, crisp but varying dark structural edges, short restrained brush marks that FOLLOW individual planks, small local wear, small upper-left warm-grey edge highlights. No photographic surface, no 3D, no flat vector, no uniform thick black outline, no giant impasto daubs, no orange-gold wash, no noisy full-surface grain, no painted text or UI. Preserve the reference's readable timber scale: when the whole swatch is reduced to 192x192, one plank is about 18-28 px tall, wear is mostly 1-3px marks and dark seams about 1-3px. Do not recreate machinery, people, ocean or light fixtures visible in the reference crop. Square opaque swatch, material fills canvas. Create a NEW coherent painted sample, not a zoomed copy or collage. Subject: close side-view of a simple T-junction between a thick vertical timber post and a horizontal timber beam, with a small diagonal timber brace in one corner. Wood structure is clearly articulated, dark occlusion only at the joints, narrow restrained upper-left edge light, cooler right-facing planes. Background is simple dark grey-brown vertical wall boards. Very sparse irregular iron fasteners, no repeated grid. All strokes follow the member they belong to; light and wear reveal the beam turn, not a continuous texture stamped across the joint. No wheel, machine, lamp, furniture or scenery.",
+  "negative_prompt": "photographic wood, 3D, abstract impasto, large daubs, orange gold wash, noisy texture, flat vectors, thick uniform cartoon outline, text, UI, scenery",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "generator": "built-in image_gen",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T12:59:07.935Z",
+  "references": [
+    {
+      "path": "assets/production/source/vs_art_master_01/material_swatch/reference_structure_v001.png",
+      "role": "style reference crop only",
+      "parent": "assets/风格定稿/风格定稿.png",
+      "rights": "approved internal project reference; no runtime crop reuse"
+    }
+  ],
+  "manual_edits": [
+    "源图未做像素修改；仅审核副本缩至192×192"
+  ],
+  "reviewer": "Codex material review",
+  "review_notes": "REWORK: beam/post faces are too warm and bright, with a broad golden upper-left highlight. Reduce warm exposure, restore dark grey-brown structure wood and narrower localized edge light before user approval. No full-hull mapping. Tool does not expose model/version/seed/provider task ID; output artifact ID retained, not presented as provider ID.",
+  "output_artifact_id": "exec-b2cf769c-afff-48e0-bb27-0bafee8ad29e",
+  "provider_task_id": null,
+  "sha256": "a4135bca093c68c3934f3a4faede6accfdf05be29f8c7a89cde45942f8fd0cd6",
+  "reference_sha256": "f8ccdfd71073212e48a994c49cbf48a747add75be82c42d207d3f999134223f2",
+  "pixel_size": [
+    1254,
+    1254
+  ],
+  "source_path": "assets/production/source/vs_art_master_01/material_swatch/material_swatch_structure_v001.png"
+}

@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.8（2026-10-31）
+> 版本：v1.9（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -34,7 +34,7 @@
 | VS-ART-GEOMETRY-01 | GPT / Codex | W2并行 | 部分完成：精确底稿通过；唯一 v004 六处净空均被梁柱侵入，已标记 REWORK | v004 底稿、候选、审核板、检查 JSON 与 manifest |
 | VS-ART-EDITABLE-01 | GPT / Codex | W2并行 | 部分完成：v005 分层与硬遮罩通过；材质评审 REWORK，旧版保留 | v005 SVG/PNG、层级 JSON、检查结果、manifest 与评审报告 |
 | VS-ART-MATERIAL-01 | GPT / Codex | W2并行 | 部分完成：v006 几何零漂移，但材质尺度、色彩和笔触语言偏离风格定稿，结论 REWORK | v006 分层源文件、审核板、manifest 与材质评审报告 |
-| VS-ART-MATERIAL-SWATCH-01 | GPT / Codex | W2并行 | 待执行：先做旧木/结构边/锈铁小块材质样板，用户批准后才允许映射 v007 | 材质样板、同尺度对照板、manifest 与样板评审报告 |
+| VS-ART-MATERIAL-SWATCH-01 | GPT / Codex | W2并行 | 部分完成：三张样板已交付；旧木/铁件内部 PASS 待用户批准，梁柱偏暖偏亮需 REWORK；v007 仍关闭 | 材质样板、同尺度对照板、manifest 与样板评审报告 |
 | VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待材质方向冻结后领取：独立审计最终候选 manifest、命名、哈希、授权和状态一致性 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
 | VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
 | VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 已完成：运行时 JSON（`aa42508`）、Web Mobile（`30a4ba3`）、真实手机同网段启动均通过 | 配置运行时接入、手机验证、W1闸门结论 |

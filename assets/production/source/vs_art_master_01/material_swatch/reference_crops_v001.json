@@ -1,0 +1,35 @@
+[
+  {
+    "key": "wood",
+    "source": "assets/风格定稿/风格定稿.png",
+    "rect": {
+      "x": 430,
+      "y": 500,
+      "width": 192,
+      "height": 192
+    },
+    "purpose": "review only; native scale; not runtime asset"
+  },
+  {
+    "key": "structure",
+    "source": "assets/风格定稿/风格定稿.png",
+    "rect": {
+      "x": 525,
+      "y": 565,
+      "width": 192,
+      "height": 192
+    },
+    "purpose": "review only; native scale; not runtime asset"
+  },
+  {
+    "key": "iron",
+    "source": "assets/风格定稿/风格定稿.png",
+    "rect": {
+      "x": 1310,
+      "y": 480,
+      "width": 192,
+      "height": 192
+    },
+    "purpose": "review only; native scale; not runtime asset"
+  }
+]

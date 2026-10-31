@@ -1,0 +1,37 @@
+{
+  "task_id": "VS-ART-MATERIAL-SWATCH-01",
+  "asset_id": "material_swatch_iron",
+  "version": 1,
+  "status": "REVIEW",
+  "purpose": "small material style swatch; no full hull mapping",
+  "prompt": "Use case: stylized-concept. Asset type: ONE small game material swatch for style matching only, NOT a ship or full scene. Input image is a native 192x192 crop of the approved project art and is the authoritative style reference. Match its restrained hand-painted game illustration language closely: grey-brown old wood, desaturated blue-grey shadows, crisp but varying dark structural edges, short restrained brush marks that FOLLOW individual planks, small local wear, small upper-left warm-grey edge highlights. No photographic surface, no 3D, no flat vector, no uniform thick black outline, no giant impasto daubs, no orange-gold wash, no noisy full-surface grain, no painted text or UI. Preserve the reference's readable timber scale: when the whole swatch is reduced to 192x192, one plank is about 18-28 px tall, wear is mostly 1-3px marks and dark seams about 1-3px. Do not recreate machinery, people, ocean or light fixtures visible in the reference crop. Square opaque swatch, material fills canvas. Create a NEW coherent painted sample, not a zoomed copy or collage. Subject: a SMALL narrow dark blue-grey iron reinforcement plate bolted across a few grey-brown wooden planks, slight bends and battered edges, three irregular hand-forged bolt heads. Rust ONLY in very small dull dark brown patches near two bolt heads and plate corner, total orange/rust area under five percent. A few subdued grey scratches and a short worn edge highlight, broad quiet painted metal midtone. No bright golden glints, orange blanket, glossy chrome, ornaments or blade. Iron and timber separated by varied dark occlusion at contact edges.",
+  "negative_prompt": "photographic wood, 3D, abstract impasto, large daubs, orange gold wash, noisy texture, flat vectors, thick uniform cartoon outline, text, UI, scenery",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "generator": "built-in image_gen",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T12:59:09.200Z",
+  "references": [
+    {
+      "path": "assets/production/source/vs_art_master_01/material_swatch/reference_iron_v001.png",
+      "role": "style reference crop only",
+      "parent": "assets/风格定稿/风格定稿.png",
+      "rights": "approved internal project reference; no runtime crop reuse"
+    }
+  ],
+  "manual_edits": [
+    "源图未做像素修改；仅审核副本缩至192×192"
+  ],
+  "reviewer": "Codex material review",
+  "review_notes": "Internal material review PASS: iron stays muted blue-grey, rust is localized near fasteners/edges, and there is no orange-gold blanket or chrome gloss. Keep REVIEW until explicit user approval; no full-hull mapping. Tool does not expose model/version/seed/provider task ID; output artifact ID retained, not presented as provider ID.",
+  "output_artifact_id": "exec-9ced21c1-4536-4c33-8a6b-a2e8c15af4b0",
+  "provider_task_id": null,
+  "sha256": "ba2c6db35d241a1889a35f56f5aea5d6ea3fb14fc45d7048bc90a79b52c493c6",
+  "reference_sha256": "a824df2422b26a3e1d8d8c1ef0e16d51248a4a3df37814564ae8baef8c7e4448",
+  "pixel_size": [
+    1254,
+    1254
+  ],
+  "source_path": "assets/production/source/vs_art_master_01/material_swatch/material_swatch_iron_v001.png"
+}

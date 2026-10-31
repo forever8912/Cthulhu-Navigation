@@ -1,0 +1,37 @@
+{
+  "task_id": "VS-ART-MATERIAL-SWATCH-01",
+  "asset_id": "material_swatch_wood",
+  "version": 1,
+  "status": "REVIEW",
+  "purpose": "small material style swatch; no full hull mapping",
+  "prompt": "Use case: stylized-concept. Asset type: ONE small game material swatch for style matching only, NOT a ship or full scene. Input image is a native 192x192 crop of the approved project art and is the authoritative style reference. Match its restrained hand-painted game illustration language closely: grey-brown old wood, desaturated blue-grey shadows, crisp but varying dark structural edges, short restrained brush marks that FOLLOW individual planks, small local wear, small upper-left warm-grey edge highlights. No photographic surface, no 3D, no flat vector, no uniform thick black outline, no giant impasto daubs, no orange-gold wash, no noisy full-surface grain, no painted text or UI. Preserve the reference's readable timber scale: when the whole swatch is reduced to 192x192, one plank is about 18-28 px tall, wear is mostly 1-3px marks and dark seams about 1-3px. Do not recreate machinery, people, ocean or light fixtures visible in the reference crop. Square opaque swatch, material fills canvas. Create a NEW coherent painted sample, not a zoomed copy or collage. Subject: approximately seven irregular horizontal old wooden hull planks with a slight subtle bend, a few staggered seams, grey-brown paint worn down to dry brown wood along a few upper edges, cool blue-grey damp lower edges. Each plank has a few individually placed cracks and short wood grain brush marks, mostly quiet flat midtone areas. NO large rust patches, no studs grid, no frame or furniture. The sample must read as small painted structural wood, not an abstract oil texture.",
+  "negative_prompt": "photographic wood, 3D, abstract impasto, large daubs, orange gold wash, noisy texture, flat vectors, thick uniform cartoon outline, text, UI, scenery",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "generator": "built-in image_gen",
+  "generated_at": null,
+  "recorded_at": "2026-10-31T12:59:06.690Z",
+  "references": [
+    {
+      "path": "assets/production/source/vs_art_master_01/material_swatch/reference_wood_v001.png",
+      "role": "style reference crop only",
+      "parent": "assets/风格定稿/风格定稿.png",
+      "rights": "approved internal project reference; no runtime crop reuse"
+    }
+  ],
+  "manual_edits": [
+    "源图未做像素修改；仅审核副本缩至192×192"
+  ],
+  "reviewer": "Codex material review",
+  "review_notes": "Internal material review PASS: grey-brown/blue-grey remains dominant, brush marks follow individual planks, and wear scale remains readable at the calibrated display size. Keep REVIEW until explicit user approval; no full-hull mapping. Tool does not expose model/version/seed/provider task ID; output artifact ID retained, not presented as provider ID.",
+  "output_artifact_id": "exec-b0490533-db12-472e-a5a8-b2836a734a22",
+  "provider_task_id": null,
+  "sha256": "4123ea347f19e639bab42aeab4476708a4f635d41ed5febb36e5fb9465c557cf",
+  "reference_sha256": "6b34a131b8ebad465db6e64bdaf37eaa66032169034d99d4bba944d14def6f11",
+  "pixel_size": [
+    1254,
+    1254
+  ],
+  "source_path": "assets/production/source/vs_art_master_01/material_swatch/material_swatch_wood_v001.png"
+}
