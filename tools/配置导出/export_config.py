@@ -63,13 +63,16 @@ PARAM_VALUE = "value"
 PARAM_TYPE = "type"
 PARAM_TYPES = ("int", "float", "bool", "string")
 
-# 主键列覆盖：这些表的主键不叫 id。
-# 只登记单主键表；复合主键表（事件结果表 group_id+seq、房间等级表 room_id+level 等）
-# 不在此列，它们的第一列天然重复，不能当唯一键用。
+# 主键列覆盖：这些表的主键不叫 id。值为列名，或列名元组（复合主键）。
+# 复合主键表的第一列天然一对多，只有组合起来才唯一，必须整组登记。
 PRIMARY_KEY_OVERRIDES = {
     PARAM_SHEET: PARAM_KEY,
     "通用消耗表": "cost_id",
     "广告点位表": "ad_id",
+    # 复合主键：一列只是父级引用，整组才唯一
+    "事件结果表": ("group_id", "seq"),           # 一个结果组的多条产出
+    "房间等级表": ("room_id", "level"),          # 一个房间的多个等级
+    "装备掉落权重表": ("equip_drop_id", "quality_id", "slot"),  # 掉落组 × 品质 × 部位
 }
 
 # 非阻断区间校验：成对字段必须 min <= max
@@ -239,17 +242,18 @@ def coerce_param_value(raw, type_name, ctx):
 
 
 def resolve_primary_key(sheet_title, keys):
-    """决定一张表的主键列；返回 None 表示不做唯一性校验。
+    """决定一张表的主键列；返回列名元组，None 表示不做唯一性校验。
 
     只认两种来源：显式声明的表，以及列名恰好叫 id 的表。
     不按“第一列是 xxx_id 就当主键”猜测——本项目存在复合主键表
-    （事件结果表 group_id+seq、房间等级表 room_id+level），
-    它们的第一列天然重复，猜错会把正常数据判成重复主键。
+    （事件结果表 group_id+seq、房间等级表 room_id+level、
+    装备掉落权重表 equip_drop_id+quality_id+slot），它们的第一列天然重复，
+    猜错会把正常数据判成重复主键。
     """
     override = PRIMARY_KEY_OVERRIDES.get(sheet_title)
     if override:
-        return override
-    return "id" if "id" in keys else None
+        return override if isinstance(override, tuple) else (override,)
+    return ("id",) if "id" in keys else None
 
 
 def check_ranges(obj, ctx):
@@ -288,9 +292,12 @@ def export_sheet(ws, tag):
 
     if primary_key is None:
         warn("%s 未识别主键列，跳过唯一性校验" % tag)
-    elif primary_key not in keys:
-        fail("%s 声明的主键列 %r 不存在" % (tag, primary_key))
-        primary_key = None
+    else:
+        missing = [col for col in primary_key if col not in keys]
+        if missing:
+            fail("%s 声明的主键列不存在：%s"
+                 % (tag, "、".join(repr(col) for col in missing)))
+            primary_key = None
 
     data = []
     seen_keys = {}
@@ -315,14 +322,22 @@ def export_sheet(ws, tag):
             )
 
         if primary_key:
-            key_value = obj.get(primary_key)
-            if is_blank(key_value):
-                fail("%s 主键 %s 为空" % (ctx, primary_key))
+            key_label = "+".join(primary_key)
+            # 判空必须看源表原始单元格：parse_int 会把空值解析成 0，
+            # 用解析后的值判断的话，“没填”和“填了 0”就分不出来。
+            blank_cols = []
+            for col in primary_key:
+                index = keys.index(col)
+                raw = row[index] if index < len(row) else None
+                if is_blank(raw):
+                    blank_cols.append(col)
+            if blank_cols:
+                fail("%s 主键 %s 为空：%s" % (ctx, key_label, "、".join(blank_cols)))
             else:
-                key_text = str(key_value)
+                key_text = "|".join(str(obj.get(col)) for col in primary_key)
                 if key_text in seen_keys:
                     fail("%s 主键 %s 重复：%r（首次出现在第%d行）"
-                         % (ctx, primary_key, key_text, seen_keys[key_text]))
+                         % (ctx, key_label, key_text, seen_keys[key_text]))
                 else:
                     seen_keys[key_text] = row_no
 

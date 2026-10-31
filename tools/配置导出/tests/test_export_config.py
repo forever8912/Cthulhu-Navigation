@@ -222,5 +222,56 @@ class ExportConfigTest(unittest.TestCase):
         self.assertEqual(partial_index["01_海域与关卡/海域表"]["rows"], 2)
 
 
+    # --- 复合主键 ------------------------------------------------------
+
+    def make_room_book(self, rows, header=None, desc=None):
+        """房间等级表是复合主键表（room_id+level），源表第一列天然重复。"""
+        write_workbook(
+            self.src / "04_房间与生产.xlsx",
+            "房间等级表",
+            header or ["room_id", "level", "hp"],
+            desc or ["房间id [string]", "等级 [int]", "血量 [int]"],
+            rows,
+        )
+
+    def test_composite_key_unique_passes(self):
+        """同一房间的多级、不同房间的同级都不是重复。"""
+        self.make_room_book([["1001", 1, 80], ["1001", 2, 100], ["1101", 1, 60]])
+        result = self.run_export()
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(len(self.read_json("04_房间与生产", "房间等级表")), 3)
+
+    def test_composite_key_duplicate_blocks(self):
+        self.make_room_book([["1001", 1, 80], ["1001", 1, 90]])
+        result = self.run_export()
+
+        self.assertNotEqual(result.returncode, 0, "复合键整组重复应阻断")
+        self.assertIn("room_id+level", result.stdout)
+        self.assertIn("重复", result.stdout)
+        self.assertFalse((self.out / "04_房间与生产" / "房间等级表.json").exists())
+
+    def test_composite_key_blank_component_blocks(self):
+        self.make_room_book([["1001", 1, 80], ["1001", None, 90]])
+        result = self.run_export()
+
+        self.assertNotEqual(result.returncode, 0, "复合键任一列为空应阻断")
+        self.assertIn("主键 room_id+level 为空", result.stdout)
+        self.assertIn("level", result.stdout)
+
+    def test_missing_declared_key_column_blocks(self):
+        """声明了复合主键但表里少一列，必须报错而不是静默跳过。"""
+        self.make_room_book(
+            [["1001", 80]],
+            header=["room_id", "hp"],
+            desc=["房间id [string]", "血量 [int]"],
+        )
+        result = self.run_export()
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("主键列不存在", result.stdout)
+        self.assertIn("level", result.stdout)
+
+
 if __name__ == "__main__":
     unittest.main()
