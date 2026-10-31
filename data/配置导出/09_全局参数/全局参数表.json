@@ -1,68 +1,362 @@
 [
   {
     "param_key": "main_stat_k",
-    "value": "1.0",
+    "value": 1.0,
     "type": "float",
-    "desc": "主属性伤害系数K（战斗系统3.1）"
+    "desc": "主属性→伤害系数K，战斗系统3.1；属性平A项的转化系数，MVP=1.0"
   },
   {
     "param_key": "crit_rate_base",
-    "value": "0.05",
+    "value": 0.05,
     "type": "float",
-    "desc": "基础暴击率5%"
+    "desc": "基础暴击率5%；技巧×0.2%叠加，封顶50%"
   },
   {
     "param_key": "crit_mult_base",
-    "value": "1.5",
+    "value": 1.5,
     "type": "float",
-    "desc": "基础暴击倍率150%"
+    "desc": "基础暴击倍率150%；叠加封顶300%"
   },
   {
     "param_key": "eff_min",
-    "value": "0.5",
+    "value": 0.5,
     "type": "float",
-    "desc": "释放效率下限"
+    "desc": "释放效率/岗位效率下限50%"
   },
   {
     "param_key": "eff_max",
-    "value": "2.0",
+    "value": 2.0,
     "type": "float",
-    "desc": "释放效率上限"
+    "desc": "释放效率/岗位效率上限200%"
   },
   {
     "param_key": "pct_mod_min",
-    "value": "0.4",
+    "value": 0.4,
     "type": "float",
-    "desc": "百分比修正P下限"
+    "desc": "增伤减伤合成系数P的下限40%"
   },
   {
     "param_key": "pct_mod_max",
-    "value": "2.0",
+    "value": 2.0,
     "type": "float",
-    "desc": "百分比修正P上限"
+    "desc": "增伤减伤合成系数P的上限200%"
   },
   {
     "param_key": "defense_k",
-    "value": "60",
+    "value": 60,
     "type": "int",
-    "desc": "防御曲线常数 x/(x+60)"
+    "desc": "护甲/魔抗/意志换算曲线常数：减伤率=x/(x+60)，上限60%"
   },
   {
     "param_key": "heal_cap_pct",
-    "value": "0.3",
+    "value": 0.3,
     "type": "float",
-    "desc": "单次治疗≤目标HP上限×30%"
+    "desc": "单次治疗硬上限=目标HP上限×30%"
   },
   {
     "param_key": "offline_hours_max",
-    "value": "8",
+    "value": 8,
     "type": "int",
-    "desc": "离线收益时长上限"
+    "desc": "离线收益时长上限（小时）"
+  },
+  {
+    "param_key": "offline_efficiency",
+    "value": 0.5,
+    "type": "float",
+    "desc": "离线收益系数50%"
   },
   {
     "param_key": "ad_daily_limit",
-    "value": "5",
+    "value": 5,
     "type": "int",
-    "desc": "单日激励视频上限"
+    "desc": "单日激励视频广告上限次数"
+  },
+  {
+    "param_key": "san_critical_thr",
+    "value": 30,
+    "type": "int",
+    "desc": "SAN档阈值-崩溃档上限"
+  },
+  {
+    "param_key": "san_low_thr",
+    "value": 50,
+    "type": "int",
+    "desc": "SAN档阈值-低落档上限"
+  },
+  {
+    "param_key": "san_high_thr",
+    "value": 80,
+    "type": "int",
+    "desc": "SAN档阈值-高昂档下限"
+  },
+  {
+    "param_key": "raid_fail_rate_res",
+    "value": 0.3,
+    "type": "float",
+    "desc": "战败时遗失资源比例下限30%"
+  },
+  {
+    "param_key": "raid_fail_rate_res_max",
+    "value": 0.5,
+    "type": "float",
+    "desc": "战败时遗失资源比例上限50%"
+  },
+  {
+    "param_key": "crit_attr_rate",
+    "value": 0.002,
+    "type": "float",
+    "desc": "技巧每点提供的暴击率加成+0.2%（战斗系统3.3）"
+  },
+  {
+    "param_key": "crit_attr_rate_cap",
+    "value": 0.2,
+    "type": "float",
+    "desc": "属性来源暴击率加成上限+20%"
+  },
+  {
+    "param_key": "crit_rate_cap",
+    "value": 0.5,
+    "type": "float",
+    "desc": "暴击率总上限50%"
+  },
+  {
+    "param_key": "crit_mult_cap",
+    "value": 3.0,
+    "type": "float",
+    "desc": "暴击倍率总上限300%（基础150%+加成）"
+  },
+  {
+    "param_key": "block_rate_base",
+    "value": 0.0,
+    "type": "float",
+    "desc": "基础格挡率0%"
+  },
+  {
+    "param_key": "block_rate_cap",
+    "value": 0.5,
+    "type": "float",
+    "desc": "格挡率上限50%"
+  },
+  {
+    "param_key": "block_min_keep",
+    "value": 0.1,
+    "type": "float",
+    "desc": "格挡成功后至少保留原伤害的10%"
+  },
+  {
+    "param_key": "atk_speed_mod_min",
+    "value": -0.5,
+    "type": "float",
+    "desc": "攻速修正下限-50%（装备词缀/技能）"
+  },
+  {
+    "param_key": "atk_speed_mod_max",
+    "value": 0.5,
+    "type": "float",
+    "desc": "攻速修正上限+50%"
+  },
+  {
+    "param_key": "heal_bonus_cap",
+    "value": 0.5,
+    "type": "float",
+    "desc": "治疗加成（词缀/技能）上限+50%"
+  },
+  {
+    "param_key": "trait_total_max",
+    "value": 5,
+    "type": "int",
+    "desc": "船员特性总数上限（正面+负面合计，正面最多占满5格）"
+  },
+  {
+    "param_key": "trait_pos_max",
+    "value": 5,
+    "type": "int",
+    "desc": "正面特性单独上限（全正面时可占满5格）"
+  },
+  {
+    "param_key": "pos_boss_gain_chance",
+    "value": 0.5,
+    "type": "float",
+    "desc": "战胜Boss结算时获得正面特性的概率"
+  },
+  {
+    "param_key": "neg_san_gain_chance",
+    "value": 0.5,
+    "type": "float",
+    "desc": "章内SAN<30结算时获得负面特性的概率"
+  },
+  {
+    "param_key": "neg_san_gain_chapter_max",
+    "value": 1,
+    "type": "int",
+    "desc": "每章SAN<30获得负面特性的次数上限"
+  },
+  {
+    "param_key": "neg_revive_gain_chance",
+    "value": 1.0,
+    "type": "float",
+    "desc": "死亡复活时获得负面特性的概率（不限次数）"
+  },
+  {
+    "param_key": "pray_clear_cost_shell",
+    "value": 300,
+    "type": "int",
+    "desc": "忏悔室（原祈祷室）直接清除1项负面特性的固定贝壳币消耗（不递增）；与「虚空晶→赎罪券」通道并存"
+  },
+  {
+    "param_key": "san_max_base",
+    "value": 100,
+    "type": "int",
+    "desc": "SAN基础上限（精神加成：上限=100+精神×san_spirit_max_bonus）"
+  },
+  {
+    "param_key": "san_init",
+    "value": 80,
+    "type": "int",
+    "desc": "船员初始SAN"
+  },
+  {
+    "param_key": "san_regen_per_min",
+    "value": 2,
+    "type": "int",
+    "desc": "SAN自然恢复量/分钟（食物与淡水充足且无袭击时）"
+  },
+  {
+    "param_key": "san_regen_water_bonus",
+    "value": 0.5,
+    "type": "float",
+    "desc": "淡水充足时SAN恢复加成+50%"
+  },
+  {
+    "param_key": "san_spirit_max_bonus",
+    "value": 1.0,
+    "type": "float",
+    "desc": "每点精神提供的SAN上限加成"
+  },
+  {
+    "param_key": "bld_dmg_ratio_normal",
+    "value": 0.83,
+    "type": "float",
+    "desc": "普通怪的建筑伤害系数：建筑伤害 = attack × 本值（对齐 v3.1 的 攻·船员12 / 攻·房间10）"
+  },
+  {
+    "param_key": "bld_dmg_ratio_elite",
+    "value": 0.34,
+    "type": "float",
+    "desc": "精英怪的建筑伤害系数（精英主要在打人，砸房只有 1/3）"
+  },
+  {
+    "param_key": "bld_dmg_ratio_miniboss",
+    "value": 0.34,
+    "type": "float",
+    "desc": "小Boss 的建筑伤害系数（沿用精英档）"
+  },
+  {
+    "param_key": "bld_dmg_ratio_boss",
+    "value": 0.5,
+    "type": "float",
+    "desc": "Boss 的建筑伤害系数；Boss 对船体 = 对房间 × 50%（与船体溢出规则一致）"
+  },
+  {
+    "param_key": "arena_layer_atk_base",
+    "value": 100,
+    "type": "int",
+    "desc": "竞技场第 n 层敌人基础攻击锚点：100×1.11^(n−1)×0.85。**锚点数值以《11_竞技场.xlsx》层数锚点表为准**（本参数仅作程序缺省公式，段内插值由 11 表锚点驱动）"
+  },
+  {
+    "param_key": "island_node_count",
+    "value": 5,
+    "type": "int",
+    "desc": "遗迹岛的探索节点数。原 10 表 island.node_count，7 岛全填 5 —→ 提为全局常数。真要出现 4 或 6 节点的岛，走事件表 node_count 列覆盖（该列默认 0=用本值）"
+  },
+  {
+    "param_key": "island_squad_size",
+    "value": 3,
+    "type": "int",
+    "desc": "遗迹探索的出战人数。**固定 3 人**，与海面战斗的整队出战区分——探索是\"小队渗透\"，不是\"甲板接舷\""
+  },
+  {
+    "param_key": "island_cost_food",
+    "value": 12,
+    "type": "int",
+    "desc": "每次进入遗迹消耗的食物。3 人 × 4 份，与竞技场「人数 × 3」的定价逻辑不同：岛屿是长流程（5 站），所以单价更高"
+  },
+  {
+    "param_key": "island_rerun_scan_ratio",
+    "value": 0.6,
+    "type": "float",
+    "desc": "重复探索时，已扫过的节点只给 **60%** 的战利品。**首通与复刷必须拉开差距**，否则最优解是刷一座岛"
+  },
+  {
+    "param_key": "island_lose_penalty",
+    "value": 0.3,
+    "type": "float",
+    "desc": "遗迹判负时普通材料与币的遗失比例。**固定 30%，不掷骰**，与主线战斗的 `raid_fail_rate_res`（30%~50% 随机）区分：探索本来就是自愿深入，罚得确定，玩家才敢做风险决策"
+  },
+  {
+    "param_key": "island_lose_protect",
+    "value": "装备|图纸|强化石|技能书|橙装碎片",
+    "type": "string",
+    "desc": "判负时**一件不掉**的硬战利品标签（按 | 拆）。判定顺序：先按本表扣除普通材料与币，再把这几个标签的产出原样带回——界面上先报遗失、再报带回，前者是代价，后者是收获"
+  },
+  {
+    "param_key": "life_tick_sec",
+    "value": 60,
+    "type": "int",
+    "desc": "船员生活结算周期（秒）。每 tick 按在船人头扣生活消耗"
+  },
+  {
+    "param_key": "life_food_per_crew",
+    "value": 2,
+    "type": "int",
+    "desc": "每 tick 每名船员消耗的食物（=每人 2 食/分）"
+  },
+  {
+    "param_key": "life_water_per_crew",
+    "value": 1,
+    "type": "int",
+    "desc": "每 tick 每名船员消耗的淡水（=每人 1 水/分）"
+  },
+  {
+    "param_key": "life_starve_food_per_tick",
+    "value": -1,
+    "type": "int",
+    "desc": "食物不足时每 tick 全体 SAN 变化"
+  },
+  {
+    "param_key": "life_thirst_san_per_tick",
+    "value": -2,
+    "type": "int",
+    "desc": "淡水不足时每 tick 全体 SAN 变化（脱水比饥饿狠）"
+  },
+  {
+    "param_key": "econ_balance_ratio",
+    "value": 1.1,
+    "type": "float",
+    "desc": "达标配置下 总产出:总消耗 的设计锚点（对账用，程序不读）"
+  },
+  {
+    "param_key": "consume_every_sec_key",
+    "value": "every_sec",
+    "type": "string",
+    "desc": "consume_json 里\"每隔 X 秒扣一次\"的字段名（v1.18 新语义，与每周期 every_n_cycles 并存）"
+  },
+  {
+    "param_key": "whale_oil_shots",
+    "value": 100,
+    "type": "int",
+    "desc": "鲸脂换弹药：1 块鲸脂（sm_whale_oil）可在工坊为 100 发弹药充能（覆盖本航段最先消耗的 100 发）"
+  },
+  {
+    "param_key": "whale_oil_dmg_bonus",
+    "value": 0.1,
+    "type": "float",
+    "desc": "鲸脂换弹药：充能期间弹药伤害 +10%（航段级临时 buff，程序状态不建 buff 表；与 5017 工坊产弹并行不冲突）"
+  },
+  {
+    "param_key": "enhance_destroy_stone_refund",
+    "value": 0.5,
+    "type": "float",
+    "desc": "强化损毁时返还的强化石比例（向上取整：+9 损毁返 3 颗 / +10 损毁返 3 颗；《装备与锻造系统》§6.2）"
   }
 ]

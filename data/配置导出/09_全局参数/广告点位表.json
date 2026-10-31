@@ -1,12 +1,5 @@
 [
   {
-    "ad_id": "ad_offline_double",
-    "name": "离线收益翻倍",
-    "scene": "offline_settle",
-    "daily_limit": 5,
-    "reward_desc": "离线收益×2"
-  },
-  {
     "ad_id": "ad_float_again",
     "name": "再捞一次",
     "scene": "floating_pick",
@@ -19,5 +12,19 @@
     "scene": "shop",
     "daily_limit": 5,
     "reward_desc": "刷新商品列表"
+  },
+  {
+    "ad_id": "ad_offline_double",
+    "name": "离线收益翻倍",
+    "scene": "offline_settle",
+    "daily_limit": 3,
+    "reward_desc": "离线收益×2"
+  },
+  {
+    "ad_id": "ad_raid_escape",
+    "name": "逃跑重置",
+    "scene": "battle_escape",
+    "daily_limit": 3,
+    "reward_desc": "本次逃跑不消耗能源"
   }
 ]
