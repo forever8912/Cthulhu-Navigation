@@ -1,0 +1,71 @@
+{
+  "status": "REVIEW",
+  "canvas": [
+    1983,
+    793
+  ],
+  "has_alpha": true,
+  "conservative_opening_checks": [
+    {
+      "index": 1,
+      "conservative_rect": {
+        "x": 460,
+        "y": 490,
+        "width": 145,
+        "height": 120
+      },
+      "alpha_nonzero": 0
+    },
+    {
+      "index": 2,
+      "conservative_rect": {
+        "x": 665,
+        "y": 490,
+        "width": 145,
+        "height": 120
+      },
+      "alpha_nonzero": 0
+    },
+    {
+      "index": 3,
+      "conservative_rect": {
+        "x": 870,
+        "y": 490,
+        "width": 145,
+        "height": 120
+      },
+      "alpha_nonzero": 0
+    },
+    {
+      "index": 4,
+      "conservative_rect": {
+        "x": 1070,
+        "y": 490,
+        "width": 145,
+        "height": 120
+      },
+      "alpha_nonzero": 0
+    },
+    {
+      "index": 5,
+      "conservative_rect": {
+        "x": 1275,
+        "y": 490,
+        "width": 145,
+        "height": 120
+      },
+      "alpha_nonzero": 0
+    },
+    {
+      "index": 6,
+      "conservative_rect": {
+        "x": 1480,
+        "y": 490,
+        "width": 145,
+        "height": 120
+      },
+      "alpha_nonzero": 39
+    }
+  ],
+  "note": "Concept-stage openings only. Fixed v005 coordinates are not yet applied; no geometry PASS claim."
+}

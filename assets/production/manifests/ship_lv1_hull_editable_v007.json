@@ -2,7 +2,7 @@
   "task_id": "VS-ART-MATERIAL-MAP-01",
   "asset_id": "ship_lv1_hull_editable",
   "version": 7,
-  "status": "REVIEW",
+  "status": "REWORK",
   "generator": "Deterministic v005 frozen-alpha mapping using approved-stage material swatches and editable SVG masks",
   "generated_at": "2026-10-31T13:26:54.403Z",
   "references": [
@@ -20,8 +20,8 @@
     "背墙纹理转为纵向并压暗",
     "不使用v006粗重整面材质"
   ],
-  "reviewer": "",
-  "review_notes": "User authorized stage continuation and deferred final judgment to the complete assembled result. Keep REVIEW until whole-hull visual review; not APPROVED and not imported into Cocos.",
+  "reviewer": "User visual review",
+  "review_notes": "REWORK: the assembled hull reads as a flat greybox skin with an overly straight silhouette, insufficient deck/exterior thickness and repetitive grid-like room framing. Power room and harpoon remain usable REVIEW assets. Do not import v007 into Cocos.",
   "license_notes": "Project-generated swatches based on approved internal style reference; no third-party texture download",
   "artifacts": [
     {
