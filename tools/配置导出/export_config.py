@@ -89,6 +89,22 @@ UNIT_FIELDS = ("interval_jitter", "probability")
 # 用 `"[int]" in desc` 判断会误判，把字符串 id 当整数解析。
 TYPE_MARKER_RE = re.compile(r"\[(int|float|bool|list|json|string|enum)\]")
 
+# 强制输出字符串的 id 列：(工作表名, 列名)。
+#
+# 为什么需要：Excel 单元格的类型跟着录入方式走，同一列里会同时存在数字 id 与文本 id
+# （事件表 event_id 有 1001 也有 W01）。[string] 标记不足以统一它们，因为说明行里的
+# [string] 也被用在**多态列**上（事件选项表 cost_value 既可能是 cost_id 也可能是数值），
+# 若让 [string] 强制转换就会破坏那些列。
+#
+# 所以只登记"已经出现混合类型"的引用 id 列——它们本来就没有稳定类型，统一成字符串
+# 只会让结果更确定。纯数字的 *_id 列刻意不登记，避免无谓地改变既有导出类型。
+ID_STRING_COLUMNS = {
+    ("事件表", "event_id"),
+    ("事件选项表", "event_id"),
+    ("事件池条目表", "target_id"),
+    ("掉落条目表", "target_id"),
+}
+
 _errors = []
 _warnings = []
 
@@ -173,6 +189,19 @@ def parse_list(raw):
     if is_blank(raw):
         return []
     return [part.strip() for part in str(raw).split("|") if part.strip()]
+
+
+def parse_id(raw):
+    """id 列统一输出字符串；空白保持空字符串。
+
+    Excel 里数字型 id 读出来可能是 int 也可能是 float（如 1001.0），
+    浮点整数要先还原成 int 再转字符串，否则会得到 "1001.0" 这种无法匹配的键。
+    """
+    if is_blank(raw):
+        return ""
+    if isinstance(raw, float) and raw.is_integer():
+        return str(int(raw))
+    return str(raw).strip()
 
 
 def parse_cell(raw, desc, ctx):
@@ -274,7 +303,11 @@ def export_sheet(ws, tag):
             if not key:
                 continue
             desc = descs[index] if index < len(descs) else ""
-            obj[key] = parse_cell(row[index] if index < len(row) else None, desc, "%s %s" % (ctx, key))
+            raw_cell = row[index] if index < len(row) else None
+            if (ws.title, key) in ID_STRING_COLUMNS:
+                obj[key] = parse_id(raw_cell)
+            else:
+                obj[key] = parse_cell(raw_cell, desc, "%s %s" % (ctx, key))
 
         if is_param_sheet:
             obj[PARAM_VALUE] = coerce_param_value(

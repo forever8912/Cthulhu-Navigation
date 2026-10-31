@@ -100,6 +100,65 @@ class ExportConfigTest(unittest.TestCase):
         self.assertEqual(first_index, (self.out / "index.json").read_bytes())
         self.assertNotIn(b"\r\n", first)
 
+    # --- id 列统一字符串 ----------------------------------------------
+
+    def read_json(self, book, sheet):
+        return json.loads(
+            (self.out / book / (sheet + ".json")).read_text(encoding="utf-8")
+        )
+
+    def test_mixed_id_column_exports_as_string(self):
+        """事件表.event_id 在源表里同时有数字与文本 id，必须统一成字符串。"""
+        write_workbook(
+            self.src / "01_海域与关卡.xlsx",
+            "事件表",
+            ["event_id", "name"],
+            ["事件唯一id [string]", "事件名 [string]"],
+            [[1001, "海面异动"], ["W01", "沉船"], [1002.0, "浮点整数id"], [None, "空id"]],
+        )
+        result = self.run_export()
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        rows = self.read_json("01_海域与关卡", "事件表")
+        self.assertEqual([r["event_id"] for r in rows], ["1001", "W01", "1002", ""])
+        for row in rows:
+            self.assertIsInstance(row["event_id"], str)
+
+    def test_target_id_columns_also_become_string(self):
+        """事件池条目表与掉落条目表的 target_id 也是混合 id 引用列。"""
+        for book, sheet in [("01_海域与关卡", "事件池条目表"), ("03_物品与掉落", "掉落条目表")]:
+            with self.subTest(sheet=sheet):
+                write_workbook(
+                    self.src / (book + ".xlsx"),
+                    sheet,
+                    ["target_id", "weight"],
+                    ["目标id [string]", "权重 [int]"],
+                    [[3001, 10], ["itm_potion_s", 20]],
+                )
+
+        result = self.run_export()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        for book, sheet in [("01_海域与关卡", "事件池条目表"), ("03_物品与掉落", "掉落条目表")]:
+            with self.subTest(sheet=sheet):
+                rows = self.read_json(book, sheet)
+                self.assertEqual([r["target_id"] for r in rows], ["3001", "itm_potion_s"])
+
+    def test_unlisted_id_column_keeps_native_type(self):
+        """未登记的 *_id 列不受影响，避免无谓地改变既有导出类型。"""
+        write_workbook(
+            self.src / "03_物品与掉落.xlsx",
+            "掉落组表",
+            ["group_id", "name"],
+            ["组id [int]", "名称 [string]"],
+            [[4201, "新手掉落"]],
+        )
+        result = self.run_export()
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        rows = self.read_json("03_物品与掉落", "掉落组表")
+        self.assertEqual(rows[0]["group_id"], 4201)
+        self.assertIsInstance(rows[0]["group_id"], int)
+
     # --- 阻断路径（必须非零退出，且不产出 JSON）-------------------------
 
     def assert_blocked(self, keyword):
