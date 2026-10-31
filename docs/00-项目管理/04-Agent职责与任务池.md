@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.0（2026-10-31）
+> 版本：v1.1（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -28,6 +28,7 @@
 | VS-W1-GPT-02 | GPT / Codex | W1 | 已完成（`ae9e652`） | `build-config/`、`assets/art/_import_test/`、`assets/scripts/view/W1ImportProbe.ts`、`Main.scene`、W1计划状态 |
 | VS-W1-DATA-01 | WorkBuddy | W1 | 待领取 | `tools/配置导出/export_config.py`、`tools/配置导出/tests/`、`data/配置导出/09_全局参数/` |
 | VS-W2-INPUT-01 | Trae | W2预备 | 可领取（独立开发，W1闸门前不合并） | `assets/scripts/view/input/`、`assets/scenes/sandbox/DragGestureSandbox.scene`、`tests/view/input/` |
+| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | 可在新窗口启动 | `assets/production/source/style_scene_001/`、`assets/production/manifests/style_scene_001/`、`assets/production/review/style_scene_001/` |
 | VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 等待并行产出 | WorkBuddy产出审查、运行时JSON接入、手机验证、W1闸门结论 |
 
 禁止事项：
@@ -120,7 +121,53 @@
 非目标：不实现船员换岗判定、吸附规则、战斗逻辑和正式UI美术。
 ```
 
-## 五、集成与额度控制
+## 五、GPT / Codex 美术母版任务卡
+
+```text
+任务编号：VS-ART-MASTER-01
+角色：美术 Agent 与集成负责人（GPT / Codex）
+目标：以 STYLE_SCENE_001_v001 为视觉蓝图，正向制作可动画、可复用、可回拼的第一批拆分母版；不直接抠取扁平场景图充当正式资产。
+
+必读文件（最多4份）：
+1. AGENTS.md
+2. docs/03-美术方案/07-厚涂美术生产规范.md
+3. docs/03-美术方案/08-风格定稿与拆分素材制作计划.md
+4. docs/00-项目管理/02-垂直切片开发计划.md
+
+视觉参考：
+- assets/风格定稿/风格定稿.png（STYLE_SCENE_001_v001）
+
+允许写入：
+- assets/production/source/style_scene_001/
+- assets/production/manifests/style_scene_001/
+- assets/production/review/style_scene_001/
+- 本任务的美术交接记录
+
+禁止写入：
+- E:\devfearfulsea\NewProject\assets\art\（APPROVED 前不得入工程）
+- Cocos 场景、脚本、Prefab、配置与其他 Agent 独占目录
+- assets/风格定稿/风格定稿.png（不得原地覆盖）
+
+首批范围：
+1. 分层海天背景与前景海水。
+2. 船体 Lv1 的完整后层/主体/前挡板结构。
+3. 第一座塔 2001 鱼叉炮及一间代表性房间。
+4. 1 名普通船员和 1 只普通海怪的部件化母版。
+5. 铜木 UI 框架与 1 组按钮样式板；不制作最终文字。
+
+验收条件：
+- 回拼审核图在构图、冷暖、材质与信息层级上延续 STYLE_SCENE_001_v001。
+- 所有可动部件补全遮挡区域，共享画布/原点，并在实际显示尺寸下无接缝闪烁。
+- 每项资产有源图、透明部件、审核图和 manifest；状态止于 REVIEW，用户批准后才能升为 APPROVED。
+- 不批量扩展 6 房、5 怪或 Lv2/Lv3；先通过最小母版闸门。
+
+交付：候选对照板、分层清单、回拼图、manifest、风险与建议；无需改动代码仓库。
+非目标：不实现动画代码、正式 HUD 逻辑、配置 ID 调整或批量全量美术。
+```
+
+该任务与 WorkBuddy 的配置流水线、Trae 的拖拽输入目录无文件重叠，可同步进行。新窗口开工时必须先复述允许写入范围和验收条件。
+
+## 六、集成与额度控制
 
 - WorkBuddy 交付后，GPT / Codex 只审查和接入，不重写整个导出器；若结果不合格，返回精确失败用例。
 - Trae 交付前，GPT / Codex 先冻结拖拽数据接口；交付后只处理跨层适配，不在其目录另写第二套输入系统。
