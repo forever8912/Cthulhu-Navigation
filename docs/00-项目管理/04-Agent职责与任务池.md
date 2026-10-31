@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.11（2026-10-31）
+> 版本：v1.12（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -36,8 +36,8 @@
 | VS-ART-MATERIAL-01 | GPT / Codex | W2并行 | 部分完成：v006 几何零漂移，但材质尺度、色彩和笔触语言偏离风格定稿，结论 REWORK | v006 分层源文件、审核板、manifest 与材质评审报告 |
 | VS-ART-MATERIAL-SWATCH-01 | GPT / Codex | W2并行 | 阶段放行：用户授权先继续整体制作；旧木/铁件作为当前基准，梁柱问题在完整映射中收敛 | 材质样板、同尺度对照板、manifest 与样板评审报告 |
 | VS-ART-MATERIAL-MAP-01 | GPT / Codex | W2并行 | REWORK：v007 技术零漂移但船体视觉被用户否决；平直灰盒蒙皮路线关闭 | v007 分层源文件、四视图、风格并排板、manifest 与交接报告 |
-| VS-ART-HULL-REDESIGN-01 | GPT / Codex | W2并行 | v008 视觉候选 REVIEW：重建船艏/船艉、甲板、外板厚度和六舱结构；待确认后迁移固定坐标 | `source/vs_art_master_01/gate_c/`、v008并排板、manifest与检查 |
-| VS-ART-P2-01 | GPT / Codex | W2并行 | 部分完成：1001 动力舱和 2001 鱼叉炮继续 REVIEW；旧 v007 回拼仅作失败证据 | `source/vs_art_master_01/p2/`、P2审核板、manifest与交接报告 |
+| VS-ART-HULL-REDESIGN-01 | GPT / Codex | W2并行 | v008 视觉候选 REVIEW：船体方向可继续；鱼叉炮已移至甲板，待迁移固定坐标 | `source/vs_art_master_01/gate_c/`、v008并排板、manifest与检查 |
+| VS-ART-P2-01 | GPT / Codex | W2并行 | 部分完成：1001 动力舱和 2001 鱼叉炮继续 REVIEW；炮位视觉改为甲板安装，旧舱内回拼废弃 | `source/vs_art_master_01/p2/`、P2审核板、manifest与交接报告 |
 | VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待材质方向冻结后领取：独立审计最终候选 manifest、命名、哈希、授权和状态一致性 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
 | VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
 | VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 已完成：运行时 JSON（`aa42508`）、Web Mobile（`30a4ba3`）、真实手机同网段启动均通过 | 配置运行时接入、手机验证、W1闸门结论 |

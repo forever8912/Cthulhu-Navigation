@@ -19,9 +19,10 @@
   ],
   "manual_edits": [
     "No source-pixel repaint",
-    "Composited existing 1001 room and 2001 harpoon only for review preview"
+    "Composited existing 1001 room in lower deck",
+    "Moved 2001 harpoon launcher to upper deck after user review; logical grid occupancy remains separate from visual mount layer"
   ],
-  "review_notes": "Visual concept only. User rejected v007 hull but considered power room and harpoon acceptable. Do not claim geometry pass or import into Cocos.",
+  "review_notes": "Visual concept only. User considered the v008 hull acceptable but required the harpoon launcher to be mounted on deck rather than inside a cabin. Do not claim geometry pass or import into Cocos.",
   "license_notes": "Self-generated from approved internal project references; no protected-IP style target or third-party texture",
   "artifacts": [
     {
@@ -29,8 +30,8 @@
       "sha256": "94dc6c26efb14f4ef72c665a33f98915ec9fbe69b5d70ce98437b57399ca2b62"
     },
     {
-      "path": "assets/production/source/vs_art_master_01/gate_c/ship_lv1_hull_preview_v008.png",
-      "sha256": "68a9fd15f274597de80c81660347b61b3a4ece9c0032284296e5ec3c463abff8"
+      "path": "assets/production/source/vs_art_master_01/gate_c/ship_lv1_hull_preview_v008_deck_v002.png",
+      "sha256": "fb2d14f08b9f2280997610660141a4bd0ad45847d1a295e899d2ba09b8e88895"
     }
   ]
 }

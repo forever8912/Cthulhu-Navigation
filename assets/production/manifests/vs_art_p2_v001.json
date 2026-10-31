@@ -41,7 +41,7 @@
   ],
   "license_notes": "Self-generated from approved internal project reference; no protected-IP style target or third-party texture",
   "reviewer": "User visual review",
-  "review_notes": "Power room and harpoon launcher remain REVIEW and were considered directionally acceptable. The v007 hull used in the old P2 assembly is REWORK; that assembly is obsolete for hull approval. Assets are not APPROVED and not imported into Cocos.",
+  "review_notes": "Power room and harpoon launcher remain REVIEW and were considered directionally acceptable. User requires the 2001 launcher to be mounted on the upper deck; the old cabin-mounted P2 assembly is obsolete. Logical one-grid occupancy remains, but presentation uses deckMountAnchor. Assets are not APPROVED and not imported into Cocos.",
   "artifacts": [
     {
       "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_v001.png",

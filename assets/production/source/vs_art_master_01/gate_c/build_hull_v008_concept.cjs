@@ -23,24 +23,24 @@ async function fit(file, width, height) {
   const harpoon = await fit(path.join(p2, 'room_2001_harpoon_v001.png'), 142, 34);
   const preview = await sharp({ create: { width: 1983, height: 793, channels: 4, background: '#00000000' } }).composite([
     { input: room, left: 450, top: 474 },
-    { input: base, left: 880, top: 545 },
-    { input: launcher, left: 865, top: 505 },
-    { input: harpoon, left: 888, top: 500 },
+    { input: base, left: 890, top: 330 },
+    { input: launcher, left: 875, top: 288 },
+    { input: harpoon, left: 898, top: 284 },
     { input: hull, left: 0, top: 0 }
   ]).png().toBuffer();
-  fs.writeFileSync(path.join(out, 'ship_lv1_hull_preview_v008.png'), preview);
+  fs.writeFileSync(path.join(out, 'ship_lv1_hull_preview_v008_deck_v002.png'), preview);
 
   const background = await sharp({ create: { width: 1983, height: 793, channels: 4, background: '#334754' } }).composite([
     { input: Buffer.from('<svg width="1983" height="793"><rect y="650" width="1983" height="143" fill="#101923"/></svg>') }
   ]).png().toBuffer();
   const review = await sharp(await sharp(background).composite([{ input: preview }]).png().toBuffer())
     .resize(1280, 720, { fit: 'contain', background: '#334754' }).png().toBuffer();
-  fs.writeFileSync(path.join(reviewDir, 'hull_v008_concept_1280x720.png'), review);
+  fs.writeFileSync(path.join(reviewDir, 'hull_v008_deck_concept_1280x720.png'), review);
   const style = await sharp(path.join(root, 'assets/风格定稿/风格定稿.png')).resize(1280, 720, { fit: 'contain', background: '#15212d' }).png().toBuffer();
   await sharp({ create: { width: 2560, height: 720, channels: 4, background: '#15212d' } }).composite([
     { input: style, left: 0, top: 0 },
     { input: review, left: 1280, top: 0 }
-  ]).png().toFile(path.join(reviewDir, 'hull_v008_style_compare_2560x720.png'));
+  ]).png().toFile(path.join(reviewDir, 'hull_v008_deck_style_compare_2560x720.png'));
 
   const { data, info } = await sharp(hull).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const openings = [460, 665, 870, 1070, 1275, 1480].map((x, index) => {
@@ -67,13 +67,13 @@ async function fit(file, width, height) {
     prompt,
     negative_prompt: 'flat rectangular barge, greybox look, repetitive wallpaper planks, giant texture pasted across hull, broad orange/gold wash, photorealism, 3D render, pixel art, vector-flat shading, thick uniform cartoon outline, excessive steampunk ornament, gore, text, watermark',
     references: ['STYLE_SCENE_001_v001', 'ship_lv1_geometry_guide_v004.png (opening positions only)', 'p2_assembled_idle_1280x720_v001.png (room/tower quality only)'],
-    manual_edits: ['No source-pixel repaint', 'Composited existing 1001 room and 2001 harpoon only for review preview'],
-    review_notes: 'Visual concept only. User rejected v007 hull but considered power room and harpoon acceptable. Do not claim geometry pass or import into Cocos.',
+    manual_edits: ['No source-pixel repaint', 'Composited existing 1001 room in lower deck', 'Moved 2001 harpoon launcher to upper deck after user review; logical grid occupancy remains separate from visual mount layer'],
+    review_notes: 'Visual concept only. User considered the v008 hull acceptable but required the harpoon launcher to be mounted on deck rather than inside a cabin. Do not claim geometry pass or import into Cocos.',
     license_notes: 'Self-generated from approved internal project references; no protected-IP style target or third-party texture',
-    artifacts: [hullFile, path.join(out, 'ship_lv1_hull_preview_v008.png')].map(file => ({ path: path.relative(root, file).replace(/\\/g, '/'), sha256: sha256(file) }))
+    artifacts: [hullFile, path.join(out, 'ship_lv1_hull_preview_v008_deck_v002.png')].map(file => ({ path: path.relative(root, file).replace(/\\/g, '/'), sha256: sha256(file) }))
   };
   fs.writeFileSync(path.join(manifestDir, 'ship_lv1_hull_visual_v008.json'), JSON.stringify(manifest, null, 2));
-  fs.writeFileSync(path.join(reviewDir, 'hull_v008_concept_board.html'), '<!doctype html><meta charset="utf-8"><title>Hull v008 REVIEW</title><style>body{background:#15212d;color:#eee;font:16px/1.7 sans-serif;margin:24px}img{max-width:100%;background:#334754}</style><h1>VS-ART-HULL-REDESIGN-01 · v008 · REVIEW</h1><p>v007船体已退回REWORK。本板只评审新船体视觉方向；六舱固定坐标尚未迁移，不作几何通过声明。</p><h2>风格定稿 / v008候选</h2><img src="hull_v008_style_compare_2560x720.png"><h2>动力舱与鱼叉炮回拼</h2><img src="hull_v008_concept_1280x720.png"><p>通过视觉方向后，再把六舱开口迁移到v005固定坐标并执行Alpha/净空检查。</p>');
+  fs.writeFileSync(path.join(reviewDir, 'hull_v008_concept_board.html'), '<!doctype html><meta charset="utf-8"><title>Hull v008 REVIEW</title><style>body{background:#15212d;color:#eee;font:16px/1.7 sans-serif;margin:24px}img{max-width:100%;background:#334754}</style><h1>VS-ART-HULL-REDESIGN-01 · v008 · REVIEW</h1><p>v007船体已退回REWORK。v008船体方向基本成立；按用户反馈，2001鱼叉炮改装在上甲板，动力舱留在下层。六舱固定坐标尚未迁移，不作几何通过声明。</p><h2>风格定稿 / 甲板炮位候选</h2><img src="hull_v008_deck_style_compare_2560x720.png"><h2>动力舱与甲板鱼叉炮回拼</h2><img src="hull_v008_deck_concept_1280x720.png"><p>视觉方向通过后，再把六舱开口迁移到固定坐标并执行Alpha/净空检查。战斗房逻辑占格不等于视觉安装在舱内。</p>');
   console.log(JSON.stringify(checks, null, 2));
 })().catch(error => {
   console.error(error);
