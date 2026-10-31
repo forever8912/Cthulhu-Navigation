@@ -1,0 +1,44 @@
+{
+  "task_id": "VS-ART-ROOM-SINGLE-SLOT-01",
+  "asset_id": "room_1001_power",
+  "version": 5,
+  "status": "REVIEW",
+  "generator": "built-in image_gen precise-object-edit",
+  "output_artifact_id": "exec-1ee340a3-90e4-4f85-a840-ef4a6d0fc54c",
+  "model": null,
+  "model_version": null,
+  "seed": null,
+  "prompt": "Use case: precise-object-edit. Asset type: single-room-slot power-room sprite v005 for a side-view mobile ship management game. Input image: the v004 two-slot power room is the edit target and material/style reference. Redesign the same power-room identity into one compact standard room bay without geometrically squeezing it. Keep one readable flywheel, one compact boiler/generator, a short belt or pipe connection, one low interaction console, one centered crew work position, matching left/right open doors, a common floor line and an unobstructed foreground walking strip. Strict orthographic side cutaway, transparent background, no characters, cannon, center partition, text, UI or watermark.",
+  "negative_prompt": "horizontal squash, double-width room, blocked doorway, multiple crew stations, trapezoid shell, cannon, characters, text, UI, watermark, photorealism, 3D render, pixel art",
+  "references": [
+    "room_1001_power_doors_v004.png"
+  ],
+  "manual_edits": [
+    "Alpha-trimmed and normalized to exact 600x400 canvas",
+    "Added single-slot door, floor, walking-band and crew anchors"
+  ],
+  "reviewer": "",
+  "review_notes": "Single-slot geometry and multi-deck ship fit pending approval; not imported into Cocos.",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_single_v005.png",
+      "sha256": "3f89deab2de167bf15077f4422cb46d030ba93c4840247149f3030f9bddcc76e"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_single_normalized_v005.png",
+      "sha256": "95f8831c16cfd131da94d985fe4559315a4f73aefa6de3092395abc0b7cfce2c"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_single_layout_v005.json",
+      "sha256": "9846c80988130781d41ce8fda43623ef6fbfc5f92e288abb12bfc0094e2e9637"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/room_1001_power_single_anchors_v005.png",
+      "sha256": "c34f2f8b6728cc1385c3011b4a1b1c691bce0298d397c3b22e9c43b099284fee"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/room_1001_power_single_compare_v005.png",
+      "sha256": "d46f94d77cfe0bafec6fd045b8fe39365edc0e7f089b8e84bd2a50afafb4ca92"
+    }
+  ]
+}

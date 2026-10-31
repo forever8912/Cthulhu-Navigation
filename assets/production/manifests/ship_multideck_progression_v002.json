@@ -1,0 +1,40 @@
+{
+  "task_id": "VS-ART-HULL-PROGRESSION-01",
+  "version": 2,
+  "status": "REVIEW",
+  "generator": "deterministic SVG layout builder",
+  "prompt": null,
+  "negative_prompt": null,
+  "model": null,
+  "seed": null,
+  "references": [
+    "ship_access_core_ladder_v001",
+    "room_1001_power_single_v005",
+    "ship_hull_visual_right_v009"
+  ],
+  "manual_edits": [
+    "Designed stable Lv1-Lv7 multi-deck slot topology",
+    "Separated cabin slots from deck weapon mounts",
+    "Added two-floor final deckhouse and camera/LOD policy"
+  ],
+  "reviewer": "",
+  "review_notes": "Topology and visual proportions pending approval. Lv4-Lv7 are forward specifications only.",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/ship_progression/ship_multideck_layout_v002.json",
+      "sha256": "5eae69e3fd4629e53060bf12fb1bc104138c589a01bbc40fe83ba2f87cd18547"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/ship_hull_progression_lv1_lv7_v002.png",
+      "sha256": "7674e06c28c257d02cd2928dac3b25a3b62fe84c4eba781fc763b9a73446c8db"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/ship_camera_scaling_v002.png",
+      "sha256": "b21c711399f5cd8caf1459bb20b47afaf9acb482d653d0fc59cd411bde97838b"
+    },
+    {
+      "path": "assets/production/review/vs_art_master_01/ship_multideck_progression_v002_board.html",
+      "sha256": "dcdcf85c245748734c7b9502008390734196039a6a811495ede67af95b9882a4"
+    }
+  ]
+}

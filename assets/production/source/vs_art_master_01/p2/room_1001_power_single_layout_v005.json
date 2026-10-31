@@ -1,0 +1,47 @@
+{
+  "asset_id": "room_1001_power",
+  "version": 5,
+  "status": "REVIEW",
+  "canvas": {
+    "width": 600,
+    "height": 400
+  },
+  "room_slot_cost": 1,
+  "floor_y": 338,
+  "doorway": {
+    "clear_width": 72,
+    "clear_height": 205
+  },
+  "door_anchors": {
+    "left": {
+      "id": "door_left",
+      "x": 0,
+      "y": 338,
+      "facing": "left"
+    },
+    "right": {
+      "id": "door_right",
+      "x": 600,
+      "y": 338,
+      "facing": "right"
+    }
+  },
+  "walk_band": {
+    "x": 0,
+    "y": 150,
+    "width": 600,
+    "height": 195
+  },
+  "crew_display_height": 250,
+  "crew_anchors": [
+    {
+      "id": "crew_main",
+      "x": 300,
+      "y": 338,
+      "facing": "right",
+      "workstation": "power_control"
+    }
+  ],
+  "content_rule": "Every normal cabin room consumes exactly one room slot. Deck-mounted weapons use deck mounts and never consume cabin slots.",
+  "navigation_rule": "Connect door_right to the adjacent door_left or access-core landing only when floor_y matches."
+}

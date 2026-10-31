@@ -1,0 +1,404 @@
+{
+  "version": 2,
+  "status": "REVIEW",
+  "orientation": {
+    "bow": "right",
+    "travel_axis": "+X",
+    "weapon_aim": "right"
+  },
+  "slot_rules": {
+    "normal_room_slot_cost": 1,
+    "deck_weapon_cabin_slot_cost": 0,
+    "deck_weapon_capacity_key": "deck_mount_count",
+    "access_core_cabin_slot_cost": 0,
+    "slot_id_pattern": "slot_D{deck_from_top}_{L|R}{distance_from_access_core}"
+  },
+  "access_core": {
+    "fixed": true,
+    "vertical_through_all_cabin_decks": true,
+    "anchors_per_deck": [
+      "corridor_left",
+      "corridor_right",
+      "ladder_up",
+      "ladder_down"
+    ],
+    "deck_anchor": "deck_exit"
+  },
+  "hull_levels": [
+    {
+      "hull_level": 1,
+      "cabin_deck_count": 1,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 2,
+          "right": 1,
+          "total": 3
+        }
+      ],
+      "cabin_slot_count": 3,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_R1"
+      ],
+      "fixed_deckhouse_floors": [],
+      "fixed_deckhouse_room_count": 0,
+      "deck_mount_count": 1,
+      "added_at_this_level": [
+        "D1_L1",
+        "D1_L2",
+        "D1_R1"
+      ]
+    },
+    {
+      "hull_level": 2,
+      "cabin_deck_count": 2,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 2,
+          "right": 1,
+          "total": 3
+        },
+        {
+          "deck": "D2",
+          "left": 1,
+          "right": 2,
+          "total": 3
+        }
+      ],
+      "cabin_slot_count": 6,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_R1",
+        "slot_D2_L1",
+        "slot_D2_R1",
+        "slot_D2_R2"
+      ],
+      "fixed_deckhouse_floors": [],
+      "fixed_deckhouse_room_count": 0,
+      "deck_mount_count": 2,
+      "added_at_this_level": [
+        "D2_L1",
+        "D2_R1",
+        "D2_R2"
+      ]
+    },
+    {
+      "hull_level": 3,
+      "cabin_deck_count": 2,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 2,
+          "right": 2,
+          "total": 4
+        },
+        {
+          "deck": "D2",
+          "left": 2,
+          "right": 2,
+          "total": 4
+        }
+      ],
+      "cabin_slot_count": 8,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_R1",
+        "slot_D1_R2",
+        "slot_D2_L1",
+        "slot_D2_L2",
+        "slot_D2_R1",
+        "slot_D2_R2"
+      ],
+      "fixed_deckhouse_floors": [
+        [
+          "captain_cabin"
+        ]
+      ],
+      "fixed_deckhouse_room_count": 1,
+      "deck_mount_count": 3,
+      "added_at_this_level": [
+        "D1_R2",
+        "D2_L2",
+        "captain_cabin"
+      ]
+    },
+    {
+      "hull_level": 4,
+      "cabin_deck_count": 3,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 2,
+          "right": 2,
+          "total": 4
+        },
+        {
+          "deck": "D2",
+          "left": 2,
+          "right": 2,
+          "total": 4
+        },
+        {
+          "deck": "D3",
+          "left": 2,
+          "right": 2,
+          "total": 4
+        }
+      ],
+      "cabin_slot_count": 12,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_R1",
+        "slot_D1_R2",
+        "slot_D2_L1",
+        "slot_D2_L2",
+        "slot_D2_R1",
+        "slot_D2_R2",
+        "slot_D3_L1",
+        "slot_D3_L2",
+        "slot_D3_R1",
+        "slot_D3_R2"
+      ],
+      "fixed_deckhouse_floors": [
+        [
+          "captain_cabin"
+        ]
+      ],
+      "fixed_deckhouse_room_count": 1,
+      "deck_mount_count": 4,
+      "added_at_this_level": [
+        "D3_L1",
+        "D3_L2",
+        "D3_R1",
+        "D3_R2"
+      ]
+    },
+    {
+      "hull_level": 5,
+      "cabin_deck_count": 3,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 2,
+          "right": 3,
+          "total": 5
+        },
+        {
+          "deck": "D2",
+          "left": 3,
+          "right": 2,
+          "total": 5
+        },
+        {
+          "deck": "D3",
+          "left": 2,
+          "right": 3,
+          "total": 5
+        }
+      ],
+      "cabin_slot_count": 15,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_R1",
+        "slot_D1_R2",
+        "slot_D1_R3",
+        "slot_D2_L1",
+        "slot_D2_L2",
+        "slot_D2_L3",
+        "slot_D2_R1",
+        "slot_D2_R2",
+        "slot_D3_L1",
+        "slot_D3_L2",
+        "slot_D3_R1",
+        "slot_D3_R2",
+        "slot_D3_R3"
+      ],
+      "fixed_deckhouse_floors": [
+        [
+          "captain_cabin",
+          "chart_room"
+        ]
+      ],
+      "fixed_deckhouse_room_count": 2,
+      "deck_mount_count": 5,
+      "added_at_this_level": [
+        "D1_R3",
+        "D2_L3",
+        "D3_R3",
+        "chart_room"
+      ]
+    },
+    {
+      "hull_level": 6,
+      "cabin_deck_count": 4,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 2,
+          "right": 3,
+          "total": 5
+        },
+        {
+          "deck": "D2",
+          "left": 3,
+          "right": 2,
+          "total": 5
+        },
+        {
+          "deck": "D3",
+          "left": 2,
+          "right": 3,
+          "total": 5
+        },
+        {
+          "deck": "D4",
+          "left": 3,
+          "right": 2,
+          "total": 5
+        }
+      ],
+      "cabin_slot_count": 20,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_R1",
+        "slot_D1_R2",
+        "slot_D1_R3",
+        "slot_D2_L1",
+        "slot_D2_L2",
+        "slot_D2_L3",
+        "slot_D2_R1",
+        "slot_D2_R2",
+        "slot_D3_L1",
+        "slot_D3_L2",
+        "slot_D3_R1",
+        "slot_D3_R2",
+        "slot_D3_R3",
+        "slot_D4_L1",
+        "slot_D4_L2",
+        "slot_D4_L3",
+        "slot_D4_R1",
+        "slot_D4_R2"
+      ],
+      "fixed_deckhouse_floors": [
+        [
+          "captain_cabin",
+          "chart_room"
+        ],
+        [
+          "bridge"
+        ]
+      ],
+      "fixed_deckhouse_room_count": 3,
+      "deck_mount_count": 6,
+      "added_at_this_level": [
+        "D4_L1",
+        "D4_L2",
+        "D4_L3",
+        "D4_R1",
+        "D4_R2",
+        "bridge"
+      ]
+    },
+    {
+      "hull_level": 7,
+      "cabin_deck_count": 4,
+      "deck_slot_sides": [
+        {
+          "deck": "D1",
+          "left": 3,
+          "right": 3,
+          "total": 6
+        },
+        {
+          "deck": "D2",
+          "left": 3,
+          "right": 3,
+          "total": 6
+        },
+        {
+          "deck": "D3",
+          "left": 3,
+          "right": 3,
+          "total": 6
+        },
+        {
+          "deck": "D4",
+          "left": 3,
+          "right": 3,
+          "total": 6
+        }
+      ],
+      "cabin_slot_count": 24,
+      "stable_slot_ids": [
+        "slot_D1_L1",
+        "slot_D1_L2",
+        "slot_D1_L3",
+        "slot_D1_R1",
+        "slot_D1_R2",
+        "slot_D1_R3",
+        "slot_D2_L1",
+        "slot_D2_L2",
+        "slot_D2_L3",
+        "slot_D2_R1",
+        "slot_D2_R2",
+        "slot_D2_R3",
+        "slot_D3_L1",
+        "slot_D3_L2",
+        "slot_D3_L3",
+        "slot_D3_R1",
+        "slot_D3_R2",
+        "slot_D3_R3",
+        "slot_D4_L1",
+        "slot_D4_L2",
+        "slot_D4_L3",
+        "slot_D4_R1",
+        "slot_D4_R2",
+        "slot_D4_R3"
+      ],
+      "fixed_deckhouse_floors": [
+        [
+          "captain_cabin",
+          "chart_room"
+        ],
+        [
+          "bridge",
+          "command_room"
+        ]
+      ],
+      "fixed_deckhouse_room_count": 4,
+      "deck_mount_count": 6,
+      "added_at_this_level": [
+        "D1_L3",
+        "D2_R3",
+        "D3_L3",
+        "D4_R3",
+        "command_room"
+      ]
+    }
+  ],
+  "camera_policy": {
+    "readability_floor_px": {
+      "room_width": 150,
+      "room_height": 100,
+      "crew_height": 72,
+      "deck_weapon_width": 80
+    },
+    "management": {
+      "levels_1_3": "full_ship_fit",
+      "levels_4_5": "full_ship_fit_until_readability_floor_then_horizontal_pan",
+      "levels_6_7": "overview_lod_plus_floor_focus; never shrink detailed rooms below readability floor"
+    },
+    "sailing": "Use exterior hull LOD for full-ship view; open cutaway only for selected deck or room.",
+    "combat": "Frame ship at 48-56% viewport width, prioritize upper deck and sea approach, dim or hide cabin interiors, and render crew/weapons from independent combat anchors without changing logic hitboxes.",
+    "transition": "Camera zoom and LOD cross-fade only; simulation coordinates and slot IDs remain unchanged."
+  },
+  "scope_note": "Vertical slice still implements Lv1-Lv3 only. Lv4-Lv7 are forward-compatible art/layout specifications, not current implementation scope."
+}

@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.13（2026-10-31）
+> 版本：v1.14（2026-10-31：新增 Lv1–Lv7 多层船体文档任务；普通房间统一一舱位，火炮改走独立甲板炮位；旧 3/6/9 双格迁移任务作废）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -39,7 +39,9 @@
 | VS-ART-HULL-REDESIGN-01 | GPT / Codex | W2并行 | v008 视觉候选 REVIEW：船体方向可继续；鱼叉炮已移至甲板，待迁移固定坐标 | `source/vs_art_master_01/gate_c/`、v008并排板、manifest与检查 |
 | VS-ART-P2-01 | GPT / Codex | W2并行 | 部分完成：1001 动力舱和 2001 鱼叉炮继续 REVIEW；炮位视觉改为甲板安装，旧舱内回拼废弃 | `source/vs_art_master_01/p2/`、P2审核板、manifest与交接报告 |
 | VS-ART-DECK-PROPS-01 | GPT / Codex | W2并行 | 已交付 REVIEW：桅杆/帆/缆绳/灯独立，桶/箱为静态装饰；右向 v009 回拼完成 | `source/vs_art_master_01/deck_props/`、右向审核板、manifest |
-| VS-DATA-HULL-SLOTS-01 | WorkBuddy | W2预备 | 待领取：设计 `build_slot_count=3/6/9` 数据迁移与旧 `grid_total` 兼容方案，不直接改数值源表 | 配置迁移提案、Schema/导出影响和存档兼容报告 |
+| VS-DATA-HULL-SLOTS-01 | WorkBuddy | W2预备 | **已作废**：双格房与单层 3/6/9 方案被多层单舱位方案替代 | 禁止继续执行旧任务卡 |
+| VS-DOC-HULL-LV1-7-01 | WorkBuddy | W2策划 | **可领取**：整理 Lv1–Lv7 多层舱位、梯井、甲板炮位、固定甲板建筑、镜头缩放与迁移影响 | 船舱 SSOT、总览/切片同步、迁移提案；不得改美术和正式配置 |
+| VS-ART-HULL-PROGRESSION-01 | GPT / Codex | W2并行 | 已交付 REVIEW：单舱位动力舱 v005、Lv1–Lv7 多层布局板和大型船镜头策略 | `source/vs_art_master_01/p2/`、`ship_progression/`、审核板与 manifest |
 | VS-W2-HULL-MODULE-VIEW-01 | Trae | W2后续 | 阻塞：待模块接口和资产 APPROVED；实现 stern/mid/bow 装配、房间层级与 deckMountAnchor | 工程内船体装配视图和测试，范围届时冻结 |
 | VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待材质方向冻结后领取：独立审计最终候选 manifest、命名、哈希、授权和状态一致性 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
 | VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
@@ -92,35 +94,63 @@
 非目标：不设计新字段、不调整现有数值、不接入Cocos运行时。
 ```
 
-### 3.2 船体格位迁移提案
+### 3.2 Lv1–Lv7 多层船体文档收敛
 
 ```text
-任务编号：VS-DATA-HULL-SLOTS-01
-角色：数据 Agent（WorkBuddy）
-目标：为 Lv1=3、Lv2=6、暂定 Lv3=9 个可建造格位设计配置与存档兼容方案；本任务先提案和测试夹具，不直接改正式 xlsx 数值。
+任务编号：VS-DOC-HULL-LV1-7-01
+角色：策划/数据 Agent（WorkBuddy）
+目标：把已确认的“普通房间单舱位、火炮独立甲板炮位、中央梯井、多层 Lv1–Lv7 船体、固定甲板建筑与大型船镜头策略”整理进现行文档，并给出配置/存档迁移提案；不得直接修改正式 xlsx、运行时 JSON、美术或 Cocos 工程。
 
 必读文件（最多4份）：
 1. AGENTS.md
-2. docs/02-系统设计/船舱房间系统.md（只读 §1.1 与配置字段段落）
-3. docs/03-美术方案/08-风格定稿与拆分素材制作计划.md（只读 P1.6）
-4. assets/production/source/vs_art_master_01/gate_c/ship_modular_layout_v001.json
+2. docs/00-项目管理/00-文档索引与协作规范.md
+3. docs/00-项目管理/02-垂直切片开发计划.md
+4. docs/02-系统设计/船舱房间系统.md
+
+冻结输入（只读，不计项目文档）：
+- assets/production/source/vs_art_master_01/ship_progression/ship_multideck_layout_v002.json
+- assets/production/source/vs_art_master_01/p2/room_1001_power_single_layout_v005.json
+- assets/production/source/vs_art_master_01/access_core/ship_access_core_ladder_layout_v001.json
 
 允许写入：
 - docs/00-项目管理/船体格位迁移提案.md
-- tools/配置导出/tests/ 中独立迁移/校验夹具
+- docs/02-系统设计/船舱房间系统.md
+- docs/00-项目管理/01-系统总览.md（只同步船体等级、房间容量和火炮安装口径）
+- docs/00-项目管理/02-垂直切片开发计划.md（只注明切片仍实现 Lv1–Lv3，Lv4–Lv7 不进入当前范围）
 
 禁止写入：
 - data/配置表/*.xlsx
+- data/配置导出/**
+- tools/**
 - E:\devfearfulsea\NewProject
-- 现有正式 JSON、存档和美术文件
+- assets/production/**
+- 任何正式 JSON、存档、代码和美术文件
 
-提案必须回答：
-1. 新字段使用 build_slot_count 还是迁移 grid_total，旧 8/10/12/14/16 如何兼容。
-2. 两格房如何占连续槽位；甲板炮位如何保持逻辑占格但使用 deckMountAnchor。
-3. 升级只追加 slot_04~06/slot_07~09，如何保证旧槽位、房间实例和船员岗位不移动。
-4. 旧存档缺新字段时的默认值、迁移版本和回滚策略。
+必须写入的现行口径：
+1. 普通生产/功能房统一占 1 个 `cabin_slot`；删除“普通房占2格”和跨格房逻辑。
+2. `2001~2004` 火炮不占船舱位，只占独立 `deck_mount`；炮手、弹药、供能仍按房间/设备逻辑结算，但视觉和容量都在甲板系统。
+3. 中央 `access_core` 不占舱位，纵向贯通全部船舱层并连接甲板；每层必须有左右走廊、上下梯子和统一地板线，房间之间以左右门联通。
+4. 船体容量冻结为：Lv1=1层×3=3；Lv2=2层×3=6；Lv3=2层×4=8 + 固定船长室；Lv4=3层×4=12 + 船长室；Lv5=3层×5=15 + 船长室/海图室；Lv6=4层×5=20 + 两层甲板建筑3固定房；Lv7=4层×6=24 + 两层甲板建筑4固定房。
+5. 固定船长室/海图室/舰桥/指挥室不计入普通舱位，不可拆除；文档须区分 `cabin_slot_count`、`fixed_deckhouse_room_count` 与 `deck_mount_count`。
+6. 稳定槽位 ID 使用 `slot_D{自上而下层号}_{L|R}{距梯井序号}`；升级只追加新层或外侧槽位，不重编号已有房间、岗位和路径。
+7. 当前垂直切片仍只实现 Lv1–Lv3。Lv4–Lv7 只冻结长期拓扑、资源命名和镜头边界，不得把内容量扩入 W2。
+8. 镜头分三态：航行全船外观 LOD、经营楼层/房间聚焦、战斗甲板聚焦。房间低于 150×100px、船员低于72px或炮位低于80px时停止继续缩小，改用平移/聚焦；镜头和 LOD 不得修改逻辑坐标或碰撞。
 
-验收条件：给出 Schema/导出器/类型/存档迁移影响矩阵；至少包含 Lv1→Lv2、两格房跨槽、炮位甲板映射和旧存档载入四个测试用例；不得擅自改正式数值。
+迁移提案必须回答：
+1. 旧 `grid_total=8/10/12/14/16`、旧 `grid_size=2`、旧 `slot_01...` 如何映射到新三类容量字段与稳定槽位 ID。
+2. 旧存档中的火炮房间实例如何迁移成 `deck_mount` 实例，并保证等级、岗位、耐久和弹药状态不丢失。
+3. 旧双格房如何压缩为单舱位且不吞掉相邻房间；若已有冲突，给出确定性的回退/收纳规则。
+4. 船体等级上限由5扩展到7涉及哪些 Schema、类型、配置表、UI、存档和测试；本任务只列影响，不落正式数据。
+5. 缺新字段的旧存档默认值、迁移版本、失败回滚和重复迁移幂等策略。
+
+验收条件：
+- 三份现行文档对房间占位、Lv1–Lv7容量、固定建筑、炮位和切片范围无冲突。
+- 迁移提案包含 Schema/导出器/类型/UI/存档/测试影响矩阵。
+- 至少列出：Lv1→Lv2新增楼层、Lv2→Lv3补齐两层、Lv5→Lv6新增第四层、旧双格房迁移、旧火炮迁移、旧存档重复载入六个测试用例。
+- 不修改正式数值源表、生成 JSON、美术或工程代码。
+
+交付：独立分支 agent/VS-DOC-HULL-LV1-7-01-multideck-spec；提交哈希、冲突清单、修改文件、迁移风险和待集成负责人裁决项。
+非目标：不设计 Lv4–Lv7 具体升级价格/耐久/房间解锁，不扩展垂直切片内容量，不实现镜头或存档代码。
 ```
 
 ## 四、Trae 任务卡
