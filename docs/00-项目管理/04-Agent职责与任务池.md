@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.2（2026-10-31）
+> 版本：v1.3（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -30,8 +30,8 @@
 | VS-W2-INPUT-01 | Trae | W2预备 | 已完成（`655a937`），已进入 W2 集成基线 | `assets/scripts/view/input/`、`DragGestureSandbox.scene`、`tests/view/input/` |
 | VS-W2-BATTLE-CORE-01 | GPT / Codex | W2 | 已完成（`41a0396` + `cb21e0e`） | `assets/scripts/logic/battle/`、`W2BattleGrayboxConfig.ts`、对应测试 |
 | VS-W2-VIEW-01 | Trae | W2 | 可领取，依赖工程提交 `cb21e0e` | `assets/scripts/view/battle/`、`BattleGraybox.scene`、`tests/view/battle/` |
-| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate A 已通过，正式素材制作中 | `assets/production/source/style_scene_001/`、`assets/production/manifests/style_scene_001/`、`assets/production/review/style_scene_001/` |
-| VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 数据管线已完成；运行时 JSON 接入与手机验证待完成 | 配置运行时接入、手机验证、W1闸门结论 |
+| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | 部分完成：授权已记录，船壳母版与三版透明框架待验收，未生成正式素材 | `assets/production/source/style_scene_001/`、`assets/production/manifests/style_scene_001/`、`assets/production/review/style_scene_001/` |
+| VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 运行时 JSON 已接入（`aa42508`）；Web Mobile 构建与手机尺寸验收通过（`30a4ba3`）；真实手机同网段启动待确认 | 配置运行时接入、手机验证、W1闸门结论 |
 
 禁止事项：
 
