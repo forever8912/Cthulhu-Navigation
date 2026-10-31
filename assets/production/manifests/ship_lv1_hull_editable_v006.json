@@ -2,7 +2,7 @@
   "task_id": "VS-ART-MATERIAL-01",
   "asset_id": "ship_lv1_hull_editable",
   "version": 6,
-  "status": "REVIEW",
+  "status": "REWORK",
   "generator": "Frozen v005 alpha plus painted material study, editable SVG masks and light overlays",
   "generated_at": "2026-10-31T09:22:37.540Z",
   "references": [
@@ -19,7 +19,7 @@
     "梁柱断续亮面，不改原有轮廓"
   ],
   "reviewer": "Codex material review",
-  "review_notes": "Technical and material review PASS; user approval and independent manifest audit pending. Keep REVIEW until explicit approval. See material_v006_review.md.",
+  "review_notes": "Geometry and alpha checks PASS and remain frozen. Material review corrected to REWORK after direct comparison with STYLE_SCENE_001_v001: brush scale is too large, orange-rust/gold highlights are too strong, and the surface reads as a coarse full-canvas texture rather than restrained structural hand-painting. See material_v006_review.md.",
   "license_notes": "Generated material study based on internal style reference, no third-party texture download",
   "artifacts": [
     {

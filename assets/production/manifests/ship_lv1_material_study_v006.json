@@ -2,7 +2,7 @@
   "task_id": "VS-ART-MATERIAL-01",
   "asset_id": "ship_lv1_material_study",
   "version": 6,
-  "status": "REVIEW",
+  "status": "REWORK",
   "generator": "built-in image_gen; material reference only",
   "prompt": "Use case: stylized-concept. Generate a MATERIAL STUDY ONLY, a seamless-looking hand-painted wooden surface covering the entire canvas, NOT a ship, NOT a scene, no objects. The input is ONLY a project approved brush/material reference. A broad landscape field of very aged damp hull timber, irregular broad horizontal planks merging into large painterly masses, muted wood brown, blue-grey shadows and warm ochre left-upper highlights, old rusted iron traces in sparse broad patches, salt stains and weathered cracks, restrained cold damp reflected light near lower third. Oil-gouache impasto painting, broken dry-brush edges, deliberate broad brush facets and uneven thickness, handmade layered pigment. Avoid a mechanically repeated pattern: plank widths highly irregular, many seams lost in shadow, no repeated rivet grid, no uniform pinstripes. Emphasize volume with warm upper-left lit planes against broad cooler downward shadows. No tiny noisy grain, no photographic wood texture, no flat vector look, no 3D. No ship silhouette, frame, room openings, characters, water, sky, UI, text, watermark, letters or symbols. This image is only cropped as a texture inside an already frozen SVG layer; DO NOT draw a boat or decide any geometry. Fill whole image opaque, wide landscape ratio around 16:9. Big readable muted strokes, well-preserved midtone detail, no pure-black large areas.",
   "negative_prompt": "ship silhouette, geometry, room openings, UI, characters, photographic wood, uniform planks or rivets, tiny grain, 3D, vector flat shading, watermark",
@@ -18,7 +18,7 @@
     "作为材质颜色参考裁切映射；不用于决定几何",
     "后墙纹理旋转并压暗，前框暖面提亮；冻结Alpha从v005复制"
   ],
-  "review_notes": "模型、版本、seed与供应商任务ID未公开，保留完整prompt、原图及工具输出标识；材质待审核",
+  "review_notes": "模型、版本、seed与供应商任务ID未公开，已保留完整prompt、原图及工具输出标识。与 STYLE_SCENE_001_v001 并排复核后判定 REWORK：笔触尺度过大，橙锈/金色高光过强，不能作为最终船体材质方向。",
   "output_artifact_id": "exec-bac317df-ba68-4e75-a6ef-5ef7dba512b6",
   "provider_task_id": null,
   "source_path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_material_study_v006.png",
