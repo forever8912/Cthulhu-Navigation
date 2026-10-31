@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.1（2026-10-31）
+> 版本：v1.2（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -26,10 +26,12 @@
 | 任务号 | Owner | 阶段 | 状态 | 独占写入范围 |
 |---|---|---|---|---|
 | VS-W1-GPT-02 | GPT / Codex | W1 | 已完成（`ae9e652`） | `build-config/`、`assets/art/_import_test/`、`assets/scripts/view/W1ImportProbe.ts`、`Main.scene`、W1计划状态 |
-| VS-W1-DATA-01 | WorkBuddy | W1 | 待领取 | `tools/配置导出/export_config.py`、`tools/配置导出/tests/`、`data/配置导出/09_全局参数/` |
-| VS-W2-INPUT-01 | Trae | W2预备 | 可领取（独立开发，W1闸门前不合并） | `assets/scripts/view/input/`、`assets/scenes/sandbox/DragGestureSandbox.scene`、`tests/view/input/` |
-| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | 可在新窗口启动 | `assets/production/source/style_scene_001/`、`assets/production/manifests/style_scene_001/`、`assets/production/review/style_scene_001/` |
-| VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 等待并行产出 | WorkBuddy产出审查、运行时JSON接入、手机验证、W1闸门结论 |
+| VS-W1-DATA-01 | WorkBuddy | W1 | 已完成并合入文档 `main`（最新 `16ddb71`） | `tools/配置导出/`、`data/配置导出/` |
+| VS-W2-INPUT-01 | Trae | W2预备 | 已完成（`655a937`），已进入 W2 集成基线 | `assets/scripts/view/input/`、`DragGestureSandbox.scene`、`tests/view/input/` |
+| VS-W2-BATTLE-CORE-01 | GPT / Codex | W2 | 已完成（`41a0396` + `cb21e0e`） | `assets/scripts/logic/battle/`、`W2BattleGrayboxConfig.ts`、对应测试 |
+| VS-W2-VIEW-01 | Trae | W2 | 可领取，依赖工程提交 `cb21e0e` | `assets/scripts/view/battle/`、`BattleGraybox.scene`、`tests/view/battle/` |
+| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate A 已通过，正式素材制作中 | `assets/production/source/style_scene_001/`、`assets/production/manifests/style_scene_001/`、`assets/production/review/style_scene_001/` |
+| VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 数据管线已完成；运行时 JSON 接入与手机验证待完成 | 配置运行时接入、手机验证、W1闸门结论 |
 
 禁止事项：
 
@@ -119,6 +121,61 @@
 
 交付：独立分支 agent/VS-W2-INPUT-01-drag-input、提交哈希、场景验证步骤、已知风险。
 非目标：不实现船员换岗判定、吸附规则、战斗逻辑和正式UI美术。
+```
+
+### 4.2 W2 战斗灰盒视图任务卡
+
+```text
+任务编号：VS-W2-VIEW-01
+角色：UI Agent（Trae）
+依赖：从工程提交 cb21e0e（分支 codex/w2-battle-graybox）创建独立任务分支。
+目标：把已冻结的拖拽输入与确定性战斗内核组合成可运行的 W2 方块灰盒，验证“拖人换岗 → 火力改变 → 自动结算”。
+
+必读文件（最多4份）：
+1. E:\devfearfulsea\NewProject\AGENTS.md
+2. docs/00-项目管理/02-垂直切片开发计划.md
+3. docs/02-系统设计/战斗系统.md（只读 §1、§2、§4、§9）
+4. docs/00-项目管理/03-多Agent协作手册.md
+
+允许写入：
+- assets/scripts/view/battle/
+- assets/scenes/sandbox/BattleGraybox.scene 及对应 .meta
+- tests/view/battle/
+
+允许只读调用：
+- assets/scripts/view/input/DragGesture*.ts
+- assets/scripts/logic/battle/BattleGraybox*.ts
+- assets/scripts/config/W2BattleGrayboxConfig.ts
+- assets/scripts/core/time/FixedStepClock.ts
+
+禁止写入：
+- assets/scripts/logic/、assets/scripts/config/、assets/scripts/core/
+- assets/scripts/view/input/
+- assets/scripts/view/GameBootstrap.ts、assets/scenes/Main.scene
+- settings/、build-config/、正式美术目录和文档仓库
+
+接口边界：
+1. 用 W2_BATTLE_GRAYBOX_CONFIG 创建 BattleGrayboxSimulation；不得在视图重复写一套数值。
+2. 通过 FixedStepClock 或等价固定步长，以 20Hz 调用 simulation.step()；渲染可逐帧插值。
+3. 只在 DragGestureSnapshot.phase=end 时做命中区判断；命中炮位后调用 assignCrew(crewId, turretId)。
+4. 视图只读 BattleGrayboxSnapshot，不直接修改怪物HP、位置、炮位冷却或胜负状态。
+5. 不提供手动开炮、瞄准或点击伤害操作。
+
+灰盒表现：
+- 3 个炮位方块、3 个可拖拽船员标记。
+- 1 个海中怪方块、1 个登船怪方块，按 progress 从远海移动到船体。
+- 显示炮位占用、怪物HP、船体HP、时间、胜负和最近事件。
+- 用线或短闪烁表示自动攻击；不使用正式美术资源。
+
+验收条件：
+- 鼠标和单指触摸均可拖拽船员换炮位，连续20次无监听或节点残留。
+- 换岗后旧炮位释放、目标炮位占用，火力变化来自同一个 BattleGrayboxSimulation。
+- 默认配置自动战斗在25~40秒内胜利；不配置炮手时最终失败。
+- TypeScript strict诊断0错误，场景引用有效，无运行时异常。
+- 提供一次浏览器预览截图和复现步骤，不修改Main.scene。
+
+交付：分支 agent/VS-W2-VIEW-01-battle-graybox、提交哈希、预览截图、验证结果和已知风险。
+非目标：不实现正式战斗公式、房间受损、登船AI、正式HUD或美术替换。
 ```
 
 ## 五、GPT / Codex 美术母版任务卡
