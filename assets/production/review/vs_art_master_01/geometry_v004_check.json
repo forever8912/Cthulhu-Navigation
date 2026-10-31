@@ -1,0 +1,53 @@
+{
+  "expected_size": [
+    1672,
+    941
+  ],
+  "geometry_pass": false,
+  "actual_size": [
+    1672,
+    941
+  ],
+  "size_pass": true,
+  "alpha_threshold": 8,
+  "clear_rect_checks": [
+    {
+      "pass": false,
+      "opaque_pixels_in_clear_rect": 1814,
+      "cell": 1,
+      "max_alpha": 254
+    },
+    {
+      "pass": false,
+      "opaque_pixels_in_clear_rect": 1898,
+      "cell": 2,
+      "max_alpha": 252
+    },
+    {
+      "pass": false,
+      "opaque_pixels_in_clear_rect": 1625,
+      "cell": 3,
+      "max_alpha": 254
+    },
+    {
+      "pass": false,
+      "opaque_pixels_in_clear_rect": 1812,
+      "cell": 4,
+      "max_alpha": 255
+    },
+    {
+      "pass": false,
+      "opaque_pixels_in_clear_rect": 1713,
+      "cell": 5,
+      "max_alpha": 253
+    },
+    {
+      "pass": false,
+      "opaque_pixels_in_clear_rect": 1491,
+      "cell": 6,
+      "max_alpha": 255
+    }
+  ],
+  "note": "不缩放、不拉伸、不修改生成结果。尺寸不符直接失败。几何通过仍需材质、边缘、遮挡与分层审核。",
+  "status": "REWORK"
+}

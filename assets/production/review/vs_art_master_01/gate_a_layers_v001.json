@@ -1,0 +1,296 @@
+[
+  {
+    "z": 10,
+    "key": "bg_sky",
+    "content": "天空/月亮",
+    "origin": "全画布",
+    "requirements": "静态远景；无 UI 烘焙"
+  },
+  {
+    "z": 20,
+    "key": "bg_silhouette",
+    "content": "远船/岛影",
+    "origin": "全画布",
+    "requirements": "低对比视差层"
+  },
+  {
+    "z": 30,
+    "key": "bg_fog_mid",
+    "content": "中景雾",
+    "origin": "全画布",
+    "requirements": "独立透明雾；限制于世界层"
+  },
+  {
+    "z": 40,
+    "key": "sea_back",
+    "content": "后侧海面",
+    "origin": "水线以下",
+    "requirements": "平铺；不覆盖船员"
+  },
+  {
+    "z": 50,
+    "key": "ship_rig_back",
+    "content": "后索具/帆",
+    "origin": "船体原点",
+    "requirements": "桅杆后方；帆独立摆动"
+  },
+  {
+    "z": 60,
+    "key": "ship_hull_back",
+    "content": "船壳后板/舱底",
+    "origin": "船体原点",
+    "requirements": "完整补绘；不带房间家具"
+  },
+  {
+    "z": 70,
+    "key": "room_shell",
+    "content": "六舱格壳体 ×6",
+    "origin": "各舱格左下",
+    "requirements": "空壳/地板/后墙；共用尺寸"
+  },
+  {
+    "z": 80,
+    "key": "room_power",
+    "content": "动力舱陈设",
+    "origin": "对应舱格",
+    "requirements": "轮机主体/活动轮/灯光分离"
+  },
+  {
+    "z": 81,
+    "key": "room_water",
+    "content": "水源房陈设",
+    "origin": "对应舱格",
+    "requirements": "储罐/管道/水位独立"
+  },
+  {
+    "z": 82,
+    "key": "room_fishing",
+    "content": "钓鱼房陈设",
+    "origin": "对应舱格",
+    "requirements": "工作台/钓具活动件；绳线独立"
+  },
+  {
+    "z": 83,
+    "key": "room_harpoon",
+    "content": "2001 鱼叉炮",
+    "origin": "底座中心",
+    "requirements": "底座/炮身/鱼叉/绳索；唯一可建塔示例，建造前隐藏"
+  },
+  {
+    "z": 84,
+    "key": "room_workshop",
+    "content": "工坊陈设",
+    "origin": "对应舱格",
+    "requirements": "台面/工具活动件；不增加锻造玩法"
+  },
+  {
+    "z": 85,
+    "key": "room_medical",
+    "content": "医务室陈设",
+    "origin": "对应舱格",
+    "requirements": "床架/帘布/灯；无人物烘焙"
+  },
+  {
+    "z": 90,
+    "key": "crew_shadow",
+    "content": "船员接触影",
+    "origin": "脚底中心",
+    "requirements": "船员共用画布，透明 PNG"
+  },
+  {
+    "z": 91,
+    "key": "crew_back_limb",
+    "content": "船员后肢",
+    "origin": "脚底中心",
+    "requirements": "旋转关节补足遮挡区"
+  },
+  {
+    "z": 92,
+    "key": "crew_body",
+    "content": "船员主体",
+    "origin": "脚底中心",
+    "requirements": "默认向右；4~8 活动部件预算"
+  },
+  {
+    "z": 93,
+    "key": "crew_head",
+    "content": "船员头部",
+    "origin": "脚底中心",
+    "requirements": "头部枢轴另记录"
+  },
+  {
+    "z": 94,
+    "key": "crew_front_limb",
+    "content": "船员前肢",
+    "origin": "脚底中心",
+    "requirements": "接缝补绘"
+  },
+  {
+    "z": 95,
+    "key": "crew_weapon",
+    "content": "船员武器/工具",
+    "origin": "脚底中心",
+    "requirements": "仅持有配置对应装备时显示"
+  },
+  {
+    "z": 100,
+    "key": "ship_frame_front",
+    "content": "前梁/舱格立柱",
+    "origin": "船体原点",
+    "requirements": "不得遮住角色头部与拖拽目标"
+  },
+  {
+    "z": 110,
+    "key": "ship_deck_front",
+    "content": "甲板/栏杆/船首尾",
+    "origin": "船体原点",
+    "requirements": "栏杆/梯子/舵轮分离；梯子不烘焙进房间"
+  },
+  {
+    "z": 120,
+    "key": "ship_rig_front",
+    "content": "前索具/桅杆",
+    "origin": "船体原点",
+    "requirements": "遮挡路径须验证；不要挡角色脸"
+  },
+  {
+    "z": 130,
+    "key": "ship_lantern",
+    "content": "提灯实体",
+    "origin": "局部挂点",
+    "requirements": "实体与光晕独立"
+  },
+  {
+    "z": 140,
+    "key": "ship_light",
+    "content": "舱内暖光",
+    "origin": "局部挂点",
+    "requirements": "局部透明叠加；左上主光一致"
+  },
+  {
+    "z": 150,
+    "key": "monster_contact",
+    "content": "怪物接触影/水纹",
+    "origin": "海面接触点",
+    "requirements": "普通怪/精英/Boss 分组；不代表内容 ID"
+  },
+  {
+    "z": 151,
+    "key": "monster_back_limb",
+    "content": "怪物后肢/触手",
+    "origin": "接触点",
+    "requirements": "同组共同画布；补全遮挡"
+  },
+  {
+    "z": 152,
+    "key": "monster_body",
+    "content": "怪物主体",
+    "origin": "接触点",
+    "requirements": "默认朝船；登船后用脚底接触点"
+  },
+  {
+    "z": 153,
+    "key": "monster_head",
+    "content": "怪物头部（可选）",
+    "origin": "接触点",
+    "requirements": "可无；按剪影决定"
+  },
+  {
+    "z": 154,
+    "key": "monster_front_limb",
+    "content": "怪物前肢/触手",
+    "origin": "接触点",
+    "requirements": "攀爬路径不得被雾覆盖"
+  },
+  {
+    "z": 155,
+    "key": "monster_weapon",
+    "content": "攻击器官",
+    "origin": "接触点",
+    "requirements": "独立前摇/攻击/回收"
+  },
+  {
+    "z": 156,
+    "key": "monster_glow",
+    "content": "怪物局部发光（可选）",
+    "origin": "接触点",
+    "requirements": "保持局部；不整身霓虹"
+  },
+  {
+    "z": 160,
+    "key": "sea_contact",
+    "content": "贴船水线/浪花",
+    "origin": "水线原点",
+    "requirements": "薄层；禁止厚浪盖住舱内"
+  },
+  {
+    "z": 170,
+    "key": "sea_front",
+    "content": "前海/水下雾",
+    "origin": "水线以下",
+    "requirements": "透明可调；敌方轮廓仍可读"
+  },
+  {
+    "z": 180,
+    "key": "fx_projectile",
+    "content": "鱼叉弹体/绳线",
+    "origin": "炮口/目标纯坐标",
+    "requirements": "独立池化对象；不烘焙进炮身"
+  },
+  {
+    "z": 181,
+    "key": "fx_hit",
+    "content": "命中/短水花",
+    "origin": "命中点",
+    "requirements": "2~4 帧短特效；无血浆"
+  },
+  {
+    "z": 182,
+    "key": "fx_damage",
+    "content": "受击遮罩",
+    "origin": "对应主体",
+    "requirements": "短时高光；禁止全屏红闪"
+  },
+  {
+    "z": 190,
+    "key": "world_overlay",
+    "content": "血条/选中框/拖拽提示",
+    "origin": "目标跟随点",
+    "requirements": "不与角色共图；必要时提升至 UI 层"
+  },
+  {
+    "z": 200,
+    "key": "ui_top",
+    "content": "资源栏/航程/设置",
+    "origin": "屏幕安全区",
+    "requirements": "边框/图标/文本独立；数值由运行时绘制"
+  },
+  {
+    "z": 210,
+    "key": "ui_side",
+    "content": "地图/背包/船员入口",
+    "origin": "屏幕安全区",
+    "requirements": "各按钮底板与图标独立"
+  },
+  {
+    "z": 220,
+    "key": "ui_bottom",
+    "content": "操作/技能按钮",
+    "origin": "屏幕安全区",
+    "requirements": "底板/图标/冷却遮罩/文本独立"
+  },
+  {
+    "z": 230,
+    "key": "ui_event",
+    "content": "事件弹窗与遮罩",
+    "origin": "屏幕中心",
+    "requirements": "底板/插画/选项/动态文字；只定分层，不生成内容"
+  },
+  {
+    "z": 240,
+    "key": "ui_drag",
+    "content": "拖拽角色/悬浮提示",
+    "origin": "屏幕坐标",
+    "requirements": "最高交互层；取消后清理"
+  }
+]

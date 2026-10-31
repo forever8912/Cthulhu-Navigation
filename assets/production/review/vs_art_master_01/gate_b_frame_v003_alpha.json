@@ -1,0 +1,70 @@
+{
+  "height": 826,
+  "bays": [
+    {
+      "width": 158,
+      "center": 450,
+      "ratio": 0.7053571428571429,
+      "left": 363,
+      "right": 520,
+      "bottom": 594,
+      "top": 371,
+      "height": 224
+    },
+    {
+      "width": 165,
+      "center": 680,
+      "ratio": 0.7432432432432432,
+      "left": 574,
+      "right": 738,
+      "bottom": 593,
+      "top": 372,
+      "height": 222
+    },
+    {
+      "width": 162,
+      "center": 900,
+      "ratio": 0.7297297297297297,
+      "left": 791,
+      "right": 952,
+      "bottom": 593,
+      "top": 372,
+      "height": 222
+    },
+    {
+      "width": 169,
+      "center": 1120,
+      "ratio": 0.7647058823529411,
+      "left": 1001,
+      "right": 1169,
+      "bottom": 592,
+      "top": 372,
+      "height": 221
+    },
+    {
+      "width": 171,
+      "center": 1350,
+      "ratio": 0.7702702702702703,
+      "left": 1222,
+      "right": 1392,
+      "bottom": 593,
+      "top": 372,
+      "height": 222
+    },
+    {
+      "width": 162,
+      "center": 1580,
+      "ratio": 0.7330316742081447,
+      "left": 1446,
+      "right": 1607,
+      "bottom": 593,
+      "top": 373,
+      "height": 221
+    }
+  ],
+  "width": 1903,
+  "sample_y": 470,
+  "note": "中心横纵透明跨度，仅为几何诊断；不替代完整矩形净空与视觉验收",
+  "alpha_threshold": 8,
+  "corner_alpha": 0
+}

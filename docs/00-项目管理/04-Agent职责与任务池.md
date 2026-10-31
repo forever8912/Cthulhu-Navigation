@@ -1,6 +1,6 @@
 # 04 - 《恐惧之海》Agent 职责与任务池
 
-> 版本：v1.4（2026-10-31）
+> 版本：v1.5（2026-10-31）
 > 状态：现行任务路由表
 > 上位规则：根目录 `AGENTS.md` 与 `03-多Agent协作手册.md`
 
@@ -30,9 +30,10 @@
 | VS-W2-INPUT-01 | Trae | W2预备 | 已完成（`655a937`），已进入 W2 集成基线 | `assets/scripts/view/input/`、`DragGestureSandbox.scene`、`tests/view/input/` |
 | VS-W2-BATTLE-CORE-01 | GPT / Codex | W2 | 已完成（`41a0396` + `cb21e0e`） | `assets/scripts/logic/battle/`、`W2BattleGrayboxConfig.ts`、对应测试 |
 | VS-W2-VIEW-01 | Trae | W2 | 可领取，依赖工程提交 `cb21e0e` | `assets/scripts/view/battle/`、`BattleGraybox.scene`、`tests/view/battle/` |
-| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate B REWORK：船壳母版与三版透明框架保留为失败证据；转入精确几何底稿路线 | `source/vs_art_master_01/`、`manifests/ship_lv1_*`、`review/vs_art_master_01/` |
-| VS-ART-GEOMETRY-01 | GPT / Codex | W2并行 | 可开始：先锁定六格几何与净高，再生成 v004；不得继续提示词盲抽 | 上述目录中的 Gate B 新版本，不覆盖 v001~v003 |
-| VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待几何底稿完成后领取；只做 manifest/命名/授权记录审计 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
+| VS-ART-MASTER-01 | GPT / Codex | W1/W2并行 | Gate B REWORK：v001~v004 全部保留为失败证据；整张候选生成路线关闭 | `source/vs_art_master_01/`、`manifests/ship_lv1_*`、`review/vs_art_master_01/` |
+| VS-ART-GEOMETRY-01 | GPT / Codex | W2并行 | 部分完成：精确底稿通过；唯一 v004 六处净空均被梁柱侵入，已标记 REWORK | v004 底稿、候选、审核板、检查 JSON 与 manifest |
+| VS-ART-EDITABLE-01 | GPT / Codex | W2并行 | 可开始：固定几何可编辑母版；透明净空改为硬遮罩，不再生成整张船框 | `source/vs_art_master_01/gate_b/`、对应 manifest 与审核报告 |
+| VS-ART-AUDIT-01 | WorkBuddy | W2并行 | 待可编辑母版审核包完成后领取；只做 manifest/命名/授权记录审计 | `assets/production/review/vs_art_master_01/manifest_audit_v001.md` |
 | VS-ART-INGAME-01 | Trae | W2后续 | 阻塞：仅在资产 APPROVED 且 W2 灰盒视图交付后开放 | 工程内限定美术验证场景与导入报告，具体范围届时冻结 |
 | VS-W1-INTEGRATION-01 | GPT / Codex | W1 | 已完成：运行时 JSON（`aa42508`）、Web Mobile（`30a4ba3`）、真实手机同网段启动均通过 | 配置运行时接入、手机验证、W1闸门结论 |
 
@@ -235,7 +236,7 @@ Owner：GPT / Codex
 输入：
 - STYLE_SCENE_001_v001
 - ship_lv1_hull_shell_v001 与 ship_lv1_hull_frame_v001~v003（仅作失败证据）
-- Gate A 批准布局：六格 140×160、共同底线、112px 船员净空
+- Gate A 批准布局：1672×941 源画布；六格左上 `(550+140i,570)`、每格 140×160 源像素、共同底线 y=730；112px 逻辑船员净空
 
 交付：
 1. 可测量的逻辑坐标底稿、透明遮罩与尺寸 JSON。
@@ -250,12 +251,38 @@ Owner：GPT / Codex
 - 通过几何自动检查后才进入材质/气氛评审。
 
 非目标：不生产六房、五怪、Lv2/Lv3，不写入 approved 或 Cocos assets/art。
+
+执行结果：精确底稿通过；v004 画布通过，但六个 128×152 源像素净空区均检测到非透明梁柱，候选 REWORK，任务停止追加生成。
+```
+
+```text
+任务编号：VS-ART-EDITABLE-01
+Owner：GPT / Codex
+目标：基于已通过的 v004 精确底稿建立固定几何、分层可编辑的船体母版；不再让生成模型决定船框拓扑。
+
+实现边界：
+1. 画布固定 1672×941，坐标、中心距、底线与 geometry_v004 JSON 完全一致。
+2. 六个 128×152 净空矩形作为不可侵犯的硬 Alpha 遮罩，梁柱、斜撑、纹理和抗锯齿均不得写入。
+3. 前框、后墙、船壳主体、房间遮罩使用同画布和共同原点；先完成无材质结构版，再在遮罩约束下添加厚涂材质。
+4. 不生成整张船框候选；生图若继续使用，只能提供可裁切材质参考，不能改变几何或直接成为正式层。
+
+交付：
+- ship_lv1_hull_editable_v005.svg（或等价分层可编辑源文件）
+- 同画布透明 PNG 导出、层级 JSON、硬遮罩与自动检查结果
+- 中灰底、逻辑尺寸、黑白剪影、1280×720 回拼审核板
+- v005 manifest 与交接报告；状态止于 REVIEW/REWORK
+
+阻断验收：
+- 六处净空 Alpha>8 的像素计数必须全部为 0。
+- 画布、格坐标、底线和共同原点逐项精确匹配，误差≤1源像素。
+- 结构版通过前禁止材质评审；材质版不得破坏结构版检查结果。
+- v004 及更早文件不得覆盖，不进入 approved 或 Cocos。
 ```
 
 ```text
 任务编号：VS-ART-AUDIT-01
 Owner：WorkBuddy
-目标：在 v004 审核包生成后，独立检查命名、版本、状态、SHA-256、提示词、参考来源、授权与人工修改记录。
+目标：在 v005 可编辑母版审核包生成后，独立检查命名、版本、状态、SHA-256、参考来源、授权与人工修改记录。
 只允许新增 manifest_audit_v001.md；不得修改 PNG、manifest 或美术规范。
 结论只允许 PASS / FAIL，并逐项列出缺失字段和目标文件。
 ```

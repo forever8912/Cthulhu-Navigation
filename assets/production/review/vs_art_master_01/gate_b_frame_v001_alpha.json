@@ -1,0 +1,70 @@
+{
+  "sample_y": 470,
+  "height": 793,
+  "alpha_threshold": 8,
+  "note": "中心横纵透明跨度，仅为几何诊断；不替代完整矩形净空与视觉验收",
+  "width": 1983,
+  "bays": [
+    {
+      "center": 450,
+      "right": 547,
+      "height": 170,
+      "left": 374,
+      "bottom": 569,
+      "top": 400,
+      "width": 174,
+      "ratio": 1.0235294117647058
+    },
+    {
+      "center": 680,
+      "right": 771,
+      "height": 169,
+      "left": 594,
+      "bottom": 569,
+      "top": 401,
+      "width": 178,
+      "ratio": 1.0532544378698225
+    },
+    {
+      "center": 900,
+      "right": 998,
+      "height": 169,
+      "left": 815,
+      "bottom": 569,
+      "top": 401,
+      "width": 184,
+      "ratio": 1.0887573964497042
+    },
+    {
+      "center": 1120,
+      "right": 1214,
+      "height": 168,
+      "left": 1032,
+      "bottom": 568,
+      "top": 401,
+      "width": 183,
+      "ratio": 1.0892857142857142
+    },
+    {
+      "center": 1350,
+      "right": 1446,
+      "height": 169,
+      "left": 1259,
+      "bottom": 569,
+      "top": 401,
+      "width": 188,
+      "ratio": 1.1124260355029585
+    },
+    {
+      "center": 1580,
+      "right": 1675,
+      "height": 170,
+      "left": 1490,
+      "bottom": 569,
+      "top": 400,
+      "width": 186,
+      "ratio": 1.0941176470588236
+    }
+  ],
+  "corner_alpha": 0
+}
