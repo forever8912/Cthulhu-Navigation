@@ -1,0 +1,78 @@
+{
+  "task_id": "VS-ART-MATERIAL-01",
+  "asset_id": "ship_lv1_hull_editable",
+  "version": 6,
+  "status": "REVIEW",
+  "generator": "Frozen v005 alpha plus painted material study, editable SVG masks and light overlays",
+  "generated_at": "2026-10-31T09:22:37.540Z",
+  "references": [
+    "ship_lv1_layers_v005.json",
+    "ship_lv1_hard_mask_v005.png",
+    "ship_lv1_material_study_v006.png",
+    "STYLE_SCENE_001_v001"
+  ],
+  "material_generation_manifest": "ship_lv1_material_study_v006.json",
+  "manual_edits": [
+    "仅RGB材质替换，逐层复制冻结Alpha",
+    "替换等距木纹与铆钉网格",
+    "左上暖面/船腹冷暗/水线湿反光",
+    "梁柱断续亮面，不改原有轮廓"
+  ],
+  "reviewer": "Codex material review",
+  "review_notes": "Technical and material review PASS; user approval and independent manifest audit pending. Keep REVIEW until explicit approval. See material_v006_review.md.",
+  "license_notes": "Generated material study based on internal style reference, no third-party texture download",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/build_material_v006.cjs",
+      "sha256": "3d1204c0d09b7677ecb63000addf1df457aad1d35d80615d5cd785e6258e9f92"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_back_walls_v006.png",
+      "sha256": "9d5fdedabe60a8cbd89d792bf550bb36d2616ae767ffbdb6dc951ba06fbb25c8"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_back_walls_v006.svg",
+      "sha256": "fd727f84b1ddd1e21fb4752f2fa4d8d981cc934b9cbdee46fb2f598161add461"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_front_frame_v006.png",
+      "sha256": "ebf6e2e5152ea89f6f1420ca874a3bd4ce5e72e169d2e69994206b6ed6fb7c38"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_front_frame_v006.svg",
+      "sha256": "e168529092dac44622ed893ec64b6fddf34faa80057b6950a41e1d7a4be37cd3"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hard_mask_v006.png",
+      "sha256": "59c321ad64f81d56333b4590663eeb83615b746e2f1f2cf6ca6e7d3e8759054a"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hard_mask_v006.svg",
+      "sha256": "1d87f2ae6d84151467da34759d4c5c875d228ad4a7126a29cee2940438528591"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_assembled_v006.png",
+      "sha256": "5e65611e2b3d3574266cca28fb6539c4c20b3b50c656b6dd74828592a8a4228f"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_body_v006.png",
+      "sha256": "c745b7a7e8847d77fe14ed9521bb6403ed00a59454b44addba6ef79660d8306d"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_body_v006.svg",
+      "sha256": "84456ed13b3577915bb535ab87f12184e11ebe0f20d61019bce9c498646d3c8e"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_hull_editable_v006.svg",
+      "sha256": "3a9eb17c144de39e7066aa05133af77d1d328bd7e74eeccc5f1b36a8fe35e4d5"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_layers_v006.json",
+      "sha256": "2d2c785a269a5fa7110b90b2b2c08d3752cdfc0609d50bda4f66b50303d330d7"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/gate_b/ship_lv1_material_study_v006.png",
+      "sha256": "a71b275d30e9da3bb536f8c4a3f8fc70e2093b4d48ee16d772cc542bde562591"
+    }
+  ]
+}
