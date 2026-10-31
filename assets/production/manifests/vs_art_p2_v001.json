@@ -1,0 +1,87 @@
+{
+  "task_id": "VS-ART-P2-01",
+  "status": "REVIEW",
+  "generated_at": "2026-10-31T13:34:19.127Z",
+  "purpose": "minimum runtime split sample: Lv1 power room plus room/tower 2001 harpoon launcher",
+  "references": [
+    "STYLE_SCENE_001_v001",
+    "ship_lv1_hull_editable_v007"
+  ],
+  "generation_records": [
+    {
+      "asset_id": "room_1001_power",
+      "output_artifact_id": "exec-291340eb-bd62-4b64-a3a5-d3433eb85da9",
+      "provider_task_id": null,
+      "model": null,
+      "model_version": null,
+      "seed": null,
+      "generator": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Asset type: game production asset, representative Lv1 power room module for a side-view ship cutaway. Input images: Image 1 is the authoritative approved project style reference; Image 2 is the frozen v007 hull candidate for scale/context only. Primary request: Create one complete rectangular Lv1 power-room interior module designed to fit a single 140x160 source-grid opening when later scaled, shown straight side-on with no perspective. It is a dark old wooden ship compartment containing a compact hand-built flywheel, belt drive, small iron boiler/generator, two pipes, one operator standing area, and a small warm oil lamp. The room is unoccupied. Style/medium: restrained dark hand-painted game illustration matching the reference; crisp variable dark structural edges; compact controlled brushwork; grey-brown old wood, blue-grey shadow, muted iron, localized dull rust. Composition/framing: centered front elevation, complete room boundaries visible, readable silhouette at 96-128px logical scale, clear floor and empty operator zone. Lighting/mood: cool ambient darkness with one small localized warm lamp; no broad golden wash. Constraints: transparent background outside the rectangular room module; no ship exterior, no characters, no UI, no text, no watermark; no perspective camera; no pipes or decoration crossing outside the module; keep machinery clear but not overly detailed. Avoid: photorealism, 3D render, pixel art, flat vector, giant impasto strokes, bright orange rust, steampunk ornament overload, horror gore.",
+      "negative_prompt": "photorealism, 3D render, pixel art, flat vector, giant impasto strokes, bright orange rust, steampunk ornament overload, horror gore, text, watermark",
+      "prompt_summary": "Side-view two-grid Lv1 power room; flywheel, belt drive, compact boiler/generator, localized lamp; transparent exterior; approved style reference."
+    },
+    {
+      "asset_id": "room_2001_harpoon",
+      "output_artifact_id": "exec-feaf0914-c341-4dec-a962-9c1efa01adc8",
+      "provider_task_id": null,
+      "model": null,
+      "model_version": null,
+      "seed": null,
+      "generator": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Asset type: game production sprite-parts sheet for room/tower ID 2001, Lv1 hand-thrown harpoon launcher. Input image: Image 1 is the authoritative approved project style reference. Primary request: Create a clean transparent sprite-parts sheet for a compact side-view shipboard harpoon launcher. Show exactly five separated non-overlapping components with generous transparent spacing: (1) low wooden-and-dark-iron mounting base, (2) short pivoting launcher body with simple rope spool and rear grip, (3) one long barbed iron harpoon pointing right, (4) one loose curved hemp rope segment, (5) a small pale cyan impact/glint effect mask. No assembled second weapon. Style/medium: restrained dark hand-painted game illustration matching the reference; crisp variable dark edges, controlled compact brushwork, grey-brown wood, blue-grey iron, tiny localized dull rust, pale cyan effect only. Composition/framing: orthographic side view, all components complete and isolated, launcher facing right, consistent top-left light, readable after scaling to a one-grid room. Constraints: genuine transparent background, no labels, no text, no grid, no frame, no characters, no ship, no ocean, no UI, no watermark; parts must not touch or overlap so they can be cropped independently. Avoid: firearms, cannons, missiles, ornate fantasy weapon, photorealism, 3D render, pixel art, flat vector, bright gold, large orange rust, giant impasto strokes.",
+      "negative_prompt": "firearms, cannons, missiles, ornate fantasy weapon, photorealism, 3D render, pixel art, flat vector, bright gold, large orange rust, giant impasto strokes, text, watermark",
+      "prompt_summary": "Five isolated transparent parts: base, launcher, harpoon, rope and pale-cyan effect; approved style reference."
+    }
+  ],
+  "manual_edits": [
+    "透明边界裁切",
+    "五部件独立裁切，不重绘源像素",
+    "按冻结舱格缩放回拼",
+    "制作待机与发射状态审核图"
+  ],
+  "license_notes": "Self-generated from approved internal project reference; no protected-IP style target or third-party texture",
+  "reviewer": "",
+  "review_notes": "Whole-set review pending. Not APPROVED and not imported into Cocos.",
+  "artifacts": [
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_v001.png",
+      "sha256": "0cd3967bdbf39ff40289385f1749f7d779b0e862bc6cbac7c26a35e90354add2"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_2001_harpoon_parts_v001.png",
+      "sha256": "7d1fdddea7911dcd3848c801976ba9577fbcde5c9b32ba71b37b2d77d643bd73"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_1001_power_module_v001.png",
+      "sha256": "e3d7718e097cc3c1b2f94cf9968e135f30df6c5ebad759e50c690d84a09e8c41"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_2001_base_v001.png",
+      "sha256": "3d365c40c2bb6e3025abe2ba5288d80acee88f0ed71fc69acd92bc409e437d50"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_2001_launcher_v001.png",
+      "sha256": "049d184158ff9113af9c78e041d6b750d822b7e29bc377db4d6f5b8244d2c349"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_2001_harpoon_v001.png",
+      "sha256": "34582627f9d6ed6aec538eae0747e9831aa4f4a14b2be4a1c896729c016d51d8"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_2001_rope_v001.png",
+      "sha256": "b14542523972b78c90408c84282acaf27ba2229dbf2144d01504400a3c0750e3"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/room_2001_effect_v001.png",
+      "sha256": "e5a36ffbc1995b23ab4a2b73388c2051794e57bcd8389c6583570213a12c5f2d"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/p2_assembled_idle_v001.png",
+      "sha256": "70a1b5d6b254a6204bb03e4e7bdc2d37b543939a2155e2a26eff6a222871a8d0"
+    },
+    {
+      "path": "assets/production/source/vs_art_master_01/p2/p2_assembled_action_v001.png",
+      "sha256": "f2b578376b20f53c5c8ac913f311d6f9f6c119832df90f5a84a063b71666553e"
+    }
+  ]
+}

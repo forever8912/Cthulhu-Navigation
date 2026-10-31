@@ -1,0 +1,68 @@
+{
+  "status": "REVIEW",
+  "layers": [
+    {
+      "key": "hull_body",
+      "canvas": [
+        1672,
+        941
+      ],
+      "alpha_differences_vs_v005": 0,
+      "clear_alpha_nonzero": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "key": "back_walls",
+      "canvas": [
+        1672,
+        941
+      ],
+      "alpha_differences_vs_v005": 0,
+      "clear_alpha_nonzero": "back wall intentionally opaque",
+      "pass": true
+    },
+    {
+      "key": "front_frame",
+      "canvas": [
+        1672,
+        941
+      ],
+      "alpha_differences_vs_v005": 0,
+      "clear_alpha_nonzero": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "mask_byte_identical": true,
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "origin": {
+    "x": 970,
+    "y": 730
+  },
+  "cells_unchanged": true,
+  "hierarchy_unchanged": true,
+  "back_wall_bleed": 3,
+  "old_v005_unchanged": true,
+  "clear_height_logical": 116.30180658873539,
+  "swatch_sha256": {
+    "wood": "4123ea347f19e639bab42aeab4476708a4f635d41ed5febb36e5fb9465c557cf",
+    "structure": "a4135bca093c68c3934f3a4faede6accfdf05be29f8c7a89cde45942f8fd0cd6",
+    "iron": "ba2c6db35d241a1889a35f56f5aea5d6ea3fb14fc45d7048bc90a79b52c493c6"
+  }
+}
